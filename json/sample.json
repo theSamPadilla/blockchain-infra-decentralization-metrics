@@ -1,0 +1,21 @@
+[
+    {
+        "<IP Address>" : {
+            "is_validator": true,
+            "stake": 69,
+            "address": "xyz#!xyz",
+            "extra_info": {
+
+            }
+        },
+
+        "<Another IP Address>" : {
+            "is_validator": false,
+            "stake": null,
+            "address": "abc#!abc",
+            "extra_info": {
+
+            }
+        }
+    }
+]

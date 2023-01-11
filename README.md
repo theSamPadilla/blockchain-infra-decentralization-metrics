@@ -21,6 +21,9 @@ The output should be a list of JSON objects in the following format:
             "is_validator": <bool> #Differentiate between RPC nodes and validator nodes.
             "stake": <int> #Stake of the validator or null if RPC node.
             "address": <string> #On-chain address of the validator.
+            "extra_info": {
+                <Any other info you want to add that may be useful in processing (validator name, skip rate, etc)>
+            }
         }
     }
 ]
