@@ -1,0 +1,104 @@
+{
+    "Total Nodes": 3461,
+    "Validator Nodes": 2068,
+    "Current Epoch": 340,
+    "Total stake": 396198689.6938293,
+    "Provider Distribution": {
+        "Other": {
+            "Total RPC Nodes": 212,
+            "Total Validators": 267,
+            "Total Stake": 51344386.77095747,
+            "Percentage of Total Stake": 12.95925203857562,
+            "Percentage of RPC Nodes": 6.125397284021959,
+            "Percentage of Validators": 12.911025145067699
+        },
+        "Equinix": {
+            "Total RPC Nodes": 224,
+            "Total Validators": 70,
+            "Total Stake": 107411927.34794348,
+            "Percentage of Total Stake": 27.11062154974522,
+            "Percentage of RPC Nodes": 6.472117885004334,
+            "Percentage of Validators": 3.3849129593810443
+        },
+        "Hetzner": {
+            "Total RPC Nodes": 162,
+            "Total Validators": 762,
+            "Total Stake": 79082387.95395969,
+            "Percentage of Total Stake": 19.960285081980516,
+            "Percentage of RPC Nodes": 4.680728113262063,
+            "Percentage of Validators": 36.847195357833655
+        },
+        "OVH Cloud": {
+            "Total RPC Nodes": 94,
+            "Total Validators": 474,
+            "Total Stake": 40178259.730609536,
+            "Percentage of Total Stake": 10.140937053996346,
+            "Percentage of RPC Nodes": 2.7159780410286043,
+            "Percentage of Validators": 22.920696324951646
+        },
+        "Webnx": {
+            "Total RPC Nodes": 9,
+            "Total Validators": 106,
+            "Total Stake": 11893244.667598847,
+            "Percentage of Total Stake": 3.001838465641973,
+            "Percentage of RPC Nodes": 0.2600404507367813,
+            "Percentage of Validators": 5.1257253384912955
+        },
+        "Lumen": {
+            "Total RPC Nodes": 4,
+            "Total Validators": 66,
+            "Total Stake": 5045925.653157752,
+            "Percentage of Total Stake": 1.2735846393275796,
+            "Percentage of RPC Nodes": 0.11557353366079168,
+            "Percentage of Validators": 3.1914893617021276
+        },
+        "Reliablesite": {
+            "Total RPC Nodes": 2,
+            "Total Validators": 120,
+            "Total Stake": 11450401.789929973,
+            "Percentage of Total Stake": 2.8900655372632627,
+            "Percentage of RPC Nodes": 0.05778676683039584,
+            "Percentage of Validators": 5.802707930367505
+        },
+        "Amazon Web Services": {
+            "Total RPC Nodes": 375,
+            "Total Validators": 42,
+            "Total Stake": 58930319.7915329,
+            "Percentage of Total Stake": 14.873931016044631,
+            "Percentage of RPC Nodes": 10.83501878069922,
+            "Percentage of Validators": 2.0309477756286265
+        },
+        "Google Cloud": {
+            "Total RPC Nodes": 46,
+            "Total Validators": 1,
+            "Total Stake": 15760.678585599,
+            "Percentage of Total Stake": 0.003977973424843578,
+            "Percentage of RPC Nodes": 1.3290956370991043,
+            "Percentage of Validators": 0.048355899419729204
+        },
+        "Maxihost": {
+            "Total RPC Nodes": 120,
+            "Total Validators": 9,
+            "Total Stake": 731668.553047559,
+            "Percentage of Total Stake": 0.18467212842449604,
+            "Percentage of RPC Nodes": 3.4672060098237503,
+            "Percentage of Validators": 0.43520309477756286
+        },
+        "Teraswitch": {
+            "Total RPC Nodes": 166,
+            "Total Validators": 32,
+            "Total Stake": 31886005.34193411,
+            "Percentage of Total Stake": 8.04798354244298,
+            "Percentage of RPC Nodes": 4.7963016469228545,
+            "Percentage of Validators": 1.5473887814313345
+        },
+        "Choopa": {
+            "Total RPC Nodes": 96,
+            "Total Validators": 2,
+            "Total Stake": 3605775.9054376762,
+            "Percentage of Total Stake": 0.9100928395861465,
+            "Percentage of RPC Nodes": 2.7737648078590005,
+            "Percentage of Validators": 0.09671179883945841
+        }
+    }
+}

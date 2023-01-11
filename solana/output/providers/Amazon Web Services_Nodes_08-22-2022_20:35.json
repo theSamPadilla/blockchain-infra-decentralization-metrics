@@ -1,0 +1,5146 @@
+{
+    "Live Nodes": 417,
+    "Validator Nodes": 43,
+    "Total different nodes seen": 627,
+    "Monitoring since date": "2022-07-22",
+    "Monitoring since epoch": 330,
+    "Current epoch": 340,
+    "Cumulative stake": 62364804.00769891,
+    "Percentage of total stake": 15.74079007073259,
+    "Nodes": {
+        "18.168.201.229": {
+            "Pubkey": "CAo1dCGYrB6NhHh5xb1cGjUiu86iyCfMTENxgHumSve4",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": true,
+            "Validator Info": {
+                "details": {
+                    "keybaseUsername": "stakedinc",
+                    "name": "Staked",
+                    "website": "https://staked.us"
+                },
+                "stake": 914838.112096764,
+                "voteAccountPubkey": "51JBzSTU5rAM8gLAVQKgp4WoZerQcSqWC7BitBzgUNAm",
+                "commission": 10,
+                "isDelinquent": false,
+                "skipRate": 4.427083333333333
+            },
+            "Earliest Deactivation": 336
+        },
+        "34.242.176.141": {
+            "Pubkey": "5axVea5zhqy2MWCooibzJjkYMHz3cvhPdgP7pVG7Sxee",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "details": {
+                    "name": "\"\""
+                },
+                "stake": 75963.637702122,
+                "voteAccountPubkey": "DT3RANYewDEqCzssBUYURi34imtsgFUb9EUjgac7pFHQ",
+                "commission": 100,
+                "isDelinquent": false,
+                "skipRate": 0.0
+            }
+        },
+        "54.85.110.125": {
+            "Pubkey": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "details": {
+                    "name": "binance staking",
+                    "website": "https://www.binance.com"
+                },
+                "stake": 6117098.881911128,
+                "voteAccountPubkey": "3N7s9zXMZ4QqvHQR15t5GNHyqc89KduzMP7423eWiD5g",
+                "commission": 0,
+                "isDelinquent": false,
+                "skipRate": 5.973101265822785
+            }
+        },
+        "52.31.190.93": {
+            "Pubkey": "A3nXCY954bSWMo9kB9FQWoeenNq3ZBnzUwFLWHfduCSs",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "details": {
+                    "name": "Spartan Group",
+                    "website": "https://www.spartangroup.io/"
+                },
+                "stake": 0.474818946,
+                "voteAccountPubkey": "Co1z6vVfiric28GUV5cxum1brp2zhhF7xVo6ofkrwCpE",
+                "commission": 10,
+                "isDelinquent": false,
+                "skipRate": null
+            }
+        },
+        "18.232.167.51": {
+            "Pubkey": "J2jV3gQsvX2htBXHeNStAVvMJaPe3RgNotwfav9pyS6y",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "details": {
+                    "details": "Aquanow is operating validator nodes in support of emerging decentralized finance projects.",
+                    "keybaseUsername": "aquavalidate",
+                    "name": "Aquanode",
+                    "website": "https://aquanow.io"
+                },
+                "stake": 97514.705633731,
+                "voteAccountPubkey": "Dz4aYDW7NvtDQXB62gcLWaA467zcYtnLiSgyiH57ZwUF",
+                "commission": 10,
+                "isDelinquent": false,
+                "skipRate": 0.0
+            }
+        },
+        "3.250.150.96": {
+            "Pubkey": "5dgjNR6Ru9VbmhJBSeWmQm17VSEYcstgQini429ePEyG",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "stake": 822378.71315136,
+                "voteAccountPubkey": "G2pFiYziSkjGTvfNGnHhFCG5TMgZHQQLfi3VdxuLfL2C",
+                "commission": 100,
+                "isDelinquent": false,
+                "skipRate": 8.012820512820513
+            }
+        },
+        "52.14.207.94": {
+            "Pubkey": "CvNorfaayk8vyFVpSQwQFSffPf3AHwzrNijBRLqawZiL",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": true,
+            "Validator Info": {
+                "stake": 60572.927491593,
+                "voteAccountPubkey": "8L8adJFEwA4PdyWg8xXvGWYuz6s5pR7UFqtgXJVNS6vS",
+                "commission": 10,
+                "isDelinquent": false,
+                "skipRate": null
+            },
+            "Earliest Deactivation": 336
+        },
+        "18.118.141.164": {
+            "Pubkey": "4gzGBpNSrJDifU5TZxwYrqSzYYGn2cba2KQVPGW14zjQ",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 333
+        },
+        "3.90.233.101": {
+            "Pubkey": "5SMEv25VcpxrR95A7swjuN5hDYLFsg6DQgLV9emVEqCo",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "18.141.216.12": {
+            "Pubkey": "8uKfCJaQMutDQFgCNvYCPh6zoEyoSJdTCTe9PgDTBW7s",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "details": {
+                    "details": "AUDIT.one is the infrastructure arm of Persistence (XPRT) and is one of the biggest validators in South Asia, running secure validator nodes across more than 20 leading Proof-of-Stake networks.",
+                    "keybaseUsername": "auditone",
+                    "name": "AUDIT.one",
+                    "website": "https://audit.one"
+                },
+                "stake": 81961.230794166,
+                "voteAccountPubkey": "DuH43g1bKd2V1rD3eXWK73vg6jAGpBYesNWQzYtL8hw8",
+                "commission": 7,
+                "isDelinquent": false,
+                "skipRate": 50.0
+            }
+        },
+        "54.74.77.164": {
+            "Pubkey": "7xmD7mC7LQkvZVUjV8nBtJS1DnPgZLzVrBNe6rBiNncj",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.236.22.185": {
+            "Pubkey": "Bo3s3ZZZJaqdXguBzTsPEHHkUmXPumRF1udBjnZyGXHh",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": true,
+            "Validator Info": {
+                "details": {
+                    "keybaseUsername": "crossaz",
+                    "name": "tbonestake"
+                },
+                "stake": 23743.378426937,
+                "voteAccountPubkey": "HwC6mKFj23wRYeoqjx5p94FKuRKyzfCPmx2wAV3AAR3t",
+                "commission": 1,
+                "isDelinquent": true,
+                "skipRate": 100.0
+            },
+            "Earliest Deactivation": 333
+        },
+        "54.186.86.197": {
+            "Pubkey": "7LFftvhgcoe3btKAsAB4pdMV4jgv18JWRrfQWB2zXMbh",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "details": {
+                    "name": "Hard Yaka"
+                },
+                "stake": 704.365969489,
+                "voteAccountPubkey": "48gmQ5T8iht1aw2gjffWDu9wmnkxNingZHEx8XTVKrpe",
+                "commission": 10,
+                "isDelinquent": false,
+                "skipRate": null
+            }
+        },
+        "35.164.26.16": {
+            "Pubkey": "krakeNd6ednDPEXxHAmoBs1qKVM8kLg79PvWF2mhXV1",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "details": {
+                    "keybaseUsername": "krakensolana",
+                    "name": "Kraken",
+                    "website": "https://www.kraken.com/"
+                },
+                "stake": 5506444.307515944,
+                "voteAccountPubkey": "KRAKEnMdmT4EfM8ykTFH6yLoCd5vNLcQvJwF66Y2dag",
+                "commission": 100,
+                "isDelinquent": true,
+                "skipRate": 18.504273504273506
+            }
+        },
+        "34.242.63.19": {
+            "Pubkey": "Cs23cJMRuahuKh5oNhVmLhM2UrtaZLULLF3HqrxfTnHc",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "details": {
+                    "name": "\"\""
+                },
+                "stake": 6600004.622521541,
+                "voteAccountPubkey": "EVw8uChLbfXm6qJnSQkzmmRmcq2YZLFqzL8p5Vb43DvU",
+                "commission": 100,
+                "isDelinquent": false,
+                "skipRate": 3.086890243902439
+            }
+        },
+        "18.202.196.20": {
+            "Pubkey": "A5EGLkDcDFtMcB3Mtdn6cYgeAq1gDvx9Yop7y8eyt9MN",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "details": {
+                    "keybaseUsername": "a16zpos",
+                    "name": "a16z-2",
+                    "website": "https://a16z.com"
+                },
+                "stake": 1888542.048904655,
+                "voteAccountPubkey": "GCmFQLKYTRCpoqTJkcwSDKp6VViyC63H2ADzjwozXMwY",
+                "commission": 8,
+                "isDelinquent": false,
+                "skipRate": 3.826530612244898
+            }
+        },
+        "3.12.85.172": {
+            "Pubkey": "9qspAkdMiYdNiPRYbQNe7uhQkyocoBUJ9zmgCieCNFna",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "52.77.188.37": {
+            "Pubkey": "6yf57R7U1J1VXszE7CobdYEWQNJMPRfWEgGfaRsVNk32",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "details": {
+                    "details": "Professional Staking+ Ecosystem Service Provider",
+                    "keybaseUsername": "hashquark",
+                    "name": "HashQuark",
+                    "website": "https://www.hashquark.io/"
+                },
+                "stake": 86111.065498229,
+                "voteAccountPubkey": "CRzMxdyS56N2vkb55X5q155sSdVkjZhiFedWcbscCf7K",
+                "commission": 10,
+                "isDelinquent": false,
+                "skipRate": 40.0
+            }
+        },
+        "54.75.99.198": {
+            "Pubkey": "GtED1BV3tdsYhTv1ij1GkjtLsgTbT9LQnpENnkyrpiHg",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "stake": 1.09771712,
+                "voteAccountPubkey": "Ew9AJ6Cu3W9unDqCwFVoEG6oFMVmfmkHm5UkuGbRhass",
+                "commission": 100,
+                "isDelinquent": false,
+                "skipRate": null
+            }
+        },
+        "3.138.122.166": {
+            "Pubkey": "XkCriyrNwS3G4rzAXtG5B1nnvb5Ka1JtCku93VqeKAr",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": true,
+            "Validator Info": {
+                "details": {
+                    "details": "Coinbase Cloud provides secure and reliable blockchain infrastructure and APIs. Stake your crypto to our enterprise-grade validators.",
+                    "keybaseUsername": "coinbasecloud",
+                    "name": "Coinbase Cloud",
+                    "website": "https://www.coinbase.com/cloud"
+                },
+                "stake": 8404343.425631799,
+                "voteAccountPubkey": "beefKGBWeSpHzYBHZXwp5So7wdQGX6mu4ZHCsH3uTar",
+                "commission": 8,
+                "isDelinquent": false,
+                "skipRate": 3.5841232227488153
+            },
+            "Earliest Deactivation": 336
+        },
+        "34.249.219.122": {
+            "Pubkey": "EKNLKABf1bCHCNzRojNUQUYveTrobeva7DaXVSCWp1PB",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.249.222.252": {
+            "Pubkey": "BpyjeG4SY9r3TNnc3rP22DP3wpsStFA1FaZWywNPy6dr",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "details": {
+                    "keybaseUsername": "a16zpos",
+                    "name": "a16z",
+                    "website": "https://a16z.com"
+                },
+                "stake": 4633421.050776737,
+                "voteAccountPubkey": "BZpEFk6ANWzLgGn1Pc3xRdquMKW5GKmLpstx3xoPPBm7",
+                "commission": 8,
+                "isDelinquent": false,
+                "skipRate": 4.922566371681416
+            }
+        },
+        "52.51.43.143": {
+            "Pubkey": "524nvr3JESQpYq5UUD7QMkpuDMg8TyyJBGr5m47jWZfe",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "stake": 4369520.075445151,
+                "voteAccountPubkey": "4khYzWBsGrBcvhQkA1UZbiMd51MaJ6zGgec563nqeP5A",
+                "commission": 100,
+                "isDelinquent": false,
+                "skipRate": 3.82830626450116
+            }
+        },
+        "54.255.235.252": {
+            "Pubkey": "363nHc3136XvjsVnP5fubLURaH3kCh5Em1DGwQCHrUCK",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "18.119.55.35": {
+            "Pubkey": "EgxVyTgh2Msg781wt9EsqYx4fW8wSvfFAHGLaJQjghiL",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "details": {
+                    "keybaseUsername": "solcommunity",
+                    "name": "SOL Community"
+                },
+                "stake": 5179282.321006127,
+                "voteAccountPubkey": "3Ty8DYNBkK237zPvACti83EJYGxDcMcoDMCou5r3eV5Q",
+                "commission": 7,
+                "isDelinquent": false,
+                "skipRate": 4.981024667931689
+            }
+        },
+        "34.245.83.156": {
+            "Pubkey": "JBAGscXeebsHCh6Lcoq4LN7svW3h3BJ9GKzXSEJqxZ3g",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "details": {
+                    "details": "DeFi Technologies bridges the gap between traditional capital markets and DeFi.",
+                    "keybaseUsername": "defitechnologies",
+                    "name": "DeFi Technologies",
+                    "website": "https://defi.tech"
+                },
+                "stake": 45003.04542924,
+                "voteAccountPubkey": "GeNA3d7npeuReW3gke1USVm4Qm3qL8xEZhbbTmSGWVkZ",
+                "commission": 100,
+                "isDelinquent": false,
+                "skipRate": 33.333333333333336
+            }
+        },
+        "35.87.206.5": {
+            "Pubkey": "2fFev6gBMMzfUzbSdVnnSzNXG9W9iZ9UNZuWpPKJKKjC",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "stake": 836898.919578372,
+                "voteAccountPubkey": "7ikNtivRm2EDHQtnheqSnxkbNvRxMgtmthEAG84V8AEf",
+                "commission": 5,
+                "isDelinquent": false,
+                "skipRate": 6.989247311827957
+            }
+        },
+        "54.78.156.216": {
+            "Pubkey": "8xWsmbZdGLXNsrNjrVWQX8WsrDoX1dohtM2ncK9vtUvb",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "stake": 806970.24640529,
+                "voteAccountPubkey": "5NVTnNN6huDEdoqR9J6Vi99mAEXFRNJqDiMmWuRHSPvJ",
+                "commission": 100,
+                "isDelinquent": false,
+                "skipRate": 4.25531914893617
+            }
+        },
+        "52.206.137.240": {
+            "Pubkey": "2X9ueHWVfEJmcyKtWoJvsZJYTU2J6cgpfKjpvGNjUesi",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "details": {
+                    "keybaseUsername": "ab1keybase",
+                    "name": "Animoca Brands",
+                    "website": "https://www.animocabrands.com"
+                },
+                "stake": 49681.890469085,
+                "voteAccountPubkey": "GELT77XW3LGNC3CTs2tFMVULoxw9wC71QuWXjLTMWGX4",
+                "commission": 10,
+                "isDelinquent": true,
+                "skipRate": 66.66666666666667
+            }
+        },
+        "34.249.202.233": {
+            "Pubkey": "FR9mh1vpduVxEUySvZmj19wYZqFaPtjRyLjQ5PvyPpgB",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "details": {
+                    "name": "\"\""
+                },
+                "stake": 907771.870132241,
+                "voteAccountPubkey": "8sLiGeRXLcwtPRWwCQ4QxBXCcipZ31wfXjnnujT3KUTW",
+                "commission": 3,
+                "isDelinquent": false,
+                "skipRate": 2.1052631578947367
+            }
+        },
+        "34.221.131.64": {
+            "Pubkey": "HdAgKNJJVpjQ9yviR3J8yDGXHb6n84W2eYPPxzKw9P3g",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "stake": 42167.782999995,
+                "voteAccountPubkey": "3yhjyVbAUuYn2ETdELMB2GH75YrV1BzfA5pATcNJ2vjN",
+                "commission": 10,
+                "isDelinquent": false,
+                "skipRate": 0.0
+            }
+        },
+        "34.244.118.227": {
+            "Pubkey": "B9xWSEdL8L6G9GZDz2gETwiFEpPpX8dx6fjnSH3S8yEQ",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "details": {
+                    "name": "\"\""
+                },
+                "stake": 112115.28890578,
+                "voteAccountPubkey": "3RiujAyKdpykTfVB7NcTBwMn4E7uwdczf58ub1vMxhuK",
+                "commission": 100,
+                "isDelinquent": true,
+                "skipRate": 11.363636363636363
+            }
+        },
+        "13.112.10.109": {
+            "Pubkey": "3TsACFXxHSK4HoW1WjyM5kJzJduM6nnUXXT9zkSLMaiY",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.145.117.66": {
+            "Pubkey": "D91hS1rccFa5idPr9TpWmhPxfyJCtzHaet2juYzQNrPC",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "stake": 253066.1912878,
+                "voteAccountPubkey": "G8fLwPKzRD8HtStVtos65Cmiy6Jjs8Y4dNFRFcdSUhVj",
+                "commission": 8,
+                "isDelinquent": false,
+                "skipRate": 5.714285714285714
+            }
+        },
+        "13.124.58.33": {
+            "Pubkey": "D5o6UKpHVTzDQUAapFZDhkepDCvYMdR9xM6vFxXaxfoh",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "52.50.241.75": {
+            "Pubkey": "5ZwufMjECbyqtafDZR7wiB1GTWmAKR3EWqf5TeUpADnx",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "stake": 1349977.47934602,
+                "voteAccountPubkey": "T3HspUFX2d3avFTNqbNPUqz9R2tVLfxVFwszQ8QpdMH",
+                "commission": 100,
+                "isDelinquent": false,
+                "skipRate": 2.573529411764706
+            }
+        },
+        "18.142.228.0": {
+            "Pubkey": "6GvbY1pRKCE1yC4tSthYQTD8ZNfkKQDtwzsLtGxJYuMs",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "details": {
+                    "name": "\"Sol4soul\""
+                },
+                "stake": 233333.87771712,
+                "voteAccountPubkey": "33m9Rv4R4QAtrUJoJrZYvPhE1fWbEqpj7chCLGZX1Y2k",
+                "commission": 100,
+                "isDelinquent": false,
+                "skipRate": 1.0869565217391304
+            }
+        },
+        "18.119.125.115": {
+            "Pubkey": "3A3xHQgmY5EcbKKC3aaZ7ftJrhpKxZDh3Gyb5GPukNTd",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": true,
+            "Validator Info": {
+                "details": {
+                    "name": "Stake DAO [Retail] (run by Stake Capital)",
+                    "website": "https://www.stakedao.org/"
+                },
+                "stake": 264.507511967,
+                "voteAccountPubkey": "C6RzXrzqXewJ5xsYpYPmveHh7A2UUkP1932FArXRSAzE",
+                "commission": 5,
+                "isDelinquent": false,
+                "skipRate": null
+            },
+            "Earliest Deactivation": 336
+        },
+        "54.220.64.241": {
+            "Pubkey": "4pmsFkzutiFSzBHz17LiymbGS5VEHF4i6LY1SDH7QFtA",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.179.166.80": {
+            "Pubkey": "627Bpyw12cJtsy7uwDG3XNPGsygdjnXBRGSwupsv3pQ1",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "54.152.215.67": {
+            "Pubkey": "3PeqPaaMhvdEtdCswrhpfyuY8WWJg2xAsH5PF3SKymME",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "43.204.251.37": {
+            "Pubkey": "3CqJCnw9qvpJemdz4DRDoqBr2q4iEyhsb8ocA5ZyQetE",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "34.252.216.242": {
+            "Pubkey": "85mB5QHCEF4PGuYvFMo7brUXaf1Acxvmj567iNjRn35G",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.171.52.93": {
+            "Pubkey": "FURNtzupBkmFvyTh4ZzYfvaEtgHNA18LrdMZ3KzHFvcn",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "44.202.223.127": {
+            "Pubkey": "CgcFhDBL8X2cqHM58XHdH2S1CgGW9t2NVkT4cdwWAKVh",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 333
+        },
+        "18.140.57.120": {
+            "Pubkey": "9Qm41C8k12RWngn2aFG7Zvwxerh5JgoyKGtUr9GVycn5",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.39.105.185": {
+            "Pubkey": "BxKkLMxdc9GqmB3Bpi8zD7gQipnj8p28gWtK3qSFos7f",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.254.89.41": {
+            "Pubkey": "3KHmsX5XjbyapQrWRQgEbord4NkQHSZ8YTZm9zeJbSf5",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "stake": 85738.540816582,
+                "voteAccountPubkey": "GsKtF8HVPosua1DcReDSJ2bgibNcfhQcbAtrVfp93cvS",
+                "commission": 20,
+                "isDelinquent": false,
+                "skipRate": 7.6923076923076925
+            }
+        },
+        "34.221.136.42": {
+            "Pubkey": "Fo2tuqRtgHnjzGhnYixr4siwY3J28izAnz92sHmvKfov",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.253.254.186": {
+            "Pubkey": "2V1NE6A3B3imRDFh5Etw3JdPt4A8tKQ296KwnxrCdxmC",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.191.186.98": {
+            "Pubkey": "57BzChu8bB8CzCMwQVMsg1qSPJwtqukUXgELYLV693dd",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "13.214.139.44": {
+            "Pubkey": "FNZvw8MJAsDvSCzz2nt7FRWJmKZ2U3dNaXF5jYeAUNKp",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.218.238.167": {
+            "Pubkey": "DaJjaXYaiffKNptfYhuSr3ixGsTgn7CFs8htE6s9S2UL",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "54.216.119.68": {
+            "Pubkey": "BFYS32RbwN244va4CTB6bnRGvJ3MpUu4RXR9fMHxCyZ5",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "stake": 0.99771712,
+                "voteAccountPubkey": "8VEwU9oALN5F9D3zLwaJoJxx6P9ocp49b3vy7eWpTLKy",
+                "commission": 100,
+                "isDelinquent": false,
+                "skipRate": null
+            }
+        },
+        "52.31.128.47": {
+            "Pubkey": "KxCegann7ZZyky2vMQ2Ef22J8PUbjg8JpwVVVtvC6RG",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "3.239.36.93": {
+            "Pubkey": "CfyauAQm6dMc3XmLcC4sVDrHEJPPNKkXra4ynQLWViFp",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "34.250.27.220": {
+            "Pubkey": "8zu5yVC3HdaaNVU3nFhN8XWR5zRK18LHd78gL7vxX6Va",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "stake": 421881.506501813,
+                "voteAccountPubkey": "6KxQFRReTRH6gFJUs2CkSa57fobfAbQtigp1NfGXt3Qs",
+                "commission": 100,
+                "isDelinquent": false,
+                "skipRate": 2.5641025641025643
+            }
+        },
+        "3.249.250.57": {
+            "Pubkey": "BUtFhK4wrFyuJx1iQFkw7fPnywvo1N7xtg29MmU9CxmT",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "stake": 2423460.772231818,
+                "voteAccountPubkey": "2M1ZCZELsU6uaDc5KrFHiA8CRiB9DqNyJbXkMKrF6NLK",
+                "commission": 100,
+                "isDelinquent": false,
+                "skipRate": 4.134615384615385
+            }
+        },
+        "18.142.136.101": {
+            "Pubkey": "FeD1HoB2dyEZnxYpzUnkmQm9jTTY3D7cTf9TFaMGeBii",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "details": {
+                    "details": "Superteam is a collective of creatives, developers, and operators dedicated to growing the Solana ecosystem",
+                    "keybaseUsername": "superteamdao",
+                    "name": "Superteam",
+                    "website": "https://superteam.fun/"
+                },
+                "stake": 601.29709274,
+                "voteAccountPubkey": "2oUpi6Qdo8RZmDGbrd5jcHeWnjUKRtExzSD8koxWbue1",
+                "commission": 10,
+                "isDelinquent": true,
+                "skipRate": null
+            }
+        },
+        "3.140.239.51": {
+            "Pubkey": "3PUVS8AVn5QW5DqohkUbJyY1BanLkxcEUQ6PbPxeQrp2",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Reactivation": 336
+        },
+        "107.22.137.47": {
+            "Pubkey": "JCpmHLcn8j1B6GA1UfAVQB9HABUvqfoZXeoAPUFnaQNp",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "34.242.40.228": {
+            "Pubkey": "FNuYzpqZTTAWWQ2mti9QrDeH1J1meXoz9aaSvAXMKGdR",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "18.191.242.245": {
+            "Pubkey": "BH9yyScv86xSY7BjdNbE3wDxTNdFUtZpmKF1iLTxEREW",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.88.61.120": {
+            "Pubkey": "GiZiQZQHC5S9JsBr88eUS9CezvqYq5HosmoU7HHxFj3A",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "34.248.209.221": {
+            "Pubkey": "EnXSYgXzkqb7CFVNcf5sqoFQxvVfTrmEgUJmSwy9qT4p",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.77.254.65": {
+            "Pubkey": "CqLG2ya3T3KvhAchgYnsVhmH93jT8jCsAg1ZZb3Megrj",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "18.213.118.154": {
+            "Pubkey": "4kGmtPAwhafRbnpM7ZZM47gj6fV5WVzKeVFKjBmuA83r",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "54.215.133.156": {
+            "Pubkey": "HA4mfVS1k9ci54gLDDj9ccTAiwtBYppxL7Y99U2PeGvo",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.252.85.205": {
+            "Pubkey": "DJjXqVM1xknYxreLDZprRJmbDEp2wAsEaemTCLyfUKdP",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.214.62.135": {
+            "Pubkey": "7FhrT3eH64pVkN91o86RuQ3Cf2qGZuWg1tpxUxoRVSEa",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.195.178.49": {
+            "Pubkey": "ADzcPGqu7RyUddKj3WSTREcXu3J7dxNpB87dhCWd65J4",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "34.240.201.44": {
+            "Pubkey": "BuZRGEcRJMCwp38dTzGk9cfhgXYuUoGh5BRF9DM7Ae4b",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.76.7.110": {
+            "Pubkey": "GPy13bWkqFSqiHuLb3BTE4k4TSqeJ9AsbGy9kHKVu4pv",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.236.244.227": {
+            "Pubkey": "4Pzv4Ah9PVmVbkFmbVjgKNEJP7EhJHMrXEFtsacapsuC",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "18.178.249.45": {
+            "Pubkey": "FsAVvGyG7TcUr3oNZcjF4dqAKWAVimXY9TVh1FHAYfUx",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "52.201.251.109": {
+            "Pubkey": "B9xD6KAsgUEWnaufNM5jrgviZ9KTBcd1LsbdhQi5csbU",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "34.240.9.206": {
+            "Pubkey": "FqXDMek6wrtojyC9XDKCNeAbb8nQz4y7TDAM2SFgBfVK",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "52.209.31.170": {
+            "Pubkey": "8ojCsjeC9Ue3gVA5AAzV62UQzSe8d3PSUtduraeoSjMG",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "35.155.253.94": {
+            "Pubkey": "D1YiS12L4M2P2UF9AvxXdFQfHbRZrV8PSkwH87iG7t2A",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "stake": 157768.479169914,
+                "voteAccountPubkey": "4jJQwaucKKmwqtaYB7rZMMAmWnKuGvd4VWzw3La5Y7pQ",
+                "commission": 10,
+                "isDelinquent": false,
+                "skipRate": 0.0
+            }
+        },
+        "35.88.225.43": {
+            "Pubkey": "87BkprGdqktXRD4tV4GHMrnwCkUHVj3E1w6ZxxRKgH8s",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.249.171.70": {
+            "Pubkey": "AUG8qpXGLbu1AmWNDxc4DMfjkTKra9jZGqPPtkv9dAy1",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.252.210.92": {
+            "Pubkey": "C37s7TGwqF6Yk1XMxBAWzEt5J2dAUP5NfyjXoZuKFi2f",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "details": {
+                    "name": "Lincoln Highway"
+                },
+                "stake": 165417.418399413,
+                "voteAccountPubkey": "JE4BXFW3iq3XWr8MfiCnsc5eTFCGfux2JKCWm33wNDXc",
+                "commission": 9,
+                "isDelinquent": false,
+                "skipRate": 7.8125
+            }
+        },
+        "54.188.88.140": {
+            "Pubkey": "J3PuXVkgNrB6yJFWrPHptKvBkscxwNTA9SWqQyv1zFjo",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.166.154.177": {
+            "Pubkey": "7nB4Gx3CQrLwe9s6RpEkaTrBkT143MawXVgp69LC5ELc",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "13.214.122.229": {
+            "Pubkey": "Aw6znV8dYQgoWC14CCXCSaDCTiYYLW8b7Et8iwsCL6UG",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "52.30.86.164": {
+            "Pubkey": "GqKUpuhL1hRSatnZa3qppYsUQ1MrU8K4nqxFXDcGSksw",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "35.161.100.130": {
+            "Pubkey": "HNq5uwktQcNFuuFYKoN1hYKVDuBZ6p8VZdfBjG1AVMso",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "stake": 358408.914722382,
+                "voteAccountPubkey": "H4QJ482BZtUr8DC7Y2idqcvE76uwrjnTfULCXZDkmEzM",
+                "commission": 100,
+                "isDelinquent": false,
+                "skipRate": 6.818181818181818
+            }
+        },
+        "3.228.6.191": {
+            "Pubkey": "J2h7JQ7jhphGu6jzU4BqqFfSvX8TkUN1NRJ7bfr8xc3H",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "52.18.121.113": {
+            "Pubkey": "72MKgjBpUNqAhAJMi1g1Gjmn2WdUCH3M8X4ejMHQ23u1",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Reactivation": 340
+        },
+        "18.217.117.70": {
+            "Pubkey": "5bzqDZo8P1p2tFkCeodepyB8xGzYnBjurxWbfR5LhZT6",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "18.204.1.172": {
+            "Pubkey": "68KwPY4iicRp8dMpfhvcWXvSoHxmguyu5fpBdDd14heB",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "34.203.186.197": {
+            "Pubkey": "LXdRR8aDcWx1SWtNnV1Lu8EXrTD14vXU7hVTRV6uD79",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "18.236.149.197": {
+            "Pubkey": "AiVvgxHLVmSnDVEQTX6FGFbbt8yaqs5SU4pCEp7xfgMp",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.75.88.244": {
+            "Pubkey": "7FwkNPVtU9fZHmXQaNyP217VqvUmVrm9xp1yzKhQQvUf",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "stake": 2344091.65055291,
+                "voteAccountPubkey": "8ZnGa8z4ukJ7RJ7gggm57rMs5QPXE5TXiaGZPmfo6c2J",
+                "commission": 100,
+                "isDelinquent": false,
+                "skipRate": 5.603448275862069
+            }
+        },
+        "34.228.116.58": {
+            "Pubkey": "2SZ9P1FeJuNjvf6GyRYr69jFgRDLqMrAk4kk53nFrKMm",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "52.215.162.29": {
+            "Pubkey": "8afaFb8FHz4mGan3djEyRQVs9m8fyXfdep4pGuvjuQk3",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.92.232.11": {
+            "Pubkey": "Cx95E8kCg9EhSUkXBGFVm31U8SMnXGBMGTxJ3zfUdFi",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "3.134.100.171": {
+            "Pubkey": "56jb7SWgxXG5LnFi1JmfC6v6BEAhXnH8VH8SxDDxknVL",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "3.238.35.129": {
+            "Pubkey": "3DdvvQpzqUuUvPFLGyPsC6VHA6zW483pVutrbpeHE9Bm",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "52.213.159.25": {
+            "Pubkey": "Hz5aLvpKScNWoe9YZWxBLrQA3qzHJivBGtfciMekk8m5",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "stake": 2718226.60916359,
+                "voteAccountPubkey": "H74qox1GASBWd94FWMyy6GVAbRVLf9SAMgbJ1tzSUAst",
+                "commission": 100,
+                "isDelinquent": false,
+                "skipRate": 3.3882783882783882
+            }
+        },
+        "54.229.168.109": {
+            "Pubkey": "5ku4Q4YPjWTPZLVVnGojvGAac4nLGD66dJvtSkx8zNqi",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "52.199.219.216": {
+            "Pubkey": "5i2xeDBpBawAUw3fFhUgJpFLGAuUDSfDgXWsPqfS1B98",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.196.153.17": {
+            "Pubkey": "6tFLgEHsm2Kj9cDWjaLywq5eJuc4ncLQM8B4YcxLw7VZ",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.83.34.97": {
+            "Pubkey": "En6rHBdJ2JwHqVzZgKDmmJTKk5ejXmQVArzTnosdrB2Q",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "34.247.120.40": {
+            "Pubkey": "GzfyKfFumrMh8TrowLQSb9QJP3c3M9VRf7PS53NYRJef",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "16.162.214.40": {
+            "Pubkey": "FFuLBekAvz5A2jo96U7hhV6kotzaY2B3v2SXBwshcubF",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.234.225.100": {
+            "Pubkey": "CiNsMyHWQYLrc7LyDGBYxYeshd47CH8j4jwusJFrYLH3",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "15.164.40.83": {
+            "Pubkey": "BPQ2YiQY1Wq9nKbRDNnUmBwSLWJoJoZ5cELAdvcBSgJ2",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "52.79.47.98": {
+            "Pubkey": "97nU2h7gJos2TfLgAic8urdF4s4tQDA3SSfYYQro6zBT",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "18.181.216.234": {
+            "Pubkey": "Eqc7ujcPYg6AWLUvdLDYSqhP9oGDfdPGTyav89JqLS8r",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "15.165.180.125": {
+            "Pubkey": "8sLvrXUrX1oqzsiXjP29CjoixqVA2zRwQpv9XgvKVdym",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.65.185.103": {
+            "Pubkey": "BxmkMvgpX5j2UJKgHqWcEbSai7GGUUMmP7s76P5EhXDf",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.217.5.146": {
+            "Pubkey": "AV7Fc5nPkoZnLspn1Kp8S2EEohMesBHosKPVS1vDPRiT",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "35.166.29.20": {
+            "Pubkey": "ASwrbodUa1WFjtakY7N87ESkjGu3tMvmtBKFcN2ndZiU",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.247.158.63": {
+            "Pubkey": "28ibVdi6oCwte6jvhZQWvZjcT4HM8nSvffwXSGim8PSa",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "13.251.180.208": {
+            "Pubkey": "4kqYhtp25EYKYjoiV3b8QYvCyzVA4LtmGDmxBYu5DY1E",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "52.45.169.137": {
+            "Pubkey": "DxUKxR7VwDWTA15fg2jyQdTAS2uKUhkavaTQCnvtR9dc",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "54.73.145.239": {
+            "Pubkey": "DfDxgqQFVWXoqV9qAMXUrwe6CRuxHsRKmb4vZfgBaYDW",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "35.76.87.53": {
+            "Pubkey": "797cmwTDLLrzniLspiSaa1SnxBNpqCVQkaZPrk92p1oc",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.10.208.81": {
+            "Pubkey": "B63gH18YceAGTo8pNjPounbBtcBHxJREbvrRmq1mbMvU",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.114.22.241": {
+            "Pubkey": "EWdXopM5dTuAhZDyFuANaAjnmyrDwYbQoeArU1G3Jxek",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "35.91.53.228": {
+            "Pubkey": "2gjgYqEpYsn4LY4MytFhLgqpJR9KAY8dQTXyVXNqbs1x",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.144.11.240": {
+            "Pubkey": "716PVC8yeqHN8ryHemLGJ78ku1cYaLcSmSxYzp4VZGw6",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 333
+        },
+        "54.187.128.121": {
+            "Pubkey": "DoWdCYAjc974mJY2PiEfJhwLidaSkpVJePTwxNZ1tvg6",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.252.208.100": {
+            "Pubkey": "4Z8LDQ2Kxj7qEwAbNZRERnhKjcfikLiu3QgTqFPgTcBJ",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.220.101.180": {
+            "Pubkey": "9tdrYLQ4e2K2xHNmobo1v5XH7yf5J96BQHuHGohDsbPQ",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "52.214.51.16": {
+            "Pubkey": "2RC2TRM5auhdngTc9XJDdtBBPUcXB6xLmGE6DmSNDg47",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "44.202.78.82": {
+            "Pubkey": "DmFqB5LdQspumdvtHRi4PHKTZENHMw2xRMmSXP6aSkfj",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "54.219.46.24": {
+            "Pubkey": "8SagJWeqwfXrb2e31e1j7f8W5T2Seb2pqUwFuy2BhHpF",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "54.188.62.92": {
+            "Pubkey": "5PmGAafuSHEUaP7pufT4pFPhTUnhAnUrf2Yr92LBN7WH",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "18.222.29.216": {
+            "Pubkey": "AE2TTZ82VU4jCurJEcyMrLetyPjQU1e36nsLib8FH9UD",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "52.76.74.198": {
+            "Pubkey": "FoHf9zmfWU7TH1swZQphVC5P7Cy8X7QZs1EZyAbCmXAA",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.246.45.183": {
+            "Pubkey": "6Nhfs7QCR7z91zMCrVA4cML3HiWtykPdEwmKf9jq2t9q",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "52.194.8.37": {
+            "Pubkey": "5EeY5qUoqTAxTSSSZx6mFptnmhz2C3DBrpQyQntn7fwJ",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "63.35.246.21": {
+            "Pubkey": "28MdLoYCyn3nc4gEwXj9dDhLAsdsp9Dfm71h5Byx2a8x",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Reactivation": 340
+        },
+        "3.250.117.23": {
+            "Pubkey": "3dvEf7UrKe4sXpdZEVPKMrfqrbmN16KoDxG8iyiaXXKk",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "stake": 85090.228838414,
+                "voteAccountPubkey": "25NKahLoee3o1z6wYU1rqf1dJgMmmfN7KBc6WmyNxt51",
+                "commission": 3,
+                "isDelinquent": false,
+                "skipRate": null
+            }
+        },
+        "18.119.103.144": {
+            "Pubkey": "DWASkR6DUfkq9Y2bonHwgKD6VaEKunf9oydtkiALFi1U",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "52.211.178.171": {
+            "Pubkey": "Hjak66ZBC9MYbt2dSyTz5eBn4wLfmWVhg7JfUBgHNsCr",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.201.77.173": {
+            "Pubkey": "6jYphXKP4LVzjMZapmJM4mHRVci2hTTkkSWeXsykF4dM",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 333
+        },
+        "54.144.54.122": {
+            "Pubkey": "BmAn9utpBgqo1JEzvBTP6w6tvi9KTVWUxqqkx8fVmtJf",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "54.216.112.221": {
+            "Pubkey": "56o7Ja2nfsxumpynqEpScmW2ByvGPDam388Qda7iFUsB",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "stake": 2653212.553012105,
+                "voteAccountPubkey": "3YLyDBHVMb9Poq8VoudNZkHaTC7U9UTJ1w1KkwxY7uok",
+                "commission": 100,
+                "isDelinquent": false,
+                "skipRate": 2.725563909774436
+            }
+        },
+        "15.165.142.140": {
+            "Pubkey": "5AGcMogyvFP13BAZ6Aeb7uLTszn6Twpc8rt5bYpvYEH",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.217.67.180": {
+            "Pubkey": "2gVa1HYGqnQhBfeP9L8Tko4Wv5UuD4vgH1sFhM7GabUY",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "35.175.125.98": {
+            "Pubkey": "49w7Tuz6o2LypHKLUnwCTUHeNcnjoUQqc8UHyf8mL11w",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "52.206.97.75": {
+            "Pubkey": "BXYqB2TCGRARMVuso3NAGo8seKttfHHMTcBraW2o57BC",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "18.166.150.250": {
+            "Pubkey": "HqaGTwMSwBVFjCr5jeuCVbatDTBUjCosWdCGFpbLdhGL",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "99.80.20.248": {
+            "Pubkey": "E7XS3Dpu9BahSYpaWH7UVCbsUyCg1h3aRwuaj35BmdR8",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "52.211.101.49": {
+            "Pubkey": "6CiEcn2aLpemxnqAzQ13v3YaTPzoRxs1BqhAJGRV3nS2",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "18.138.39.197": {
+            "Pubkey": "FAbiYzwj5iogjGhWjaZpEfwLR9oraH1CGNaWiu7byRvM",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "52.194.24.109": {
+            "Pubkey": "7vQyijuxpT6UJEmbbUDbvVXbDfK89VymJBj33LzJ7ofd",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.166.124.236": {
+            "Pubkey": "9Yv2FpTWF7AX5i2RGXU42dEwaJvwt5dq4BDjtmTNQtji",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "52.27.172.67": {
+            "Pubkey": "CtHzzHWAMZ2YBfZBAgNzsAuPdhcwWVm998bgBbuybLzb",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.143.67.125": {
+            "Pubkey": "5LKz3MCgrrSdv2r3Ka6pLHngzNsfS5KSZh2rrVJCzwQs",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "54.76.34.184": {
+            "Pubkey": "Eih89KeydLg8jBPd4jPGkRKCTtiDi5Jbo8LpMAighhc",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "99.81.100.235": {
+            "Pubkey": "DFzYYEqERe8F16WdjwPKCrJbek6rmn5n186M1dsAvpUy",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "13.124.174.97": {
+            "Pubkey": "FvWrsBA9XoscdZkPkRDVpsNBPUjFZmtq36z9jUybxAPF",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "18.234.157.228": {
+            "Pubkey": "43Z2eLnib8q4sDxrSrCnhv8TiQ2BVv58tNBzS17YkDVf",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "18.202.171.169": {
+            "Pubkey": "CtS9i3TjhMDjVoWV1zfZUgZZS7gd523MHjpsthfo4dxk",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.154.5.73": {
+            "Pubkey": "FBKFWadXZJahGtFitAsBvbqh5968gLY7dMBBJUoUjeNi",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "stake": 2424614.866365088,
+                "voteAccountPubkey": "AZoCYB4VgoM9DR9f1ZFcBn8xPSbtbqoxZnKJR7tkvEoX",
+                "commission": 100,
+                "isDelinquent": false,
+                "skipRate": 3.4957627118644066
+            }
+        },
+        "34.236.171.249": {
+            "Pubkey": "94W5VmCEwQNc19ggVoFRNoBFG1dgfPsTJhdv43JWavdm",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "3.139.76.96": {
+            "Pubkey": "2EpNh4z11vyB83sKvGZkUnhvwfBdEajh6VQBC1WL41Ux",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "18.117.83.95": {
+            "Pubkey": "BmFHftw6gbCz2AMoAvnqCcmD68GW9w7tHs9pxHdeFBYR",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.150.181.148": {
+            "Pubkey": "J73YEsvzWsMtkmBz9i3Kz7t7TmM9crY2SvQhrqLWTHfd",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "52.211.140.46": {
+            "Pubkey": "56oNHkdY9TmYXiJurttGN1p6DAiXpW1knsvvSQTPxNF1",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "18.139.178.216": {
+            "Pubkey": "HywwTPv8VwUZHJdptJfTe1iY8xU3hj2k8eJeNW2Xvsdh",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "108.128.224.201": {
+            "Pubkey": "35iVCKdBwi1FuuTjqQyRKFWueajUJaPh69YvRzi2oFbr",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "35.75.240.100": {
+            "Pubkey": "Ai9dA2gocgksCYhdmboFas6aNRP3M7eLYvE31y7TEQ5c",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "99.80.160.201": {
+            "Pubkey": "CTVv79ywFad2tHF3M6JpBrJfJyTRYAGDq2L2MqXGrFY",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "99.81.75.70": {
+            "Pubkey": "AuFFJtPpBvfG6R2FD6X1ay3acSixYKfWzG6JMpo5W2ZF",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.239.164.119": {
+            "Pubkey": "Br1DLqbaLT7YeMJyPq7oDqBMf9p1GXBqTuxFKJ5RmChs",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "35.72.86.108": {
+            "Pubkey": "2gPMMyhFqG8q7wVnxTFn9BPVrQaggFzkC6idJvJtdC3t",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.150.142.243": {
+            "Pubkey": "D7wb8hkXEXVjoEiPFU6Jm8w5FZfcdY4BzWkWfd4Wxn1A",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "44.200.40.156": {
+            "Pubkey": "2xP4EtUDyigUV8RBtgDaHymXqvwkPdLaBwB3rkL4Sr1X",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "3.209.12.63": {
+            "Pubkey": "9cvj6TxHVZ9Mf2YxgsoAkKXqNRNjFySbbqLWfr5vrpmR",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "18.221.194.64": {
+            "Pubkey": "2qpDJL5foxF541e8qBqpZ72FxDBTnwb6xz5obu9SwkwT",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.142.214.74": {
+            "Pubkey": "9ctu6RgVYSNAdNDuVRqeXk56hq4rtDznDiKRQTYHBDPg",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.226.243.79": {
+            "Pubkey": "9s1UiUaphQZgPu4V8cewdSgHmFJR5WjytETV7q7FwSWy",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.171.32.121": {
+            "Pubkey": "BeJEnbB465HLH7f5bwkZjCwASMJUJ7CB9ihYhoEHtUqX",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "52.50.202.62": {
+            "Pubkey": "CHQcuEFDDxZywtRSXnFa67xx37kPnZEY2PHjbiGmgM8e",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.231.94.117": {
+            "Pubkey": "BUyDhbZ6r4G2VUpKzEMNKrb6v8XQeL6jweAH7GoyXHHi",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "54.171.147.33": {
+            "Pubkey": "DHP7gCBzyKa2m9toifxNUMf4VrFKauXBCEB28nYTCoRY",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "52.48.196.249": {
+            "Pubkey": "4opfRj84xLomtNG6qDNmyWXiMUPMEwugPHsESo4S2VYm",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "44.197.208.76": {
+            "Pubkey": "2Zci5Niz53quwnnrX6NHD53FhsSQNwJ8is9dyPgoWoKq",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "63.34.173.236": {
+            "Pubkey": "3Doa236s3JLeJo1Xw1Bet5R7BsgfuoJSCRuW6w7tQis1",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Reactivation": 340
+        },
+        "18.119.132.181": {
+            "Pubkey": "2XH4AwjpBfdPBsACVk4cs1MjHmCiVgB5urKV1ek6GbAV",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "50.112.162.80": {
+            "Pubkey": "B5SyN4ahHme9uZNLFLUAZxPiYnXLo6UYtJJSubWfQYxx",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "54.162.199.183": {
+            "Pubkey": "EHajUDSMwuW91btjRtxxjRLCmdFXxqC9h5BrLiz7sjSs",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "54.81.156.143": {
+            "Pubkey": "BtJTjptSQw6gBoswfbkPm2aQbLaHBAtEPHfYwAAM11Ut",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "63.35.11.73": {
+            "Pubkey": "7A1sHbV1Gzpn6GPeKaU8wt2J1vJYszoUaC4zfVRWfvKo",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Reactivation": 340
+        },
+        "35.86.96.184": {
+            "Pubkey": "8udQd3w6Rko3JQDYhpeFDWbzkwCMUHshWM3wpuzcDdud",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "44.205.7.31": {
+            "Pubkey": "Ex2Tm12SY39eY1sr7JGndhnkeKFbg99hweYVYbVqAjdw",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "54.210.49.169": {
+            "Pubkey": "YHCdjhti18Nu8MeWW5wmexrQzzzKa89i3suHDnVFHmd",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "3.232.205.126": {
+            "Pubkey": "92QN1Tod9gGzPgBbkNazSpjb8a7g5d5ZSZ5GTuFn4TKZ",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "44.203.248.192": {
+            "Pubkey": "xCc694pDGe7duE6fNNvXa8WKdvCGapj5Q5goB8dSCeg",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "54.218.103.53": {
+            "Pubkey": "kRAkemXzEvGfBsk2Jm73yv3bR1NcV9dbeTpmNabnoRJ",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "18.191.186.195": {
+            "Pubkey": "DQZSrhHmWeTerYZtC8mcViWCJbQDeHbVG4GJqFxTkAKm",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.86.221.200": {
+            "Pubkey": "77trBWaPAzM7DS8aYxfqo2WUDQCkxtrBkV1BiMAyweSx",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "52.208.155.130": {
+            "Pubkey": "9HVxHXwKAeb4fuucfKxvBJWgVgPLQyn3PZstAmrUQgA9",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.219.61.140": {
+            "Pubkey": "BzERoBmWMnVfawFhQ9n2GvVJ7ivbMBievAYt1sBDEA3z",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "52.19.66.113": {
+            "Pubkey": "B7kvkc2Y1TNCBM5HBTqGt7oXiq95mJDVtD1Nnz4e1P5J",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Reactivation": 340
+        },
+        "54.237.146.19": {
+            "Pubkey": "AhWZi767Wo6sDWhXwS8oftvVWhvZj6FEa3175CBJ7Mbj",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "3.19.237.53": {
+            "Pubkey": "7WP3WBaH4NoNtoEGDybKi7ZYCQUhmBxneEWooCHoBX1L",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.216.162.157": {
+            "Pubkey": "Bdz7BPs5wkZ5DKUwTdYEAv2SByxGoQpLieTBg5n3sEWB",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.225.107.142": {
+            "Pubkey": "6BWSXgHeu7z5bzu5JaTN1xdmktoH984f48B5nvmAquj5",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "46.137.160.249": {
+            "Pubkey": "2ZSE9BhszvTGvtsExkn7P391guCym2FXeNXo5b9xJ2mE",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "13.214.86.135": {
+            "Pubkey": "5mepZdNhYBfbHT9CNhFtgw5djsk7vJk1AJGs5RWK9rrV",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.73.219.192": {
+            "Pubkey": "2Nfk3XfeQyoGqQgZPq5erq1B7fJ9Gtk77DfhJb87NxKa",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.216.127.25": {
+            "Pubkey": "6QKoStLyViJxf7ugdaLzw1gqmJVSvk5SSnF7fNJuPZrk",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "35.79.128.62": {
+            "Pubkey": "L7VXBiJ3PxeUEs2BRZRKmn9WcTWJz62TxWPjUgMvbJd",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.194.144.52": {
+            "Pubkey": "7WYuiXJV3mh3QiukkyTUXGpCw9LKDb1m3Z2qTFX5AtGP",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.133.136.127": {
+            "Pubkey": "G9hphovoNah8Ngqb2RDPAVT6vkmgDA2HXNxwf1iSiiWP",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "13.213.138.158": {
+            "Pubkey": "Fx3j8LikuRQmdHaaf9e6wfZSbaSdCfG71yz9yg2uiNnz",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "3.145.218.102": {
+            "Pubkey": "24JNMaqkM1CcsBndbT1BKg7Uv1yLDc1R1jXYUQqdSbyh",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "63.33.160.93": {
+            "Pubkey": "BGyLkPehVDUfXpfjKDfpzvsqP4xoJpfsxF5D4kNRh4mh",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "13.125.237.201": {
+            "Pubkey": "3Xo7UEsHt97YUAnWZaiDq1ioMiARV7wUB44isbuyBD65",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.248.171.65": {
+            "Pubkey": "AtTLdYc867j5mDLrA9Ms94qEDV8Sz4nPbHTPotwyd3HZ",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "3.122.41.18": {
+            "Pubkey": "i1JsbTFD7g7wvQGhnLYBh5EgjrYNWkZineBozLRF3rj",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.255.29.252": {
+            "Pubkey": "B29mKtKrcHVjbwHiMSG4JGvCiSWxssVAAVcQpyS2RM7P",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "35.87.37.70": {
+            "Pubkey": "4zLrvrddgDJcJ28iXPfDjPARTDbeCdwzfS2yWvFazgre",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.12.71.86": {
+            "Pubkey": "AuNusQtGyXyP7cRtqYj9HmtBuBi59fKMR7HenCjeVNbK",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.1.171.30": {
+            "Pubkey": "3JgUdGKnz93hiXMCV8BYudWqgddGUt7fRSnG793scyf5",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "18.163.210.192": {
+            "Pubkey": "DGTc1YMYiDirEcf7RssKUNAxoncjxWKcrw9BE9zb6JZP",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.248.82.173": {
+            "Pubkey": "9gYMDUemcBqHeyPtSxtQazPFwKVxxVPpasKsiojY72fo",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Reactivation": 340
+        },
+        "63.33.222.242": {
+            "Pubkey": "6rzMLfsfkJ3K614PzV2LyykSo8Jg3gACBMjX8X7JfZC4",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.242.163.68": {
+            "Pubkey": "96T9eu2qoaiwDh7VeQcvofssLanfQ2CCKB1ZViDEuMJ8",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.220.165.67": {
+            "Pubkey": "8KgFY7bGALXUA82rujPpNhLAu58CKua7Lnko8mumktS2",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.255.26.172": {
+            "Pubkey": "CHbbXgxF63vkYbtXJaQ99t2Y43h5KytaJr7brxYZouzK",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.133.154.35": {
+            "Pubkey": "DYZZ9xzqKZoceFCsHz1pHTagshnMwwvuUcqZDPF38D8P",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "18.206.151.178": {
+            "Pubkey": "FnkSbRJYQ7V545ZjYGzqh8debRgH876yr5uhGGpHMjr8",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "54.254.119.157": {
+            "Pubkey": "4MgZoPVZgFwyyzenk3wsMiB7WBxhaEH9UYoAuenqekkb",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.235.234.255": {
+            "Pubkey": "5xz57wZC6LVjRS2fTWFAGcvpn7erQ5jmgqPbR9BSTsrn",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "18.140.197.213": {
+            "Pubkey": "BeMcVntj1PfQkKQobKab3epLozPNyQhPZf8dtbLiddTq",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.251.31.183": {
+            "Pubkey": "58TWfV3sekLZZFK9pUtVqJBgEa9uoR2Y6PvLzrwoHnUe",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "44.192.41.129": {
+            "Pubkey": "ETSNLc4hPQiPRhmL6jNMrVbptViPeECvmMp7vw2wpJTC",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "54.247.16.185": {
+            "Pubkey": "7VjUqxQnj74CvgqsV7EfMyZvYXCr5LGoTMzvTtkutuDA",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.243.82.149": {
+            "Pubkey": "8Fx6c7Uf5VETkF17CP3EjnG2ZSLqGYHNFP67vuLYYK2a",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "13.251.43.47": {
+            "Pubkey": "CCrYL9zHMwjBDAQGHXvXXMfMcTLRvjhs1wUp85AsE8oy",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "54.179.7.87": {
+            "Pubkey": "Gur9hSqXobTxpHF22TUJkfgBTA6tD9nGdFcLSv11ZXo1",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "44.204.130.134": {
+            "Pubkey": "5SLFkNAgjnRopYGa48LUUgVw4RHNC73QHXAo6i3oPYTj",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "54.204.89.230": {
+            "Pubkey": "HJMdE3vNGr7fP2S6rdofrxvxkYevM3hzKLjgWmfaSEG2",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.226.247.181": {
+            "Pubkey": "7R16NuTSjkDcigGxSceKuSoFBUApoyxWpBCQ1ErgASYR",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "52.12.116.161": {
+            "Pubkey": "3shXwe5jgXbDhxBvZF7kfpsVPbXzkFjhuferLTyhk4f8",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "18.214.191.0": {
+            "Pubkey": "6w5FMZ6hBpnW1eGPhi8yDUiEPqBxrW1ASEudeP69s8sx",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.77.178.197": {
+            "Pubkey": "4WduLNQebg1xnJWgmfwToWu5nDH73fjm6tfc68tbhxq8",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "100.27.41.21": {
+            "Pubkey": "5KH5etLHFejkt9sr1hfVGh7kv1eyLqrceuFH3LdKUzCp",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "54.246.204.173": {
+            "Pubkey": "A6BdprFyyDpptZhJmvJMorFWFJcb8oNcKsYkH9k2KQjZ",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.249.56.80": {
+            "Pubkey": "4XsJRPinfTBEHyadUGFV1ebQ3jH61Mk214Zqyi86oZ4k",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "52.215.84.11": {
+            "Pubkey": "6aEB53htkTPxzNMKEh2N2SmuGHqq3EJkeBmUyaVSxsL5",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "stake": 0.0,
+                "voteAccountPubkey": "9RLARo59pLPVEJGF21YRqE32wKwYwA8CJEMjteEc1YQk",
+                "commission": 100,
+                "isDelinquent": false,
+                "skipRate": null
+            }
+        },
+        "3.136.20.99": {
+            "Pubkey": "9vYJ2abxna8Uepj7FL2WYy88LP2QHa4aZq17WturgoY",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "18.220.43.38": {
+            "Pubkey": "WaJgwT1mRy6zDkyKQzvRsNHtPT4VjSvwR24mrMwJJD9",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.197.121.91": {
+            "Pubkey": "9Jjz2ekPw7Aj23Tn1YxRqT6v67QjXiCLHi9j1iDVsgqB",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "13.58.192.63": {
+            "Pubkey": "CnHQrGRSKn8BizqJhsH9feHomanh64ZCpZYvQCDgEBXc",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "184.73.22.118": {
+            "Pubkey": "F5cPvvpRDideZ2LM2Xj2ctUa8hraqkmt1i6wKbCopyaU",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "52.213.187.217": {
+            "Pubkey": "9toHiUsLmk7nLJiJaTvU1gAZbjNWWMT9wF6djoYHEESZ",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "3.36.33.161": {
+            "Pubkey": "CgAkLSLj2E95ZH6cnrNjfo71Jx6Uinfy9rJzXSvdbqEa",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.173.234.210": {
+            "Pubkey": "2ZRYx37q12bBw58pqhYJE5AenzzDuRM7zLfbHqHvppi5",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "54.78.213.147": {
+            "Pubkey": "3Lm1DbQ8CGLGTx3BkafZkREBGwUbhJ9hT8MQuxENUBU6",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.81.98.121": {
+            "Pubkey": "2ogA5B2QBcrrqyEhaTEHaDLDebsxF7hgP9Pkm8snnr7q",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.170.195.46": {
+            "Pubkey": "AHfC79uF97vYNmc7kah7C3qMoVx1uZZHNpyNxmvmXzfE",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.194.191.0": {
+            "Pubkey": "xoq1ZywrcemB2YAkRVTPqHWmdqVYcvC43aTNkuRTNhF",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "13.212.243.18": {
+            "Pubkey": "DeuN2DTxRuZ165CBxXQ4b3Xtz3zJ3eBNuN5kvvYaW89P",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.221.220.7": {
+            "Pubkey": "KrAkemDjnpvbS3yTDtL6Qx8ZrKfKyAAb84cKMYwp2xg",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.85.161.189": {
+            "Pubkey": "36SnyrdgmYcg18G2UXSz1eXJRZ37yA9iJPX1J3szuWo7",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.245.24.214": {
+            "Pubkey": "HzbjcKoQYqP9UPkf1wJo2jmdhSP9xZawDiGDw1orgi3A",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "35.74.106.137": {
+            "Pubkey": "3m1tWWvJt4K6eo3Xpv3T2E6zYmQi5S6UN3BMXByv59L7",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "52.71.255.58": {
+            "Pubkey": "J7oy93PqMNMy6AxWowuWZgaBiLMEW2tzvn4jTzRvKTQ4",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "3.144.47.198": {
+            "Pubkey": "B4mhwfUFyh3yoAMM8KgaDsGKsNYMLynTbfXJEvdcae6c",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.195.244.134": {
+            "Pubkey": "BMz9A11XaXrje2E5rnpXS7T5fAnj3uAnmcd5YsvMS7Ac",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "52.27.247.162": {
+            "Pubkey": "9y2khjQpb3fXSmk5ksG9atK18Mfqz8JVsrQ1MZrEXd2d",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "13.59.112.125": {
+            "Pubkey": "Dv1wgsBSCtBcTfs471ecPvLGFMXJMht9eXwZw5Q69Sae",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.205.134.175": {
+            "Pubkey": "7vdb3yWpEBDFMmjstXvHGTXLokA4NFPAtdLzrYsCFWFx",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "18.193.224.75": {
+            "Pubkey": "Fr7Z7BZ7qzerf28MCeC3tLvxunvuaTkATZuyE52BdikF",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.142.252.203": {
+            "Pubkey": "CWepEMwocCyeMHLvVvKHX9UPD555A15dYzBGPcjLoXc8",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.220.88.113": {
+            "Pubkey": "CoABFAbj55hM66sLCffjTYb6XsjcUQyfroz9PnAqkr1e",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "54.224.188.1": {
+            "Pubkey": "EWujGdqmyuU2JD9fX5c18QxqVP4j7K65bBWgdXSSuzbe",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "100.27.6.36": {
+            "Pubkey": "Eua71ycYg5AHbWr6j2RzJhAB7hryRTjdyZvcsZ1gcBZU",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "54.170.51.152": {
+            "Pubkey": "GmXUmHB7E6mVevohRa1amBEa5WY4GSsK2R8PsZiT11rb",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "13.228.5.84": {
+            "Pubkey": "8K6TcdTjnVJ8y65u6FzMyyoUpjNwQsAUjKk7j4pFoyty",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.92.0.229": {
+            "Pubkey": "CqLiE7iBZb3S1V82r9E4MhpyVUzPQtBsP4bbDFJJoQP9",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Reactivation": 337,
+            "Earliest Deactivation": 340
+        },
+        "54.73.78.134": {
+            "Pubkey": "8fs4HYLCBcErhVGk9nQwEdCqBeTo1aXWpZ3yivU7d3pK",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "35.76.1.180": {
+            "Pubkey": "7zZ188ys2hsuuGo2gEKyHFZadXCgqxAWERS3cm7zNCXZ",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "52.23.216.215": {
+            "Pubkey": "6aSnYSfiBc4RDfmyKCFjr3Bn1tbDLGv4JMb14PSWWygx",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "3.251.49.57": {
+            "Pubkey": "7QghVqtm5QfQ5WfJbtNSBJ7oXKLgeouUf9LBYBEzE5XW",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.169.252.182": {
+            "Pubkey": "3sMNt8YARXLR3gjG2qs6i2QQMe6dhnFGJsF2JFgZAkmC",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "54.198.163.49": {
+            "Pubkey": "HQ1eGvyLecXta5itumYBVDLyUofTpMvzLjYp9ZoLu64e",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "54.78.81.242": {
+            "Pubkey": "9b2tdC8AtssEeDioPH3hiC2PBu7t2gvVshMX6BsgkgYq",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "18.206.188.186": {
+            "Pubkey": "3CWGQgx2iyo7MtKV766EJmtXkL7NtgKFvsP8VTt3jvqb",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "63.33.183.0": {
+            "Pubkey": "B1maNcDTFDpLbiHPduwCeNqPKywKAA7etANgmcXrt6xF",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.91.126.42": {
+            "Pubkey": "Ds9eH7TYLFHUVYfrYEHwWUg6McpDorgRu8Hg2LUvP5yX",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.155.49.242": {
+            "Pubkey": "GcNrEnDfeen6NzoNJoPqgdySVxtHjf8hk8Khp56pmqET",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "52.209.252.201": {
+            "Pubkey": "3iokNzRXWMWxYX1izzY3oLrgSo6ua7ab6ZY9NiGr3Vja",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "52.79.72.84": {
+            "Pubkey": "8bcrEV6EGi3qAjDaSTVoVRnZQintjJjRL6J6ju9khcxK",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.81.44.109": {
+            "Pubkey": "J5yvCyuVJVc5F2NVbUnJ77TQDYFVZNgn15Ssb4MuhpuV",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "54.168.186.85": {
+            "Pubkey": "BwAfiCyqWqCPC3gz86t93c3ci6ATMF9Bhxt25tspQXEB",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.210.197.10": {
+            "Pubkey": "GotP22r1FeZyFkATbxnHqR8UVz1tdHui9gpXu1dG874X",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "72.44.58.182": {
+            "Pubkey": "2QG11CWvkqQwPoxzNvA7aafM7goip5KwL35oSEhqWajF",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Reactivation": 340
+        },
+        "99.81.24.152": {
+            "Pubkey": "4GzKKr88xkGoozHYw815KBZ5mwAZW7frxGe5p4352vxS",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.236.163.227": {
+            "Pubkey": "H1EpG5eHYKNjreQtZeBtaNBx7dAyqQPYZfwAEYJTEHR7",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "34.244.197.34": {
+            "Pubkey": "BKYZYZBHa2R8XLPSyWJXNsdwY5NCLjQpDwc49jhG6a3C",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.133.109.154": {
+            "Pubkey": "DzFMFhobUg2o9mFT89dmMgp4656zwPrJGmHiMJPgHk2L",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "18.196.227.50": {
+            "Pubkey": "7z3pcapcrU8BMKj8zGJeJ9KTFr9dzWkhRgznvgxvuziL",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "34.225.190.23": {
+            "Pubkey": "5fcAYso22z92cTM1RR3M6PfCULt5BML1SbhiaNvuHSGL",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "44.200.200.37": {
+            "Pubkey": "GkXmKbDi79xS6PC6DGLwhhmn4ZvAn6Xa6NpEEfCEUiZK",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "52.211.45.135": {
+            "Pubkey": "DYv7JsY6pvrzbPXcWT43FFHKdBQw5v19eFEtYT7JZCZz",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Reactivation": 340
+        },
+        "18.200.58.117": {
+            "Pubkey": "DiZBPvT2Hq4hHk2piVuzfAWAuFsinm1RANM5J3h3Uj1G",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.228.82.98": {
+            "Pubkey": "CrqCmsX3XhFT8P2qCDrE5WGGkvn2RTKnTyNvdF4poqWk",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.161.248.65": {
+            "Pubkey": "9yL2bewbT9T4LVzcmfFrHvfE5bYR6AZaFywP7wxH2DeW",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "34.232.44.26": {
+            "Pubkey": "GaWxwo8wkVBQvqH7KxYCUVDrNoiV7QCfy1Xzjs55iYvH",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "3.250.25.185": {
+            "Pubkey": "7fn2oFBkpHJuGe7gVhj8vVY2Y1QyF6bLLzZm8R33uENT",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "15.164.231.201": {
+            "Pubkey": "EqxpRG3QfkhwdWjNQwqZESZJnXVjDaykK2w1zS66KGLb",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "18.237.173.173": {
+            "Pubkey": "B8Gwhm4bCrEGkNw36oq4jxozC2rLVhropumY962zoCBP",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "44.203.32.203": {
+            "Pubkey": "Cah9xRn6G39ELEmWG3PLZkyRxjQNYjpXCfMaZgvQtzMQ",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Reactivation": 337,
+            "Earliest Deactivation": 340
+        },
+        "18.188.29.254": {
+            "Pubkey": "HfCxffnghaQ6ajvqzs6Eu3DruGut7oQi97Kh96Sr4aYK",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "18.119.120.201": {
+            "Pubkey": "yP3E19aTskhM4PfDaTRkrViV91BBCPLVwNehq9a7Muw",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.14.127.163": {
+            "Pubkey": "9bqNRsR36pArhXtBpHa8pLiLMQBySnSGZaDUqB3WoZWL",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "75.101.212.90": {
+            "Pubkey": "7UqqyGMuawCvQQdCp4hWY2DwTSbXpXqnwERP1txraP43",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "54.95.59.206": {
+            "Pubkey": "rNPG2w8WqrqRv5Kzh6qMgEy2z8nxcyGSrDqCSxveq8j",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.81.144.187": {
+            "Pubkey": "A5goQxgibjf7bU2tcHfsnhQmnqowmYqXyzVa94DYbszp",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "54.179.168.16": {
+            "Pubkey": "8HFtVjLoxxAdFofaqjH55KziPuXyvg9RRLw9KcW1SM5e",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.236.129.222": {
+            "Pubkey": "DrGswGfERef3mhPYhJKSALWnqbxP8P8inctVNeTJUwxP",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.212.37.229": {
+            "Pubkey": "3UMXt2sf5FCoezQULettxYmVC3ysHk8SJf4WDXMgZcrs",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.225.166.178": {
+            "Pubkey": "AdZ2hacXNp81yP9aYYc5EvJ2XSb8kwarKbC8fveD1k5F",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.80.65.202": {
+            "Pubkey": "14WZsLV3CVhM4g9VSFboVWFUXZcwwaiPwPYnwHtdF5h8",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "18.136.197.85": {
+            "Pubkey": "HFrLr8Hdhkn1p2bt9nLSQM8bhqHxiwNXauu5k6jYwqi1",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "3.89.201.76": {
+            "Pubkey": "GsZCRxwL7zKcd4FidoZM6AKRBVTyX2pF4KYVBTq9Z9vQ",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.243.229.224": {
+            "Pubkey": "SdHEpyEMB1S7BcJWSxVNzMLV3SM9VozKo86xnB3yFoi",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "3.249.92.54": {
+            "Pubkey": "EeomS2D4vGXHZ1f9qvbDFraGwQto3Tqvnjg7vJgepF6w",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "52.49.240.108": {
+            "Pubkey": "Gze9ExZbYFMEBaLfarQCVJZzmXcBhxWqt3KC7kJT1o52",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.241.23.174": {
+            "Pubkey": "4Q5fdRzTU43zPC23hvkU6yioe5dtXBUm1yir17sf98HA",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.37.158.241": {
+            "Pubkey": "AQ3eXXdR8jbsyzGCpMdHiyy9Q42sYjH7hFJwXb4dvTCv",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "50.19.12.176": {
+            "Pubkey": "7mxZQYk3Jc61McYDkHigUES4aSxT8HWQzmbZ9thhrhAS",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.254.208.227": {
+            "Pubkey": "GMwMh2xtM3nWJYi44FQeWinBSxeQYhnaWx7L3JmB1vkA",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "99.81.255.210": {
+            "Pubkey": "FbhddJSuVp3NHZXQUwLQK9GrmTLqCZtCfXGMrMeUQiUB",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "52.198.246.134": {
+            "Pubkey": "2qRN8rC7huWqMgss8PrKR6zWBfMTLL4dvNn762XeNN9Q",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "35.75.15.76": {
+            "Pubkey": "8txo8VjUURdNMzuCSeG4wibMbVsHKYXs3iGxeoGCbpwt",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "52.212.43.23": {
+            "Pubkey": "43uhpa2h57KzNZKkHFQGPkxqeutmi8SBhtpxTcqW6sgZ",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.226.190.96": {
+            "Pubkey": "EuLm4qBrf9rjSpc8W4jYNQ6ZcUpdhD7qteZ2ZLm5FBLb",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "54.145.87.150": {
+            "Pubkey": "AXTf415ULUm3W2DQ7g1YswFVFQwBNitEdoSAgVDicM9i",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.18.220.35": {
+            "Pubkey": "CmmNGdYq8VKxDwUuXZZw7h9gYvvXnaDAgx1EUaVMCVwT",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "18.177.166.101": {
+            "Pubkey": "Bcv7V9LjANR4hehTVMgaU6Wt7UfnC4SqWuDwNkLEbD3z",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.129.204.121": {
+            "Pubkey": "5z4DJhRqJ116pLVKsg61Aweuo777uA3vuct4M2XtjKtq",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "52.212.149.203": {
+            "Pubkey": "Dx5sYczrwDyAssEbrDFhvHbMHviTBStSuGCNiwAgXM6Q",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "44.208.50.32": {
+            "Pubkey": "6FqRM7dB5AJgtm98HNm8jvqkiPhpayLxThKg9sA3o1nJ",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "44.206.187.180": {
+            "Pubkey": "sLdYSsqVeDSAKQPq9UpmJpLsPeQW5ybo1n9EQYdtqKz",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.73.117.167": {
+            "Pubkey": "FN1QMmmpZEwTvE9yX8WzrKyJK5QG92Y86qsyHt36jEhn",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "108.128.239.28": {
+            "Pubkey": "cPE3UsskmJQnUYEpvZ6VnvZn96LZNSt4AEfJeezmw57",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.187.148.129": {
+            "Pubkey": "9yqh7qFZHJQnYN6rfyspHC7MxPFRZCPtZTJhRy3jCvUU",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.255.80.96": {
+            "Pubkey": "DKLxAk662HveCu3vgu4xJQZENBHE76VxwRGeYrkFMm3k",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "18.224.183.103": {
+            "Pubkey": "DjWT8sTs77fGY1fQTm3QVxgLQPG8zcSKqXqUjYiZ843B",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "18.204.21.168": {
+            "Pubkey": "97A7tNEetSrJSPuvy2Ser65dSiAC3Vdo1pwkrhrEC123",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "54.146.169.67": {
+            "Pubkey": "AYkNg9351QzRwbA9dAxZzPXpowbTLen46PpctMW6EHXw",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "3.235.88.97": {
+            "Pubkey": "5urLkzC1qPBYsz9cDWNWjHajuvSc54ku3f7Af4SEC3Ys",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "18.116.35.38": {
+            "Pubkey": "HwKTVYNXQocRULtdwxTP5cGYje4fqLi7vRmuLAsvdCsa",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "108.128.214.100": {
+            "Pubkey": "7iV1GWeVAd1nSHtGJ7KqmDfEvD73oTuESYuK6HAjXjvx",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "35.90.134.215": {
+            "Pubkey": "BYMPjpqDd9QJzPFeggJWPYyK24j3UqvA9YtK4bAyFsNZ",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "18.141.19.169": {
+            "Pubkey": "7Ndj5aQyorpicTNvFXXMYNdpbsRkEh8Jcuk985Y9kePP",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "54.191.99.216": {
+            "Pubkey": "AZ9p7mySkMGXdnbMBVdW9ZccAN5Y8pTJ3WMVbPrpqRpS",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "18.236.83.91": {
+            "Pubkey": "D5VWNFXDQYDydrUJUS9tsJjaewUtWfytkx2AJ3J94x9G",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "13.112.188.218": {
+            "Pubkey": "5NuhuKxkjneYR42PUejD3NMp6EkQZoZPWGa38KFVB4qv",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.37.146.75": {
+            "Pubkey": "2nENsfbL5K7UyiVoFATz6PRxYgXvHBYBB2xQTxhXb4MA",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.81.214.241": {
+            "Pubkey": "7b3aCJwYjoCL8PMdwuxfcb1k2otGwmKtEK4LshJUyqvy",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "18.219.87.237": {
+            "Pubkey": "GAPeCViLpNuvCjfF7EUMDPKL8UoBGy1RQV12UX24ikxT",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "15.165.158.158": {
+            "Pubkey": "6LxYnXr87BCfhdbLaC948hg8Jc18aKti4beqHmvRoLHN",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "44.207.77.103": {
+            "Pubkey": "Ds1zBqsduCC4yreD6mNqn2e2aPCNugQKEFT3HGH5mtUZ",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.249.102.108": {
+            "Pubkey": "F1A3L6XFHwETto1uzQWwpMfAbGFTUWmiAKik2XwQdisY",
+            "Oldest epoch seen": 330,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Reactivation": 336
+        },
+        "52.212.191.103": {
+            "Pubkey": "3xv4imWCandP721mcZf8vH66vsTbmtRV1pbWrmuyMoSG",
+            "Oldest epoch seen": 330,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "54.167.97.44": {
+            "Pubkey": "Bo3s3ZZZJaqdXguBzTsPEHHkUmXPumRF1udBjnZyGXHh",
+            "Oldest epoch seen": 331,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "details": {
+                    "keybaseUsername": "crossaz",
+                    "name": "tbonestake"
+                },
+                "stake": 9578.275632344,
+                "voteAccountPubkey": "HwC6mKFj23wRYeoqjx5p94FKuRKyzfCPmx2wAV3AAR3t",
+                "commission": 1,
+                "version": "1.10.31",
+                "isDelinquent": false,
+                "skipRate": 50.0
+            }
+        },
+        "52.86.113.203": {
+            "Pubkey": "BmGuqnnHzaVdNisdTk18vkSE7BZz61BP6h4YRTWYx4u4",
+            "Oldest epoch seen": 331,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "100.24.105.221": {
+            "Pubkey": "iyypCureoTPuPem9VtJBEcqkuziHYhm2GhkpddaJsyz",
+            "Oldest epoch seen": 331,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "18.219.5.244": {
+            "Pubkey": "F2XuHNSviBbVP4sz7whqYuNxHyyeQssnXeUFW5yJwY1W",
+            "Oldest epoch seen": 331,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "34.231.104.251": {
+            "Pubkey": "Go9acvHmzgm2fWHymUB2xhvNp6ow5ZoRvKJdjmEAKwiF",
+            "Oldest epoch seen": 331,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "52.197.23.7": {
+            "Pubkey": "4tkyBUmxB4gWnUa9mcAxd3FTqmzKSmep8iKydeeJejqb",
+            "Oldest epoch seen": 331,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "52.196.116.185": {
+            "Pubkey": "EYPZQHSkufrwQqzhQ8vf3ybDJG3xszur49Q5kXeUGfpg",
+            "Oldest epoch seen": 331,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.35.57.45": {
+            "Pubkey": "AG83mdDuY9K9phbM97c83ehKARWiqf5ETtdjvAY313Gu",
+            "Oldest epoch seen": 331,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "44.198.169.87": {
+            "Pubkey": "hfnaG2E6uJ6ygZWrGruh82Kkuf7eqHqVq9rUAQvP2YJ",
+            "Oldest epoch seen": 331,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "54.144.220.137": {
+            "Pubkey": "31oDY9GeCuyuaBqYygKtx2Jcv5s9HZgc8E6MyYETcZe5",
+            "Oldest epoch seen": 331,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.216.161.184": {
+            "Pubkey": "EB8W5HJxEu7oRmif2bZ8CNUakiwVpXu97Ui9YPzZjKC4",
+            "Oldest epoch seen": 331,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "3.140.240.233": {
+            "Pubkey": "EjYqTdh9nUExLvT2ZZxZP9ntzRUUgux7Pe3werXYsQC2",
+            "Oldest epoch seen": 331,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "3.83.1.139": {
+            "Pubkey": "CwLSKLcNrdAy4mQAKtda3Zta13eYgKGJdB5Cag7pi47K",
+            "Oldest epoch seen": 331,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "54.212.241.123": {
+            "Pubkey": "42FRYRr6tFEfyQ787493J8ZHrEwG1eCcK6EeuugQZso4",
+            "Oldest epoch seen": 331,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "34.204.80.209": {
+            "Pubkey": "5qZj9ZdgKRhUK1FzLFkP7tuK9bm8XscZ3jRiArDQ16gB",
+            "Oldest epoch seen": 331,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "52.211.146.122": {
+            "Pubkey": "3sHxPdGJTJ2UzwEzBsqgQ4FCN2sMMVQdv9BWLctsQbXX",
+            "Oldest epoch seen": 331,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "18.209.1.38": {
+            "Pubkey": "DS8UKykwsoTf3BtEvTvPozuWCqv7Wm26kfNVt7neumHN",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.138.36.106": {
+            "Pubkey": "13Aeczt2jAJQJpAvTZVUHrWYFPA7FPsvxEbwHPstEuDX",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "18.188.5.164": {
+            "Pubkey": "XkCriyrNwS3G4rzAXtG5B1nnvb5Ka1JtCku93VqeKAr",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "details": {
+                    "details": "Coinbase Cloud provides secure and reliable blockchain infrastructure and APIs. Stake your crypto to our enterprise-grade validators.",
+                    "keybaseUsername": "coinbasecloud",
+                    "name": "Coinbase Cloud",
+                    "website": "https://www.coinbase.com/cloud"
+                },
+                "stake": 8374293.907549137,
+                "voteAccountPubkey": "beefKGBWeSpHzYBHZXwp5So7wdQGX6mu4ZHCsH3uTar",
+                "commission": 8,
+                "version": "1.10.32",
+                "isDelinquent": false,
+                "skipRate": 6.881648936170213
+            }
+        },
+        "54.173.163.170": {
+            "Pubkey": "6aSnYSfiBc4RDfmyKCFjr3Bn1tbDLGv4JMb14PSWWygx",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "52.14.214.85": {
+            "Pubkey": "CvNorfaayk8vyFVpSQwQFSffPf3AHwzrNijBRLqawZiL",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": true,
+            "Validator Info": {
+                "stake": 32660.462416452,
+                "voteAccountPubkey": "8L8adJFEwA4PdyWg8xXvGWYuz6s5pR7UFqtgXJVNS6vS",
+                "commission": 10,
+                "version": "1.10.31",
+                "isDelinquent": false,
+                "skipRate": 100.0
+            },
+            "Earliest Deactivation": 336
+        },
+        "18.208.172.223": {
+            "Pubkey": "J5yvCyuVJVc5F2NVbUnJ77TQDYFVZNgn15Ssb4MuhpuV",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.74.38.69": {
+            "Pubkey": "7Qd439UFv1uMwoJaN3d7Dy3gm6Vv1xSZ5sPdqAJyZZs8",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.228.54.90": {
+            "Pubkey": "3UeRoJwNL7rp6dAMnXpJ3he7cnZxEQQXpYrpxDHzg493",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.239.162.36": {
+            "Pubkey": "H8keKPeGQV53w1ufbM8LKLecZytyv8RngBJfPhdSSWYZ",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "34.206.64.108": {
+            "Pubkey": "24tfw9Y3RpsYVCWSQs93oYmfpVX5TSMeeqYkgRSNCZqy",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.82.240.235": {
+            "Pubkey": "9fqBwzuircDCYzFfgzB8FffbfQk92kAKedkeaEFk8mmZ",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "54.89.100.193": {
+            "Pubkey": "kJM74dGJ9kfGLzazptQM6mQhdjwVX4DnRdRdrNixPUs",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.159.161.221": {
+            "Pubkey": "8MWx1PYBvmymTetdo2sKifm57z5BLR4y4qBQd8gb82fv",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.20.188.44": {
+            "Pubkey": "CB9Y6JwApvMx8Crcfo5Xa2rz3CpYUxets144hqogd22S",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Reactivation": 340
+        },
+        "52.214.191.180": {
+            "Pubkey": "2yxUKpTK7tnPnv1oRrWxeMULPhc69Q6yVT7gDbGmW1BU",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.195.201.40": {
+            "Pubkey": "38zv2SFuY6yQguNZB3KXCJH7oaRBpud7rkM58qTbgFb3",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "44.192.126.28": {
+            "Pubkey": "ETSNLc4hPQiPRhmL6jNMrVbptViPeECvmMp7vw2wpJTC",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "52.14.203.155": {
+            "Pubkey": "3xthDKi7wspVqn5phd5gCvKpnCNxLGDh8Pejzug5P6DT",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "18.209.219.155": {
+            "Pubkey": "VYQoBb2me5J8mdHA1vpaLA5cqRZYY5ciw7ahkRuBayq",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.231.161.161": {
+            "Pubkey": "AhWZi767Wo6sDWhXwS8oftvVWhvZj6FEa3175CBJ7Mbj",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.167.99.46": {
+            "Pubkey": "GC5ye1bip1wDAvYBaxPKywMTS7tBkQUuG6nxrzjTtyoJ",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "54.155.14.24": {
+            "Pubkey": "BrGUbWNo3D66GNEb2aB9cHvpHXAPBdTLxcLjiJ3aJCig",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "79.125.49.1": {
+            "Pubkey": "CPVPofuw1ubSjF1rQMAR98vkPdo8CP2mh42ZPB2cNwJa",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "35.90.27.11": {
+            "Pubkey": "HZqPfCA1gycGU27T6TpkT6T9PEWg6vi4PPxp3ci2YqjR",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "54.73.189.212": {
+            "Pubkey": "Cp8FessUAwvzkBnasxJRLuq9Db5E55P79sPnMJVfQCog",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.157.109.147": {
+            "Pubkey": "7R16NuTSjkDcigGxSceKuSoFBUApoyxWpBCQ1ErgASYR",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "63.34.196.115": {
+            "Pubkey": "AQs5qgs3zNzuFX38k7Ltpp64GJogHSTjWJw11ECmt8pe",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.252.197.231": {
+            "Pubkey": "3U3sq6xwKtp3mGLuAeF2FhgRdxgJHsw7jPo6T2z1R1Kh",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "44.202.179.1": {
+            "Pubkey": "BUyDhbZ6r4G2VUpKzEMNKrb6v8XQeL6jweAH7GoyXHHi",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.235.99.225": {
+            "Pubkey": "2TeYMDxBNPqVL3Ex7csUQqYWigS2p8DkU1ECG1qZexNk",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "54.158.43.201": {
+            "Pubkey": "9BZnoPqYhZyXFdVCHemZ6pNggdaEHmjBJwexYTTqsQUz",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.246.76.18": {
+            "Pubkey": "8SHHrcNjdkPY9ZP8cjTy8dA2wg7TjbhwAvMjXVNW4tim",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.228.0.61": {
+            "Pubkey": "5KH5etLHFejkt9sr1hfVGh7kv1eyLqrceuFH3LdKUzCp",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.112.83.246": {
+            "Pubkey": "HUsgzj5L76HQcf1JAaWNF8s489a9fxgW2hMqoqNqyz87",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "54.247.117.73": {
+            "Pubkey": "Fs7SYFwqhtP1xi1Cq6bG3yvvrYUtHV6TZ6eLZpJ2R5vr",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.77.255.202": {
+            "Pubkey": "G3uFuG3veF3886ZGQJUDFwu2GCk2mNe1bi7ywSqiRnfb",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.76.19.172": {
+            "Pubkey": "HFLdbWCx9teD5La3GQkCka1iQEEVf8huzhSTyu2x4BZ7",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "99.80.69.176": {
+            "Pubkey": "6ckU6K72SxCod1odP6JS9A9fnMWdqvowjJHdFroCGHKt",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.15.42.21": {
+            "Pubkey": "FCQqariAfaQ2iYVWR4XYuTh6VA6iFjodMPCBtKuif2UF",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "18.206.85.48": {
+            "Pubkey": "5xz57wZC6LVjRS2fTWFAGcvpn7erQ5jmgqPbR9BSTsrn",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.242.179.212": {
+            "Pubkey": "7E6XLdKTBkGm2uHs9bJDGafVm7quRjmHcFxDLC3pcMFP",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.219.215.32": {
+            "Pubkey": "DmFqB5LdQspumdvtHRi4PHKTZENHMw2xRMmSXP6aSkfj",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.249.89.159": {
+            "Pubkey": "A1Hc4eA7iRn4nR2NV3r5PffTu2wGHchdHsVZQDFNLii8",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.210.164.38": {
+            "Pubkey": "12x82wsgNycS2AwpaBmCUZoRxjn1NkKDJiMaDaFLduiM",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "44.204.17.36": {
+            "Pubkey": "Ww7UGLocsCtymsbSwWSB6BiezjB1Wh668XVSifEjy7K",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "54.171.22.43": {
+            "Pubkey": "6wURRbpqWN1jXaQ1KWZSesHZbS3uSKvmBapJ29KUQiNJ",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.251.189.57": {
+            "Pubkey": "2yAh9U4k7v6YjQX8X25vmTGQfxYoUKo6wiyaDqKTm5Ds",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "18.141.112.25": {
+            "Pubkey": "EX9w5e9YrV37BFtdS2hVcu4JSqKfeDFL5UBmW25EWKMC",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Reactivation": 340
+        },
+        "54.237.242.170": {
+            "Pubkey": "1jGHvFQMdM3zFy6CX6jDLAjafFkPkqgGyrymhv19ia4",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "54.170.103.166": {
+            "Pubkey": "F6PsPPv5uWzgoT2FgtH2LHWt29sbUKsMMZ46HSXSM5ct",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.87.19.133": {
+            "Pubkey": "A5goQxgibjf7bU2tcHfsnhQmnqowmYqXyzVa94DYbszp",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.238.53.11": {
+            "Pubkey": "2iJ43JaHMwaBDioDUJBKm61Lcsvs7jeo4XXoeKPztYqu",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "63.32.135.36": {
+            "Pubkey": "9vTxmLYT9SnP3a7LbnfgVWv8peDG68uv2iF5eKGQvXUa",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.235.103.148": {
+            "Pubkey": "95i8BvvhMJgRLNGZh4KQu5nG8s8TxAxcxrXcZeGb94SE",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "34.228.143.48": {
+            "Pubkey": "8cg7LcNVKjLuSQowVdg6y1D6Zt66eULb7U6FdwMFRrd1",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "54.216.205.233": {
+            "Pubkey": "4seW98J289XRh8ZVmk4jDM4mjHXrK4AHr7nYod3JxYER",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.241.23.253": {
+            "Pubkey": "6hLU6yhmotWLg9BdHwb3jQ47SuEk7Pa2oak44YNLG6UZ",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.243.198.77": {
+            "Pubkey": "CGjJXqeetiuM7dECh6ReJrbmzj5CuEY1QwEuqn3zgsU7",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "18.222.228.45": {
+            "Pubkey": "9M7gP3PkokBYLk9CMo9PH2w25iFCLHubkzBJotVAifWW",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "44.192.84.57": {
+            "Pubkey": "82T4nyvcpzMpc3vCSH666ZtbGnEkTQXFsmgdUMsMhiVS",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "3.89.202.223": {
+            "Pubkey": "B9xD6KAsgUEWnaufNM5jrgviZ9KTBcd1LsbdhQi5csbU",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.229.102.56": {
+            "Pubkey": "51ora7SP85nTaTAnrZLjN1VdcDDsdaAGRNjxuyj8Z5Am",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "52.215.123.94": {
+            "Pubkey": "8BTq9RF9pdRzoV6fpbwUYgbdG3M14Ti7ohSdwfWoGxba",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.166.160.116": {
+            "Pubkey": "BtJTjptSQw6gBoswfbkPm2aQbLaHBAtEPHfYwAAM11Ut",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.227.246.145": {
+            "Pubkey": "CfyauAQm6dMc3XmLcC4sVDrHEJPPNKkXra4ynQLWViFp",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.239.153.174": {
+            "Pubkey": "H9xLRzCmpFAKJzRaP8G1KzSgCdS5bspKTrUSxNnZVyF6",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "3.231.33.131": {
+            "Pubkey": "7UqqyGMuawCvQQdCp4hWY2DwTSbXpXqnwERP1txraP43",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "44.203.30.27": {
+            "Pubkey": "GqcfVmPNaLARHekguR13euT6iT8c6BRLvt5TofSrneQy",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "34.207.137.223": {
+            "Pubkey": "8eta8mjkv3RLjpDJrHeuiD2gWkRcUqYbCo9QMwe3yY6H",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "44.204.98.29": {
+            "Pubkey": "Eua71ycYg5AHbWr6j2RzJhAB7hryRTjdyZvcsZ1gcBZU",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "52.212.181.162": {
+            "Pubkey": "2MkJmaRvEHL6Uy78JM6oN3bRBKBwxiuTCn6D5UojZCjy",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "100.27.43.86": {
+            "Pubkey": "iTf5PhrBdkxfpkxYu417tGbCDDQKgyKDSjwTdJysdvs",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.194.21.180": {
+            "Pubkey": "DbMcaYSkb8pzTZNGDp9Rs11H4Nhx5DnSM3fcNFBSyWRC",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "44.193.207.61": {
+            "Pubkey": "4Pzv4Ah9PVmVbkFmbVjgKNEJP7EhJHMrXEFtsacapsuC",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.195.142.127": {
+            "Pubkey": "A6Ddgy4j6W6oFbyPKKTFfPVsYJC5SJ7j6FEWrobDbUnY",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.251.143.127": {
+            "Pubkey": "GhBryRSiqL9AGco8y7XW7ruvH4foy3taEYcuuPYMB7xj",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "16.162.67.30": {
+            "Pubkey": "Fox5xwtWzCNPivngwD1LdBcaV1PwStorYcyqDzAbFEuv",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "54.162.22.131": {
+            "Pubkey": "FFKQM74CzYgwXCi7bXfpjFdTNaUe6peHQ9biLhHWQVN1",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "18.202.131.169": {
+            "Pubkey": "5rcqNKG91KgKc9UKHtbvMNQAx6VEyuTBxaSyr92uSKgE",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "52.47.95.163": {
+            "Pubkey": "5ehYXkf6V2qzofHyrzX78dubhQMcLiz7h3wy89PTKBk4",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "15.164.226.234": {
+            "Pubkey": "EqxpRG3QfkhwdWjNQwqZESZJnXVjDaykK2w1zS66KGLb",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.204.92.163": {
+            "Pubkey": "DnVXSk9KHv55fZ4U9qT8YnwBfzoty6SGAizpYdbEsExH",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "44.203.107.61": {
+            "Pubkey": "ZV8JM7r6MqQ5wKkGuj2V9aCUqbXyBrVR9XaDW8UL39U",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.85.97.148": {
+            "Pubkey": "F8MFQAMbqg2HJB8JhMyLN8FsPYo3cACkbEkcGgSYxna6",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "3.81.124.158": {
+            "Pubkey": "88ECphM4BoNYNQ2NWr4HwXyFxJm1BuitfTrv5S69nSjw",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "107.21.22.62": {
+            "Pubkey": "9w224DsXivFetCEA7mTEhoGen2av9YqZ63UPkBTBfxM1",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "3.237.102.33": {
+            "Pubkey": "FmC4pS26AchjwPzDpndUciBaqLVn2ooQnF3ocvEMassz",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "54.72.177.150": {
+            "Pubkey": "4TCN4cythoDxNkFJkMZSXTZytQwsz1svbaPXR1ydeivH",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.228.10.228": {
+            "Pubkey": "3iPV6zxcohQY5azPDq3hVsqDbfVngYeEYH7FPZnKQGp2",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "54.73.149.59": {
+            "Pubkey": "HisPZvCaDtmuhpe8ZMeUm9E5QetZZvgd5awiHTwXhXYe",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.225.5.109": {
+            "Pubkey": "eeJQYHA8cHJZ6X3pSxMbrdUvfadY1GLF64LNC5RFnvZ",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.39.191.25": {
+            "Pubkey": "6LxYnXr87BCfhdbLaC948hg8Jc18aKti4beqHmvRoLHN",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "52.212.42.190": {
+            "Pubkey": "6CrZHtu4eRmUcA8o3Nuh3MFTszvu3N87sUvhcfZEXXe",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "44.203.82.153": {
+            "Pubkey": "FndksrBioHtdBn2TzyaLarVahjSLcWCNQMdDX15wiaHd",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "52.209.2.126": {
+            "Pubkey": "BxQ2KaJJFKwD2YyCtNpfZpJeUHyBitwScY7F7KRrqomw",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.247.77.134": {
+            "Pubkey": "2VaGjVhQUXw2jarjAu3fCsHyREFrfMHEDYiyupZ5G7vQ",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "44.206.77.22": {
+            "Pubkey": "GYXzDkn2QUGyvYYY2JyS7Ap5hxBiqfeYpnYwWaGsw5oA",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.228.97.134": {
+            "Pubkey": "2gfD7Z7DEo8Bpc5peirjKHZdM48ZpR3RHAJbnimMyT8r",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.210.67.126": {
+            "Pubkey": "42FRYRr6tFEfyQ787493J8ZHrEwG1eCcK6EeuugQZso4",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "3.238.80.193": {
+            "Pubkey": "8U1mijLUN6qd9hTzHMHQ2uAwrAF5r2Y64DFAaVgGCd1W",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.208.83.38": {
+            "Pubkey": "7iCFf8Qbv86ALk4uyoaPw8UQ86pvBPQn3TpVWJvP99yR",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "3.222.115.32": {
+            "Pubkey": "AYx79HZuBrRfisBzXvxXxnTKKGkLevVcfYEZ9CJUH5UK",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "18.208.204.133": {
+            "Pubkey": "CBa7VRshEJi5he82rDDgiWw9AfPwqSmCxr1wmxWJzih5",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "52.214.108.28": {
+            "Pubkey": "Hs8VtqtjnVYbrAHDMFeMgYF2bVJacuyArMVEVrfSVCMH",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "75.101.219.171": {
+            "Pubkey": "CNrqhSqh5EMjSBwyCMKawHtgQKJBxjLGM7dJACiw3CMZ",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "54.194.177.16": {
+            "Pubkey": "3pwArsfzaaSqQmFC9nhcRysXrVSvuTvtvj3wZ3JHYuWE",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.76.234.17": {
+            "Pubkey": "Ed62EqJaMJtemD5EUeyqN4Qiv6BDG4QdVJA4y3vLsUV9",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.242.161.166": {
+            "Pubkey": "63EGW2AkqYp5nepNrbG1gejTkC2KxbCQiJkDGJJekHWf",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.228.194.105": {
+            "Pubkey": "Guk3Mig6MQz5oomMq7PVPMSRHxVRVCF4F3Kvv51S35Pi",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.197.36.163": {
+            "Pubkey": "C7UPFBP8FDiLUD2bCUiDZ518UuczXXH5AvDpMBMAQ9Z",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "18.232.178.219": {
+            "Pubkey": "2Zci5Niz53quwnnrX6NHD53FhsSQNwJ8is9dyPgoWoKq",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.235.99.159": {
+            "Pubkey": "HuDaGSLA7en4xPXhDpf6fToNokNAVcX3w4hpvXCwu4b4",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "18.143.31.110": {
+            "Pubkey": "FAbiYzwj5iogjGhWjaZpEfwLR9oraH1CGNaWiu7byRvM",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "184.72.74.39": {
+            "Pubkey": "9dD5BPiPNtW9ggB6LCSFLbFdrC8D7LSX4ycEhPJEDGP8",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.95.248.161": {
+            "Pubkey": "AaM8xZFMdpeepMJR3D9oPfXBsQT4n5nXwmkVnxhcKjyT",
+            "Oldest epoch seen": 333,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 336
+        },
+        "44.199.211.133": {
+            "Pubkey": "5LPBngZqz9ttUsAycVAuccZLBfpGzB2AmD3dVBtuGjM",
+            "Oldest epoch seen": 333,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "13.59.233.36": {
+            "Pubkey": "CvNorfaayk8vyFVpSQwQFSffPf3AHwzrNijBRLqawZiL",
+            "Oldest epoch seen": 336,
+            "Is Live": false,
+            "Is Validator": true,
+            "Validator Info": {
+                "stake": 7654.872498066,
+                "voteAccountPubkey": "8L8adJFEwA4PdyWg8xXvGWYuz6s5pR7UFqtgXJVNS6vS",
+                "commission": 10,
+                "version": "1.11.5",
+                "isDelinquent": true,
+                "skipRate": 0.0
+            },
+            "Earliest Deactivation": 340
+        },
+        "35.153.142.39": {
+            "Pubkey": "FGfdYEja4eGP2Jg1GqSZvPEKppiQmyQyLhM7Yoxi4w8r",
+            "Oldest epoch seen": 336,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "34.204.197.67": {
+            "Pubkey": "4R5Ym5r9Dsa6zAp3xqSwA95VCFTp7hPetKxg5D7tPvsp",
+            "Oldest epoch seen": 336,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "13.212.151.53": {
+            "Pubkey": "HsZ6iG5dVvyRBUU7T5zq6ksCn542hgUEDbp2xRFtashc",
+            "Oldest epoch seen": 336,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "18.222.6.192": {
+            "Pubkey": "FykF8AjMDs4htNRhKms9RDUx8oKg74CWDpnUDG5BFwjz",
+            "Oldest epoch seen": 336,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "13.215.189.255": {
+            "Pubkey": "HSpm2jT8jKD45DSef3ffMaxW5NZqtTjdhTNdNAqfHcES",
+            "Oldest epoch seen": 336,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "44.202.186.131": {
+            "Pubkey": "B6PrFqc6H9rwmTAdtSg8koH4TWsUPnaDMwye4hgmLA8G",
+            "Oldest epoch seen": 336,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "18.220.245.80": {
+            "Pubkey": "FQVSzaEaFQRjFQ9Uw7XoRo2rFVyv57Dy2JNTUr9h1uxK",
+            "Oldest epoch seen": 336,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "44.202.1.9": {
+            "Pubkey": "8SvtiqfncRAdEE1dD6jttmUisQE9N9hqdWZvCbVndUhH",
+            "Oldest epoch seen": 336,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "52.36.44.252": {
+            "Pubkey": "tVHL6zJ9EscwXonsAJapM44cKUUrDwLRA8fFfK3w6pg",
+            "Oldest epoch seen": 336,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "52.193.159.171": {
+            "Pubkey": "GZS6N6HuugAtj7TUMNwPXdPKqS61nhz6qwshoJ1rZXsA",
+            "Oldest epoch seen": 336,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "35.74.236.54": {
+            "Pubkey": "HUsgzj5L76HQcf1JAaWNF8s489a9fxgW2hMqoqNqyz87",
+            "Oldest epoch seen": 336,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "174.129.187.123": {
+            "Pubkey": "5ECZjKZ5zfvH7FtcTrzkakMVtN8MLEDxm4uHxygQbUp",
+            "Oldest epoch seen": 336,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.89.181.75": {
+            "Pubkey": "BhYfoToGTeENic3Qrdc4MCkCtNZP7Zy5EDsAyNYNgees",
+            "Oldest epoch seen": 336,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "18.215.165.39": {
+            "Pubkey": "J5JuScMvJwb8F2CNGPEQPKLNzer5QWqX6w9FwidHSqtN",
+            "Oldest epoch seen": 336,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "3.222.185.146": {
+            "Pubkey": "AYBhYSPCqpdUy8kZk33g5N1zf1VWw3LBKJ9zKYgJcEsq",
+            "Oldest epoch seen": 336,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.204.167.68": {
+            "Pubkey": "7QdNTDFKGP6AvTrmtzMcjHrQQp9LZGuURfzX4hkRk7ab",
+            "Oldest epoch seen": 336,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "3.226.249.211": {
+            "Pubkey": "A3osxKxTHwkgzsE3pqo99RV2KcUS3MJ3Rh98Hb7PW5vt",
+            "Oldest epoch seen": 336,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.239.226.115": {
+            "Pubkey": "5Lnu5ppzpeRy6LBbFLi5dhfdGJdNcv7Pai77Sft9kWKZ",
+            "Oldest epoch seen": 336,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "54.229.112.110": {
+            "Pubkey": "Hipihnke6NsSZuVTQTaYzmDYVG6HJ3vk2UhKYED4ArzP",
+            "Oldest epoch seen": 336,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "3.218.164.200": {
+            "Pubkey": "A2kdCprz5RkipveoWcubfGjNKhFrXjfHhzSxLtmWauT3",
+            "Oldest epoch seen": 336,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "44.202.114.126": {
+            "Pubkey": "4BhNjkZBb1WHVqp4WRPm9QbU1YS1itMhcZ6ZTTVwSswc",
+            "Oldest epoch seen": 336,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "34.226.203.139": {
+            "Pubkey": "9kZBciafDT97iyFFgACreEz5D3dPncNgPhvkuvLqTft8",
+            "Oldest epoch seen": 336,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "54.209.111.168": {
+            "Pubkey": "5bXzujFMdUTbYi5QzYA2FDSPMUt44iYCaVyya6LEQUZR",
+            "Oldest epoch seen": 336,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.216.166.148": {
+            "Pubkey": "g2hgR7amQbPzQnm6dLEaHKWephQ47gj6TSPMaFXqr5A",
+            "Oldest epoch seen": 336,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "35.157.185.88": {
+            "Pubkey": "E9Ljwq9x8yDLSFt5auLHavS7xKwmhGR2SNXD9Wr666kt",
+            "Oldest epoch seen": 336,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "34.204.7.207": {
+            "Pubkey": "AoJ7gBQv6DPSBJx2nNKUj8RmR6HMpdzpD8zdHQyBvgZ3",
+            "Oldest epoch seen": 336,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "3.84.19.247": {
+            "Pubkey": "GHe2tteSzdcWRvxXEigXsJfzbCG2eZweSh7B24yYZp9Q",
+            "Oldest epoch seen": 336,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "54.88.83.71": {
+            "Pubkey": "6tPTaM5vKzp155VDWxbwEyM6fZ5dHai6e2pfzdKMLG8A",
+            "Oldest epoch seen": 336,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "3.22.184.113": {
+            "Pubkey": "BN4wQvDUBZtfKuNcfVwNieGnAeBLs9vDzf9xtFUakT45",
+            "Oldest epoch seen": 336,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "13.58.83.200": {
+            "Pubkey": "Dh4TYMetTmANb6CgogcAPqSsLwPk4P1v9MtnX7bGvTPT",
+            "Oldest epoch seen": 336,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "54.85.56.62": {
+            "Pubkey": "ApGrtLkc2JLcVzCzw2nkufo9jRHXTPeEVeCN7GjNSX8y",
+            "Oldest epoch seen": 336,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "3.238.30.107": {
+            "Pubkey": "J6vYKYzT5MR1PfE4GjsJZ4fhbK623yLQ9GVjxWdXFRgM",
+            "Oldest epoch seen": 336,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "3.17.204.4": {
+            "Pubkey": "87e5sgLhccqVMftd2wZAQ1FwREN1Kv12GcBdgZVKEjuT",
+            "Oldest epoch seen": 336,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "35.82.175.231": {
+            "Pubkey": "6jsdjXxdSHFeB2SKLASsqwtDawmXUxRRysN6BcbKZuMn",
+            "Oldest epoch seen": 336,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "34.213.230.215": {
+            "Pubkey": "7in6irqa4m1VjzCoNWiB6tTQLw9xoQszS1WtVT9Lgqih",
+            "Oldest epoch seen": 336,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "35.88.161.12": {
+            "Pubkey": "8vYKqrJR3cZkQDhGqsjRK4fArngHwojXt74w2nPortwk",
+            "Oldest epoch seen": 336,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "44.204.35.128": {
+            "Pubkey": "2Ya3czmX61hzaQzEMghxzBQP8xUWqPboR9xmFJbPWGxC",
+            "Oldest epoch seen": 336,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "3.133.113.50": {
+            "Pubkey": "3A3xHQgmY5EcbKKC3aaZ7ftJrhpKxZDh3Gyb5GPukNTd",
+            "Oldest epoch seen": 336,
+            "Is Live": false,
+            "Is Validator": true,
+            "Validator Info": {
+                "details": {
+                    "name": "Stake DAO [Retail] (run by Stake Capital)",
+                    "website": "https://www.stakedao.org/"
+                },
+                "stake": 274.464937906,
+                "voteAccountPubkey": "C6RzXrzqXewJ5xsYpYPmveHh7A2UUkP1932FArXRSAzE",
+                "commission": 5,
+                "version": "1.11.5",
+                "isDelinquent": true,
+                "skipRate": null
+            },
+            "Earliest Deactivation": 340
+        },
+        "44.200.237.32": {
+            "Pubkey": "BDnUe4eUoUApNPpmNj2STDSMDG2W7WYwRYhvkuJNTseS",
+            "Oldest epoch seen": 336,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.90.115.92": {
+            "Pubkey": "EwWd22h7bj2gxUzwVeKPdwji76rGGyx4rCuuz14XEesQ",
+            "Oldest epoch seen": 336,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "3.235.87.153": {
+            "Pubkey": "8Sz6du2JX1Kz81DgS78zTszfazYoDGf4ykrb1GbnmKfm",
+            "Oldest epoch seen": 336,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "18.217.195.141": {
+            "Pubkey": "Ck5d2aFMvE1crubNt4uHF8XTv8icyyvcZuJYbSHWQ2dT",
+            "Oldest epoch seen": 336,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.238.105.80": {
+            "Pubkey": "6oxX39E1vNwnv5KC52LFYEwfw2NnPJWzP5jDhqD4Jz8",
+            "Oldest epoch seen": 336,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "44.201.40.91": {
+            "Pubkey": "2vr5fB1XVfU1WeiP7zUC8aaMkBHihR2wxi2xVHipQHRQ",
+            "Oldest epoch seen": 336,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.235.241.39": {
+            "Pubkey": "DaJx5LMAs8LRB9XXHdtjzrPm8MgLnzVEMrudwUCs6Xin",
+            "Oldest epoch seen": 336,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "18.232.125.19": {
+            "Pubkey": "5J59khK9x5E8j9mtuztEUa8vrxtAUeJkzHSDFhJtzpZo",
+            "Oldest epoch seen": 336,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "3.239.127.129": {
+            "Pubkey": "GnYCqB9iDTcHPfaUpGa9TKRXx3vvshMepyK54j9MHntG",
+            "Oldest epoch seen": 336,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "18.209.109.157": {
+            "Pubkey": "7qFphrc7pEN2YGTLNHLqxiw5zmcLUch91ypuZZ55E8dV",
+            "Oldest epoch seen": 336,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "52.91.223.66": {
+            "Pubkey": "DgNwZrfMqyVMhLYd6eyi8p5LpGnsYDsUWnWZhiwyCha8",
+            "Oldest epoch seen": 336,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "35.87.57.65": {
+            "Pubkey": "8wvZq1je4xM3D3kEF27614MS1vFRJTmRmjt6wksChLTa",
+            "Oldest epoch seen": 336,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "18.222.99.180": {
+            "Pubkey": "JCZeEEmW6LUA7DqsMsK8xrHdW4iuPEHv7nppwxEmFRbU",
+            "Oldest epoch seen": 336,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.133.85.234": {
+            "Pubkey": "C8u3tyY6k7Etn9oBL6sHh2sdr5JmctrhjaJwLnW77y5H",
+            "Oldest epoch seen": 336,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "75.101.198.225": {
+            "Pubkey": "BdCHipQqeYZfc41Tm1KWapswh1kGYD8PbyLFUJBDYhPt",
+            "Oldest epoch seen": 336,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "52.90.30.129": {
+            "Pubkey": "DtatHkNnNaL912PyDygSzALLXWMTtnS2h8XUqGfc1Rep",
+            "Oldest epoch seen": 336,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "3.143.5.62": {
+            "Pubkey": "CvNorfaayk8vyFVpSQwQFSffPf3AHwzrNijBRLqawZiL",
+            "Sol Balance": 25.65588759,
+            "Oldest epoch seen": 337,
+            "Is Live": false,
+            "Is Validator": true,
+            "Validator Info": {
+                "stake": 7656.555685986,
+                "voteAccountPubkey": "8L8adJFEwA4PdyWg8xXvGWYuz6s5pR7UFqtgXJVNS6vS",
+                "commission": 10,
+                "version": "1.10.34",
+                "isDelinquent": false,
+                "skipRate": null
+            },
+            "Earliest Deactivation": 340
+        },
+        "44.204.98.227": {
+            "Pubkey": "GtUavf8jjgcQAUM1nT1KujqVZzkb4s6boV7Rzo5XKCBP",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 337,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "3.134.253.254": {
+            "Pubkey": "E4if5HV17doN4DRUVPqTPNGEYY72CtAToMoh3doJDrtL",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 337,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "44.201.117.91": {
+            "Pubkey": "Fp9FvwfDHnRq6JEE8oNdVbjo3v71QWZ1osSQKPWKEeKo",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 337,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "18.208.132.94": {
+            "Pubkey": "86dgY1YYi263HodteHGzRqvkYvqLCtCcq9Q9X2yMQNXX",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 337,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "18.234.164.21": {
+            "Pubkey": "CkKbERxSqsp6GLabAEMFYWTeuBa4Q6o6e8w3oZKkdZua",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 337,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.84.230.101": {
+            "Pubkey": "Gz2hd2Lchvac5aktokzc4pwF5rQXSxk1RdRX5cpdaQCB",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 337,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "35.170.54.2": {
+            "Pubkey": "4mmwnrtpz7Qb2ot9wMegZFNfLtoz2VGQ9aZMaYYL27MY",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 337,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "3.91.174.245": {
+            "Pubkey": "8fT6xvfUdWfMvSMKVPtyq6T4BY5T3f2nvT3fNx9zTy5v",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 337,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "3.236.252.144": {
+            "Pubkey": "CJXFpwuR7fWJ2MUpWXGaoVU5agXSjjK4N6HsGbFdm1KV",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 337,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "13.229.242.95": {
+            "Pubkey": "HsZ6iG5dVvyRBUU7T5zq6ksCn542hgUEDbp2xRFtashc",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 337,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.195.181.23": {
+            "Pubkey": "DNjMg9FwQXGY99TH9rmwRc8L3kYn5AckFTpsjG9W7TRv",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 337,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "35.174.137.74": {
+            "Pubkey": "NbJEV1xJEcV6yEcMzvAap6778LjoQAJrfAtrC4b1nxv",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 337,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "184.73.100.48": {
+            "Pubkey": "BNYCyQ6cSqqF4p31HpmXjpyj3e8zH6sc8ntTyoQuL28o",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 337,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.144.85.70": {
+            "Pubkey": "3A3xHQgmY5EcbKKC3aaZ7ftJrhpKxZDh3Gyb5GPukNTd",
+            "Sol Balance": 23.072201762,
+            "Oldest epoch seen": 337,
+            "Is Live": false,
+            "Is Validator": true,
+            "Validator Info": {
+                "details": {
+                    "name": "Stake DAO [Retail] (run by Stake Capital)",
+                    "website": "https://www.stakedao.org/"
+                },
+                "stake": 274.562092608,
+                "voteAccountPubkey": "C6RzXrzqXewJ5xsYpYPmveHh7A2UUkP1932FArXRSAzE",
+                "commission": 5,
+                "version": "1.10.34",
+                "isDelinquent": false,
+                "skipRate": null
+            },
+            "Earliest Deactivation": 340
+        },
+        "52.36.193.0": {
+            "Pubkey": "GuGfchKGGDH5Dsq2wAYCb1F1ZJEYnge8sWytN4amf2uL",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 337,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "52.91.93.207": {
+            "Pubkey": "3Jf6zQEc6SH9q4eEJv5tGPzMnY2A4B6wSJgBw75cw6HS",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 337,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.239.19.193": {
+            "Pubkey": "9E5zdtCgxFDNAXwTk6VAZw2JFeaztQKgYbaf3KAuHiyN",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 337,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.238.231.63": {
+            "Pubkey": "8ELqCDd3jZjKTuseSJYzjaaw2ozjRBSDxhaWWdEaXRBm",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 337,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "35.157.193.176": {
+            "Pubkey": "KKzMdazfEanz7JVZS6LZCa9tcgo3WsDg7SJK9gFJ691",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 337,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.91.203.177": {
+            "Pubkey": "62h2TjaKuAryQdwTVjAYVJqCrGC6mQTZSUZpXGqe6DSp",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 337,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "54.221.120.67": {
+            "Pubkey": "7ZB1NjGMLABbV3AwG8fhqkda6DrtqmpukPXTqdTReka2",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 337,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "54.225.55.189": {
+            "Pubkey": "6t6h5si7xveCdnd5SPogPJmbnbB8tLyqZMnnVBMSUGQo",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 337,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "54.173.138.142": {
+            "Pubkey": "CLtyKp9Y7NNYHUS6pJUhXR4t32rC8DCreDNWCa5C52kE",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 337,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "3.90.168.178": {
+            "Pubkey": "F7MWPtD6iTX7zD1HFcQjybeSg13by7tYq5Lzi26Fw9JD",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 337,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.125.160.186": {
+            "Pubkey": "4aiNMKf5rx5DsgUbYRUZJPoxbFLXKy4cWtvFUrjVH8Ke",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 337,
+            "Is Live": false,
+            "Is Validator": false,
+            "Validator Info": {},
+            "Earliest Deactivation": 340
+        },
+        "18.218.245.250": {
+            "Pubkey": "CvNorfaayk8vyFVpSQwQFSffPf3AHwzrNijBRLqawZiL",
+            "Sol Balance": 19.94107663,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "stake": 46477.800579012,
+                "voteAccountPubkey": "8L8adJFEwA4PdyWg8xXvGWYuz6s5pR7UFqtgXJVNS6vS",
+                "commission": 10,
+                "version": "1.10.35",
+                "isDelinquent": false,
+                "skipRate": 60.0
+            }
+        },
+        "44.204.150.50": {
+            "Pubkey": "BeS62YKrEJ11fD3abkJ37X5KPLfAR2yhC8PgZRHahTc3",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.93.38.75": {
+            "Pubkey": "5eirXPBZBc8NVtS7XQhGXvLNWQmGz6uofnY3MfNrkqvW",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.111.193.184": {
+            "Pubkey": "DA3h5TUuKXUZWYPAkU1WyhNjh8F5dQbChAJ89fU4fktm",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.92.232.239": {
+            "Pubkey": "Dg81xjvnYstvxeeDjThCj6uhRAwPkH8UMkJN4SNAMxS",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.200.197.139": {
+            "Pubkey": "HcnJSZcMw8vn6wzxPcerD8AxcsLrTxtcuMDTB7H71vr9",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.245.26.212": {
+            "Pubkey": "5JLXHtf35xCGbneKfPithpNNrm6H4jc6VCWxFnWbfwzZ",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.138.184.139": {
+            "Pubkey": "7TrGi2VwMrKWaCBWWrWbmwhpLYzHFs1gGspphjeSw1si",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "44.203.93.56": {
+            "Pubkey": "F51hKiu4ZmbMHLN5GD1sj3TJ2bk1EVQj1NhQbBnGUFCC",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.92.29.85": {
+            "Pubkey": "B3W1hyfn6Hdi5Nq8hfCzpE9oKguHGZ1PaDn1yyHtLugq",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.231.145.100": {
+            "Pubkey": "yiz1QE5UtvRnJrKuPYrGt8hPKcH3Y5VofmtkrKgAesN",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "52.30.186.192": {
+            "Pubkey": "Hipihnke6NsSZuVTQTaYzmDYVG6HJ3vk2UhKYED4ArzP",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "18.224.40.95": {
+            "Pubkey": "9yy7ch6fjEavTLQY42Dyt1TePK1g8ZHQ8GCfvZEddkfN",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.163.17.180": {
+            "Pubkey": "5RK77bQHGzDPUGS3SSnkJdzh69yYf3WDbnfPoqRJMw4s",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "44.203.116.93": {
+            "Pubkey": "2jCCFkePrFCZdoRepT7phbbqvSHXpknhi9CupxPjk1V7",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "100.27.8.28": {
+            "Pubkey": "A5TDCcd97GxrogJnQrKjZtkAyVyp3qGwoKMrPwkipj83",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.71.21.131": {
+            "Pubkey": "E9Ljwq9x8yDLSFt5auLHavS7xKwmhGR2SNXD9Wr666kt",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.91.142.20": {
+            "Pubkey": "5qbmTGyWob8zvcSj31eicSMQoyAkLnSEAVqdiQgCbL7K",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "15.164.36.33": {
+            "Pubkey": "4bqPymBjeevE7VmVV7NR2z5mUuHhiSKLAnTCQKNEknZC",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.216.94.52": {
+            "Pubkey": "97odGe4zqYBpAnTKh3FDDSugUymYXGJ2Q1pPfhJgJw2D",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "18.191.232.208": {
+            "Pubkey": "AS24o52q9WyyAKQDUt8b2bToSZtjCM9WWBKYT6KeXJZG",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.87.83.253": {
+            "Pubkey": "DcqnoYuocgWDp2fTVUW1DQvyTTGwTKU5iS75GBuZ6HiL",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.249.25.132": {
+            "Pubkey": "9NByXDqeVskCK7gs1VMCbz3cAgeU5vTPmj3qBQdC3ihz",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "50.17.234.175": {
+            "Pubkey": "2SZ9P1FeJuNjvf6GyRYr69jFgRDLqMrAk4kk53nFrKMm",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.92.162.253": {
+            "Pubkey": "GeNwm5M8FSWZtPcSHYNSqsjMZinRtxTCvdCUcpiD8a5E",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.19.55.151": {
+            "Pubkey": "FLUM8yrbtGvJLif2UkafPdewEvn4MC8FqWqn4UbVovtS",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.112.87.104": {
+            "Pubkey": "HUsgzj5L76HQcf1JAaWNF8s489a9fxgW2hMqoqNqyz87",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.169.218.165": {
+            "Pubkey": "HTaZfrbzVafhd6g3FR5BWKWwBEvq4aErzTejSLV2kkmN",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "44.192.108.69": {
+            "Pubkey": "82yWYkHwWnyN3ADbPxGNMwswuxFqnoESHhipYqTtmE3p",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "44.192.32.219": {
+            "Pubkey": "Gb4CgEWo43LxTNxSVJoLj7BmstD5n1VWSFYNBY8p6t81",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "13.112.175.116": {
+            "Pubkey": "J9z5K6oQNtTxNgYEt1Ckrsd2RABq8dAcdA8qEX5gA5P4",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.251.149.63": {
+            "Pubkey": "97M5ep7rRAFVWBcwSDnPHvY6whBjkZXQfJfGAerK2CJG",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "52.205.140.223": {
+            "Pubkey": "D9Qk2uhe25NaQvDVshaWpaCmpempjZ6Wb4CJ2fXg6M6Y",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.143.214.193": {
+            "Pubkey": "HB2CiJfQzMBxPoTmAJ4snoLtahZcgti5wrFnw9D3NsxA",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "34.236.119.197": {
+            "Pubkey": "AYkNg9351QzRwbA9dAxZzPXpowbTLen46PpctMW6EHXw",
+            "Sol Balance": 0.14748136,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": true,
+            "Validator Info": {
+                "stake": 4.99771712,
+                "voteAccountPubkey": "CRxdnvdZYEa8Eh5RxypiAthBPnpAjzaTmjqc2wZvCNTr",
+                "commission": 100,
+                "version": "1.10.32",
+                "isDelinquent": false,
+                "skipRate": null
+            }
+        },
+        "18.118.165.244": {
+            "Pubkey": "6j9hCwE1NWBA63PCMz4UhuhNrBzu1Htq9NwTnfGKVPDM",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.91.122.248": {
+            "Pubkey": "DEGHmvbh9qBpbN2UetEfvd8iqtUr169uxeuPdEEASH6G",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "35.172.223.2": {
+            "Pubkey": "2xB3z24sZ5oUUNW5LgjxRFgrFosm1tmLsQnbVTvt57z1",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.169.121.160": {
+            "Pubkey": "7uCx611pbiK5kTVRWyHXwXUXrtNnESpHkTDc8W9Mxz4S",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "35.91.137.8": {
+            "Pubkey": "CbUwqo2ifsEX68zoyxRGounS2KQ5JgdmWXyF3iiherMF",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "18.143.54.241": {
+            "Pubkey": "627Bpyw12cJtsy7uwDG3XNPGsygdjnXBRGSwupsv3pQ1",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.87.97.146": {
+            "Pubkey": "7mmJSo335wGhFddZ8DHprqxmcUXcEnCouCSePQMYuBmV",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "44.202.199.72": {
+            "Pubkey": "7PWAYRodr1YuSsMkFQd3rzwQf52AMruFeF2ZSSierQxH",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.142.213.158": {
+            "Pubkey": "5N69WyUgM6w7f5zcj93VCpj3iJkLkgpCXK9UT1MtC9Wf",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "3.144.19.99": {
+            "Pubkey": "9UDarU6inMBGxUnHK8j5e9GHPQkoe6ffccocPbpuJxSa",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "54.75.117.226": {
+            "Pubkey": "EwqDJcfEDosza6kq7Reo1HDtsfP3bQnXWku4Lj9zpSSG",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "18.116.29.54": {
+            "Pubkey": "2oLD8WpnrmBYVhBEG6pS5XR9gtzz83VXNTisge8q9y1R",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        },
+        "35.175.127.69": {
+            "Pubkey": "F3X1fDMboe7GefDt4jjgHRMRapGPohbFDJEZKwL4kZzF",
+            "Sol Balance": 0.0,
+            "Oldest epoch seen": 340,
+            "Is Live": true,
+            "Is Validator": false,
+            "Validator Info": {}
+        }
+    }
+}
