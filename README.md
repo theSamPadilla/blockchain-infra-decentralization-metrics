@@ -1,1 +1,27 @@
-# blockchain-infra-decentralization-metrics
+# Blockchain Infra Decentralization Metrics
+This repo is a collection of scripts that measure the infrastructure decentralization of multiple blockchains.
+
+This project measures:
+- Stake distribution across infrastructure providers.
+- Stake distribution across geographies.
+- RPC nodes distribution across infrastructure providers*
+- RPC nodes distribution across geographies*
+**RPC node data is not available for all chains*
+
+## How it Works
+The individual scripts inside each chain directory name looks/crawls the IP addresses of the validators and finds their respective stake. Each script outputs the data for their chain to a JSON file follwoing the specification below.
+The main script then uses the JSON files to find the infrastructure provider and the geographic location where each validator is running for each chain.
+
+## JSON specification
+The output should be a list of JSON objects in the following format:
+```
+[
+    {
+        <IP Address> : {
+            "is_validator": <bool> #Differentiate between RPC nodes and validator nodes.
+            "stake": <int> #Stake of the validator or null if RPC node.
+            "address": <string> #On-chain address of the validator.
+        }
+    }
+]
+```
