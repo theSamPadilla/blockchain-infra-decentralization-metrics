@@ -1,0 +1,7 @@
+data_dir = "/home/samuelpadilla/tmcrawl/db"
+listen_addr = ""
+seeds = ["cd4d17e587032f9119a5b138f94bfff68fab4901@159.69.32.74"]
+ipstack_key ="69_fu_420"
+reseed_size = 100
+crawl_interval = 15
+recheck_interval = 3600

@@ -1,0 +1,187 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "Swagger documentation for the tmcrawl service API.",
+        "title": "tmcrawl API Docs",
+        "contact": {
+            "name": "Fission Labs",
+            "email": "contact@fissionlabs.io"
+        },
+        "license": {
+            "name": "CC0",
+            "url": "https://creativecommons.org/share-your-work/public-domain/cc0/"
+        },
+        "version": "1.0"
+    },
+    "host": "localhost:27758",
+    "basePath": "/api/v1",
+    "paths": {
+        "/nodes": {
+            "get": {
+                "description": "Get all nodes with optional pagination query parameters.",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "nodes"
+                ],
+                "summary": "Get all nodes",
+                "parameters": [
+                    {
+                        "type": "integer",
+                        "description": "The page number to query",
+                        "name": "page",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "description": "The number of nodes per page",
+                        "name": "limit",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/server.PaginatedNodesResp"
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid pagination parameters or failure to parse a node",
+                        "schema": {
+                            "$ref": "#/definitions/server.ErrorResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/nodes/{address}": {
+            "get": {
+                "description": "Get node by address.",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "nodes"
+                ],
+                "summary": "Get node",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "The node address (IP or resolvable to IP)",
+                        "name": "address",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/crawl.Node"
+                        }
+                    },
+                    "400": {
+                        "description": "Failure to parse the node",
+                        "schema": {
+                            "$ref": "#/definitions/server.ErrorResponse"
+                        }
+                    },
+                    "404": {
+                        "description": "Failure to find the node",
+                        "schema": {
+                            "$ref": "#/definitions/server.ErrorResponse"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "crawl.Location": {
+            "type": "object",
+            "properties": {
+                "city": {
+                    "type": "string"
+                },
+                "country": {
+                    "type": "string"
+                },
+                "latitude": {
+                    "type": "string"
+                },
+                "longitude": {
+                    "type": "string"
+                },
+                "region": {
+                    "type": "string"
+                }
+            }
+        },
+        "crawl.Node": {
+            "type": "object",
+            "properties": {
+                "address": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "last_sync": {
+                    "type": "string"
+                },
+                "location": {
+                    "type": "object",
+                    "$ref": "#/definitions/crawl.Location"
+                },
+                "moniker": {
+                    "type": "string"
+                },
+                "network": {
+                    "type": "string"
+                },
+                "p2p_port": {
+                    "type": "string"
+                },
+                "rpc_port": {
+                    "type": "string"
+                },
+                "tx_index": {
+                    "type": "string"
+                },
+                "version": {
+                    "type": "string"
+                }
+            }
+        },
+        "server.ErrorResponse": {
+            "type": "object",
+            "properties": {
+                "error": {
+                    "type": "string"
+                }
+            }
+        },
+        "server.PaginatedNodesResp": {
+            "type": "object",
+            "properties": {
+                "limit": {
+                    "type": "integer"
+                },
+                "nodes": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/crawl.Node"
+                    }
+                },
+                "page": {
+                    "type": "integer"
+                },
+                "total": {
+                    "type": "integer"
+                }
+            }
+        }
+    }
+}

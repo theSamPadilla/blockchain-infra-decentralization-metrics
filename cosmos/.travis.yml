@@ -1,0 +1,9 @@
+dist: trusty
+language: go
+go:
+  - 1.13.x
+install: true
+before_install:
+  - go get github.com/swaggo/swag/cmd/swag@v1.6.5
+script:
+  - env GO111MODULE=on make ci-test swagger-verify install

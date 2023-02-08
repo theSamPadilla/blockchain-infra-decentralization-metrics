@@ -1,0 +1,123 @@
+basePath: /api/v1
+definitions:
+  crawl.Location:
+    properties:
+      city:
+        type: string
+      country:
+        type: string
+      latitude:
+        type: string
+      longitude:
+        type: string
+      region:
+        type: string
+    type: object
+  crawl.Node:
+    properties:
+      address:
+        type: string
+      id:
+        type: string
+      last_sync:
+        type: string
+      location:
+        $ref: '#/definitions/crawl.Location'
+        type: object
+      moniker:
+        type: string
+      network:
+        type: string
+      p2p_port:
+        type: string
+      rpc_port:
+        type: string
+      tx_index:
+        type: string
+      version:
+        type: string
+    type: object
+  server.ErrorResponse:
+    properties:
+      error:
+        type: string
+    type: object
+  server.PaginatedNodesResp:
+    properties:
+      limit:
+        type: integer
+      nodes:
+        items:
+          $ref: '#/definitions/crawl.Node'
+        type: array
+      page:
+        type: integer
+      total:
+        type: integer
+    type: object
+host: localhost:27758
+info:
+  contact:
+    email: contact@fissionlabs.io
+    name: Fission Labs
+  description: Swagger documentation for the tmcrawl service API.
+  license:
+    name: CC0
+    url: https://creativecommons.org/share-your-work/public-domain/cc0/
+  title: tmcrawl API Docs
+  version: "1.0"
+paths:
+  /nodes:
+    get:
+      description: Get all nodes with optional pagination query parameters.
+      parameters:
+      - description: The page number to query
+        in: query
+        name: page
+        type: integer
+      - description: The number of nodes per page
+        in: query
+        name: limit
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/server.PaginatedNodesResp'
+        "400":
+          description: Invalid pagination parameters or failure to parse a node
+          schema:
+            $ref: '#/definitions/server.ErrorResponse'
+      summary: Get all nodes
+      tags:
+      - nodes
+  /nodes/{address}:
+    get:
+      description: Get node by address.
+      parameters:
+      - description: The node address (IP or resolvable to IP)
+        in: path
+        name: address
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/crawl.Node'
+        "400":
+          description: Failure to parse the node
+          schema:
+            $ref: '#/definitions/server.ErrorResponse'
+        "404":
+          description: Failure to find the node
+          schema:
+            $ref: '#/definitions/server.ErrorResponse'
+      summary: Get node
+      tags:
+      - nodes
+swagger: "2.0"
