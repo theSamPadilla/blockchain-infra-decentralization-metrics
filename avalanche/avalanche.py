@@ -3,6 +3,7 @@ from datetime import datetime
 import time
 import json
 import pandas as pd
+from typing import Dict
 
 def get_validators() -> pd.DataFrame:
     """
@@ -17,7 +18,6 @@ def get_validators() -> pd.DataFrame:
     }
     response = requests.get(url, params=params).json()
     _next = response["link"].get("next")
-    next_url = f"https://{BASE_URL}{_next}"
     next_url = f"https://api-beta.avascan.info{_next}"
 
     tmp_df = pd.DataFrame(response["items"])
@@ -54,34 +54,35 @@ def get_validators() -> pd.DataFrame:
     df = df[["address","ip","stake","is_validator","extra_info"]]
     return df
 
-# Get validators
-validators = get_validators()
+def main() -> Dict:
+    # Get validators
+    validators = get_validators()
 
-today = datetime.today().strftime("%Y-%m-%d")
-validators.to_csv(f"avalanche-validators-{today}.csv", index=False)
-print(validators)
+    # NOTE: we want this format output
+    #[
+    #    {
+    #        <IP Address> : {
+    #            "is_validator": <bool> #Differentiate between RPC nodes and validator nodes.
+    #            "stake": <int> #Stake of the validator or null if RPC node.
+    #            "address": <string> #On-chain address of the validator.
+    #            "extra_info": {
+    #                <Any other info you want to add that may be useful in processing (validator name, skip rate, etc)>
+    #            }
+    #        }
+    #    }
+    #]
 
-# Want data in this format
-"""
-[
-    {
-        <IP Address> : {
-            "is_validator": <bool> #Differentiate between RPC nodes and validator nodes.
-            "stake": <int> #Stake of the validator or null if RPC node.
-            "address": <string> #On-chain address of the validator.
-            "extra_info": {
-                <Any other info you want to add that may be useful in processing (validator name, skip rate, etc)>
-            }
-        }
-    }
-]
-"""
-
-# drop validators where ip = 'unkown'
-validators = validators[validators['ip'] != 'unknown']
-validators_dict = validators.set_index('ip').T.to_dict()
+    # drop validators where ip = 'unkown'
+    validators = validators[validators['ip'] != 'unknown']
+    validators_dict = validators.set_index('ip').T.to_dict()
+    return validators_dict
 
 # save to json
-with open(f'avalanche-validators-{today}.json', 'w') as f:
-    json.dump(validators_dict, f)
-print(validators_dict)
+if __name__ == "__main__":
+    validators_dict = main()
+
+    # save to json
+    today = datetime.today().strftime("%Y-%m-%d")
+    with open(f'output/avalanche-validators-{today}.json', 'w') as f:
+        json.dump(validators_dict, f)
+    print(validators_dict)
