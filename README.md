@@ -9,15 +9,17 @@ This project measures:
 **RPC node data is not available for all chains*
 
 ## How it Works
-The individual scripts inside each chain directory name looks/crawls the IP addresses of the validators and finds their respective stake. Each script outputs the data for their chain to a JSON file follwoing the specification below.
-The main script then uses the JSON files to find the infrastructure provider and the geographic location where each validator is running for each chain.
+The individual scripts inside each chain directory gets/crawls the IP addresses of the validators and finds their respective stake and other relevant information. Each script outputs the data for their chain to a JSON file inside the `json` folder in the root directory. That JSON file **must** follow the specification below.
+
+The `main.py` script uses the JSON files for a given to find the infrastructure provider and the geographic location where each node is running.
 
 ## JSON specification
 The output should be a JSON objects in the following format:
 ```
 {
     "timestamp": <str> # When was the analysis last ran
-    "chain_data": {Any other information to add about the chain and the collection method of IPs},
+    "collection_method": <str>, <"crawl" for nodes manually crawled, or "api" for IPs found via the chain RPC API>
+    "chain_data": {Any other information to add about the chain},
     "nodes": [
         <IP Address> : {
             "is_validator": <bool>, #Differentiate between RPC nodes and validator nodes.
