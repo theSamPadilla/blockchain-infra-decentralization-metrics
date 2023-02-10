@@ -1,21 +1,18 @@
-[
-    {
+{
+    "timestamp": "2023-02-07",
+    "collection_method": "api",
+    "chain_date": {},
+    "nodes": {
         "<IP Address>" : {
             "is_validator": true,
-            "stake": 69,
+            "stake": 69, 
             "address": "xyz#!xyz",
             "extra_info": {
-
+                "owner": "Jane Doe",
+                "website":"123.com"
             }
         },
-
-        "<Another IP Address>" : {
-            "is_validator": false,
-            "stake": null,
-            "address": "abc#!abc",
-            "extra_info": {
-
-            }
-        }
+        "<IP Address 2>" : {},
+        "<IP Address 3>" : {}
     }
-]
+}
