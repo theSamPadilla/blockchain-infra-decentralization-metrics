@@ -25,7 +25,9 @@ from ipwhois.asn import IPASN #type: ignore
 BASE_DIR = os.path.dirname(os.path.realpath(__file__))
 PROVIDER_CONFIG_PATH = BASE_DIR + "/config/ProviderConfig.json"
 with open(BASE_DIR + "/config/SettingsConfig.json", "r") as f:
-    SOL_CLI_PATH = json.load(f)["sol_cli"]
+    loaded = json.load(f)
+    SOL_CLI_PATH = loaded["sol_cli"]
+    OUTPUT_FOLDER = loaded["output_folder"]
     f.close()
 
 ## Classes ##
@@ -141,6 +143,7 @@ class SolanaCLI:
     def Save(self):
         #Write object binary to the file
         print("\tSaving SOL object.", flush=True)
+        os.makedirs(os.path.dirname(self.objectPath), exist_ok=True)
         with open(self.objectPath, "wb") as f:
             pickle.dump(self, f)
             f.close()
@@ -159,8 +162,10 @@ class SolanaCLI:
         print("\tDone.", flush=True)
 
     def SaveProviderDistribution(self):
-        path = BASE_DIR + "/" + OUTPUT_FOLDER + "/network/SolanaProviderDistribution_" + str(datetime.now().strftime("%m-%d-%Y_%H:%M")) + ".json"
+        time = str(datetime.now().strftime("%m-%d-%Y_%H:%M"))
+        path = f"{OUTPUT_FOLDER}/network/ProviderDistribution_{time}.json"
         to_write = {
+            'Analysis Date': time,
             'Total Nodes': len(self.gossipLookup),
             'Validator Nodes': len(self.validatorsLookup),
             'Current Epoch': self.epoch,
@@ -168,6 +173,7 @@ class SolanaCLI:
             'Provider Distribution': self.providersData
         }
 
+        os.makedirs(os.path.dirname(path), exist_ok=True)
         with open(path, "w") as f:
             json.dump(to_write, f, indent=4, default=str)
             f.close()
@@ -253,14 +259,17 @@ class Provider:
 
     def Save(self):
         print("\tSaving %s object" % self.provider, flush=True)
+        os.makedirs(os.path.dirname(self.objectPath), exist_ok=True)
         with open(self.objectPath, "wb") as f:
             pickle.dump(self, f)
             f.close()
         print("\tDone.", flush=True)
 
     def SaveNodeJSONInfo(self):
-        path = BASE_DIR + "/" + OUTPUT_FOLDER + "/providers/" + self.provider + "_Nodes_" + str(datetime.now().strftime("%m-%d-%Y_%H:%M")) + ".json"
+        time = str(datetime.now().strftime("%m-%d-%Y_%H:%M"))
+        path = f"{OUTPUT_FOLDER}/providers/{self.provider}_Nodes_{time}.json"
         to_write = {
+            'Analysis date:': time,
             'Live Nodes': self.liveNodeCount,
             'Validator Nodes': self.validatorCount,
             'Total different nodes seen': len(self.nodeDict),
@@ -272,6 +281,7 @@ class Provider:
             'Nodes': self.nodeDict
         }
 
+        os.makedirs(os.path.dirname(path), exist_ok=True)
         with open(path, "w") as f:
             json.dump(to_write, f, indent=4, default=str)
             f.close()
@@ -311,8 +321,7 @@ def main(exec_mode, providers_to_track):
     print("Done.", flush=True)
 
     #Output results if called from CLI
-    if OUTPUT_FOLDER == "output/":
-        PrintCompletion(short_to_object_map)
+    PrintCompletion(short_to_object_map)
 
 ## Helper Functions ##
 def MakeSolanaObject():
@@ -377,7 +386,7 @@ def MakeProviderObjects(providers_to_track: dict, exec_mode: str):
     return short_to_object_map
 
 def GetNetworkProviderDistribution(providers_to_track: dict, short_to_object_map: dict):
-    print("\n\nAnalyzing Gossip Nodes. This may take a few minutes...", flush=True)
+    print(f"\n\nAnalyzing {len(SOL_OBJ.gossipLookup)} Nodes. This may take a few minutes...", flush=True)
     
     #Iterate over all gossipNodes
     for ip, node in SOL_OBJ.gossipLookup.items():
@@ -388,17 +397,17 @@ def GetNetworkProviderDistribution(providers_to_track: dict, short_to_object_map
             obj = IPASN(net)
             results = obj.lookup()
             asn = results['asn']
-        except ipwhois.exceptions.IPDefinedError:
+            provider_name = "Other" #Set provider name as Other. Will get overwritten for relevant providers defined in the file
+        except Exception as e:
             #Ignore this IP
-            print("\t[WARN] - IPDefinedError found for %s" % ip, flush=True)
+            print("\t[WARN] - Undefined IP: %s for %s" % (e, ip), flush=True)
+            print("\t\t-Ignoring.")
             continue
 
         #Set node information
         pubkey = node['pubkey']
         isValidator = pubkey in SOL_OBJ.validatorsLookup #if not validator, then RPC.
 
-        #Set provider name as Other. Will get overwritten for relevant providers defined in the file
-        provider_name = "Other"
 
         #If the ASN is in the ASN lookup, overwrite provider
         if asn in PROVIDER_ASN_LOOKUP:
@@ -454,11 +463,10 @@ def PrintUsage():
         "of RPC nodes, validators, and stake of each provider specified in the PorviderLookup.json file.")
 
     print("\n\n-----PARAMETERS-----")
-    print("The scraper takes 4 optional parameters in the following format:")
+    print("The scraper takes 3 optional parameters in the following format:")
     print("\n> --exec.mode=<value> -> Defines the execution method. Options are (\"full\" or \"liveliness\") Default is \"full\".")
     print("\n> --providers=<val1>,<val2> -> Defines the providers for which to track nodes, based on the config/ProviderConfig.json and following",
         "the format defined on the README. Default is None.")
-    print("\n> --from.script -> Sends the output files to upload/ for upload to GCS and silences runtime messages. Use recommended for bash scripts only.")
     print("\n> --help -> Prints this message.")
 
     print("\n\n-----OUTPUT-----")
@@ -474,15 +482,8 @@ def GetArguments(args: list):
     if "--help" in args:
         PrintUsage()
     
-    #Set global output folder depending on call origin flag
-    global OUTPUT_FOLDER
-    OUTPUT_FOLDER = "output/"
-    if "--from.script" in args:
-        OUTPUT_FOLDER = "upload/"
-        args.remove("--from.script")
-
     #Set arg constraints
-    allowed_commands = {"--providers", "--exec.mode", "--from.cli", "--help"}
+    allowed_commands = {"--providers", "--exec.mode", "--help"}
     allowed_exec_modes = {"full", "liveliness"}
     allowed_providers = LoadConfigFileAndGetAllowedProviders()
 
@@ -605,7 +606,7 @@ def GetAsnDescriptionMap():
 
 ## Main Caller ##
 if __name__ == "__main__":
-    if len(sys.argv) > 4:
+    if len(sys.argv) > 3:
         print("ERROR: Too many parameters.")
         PrintUsage()
     else:
