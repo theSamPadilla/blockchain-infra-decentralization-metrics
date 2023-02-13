@@ -1,4 +1,10 @@
 {
-    "sol_cli": "/home/samuelpadilla/.local/share/solana/install/active_release/bin/solana",
-    "output_folder": "/home/samuelpadilla/blockchain-infra-decentralization-metrics/results/solana"
+<<<<<<< HEAD
+    "sol_cli": "[full_path_to_solana_CLI]",
+    "output_folder": "[pat_to_desired_output_folder]"
 }
+=======
+    "sol_cli": "[full_path_to_solana_CLI]",
+    "output_folder": "[pat_to_desired_output_folder]"
+}
+>>>>>>> d29723aaae6842e2d361d4f5cdfedccc7607750d
