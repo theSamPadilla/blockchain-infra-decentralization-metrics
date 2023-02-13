@@ -1,0 +1,98 @@
+{
+    "396982":{
+        "provider": "Google Cloud",
+        "asn_description": "GOOGLE-CLOUD-PLATFORM, US",
+        "website": "https://cloud.google.com/",
+        "short": "GCP"
+    },
+    "15169":{
+        "provider": "Google Cloud",
+        "asn_description": "",
+        "website": "https://cloud.google.com/",
+        "short": "GCP"
+    },
+    "19527":{
+        "provider": "Google Cloud",
+        "asn_description": "",
+        "website": "https://cloud.google.com/",
+        "short": "GCP"
+    },
+    "15169 19527":{
+        "provider": "Google Cloud",
+        "asn_description": "",
+        "website": "https://cloud.google.com/",
+        "short": "GCP"
+    },
+    "19318":{
+        "provider": "Lumen",
+        "asn_description": "IS-AS-1, US",
+        "website": "https://www.lumen.com/en-us/home.html",
+        "short": "LMN"
+    },
+    "20473":{
+        "provider": "Choopa",
+        "asn_description": "AS-CHOOPA, US",
+        "website": "https://www.choopa.com/",
+        "short": "CHO"
+    },
+    "396356":{
+        "provider": "Maxihost",
+        "asn_description": "MAXIHOST, US",
+        "website": "https://www.maxihost.com/",
+        "short": "MXH"
+    },
+    "23470":{
+        "provider": "Reliablesite",
+        "asn_description": "RELIABLESITE, US",
+        "website": "https://www.reliablesite.net/",
+        "short": "RLS"
+    },
+    "18450":{
+        "provider": "Webnx",
+        "asn_description": "WEBNX, US",
+        "website": "https://webnx.com/",
+        "short": "WBX"
+    },
+    "14618":{
+        "provider": "Amazon Web Services",
+        "asn_description": "AMAZON-AES, US",
+        "website": "https://aws.amazon.com/",
+        "short": "AWS"
+    },
+    "16509":{
+        "provider": "Amazon Web Services",
+        "asn_description": "AMAZON-02, US",
+        "website": "https://aws.amazon.com/",
+        "short": "AWS"
+    },
+    "20326":{
+        "provider": "Teraswitch",
+        "asn_description": "TERASWITCH, US",
+        "website": "https://teraswitch.com/",
+        "short": "TSW"
+    },
+    "54825":{
+        "provider": "Equinix",
+        "asn_description": "PACKET, US",
+        "website": "https://www.equinix.com/",
+        "short": "EQX"
+    },
+    "15830":{
+        "provider": "Equinix",
+        "asn_description": "EQUINIX, GB",
+        "website": "https://www.equinix.com/",
+        "short": "EQX"
+    },
+    "16276":{
+        "provider": "OVH Cloud",
+        "asn_description": "OVH, FR",
+        "website": "https://us.ovhcloud.com/",
+        "short": "OVH"
+    },
+    "24940":{
+        "provider": "Hetzner",
+        "asn_description": "HETZNER-AS, DE",
+        "website": "https://www.hetzner.com/cloud",
+        "short": "HTZ"
+    }
+}

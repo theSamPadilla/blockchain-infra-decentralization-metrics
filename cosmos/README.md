@@ -1,4 +1,4 @@
-# tmcrawl [WIP - Not Fully nctional]
+# tmcrawl [WIP]
 
 [![Build Status](https://travis-ci.org/theSamPadilla/tmcrawl.svg?branch=master)](https://travis-ci.org/theSamPadilla/tmcrawl)
 [![Go Report Card](https://goreportcard.com/badge/github.com/theSamPadilla/tmcrawl)](https://goreportcard.com/report/github.com/theSamPadilla/tmcrawl)
@@ -58,13 +58,6 @@ All API documentation is hosted via Swagger UI under path `/swagger/`.
 
 ## Future Improvements
 
+- Moving crawling functionality to p2p port for higher accuracy.
 - Crawl integration tests
 - Front-end visualization
-
-## Contributing
-
-Contributions are welcome! Please open an Issues or Pull Request for any changes.
-
-## License
-
-[CCC0 1.0 Universal](https://creativecommons.org/share-your-work/public-domain/cc0/)

@@ -83,9 +83,11 @@ def get_node_info(node: dict):
 
 def get_ip_address(address: str):
     """Returns the ip address of a node"""
-    ping = subprocess.getoutput(f"ping -t 1 {address} ")
+    print(f"Attempting to get IP from: {address}")
+    ping = subprocess.getoutput(f"ping -c 1 {address} ")
     id_pattern = r"\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}"
     address = m.group() if (m := re.search(id_pattern, ping)) is not None else "Unknown"
+    print(f"\tGot IP: {address}")
     return address
 
 
@@ -121,6 +123,7 @@ def main():
 
     nodes = []
 
+    print(f"There are {len(id_node_list)} nodes")
     for _ in id_node_list:
         nodes_fields = get_node_info(_)["value"]["fields"]
 
@@ -143,6 +146,8 @@ def main():
 
         nodes.append(nodes_data)
 
+    print("Done iterating\n")
+
     roles = {
         "3": "execution",
         "2": "consensus",
@@ -152,16 +157,21 @@ def main():
     }
 
     nodes_df = pd.DataFrame(nodes)
+
+    print(nodes_df["networkingAddress"])
     nodes_df["role"] = nodes_df["role"].apply(lambda x: roles[x])
     nodes_df["ip_address"] = nodes_df["networkingAddress"].apply(
         lambda x: get_ip_address(x.split(":")[0])
     )
-    result = nodes_df.groupby("ip_address").apply(group_to_dict).tolist()
 
+    result = nodes_df.groupby("ip_address").apply(group_to_dict).tolist()
     today = datetime.today().strftime("%Y-%m-%d")
+    print(result)
+    result["timestamp"] = today
 
     with open(f"flow_output_{today}.json", "w") as f:
-        json.dump(result, f, ensure_ascii=False)
+        json.dump(result, f, indent=4, ensure_ascii=False)
+        f.close()
 
 
 if __name__ == "__main__":

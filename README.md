@@ -36,3 +36,15 @@ The output should be a JSON objects in the following format:
     ]
 }
 ```
+
+## Usage
+The tool takes 1 mandatory parameter and 2 optional parameters in the following format:
+
+- **[MANDATORY]** `--blockchain=[value]` -> Defines the target blockchain. There must exist a file in the `json/` directory (without the `.json` extension) matching `[value]`.
+
+- `--providers=[val1],[val2]` -> Defines the providers for which to track nodes, based on the config/ProviderConfig.json.
+    Only accepted values are the "short" attribute defined for each ASN in the ProviderConfig.json. See below for the format of the ProviderConfig file.
+
+- `--output` -> Prints an overview of the results upon completion.
+
+- `--help` -> Prints this message.

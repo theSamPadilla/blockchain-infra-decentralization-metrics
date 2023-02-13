@@ -23,11 +23,11 @@ memory/
 .vscode/
 cosmos/tmcrawl.toml
 cosmos/analysis/*.json
-cosmos/analysis/results
-cosmos/analysis/info
-cosmos/db/tmcrawl.db
-solana/config
-solana/memory
+cosmos/analysis/results/
+cosmos/analysis/info/
+cosmos/db/tmcrawl.db/
+solana/config/
+solana/memory/
 
 # Output directories
 results/
