@@ -14,6 +14,10 @@
 # Dependency directories (remove the comment below to include it)
 # vendor/
 
+# Root files
+to-do.md
+misc/
+
 # Specific Directories
 .vscode/
 cosmos/tmcrawl.toml
@@ -21,3 +25,12 @@ cosmos/analysis/*.json
 cosmos/analysis/results/
 cosmos/analysis/info/
 cosmos/db/tmcrawl.db/
+solana/config/
+solana/memory/
+
+# Output directories
+results/
+json/
+cardano/output/
+avalanche/output/
+solana/output/
