@@ -26,7 +26,7 @@ cosmos/analysis/*.json
 cosmos/analysis/results/
 cosmos/analysis/info/
 cosmos/db/tmcrawl.db/
-solana/config/
+solana/config/*.json
 solana/memory/
 
 # Output directories
