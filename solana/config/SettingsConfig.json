@@ -1,3 +1,4 @@
 {
-    "sol_cli": "[full_path_to_solana_CLI]"
+    "sol_cli": "[full_path_to_solana_CLI]",
+    "output_folder": "[pat_to_desired_output_folder]"
 }
