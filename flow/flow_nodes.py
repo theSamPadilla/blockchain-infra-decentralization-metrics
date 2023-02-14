@@ -83,11 +83,9 @@ def get_node_info(node: dict):
 
 def get_ip_address(address: str):
     """Returns the ip address of a node"""
-    print(f"Attempting to get IP from: {address}")
     ping = subprocess.getoutput(f"ping -c 1 {address} ")
     id_pattern = r"\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}"
     address = m.group() if (m := re.search(id_pattern, ping)) is not None else "Unknown"
-    print(f"\tGot IP: {address}")
     return address
 
 
@@ -123,7 +121,7 @@ def main():
 
     nodes = []
 
-    print(f"There are {len(id_node_list)} nodes")
+    print(f"Analyzing {len(id_node_list)} nodes...")
     for _ in id_node_list:
         nodes_fields = get_node_info(_)["value"]["fields"]
 
@@ -146,7 +144,7 @@ def main():
 
         nodes.append(nodes_data)
 
-    print("Done iterating\n")
+    print("\tDone.")
 
     roles = {
         "3": "execution",
@@ -158,19 +156,46 @@ def main():
 
     nodes_df = pd.DataFrame(nodes)
 
-    print(nodes_df["networkingAddress"])
+    print("\nou Transforming dataframe result. This may take several minutes...")
     nodes_df["role"] = nodes_df["role"].apply(lambda x: roles[x])
     nodes_df["ip_address"] = nodes_df["networkingAddress"].apply(
         lambda x: get_ip_address(x.split(":")[0])
     )
 
+    print("\tDone.")
     result = nodes_df.groupby("ip_address").apply(group_to_dict).tolist()
+    
+    ## NOTE: we want this format output
+    # {
+    # "timestamp": <str> # When was the analysis last ran
+    # "collection_method": <str>, <"crawl" for nodes manually crawled, or "api" for IPs found via the chain RPC API>
+    # "chain_data": {Any other information to add about the chain},
+    # "nodes": {
+    #     <IP Address> : {
+    #         "is_validator": <bool>, #Differentiate between RPC nodes and validator nodes.
+    #         "stake": <int>, #Stake of the validator or null if RPC node.
+    #         "address": <string>, #On-chain address of the validator.
+    #         "extra_info": {
+    #             <Any other info you want to add that may be useful in processing (validator name, skip rate, etc)>
+    #         }
+    #     },
+    #     <IP Address 2> : {},
+    #     <IP Address 3> : {},
+    #     .
+    #     .
+    # }}
+
     today = datetime.today().strftime("%Y-%m-%d")
-    print(result)
-    result["timestamp"] = today
+    
+    dict_result = {
+        "timestamp": today,
+        "collection_method": "api",
+        "chain_data": {},
+        "nodes": {list(node)[0]: node[list(node)[0]] for node in result}
+    }
 
     with open(f"flow_output_{today}.json", "w") as f:
-        json.dump(result, f, indent=4, ensure_ascii=False)
+        json.dump(dict_result, f, indent=4, ensure_ascii=False)
         f.close()
 
 
