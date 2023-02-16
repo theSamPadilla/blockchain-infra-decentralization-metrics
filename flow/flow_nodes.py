@@ -146,18 +146,15 @@ def main():
 
     print("\tDone.")
 
-    roles = {
-        "3": "execution",
-        "2": "consensus",
-        "1": "collection",
-        "4": "verification",
-        "5": "access",
-    }
+    #Get role settings (key and minimums) from config file
+    with open("config/FlowConfig.json", "r") as f:
+        roles_settings = json.load(f)
+        f.close()
 
     nodes_df = pd.DataFrame(nodes)
 
-    print("\nou Transforming dataframe result. This may take several minutes...")
-    nodes_df["role"] = nodes_df["role"].apply(lambda x: roles[x])
+    print("\nTransforming dataframe result. This may take several minutes...")
+    nodes_df["role"] = nodes_df["role"].apply(lambda x: roles_settings["role_map"][x])
     nodes_df["ip_address"] = nodes_df["networkingAddress"].apply(
         lambda x: get_ip_address(x.split(":")[0])
     )
@@ -165,36 +162,32 @@ def main():
     print("\tDone.")
     result = nodes_df.groupby("ip_address").apply(group_to_dict).tolist()
     
-    ## NOTE: we want this format output
-    # {
-    # "timestamp": <str> # When was the analysis last ran
-    # "collection_method": <str>, <"crawl" for nodes manually crawled, or "api" for IPs found via the chain RPC API>
-    # "chain_data": {Any other information to add about the chain},
-    # "nodes": {
-    #     <IP Address> : {
-    #         "is_validator": <bool>, #Differentiate between RPC nodes and validator nodes.
-    #         "stake": <int>, #Stake of the validator or null if RPC node.
-    #         "address": <string>, #On-chain address of the validator.
-    #         "extra_info": {
-    #             <Any other info you want to add that may be useful in processing (validator name, skip rate, etc)>
-    #         }
-    #     },
-    #     <IP Address 2> : {},
-    #     <IP Address 3> : {},
-    #     .
-    #     .
-    # }}
-
+    #Prepare final dict
     today = datetime.today().strftime("%Y-%m-%d")
-    
     dict_result = {
         "timestamp": today,
         "collection_method": "api",
-        "chain_data": {},
+        "chain_data": {"role_requirements": roles_settings["minimum_requirements"]},
         "nodes": {list(node)[0]: node[list(node)[0]] for node in result}
     }
 
-    with open(f"flow_output_{today}.json", "w") as f:
+    #Add activity metric and final edits to each node.
+    for ip, node in dict_result["nodes"].items():
+        role = node["extra_info"]["role"]
+        stake = int(float(node["stake"]))
+        node["extra_info"]["is_active"] = False
+        if stake >= roles_settings["minimum_requirements"][role]:
+            node["extra_info"]["is_active"] = True
+
+        #Update address and domain
+        node["extra_info"]["domain"] = node["address"]
+        node["address"] = node["extra_info"]["id"]
+
+    with open("config/SettingsConfig.json", "r") as f:
+        output_folder = json.load(f)["output_folder"]
+        f.close()
+        
+    with open(f"{output_folder}flow.json", "w") as f:
         json.dump(dict_result, f, indent=4, ensure_ascii=False)
         f.close()
 
