@@ -65,7 +65,7 @@ class Blockchain:
         print("\tDone.", flush=True)
 
     def SaveProviderDistribution(self):
-        path = "{base}/{output}/{target}/network/ProviderDistribution_{time}.json".format(base=BASE_DIR, output=OUTPUT_FOLDER, target=self.target, time=str(datetime.now().strftime("%m-%d-%Y_%H:%M")))
+        path = "{base}/{output}/{target}/network/ProviderDistribution_{time}.json".format(base=BASE_DIR, output=OUTPUT_FOLDER, target=self.target, time=str(datetime.today().strftime("%m-%d-%Y")))
         to_write = {
             'Analysis Date': self.analysisDate,
             'Total Nodes': self.totalNodes,
@@ -79,7 +79,89 @@ class Blockchain:
         with open(path, "w") as f:
             json.dump(to_write, f, indent=4, default=str)
             f.close()
+
+#Create inherited class
+class Flow(Blockchain):
+    def __init__(self, target, analysis_date):
+        super().__init__(target)
+        self.analysisDate = analysis_date
+
+        #Flow specific variables
+        self.totalStake = {"active": 0, "total": 0}
+        self.executionNodes = {"active": 0, "total": 0}
+        self.consensusNodes = {"active": 0, "total": 0}
+        self.collectionNodes = {"active": 0, "total": 0}
+        self.verificationNodes = {"active": 0, "total": 0}
+        self.accessNodes = {"active": 0, "total": 0}
+        self.totalInactiveNodes = 0
     
+        #Main Data Strucutre
+        self.providersData = {
+            "Other": {"Execution Nodes": {"active": 0, "total": 0}, "Consensus Nodes": {"active": 0, "total": 0}, "Collection Nodes": {"active": 0, "total": 0}, "Verification Nodes": {"active": 0, "total": 0}, "Access Nodes": {"active": 0, "total": 0}, "Total Stake": {"active": 0, "total": 0}, "Total Nodes": 0, "Total Inactive Nodes": 0},
+            "Unidentified": {"Execution Nodes": {"active": 0, "total": 0}, "Consensus Nodes": {"active": 0, "total": 0}, "Collection Nodes": {"active": 0, "total": 0}, "Verification Nodes": {"active": 0, "total": 0}, "Access Nodes": {"active": 0, "total": 0}, "Total Stake": {"active": 0, "total": 0}, "Total Nodes": 0, "Total Inactive Nodes": 0}
+        }
+
+    def ReturnNodeTypeQuantities(self, role):
+        buff = {"execution": self.executionNodes,
+        "consensus": self.consensusNodes,
+        "collection": self.collectionNodes, 
+        "verification": self.verificationNodes, 
+        "access": self.accessNodes}
+        return buff[role]
+
+
+    #Overwrite percentages
+    def CalculatePercentages(self, target_ips):
+        print("\tCalculating Provider Percentages.", flush=True)
+        for provider in self.providersData:
+            stake = self.providersData[provider]["Total Stake"]["total"]
+            execution = self.providersData[provider]["Execution Nodes"]
+            collection = self.providersData[provider]["Collection Nodes"]
+            consensus = self.providersData[provider]["Consensus Nodes"]
+            verification = self.providersData[provider]["Verification Nodes"]
+            access = self.providersData[provider]["Access Nodes"]
+            total = self.providersData[provider]["Total Nodes"]
+            active = total - self.providersData[provider]["Total Inactive Nodes"]
+
+            #Active
+            self.providersData[provider]["Percentage of Active Execution Nodes"] = execution["active"] * 100 / self.executionNodes["active"]
+            self.providersData[provider]["Percentage of Active Collection Nodes"] = collection["active"] * 100 / self.collectionNodes["active"]
+            self.providersData[provider]["Percentage of Active Consensus Nodes"] = consensus["active"] * 100 / self.consensusNodes["active"]
+            self.providersData[provider]["Percentage of Active Verification Nodes"] = verification["active"] * 100 / self.verificationNodes["active"]
+            self.providersData[provider]["Percentage of Active Access Nodes"] = access["active"] * 100 / self.accessNodes["active"]
+            
+            #Total
+            self.providersData[provider]["Percentage of Total Execution Nodes"] = execution["total"] * 100 / self.executionNodes["total"]
+            self.providersData[provider]["Percentage of Total Collection Nodes"] = collection["total"] * 100 / self.collectionNodes["total"]
+            self.providersData[provider]["Percentage of Total Consensus Nodes"] = consensus["total"] * 100 / self.consensusNodes["total"]
+            self.providersData[provider]["Percentage of Total Verification Nodes"] = verification["total"] * 100 / self.verificationNodes["total"]
+            self.providersData[provider]["Percentage of Total Access Nodes"] = access["total"] * 100 / self.accessNodes["total"]
+
+            #General
+            self.providersData[provider]["Percentage of Total Stake"] = stake * 100 / self.totalStake["active"]
+            self.providersData[provider]["Percentage of Active Nodes"] = active * 100 / (self.totalNodes - self.totalInactiveNodes)
+            self.providersData[provider]["Percentage of Total Nodes"] = total * 100 / self.totalNodes
+
+
+        print("\tDone.", flush=True)
+
+    def SaveProviderDistribution(self):
+        path = "{base}/{output}/{target}/network/ProviderDistribution_{time}.json".format(base=BASE_DIR, output=OUTPUT_FOLDER, target=self.target, time=str(datetime.today().strftime("%m-%d-%Y")))
+        to_write = {
+            'Analysis Date': self.analysisDate,
+            'Total Nodes': self.totalNodes,
+            'Inactive Nodes': self.totalInactiveNodes,
+            'Total Active Nodes': (self.totalNodes - self.totalInactiveNodes),
+            'Total Stake': self.totalStake["total"],
+            'Inactive Stake': self.totalStake["total"] - self.totalStake["total"],
+            'Provider Distribution': self.providersData
+        }
+
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        with open(path, "w") as f:
+            json.dump(to_write, f, indent=4, default=str)
+            f.close()
+
 class Provider:
     def __init__(self, short, provider, target_chain):
         #Info
@@ -108,7 +190,7 @@ class Provider:
                 if not node_info['stake']:
                     stake = 0
                 else:
-                    stake = int(node_info['stake'])
+                    stake = int(float(node_info['stake']))              
                 self.cumulativeStake += stake
             
             #Non validator node
@@ -136,7 +218,9 @@ class Provider:
         print("\tDone.", flush=True)
 
     def SaveNodeJSONInfo(self):
-        path = "{base}/{output}/{target}/providers/{provider}_Nodes_{time}.json".format(base=BASE_DIR, output=OUTPUT_FOLDER, target=self.target_chain, provider=self.provider, time=str(datetime.now().strftime("%m-%d-%Y_%H:%M")))
+        path = "{base}/{output}/{target}/providers/{provider}_Nodes_{time}.json".format(base=BASE_DIR, output=OUTPUT_FOLDER, target=self.target_chain, provider=self.provider, time=str(datetime.today().strftime("%m-%d-%Y")))
+        #Catch for flow
+        stake = BLOCKCHAIN_OBJ.totalStake if BLOCKCHAIN_OBJ.target != "flow" else BLOCKCHAIN_OBJ.totalStake["total"]
         to_write = {
             'Analysis Date': self.analysisDate,
             'Total Nodes': len(self.nodeDict),
@@ -145,7 +229,7 @@ class Provider:
             'Monitoring since date': self.objectCreationDate,
             'Analysis Date': date.today().strftime("%m-%d-%Y"),
             'Cumulative stake': self.cumulativeStake,
-            'Percentage of total stake': (self.cumulativeStake * 100) / BLOCKCHAIN_OBJ.totalStake, 
+            'Percentage of total stake': (self.cumulativeStake * 100) / stake, 
             'Nodes': self.nodeDict
         }
 
@@ -246,11 +330,98 @@ def GetNetworkProviderDistribution(providers_to_track: dict, short_to_object_map
         f.close()
 
     # Update blockchain object analysisDate
-    BLOCKCHAIN_OBJ.analysisDate = json_analysis["timestamp"] #This is purely for human-readability, no need to be date type.
+    analysisDate = json_analysis["timestamp"] #This is purely for human-readability, no need to be date type.
+    BLOCKCHAIN_OBJ.analysisDate = analysisDate
     target_ips = json_analysis["nodes"]
 
     print("\n\nAnalyzing %d Nodes. This may take a few minutes..." % len(target_ips), flush=True)
 
+    #Delegate the flow runs to appropriate object
+    if target_blockchain == "flow":
+        GetFlowNetworkProviderDistribution(providers_to_track, short_to_object_map, target_blockchain, target_ips, analysisDate)
+    else:
+        GetGeneralNetworkProviderDistribution(providers_to_track, short_to_object_map, target_blockchain, target_ips)
+
+    print("Done.", flush=True)
+
+def GetFlowNetworkProviderDistribution(providers_to_track: dict, short_to_object_map: dict, target_blockchain: str, target_ips: dict, analysisDate: str):
+    #Overwrite global BLOCKCHAIN_OBJ variable to Flow() class
+    global BLOCKCHAIN_OBJ
+    BLOCKCHAIN_OBJ = Flow(target_blockchain, analysisDate)
+    
+    #Iterate over all IP addresses
+    for ip, node_info in target_ips.items():
+        #Nest the Network object building in a try/except
+        try:
+            #Build Network objects and set variables
+            net = Net(ip)
+            obj = IPASN(net)
+            results = obj.lookup()
+            asn = results['asn']
+            provider_name = "Other" #Set provider name as Other. Will get overwritten for relevant providers defined in the file
+        except Exception as e:
+            #Capture unespecified IPs and set None asn
+            BLOCKCHAIN_OBJ.unidentifiedIPs[ip] = target_ips[ip]
+            print("\t[WARN] - Undefined IP: %s for %s" % (e, ip), flush=True)
+            asn = None
+            provider_name = "Unidentified"
+        
+        #If the ASN is in the ASN lookup, overwrite provider
+        if asn in PROVIDER_ASN_LOOKUP:
+            provider_name = PROVIDER_ASN_LOOKUP[results['asn']]['provider']
+            
+            #Create entry if provider hasn't yet been seen
+            if provider_name not in BLOCKCHAIN_OBJ.providersData:
+                BLOCKCHAIN_OBJ.providersData[provider_name] = {
+                    "Execution Nodes": {"active": 0, "total": 0},
+                    "Consensus Nodes": {"active": 0, "total": 0},
+                    "Collection Nodes": {"active": 0, "total": 0},
+                    "Verification Nodes": {"active": 0, "total": 0},
+                    "Access Nodes": {"active": 0, "total": 0},
+                    "Total Stake": {"active": 0, "total": 0},
+                    "Total Nodes": 0,
+                    "Total Inactive Nodes": 0
+                }
+
+            #Catch the providers_to_track nodes and save them to the object
+            if provider_name in providers_to_track.values():
+                short = list(providers_to_track.keys())[list(providers_to_track.values()).index(provider_name)]
+                short_to_object_map[short].SaveProviderNode(ip, node_info)
+
+        #Identify role parameter, stake, and key name
+        role = node_info["extra_info"]["role"]
+        role_param = BLOCKCHAIN_OBJ.ReturnNodeTypeQuantities(role)
+        stake = 0 if not node_info["stake"] else int(float(node_info["stake"]))
+        key_name = f"{role.capitalize()} Nodes"
+
+        #Check if it meets requirements and add to general and provider stake
+        if node_info["extra_info"]["is_active"]:
+            role_param["active"] += 1
+            BLOCKCHAIN_OBJ.totalStake["active"] += stake
+
+            #Provider data
+            BLOCKCHAIN_OBJ.providersData[provider_name][key_name]["active"] += 1
+            BLOCKCHAIN_OBJ.providersData[provider_name]["Total Stake"]["active"] += stake
+        
+        #Else sum inactive nodes to provider dict and blockchain object
+        else:
+            BLOCKCHAIN_OBJ.providersData[provider_name]['Total Inactive Nodes'] += 1
+            BLOCKCHAIN_OBJ.totalInactiveNodes += 1
+
+        #Add to general and provider totals
+        role_param["total"] += 1
+        BLOCKCHAIN_OBJ.totalStake["total"] += stake
+        BLOCKCHAIN_OBJ.totalNodes += 1
+
+        #Provider data
+        BLOCKCHAIN_OBJ.providersData[provider_name][key_name]["total"] += 1
+        BLOCKCHAIN_OBJ.providersData[provider_name]["Total Stake"]["total"] += stake
+        BLOCKCHAIN_OBJ.providersData[provider_name]["Total Nodes"] += 1
+
+    #Calculate the percentages after a full analysis
+    BLOCKCHAIN_OBJ.CalculatePercentages(target_ips)
+
+def GetGeneralNetworkProviderDistribution(providers_to_track: dict, short_to_object_map: dict, target_blockchain: str, target_ips: dict):
     #Iterate over all IP addresses
     for ip, node_info in target_ips.items():
         #!TODO
@@ -291,10 +462,7 @@ def GetNetworkProviderDistribution(providers_to_track: dict, short_to_object_map
 
         #If it is validator (eve if unidentified), sum validator and stake to provider dict and blockchain object.
         if node_info["is_validator"]:
-            if not node_info["stake"]: #Catch null stake entries for validators
-                stake = 0
-            else:
-                stake = int(node_info["stake"])
+            stake = 0 if not node_info["stake"] else int(node_info["stake"])
             BLOCKCHAIN_OBJ.providersData[provider_name]['Total Validators'] += 1
             BLOCKCHAIN_OBJ.providersData[provider_name]['Total Stake'] += stake
             BLOCKCHAIN_OBJ.totalStake += stake
@@ -311,9 +479,6 @@ def GetNetworkProviderDistribution(providers_to_track: dict, short_to_object_map
 
     #Calculate the percentages after a full analysis
     BLOCKCHAIN_OBJ.CalculatePercentages(target_ips)
-
-    print("Done.", flush=True)
-
 
 ## Usage Functions ##
 def PrintCompletion(short_to_object_map, target):   
