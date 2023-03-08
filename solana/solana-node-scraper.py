@@ -162,7 +162,7 @@ class SolanaCLI:
         print("\tDone.", flush=True)
 
     def SaveProviderDistribution(self):
-        time = str(datetime.now().strftime("%m-%d-%Y_%H:%M"))
+        time = str(datetime.today().strftime("%m-%d-%Y"))
         path = f"{OUTPUT_FOLDER}/network/ProviderDistribution_{time}.json"
         to_write = {
             'Analysis Date': time,
@@ -266,7 +266,7 @@ class Provider:
         print("\tDone.", flush=True)
 
     def SaveNodeJSONInfo(self):
-        time = str(datetime.now().strftime("%m-%d-%Y_%H:%M"))
+        time = str(datetime.today().strftime("%m-%d-%Y"))
         path = f"{OUTPUT_FOLDER}/providers/{self.provider}_Nodes_{time}.json"
         to_write = {
             'Analysis date:': time,

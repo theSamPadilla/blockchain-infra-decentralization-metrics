@@ -18,6 +18,7 @@
 to-do.md
 misc/
 memory/
+ethereum/
 
 # Specific Directories
 .vscode/
@@ -28,6 +29,7 @@ cosmos/analysis/info/
 cosmos/db/tmcrawl.db/
 solana/config/
 solana/memory/
+flow/config/SettingsConfig.json
 
 # Output directories
 results/

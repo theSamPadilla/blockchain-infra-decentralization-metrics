@@ -48,3 +48,6 @@ The tool takes 1 mandatory parameter and 2 optional parameters in the following 
 - `--output` -> Prints an overview of the results upon completion.
 
 - `--help` -> Prints this message.
+
+## Things to note
+1. Criteria for `active` in flow is defined by those nodes whose stake is lower than the minimum specified requirement for that node role - as per [Flow's documentation](https://developers.flow.com/nodes/node-operation/node-roles).
