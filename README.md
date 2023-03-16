@@ -20,7 +20,7 @@ The output should be a JSON objects in the following format:
     "timestamp": <str> # When was the analysis last ran
     "collection_method": <str>, <"crawl" for nodes manually crawled, or "api" for IPs found via the chain RPC API>
     "chain_data": {Any other information to add about the chain},
-    "nodes": [
+    "nodes": {
         <IP Address> : {
             "is_validator": <bool>, #Differentiate between RPC nodes and validator nodes.
             "stake": <int>, #Stake of the validator or null if RPC node.
@@ -33,17 +33,20 @@ The output should be a JSON objects in the following format:
         <IP Address 3> : {},
         .
         .
-    ]
+    }
 }
 ```
 
 ## Usage
 The tool takes 1 mandatory parameter and 2 optional parameters in the following format:
 
-- **[MANDATORY]** `--blockchain=[value]` -> Defines the target blockchain. There must exist a file in the `json/` directory (without the `.json` extension) matching `[value]`.
+- **[MANDATORY]** `--blockchain=[value]` -> Defines the target blockchain. There must exist a file in the `json/` directory matching `[value]` (i.e. `[value].json`).
 
-- `--providers=[val1],[val2]` -> Defines the providers for which to track nodes, based on the config/ProviderConfig.json.
-    Only accepted values are the "short" attribute defined for each ASN in the ProviderConfig.json. See below for the format of the ProviderConfig file.
+- `--providers=[val1],[val2]` -> Defines the providers for which to track nodes, based on the `config/ProviderConfig.json`.
+    Only accepted values are the "short" attribute defined for each ASN in the `ProviderConfig.json`. See below for the format of the `ProviderConfig.json` file.
+
+- `--countries=[val1],[val2]` -> Defines the countries for which to track nodes, based on the ISO Alpha-2 country code convention.
+    Only accepted values are the ISO Alpha-2 country code. A table of each country code to its respective country can be found at `config/CountryConfig.json`.
 
 - `--output` -> Prints an overview of the results upon completion.
 
