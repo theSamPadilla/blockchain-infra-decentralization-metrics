@@ -19,16 +19,17 @@ to-do.md
 misc/
 memory/
 ethereum/
+lib/
 
-# Specific Directories
+# Specific Directories or files
 .vscode/
 cosmos/tmcrawl.toml
 cosmos/analysis/*.json
 cosmos/analysis/results/
 cosmos/analysis/info/
 cosmos/db/tmcrawl.db/
-solana/config/
-solana/memory/
+solana/config/SettingsConfig.json
+cardano/config/SettingsConfig.json
 flow/config/SettingsConfig.json
 
 # Output directories
@@ -36,4 +37,3 @@ results/
 json/
 cardano/output/
 avalanche/output/
-solana/output/

@@ -12,7 +12,12 @@ from datetime import datetime
 import os
 
 
-BLOCKFROST_PROJECT = os.environ.get("BLOCKFROST_PROJECT")
+with open("config/SettingsConfig.json", "r") as f:
+    buff = json.load(f)
+    BLOCKFROST_PROJECT = buff["blackfrost_project"]
+    OUTPUT_FOLDER = buff["output_folder"]
+    f.close()
+
 if BLOCKFROST_PROJECT is None:
     print("BLOCKFROST_PROJECT env var not set")
     exit(1)
@@ -186,6 +191,6 @@ if __name__ == "__main__":
 
     # save to json
     today = datetime.today().strftime("%Y-%m-%d")
-    with open(f'output/cardano-validators-{today}.json', 'w') as f:
-        json.dump(validators_dict, f)
-    print(validators_dict)
+    with open(f'{OUTPUT_FOLDER}/cardano.json', 'w') as f:
+        json.dump(validators_dict, f, indent=4)
+    print(f"Done. Check {OUTPUT_FOLDER}")
