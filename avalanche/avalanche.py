@@ -44,7 +44,7 @@ def get_validators() -> pd.DataFrame:
         df = pd.concat([df, tmp_df], axis=0)
 
     # unpack everything
-    df["address"] = df["beneficiaries"].apply(lambda x: x[0])
+    df["address"] = df["beneficiaries"].apply(lambda x: x[0] if len(x) > 0 else x)
     df["ip"] = df["node"].apply(lambda x: x.get("ip","unknown"))
     df["stake"] = df["stake"].apply(lambda x: x["total"]) # NOTE: need to scale
     df["is_validator"] = True
@@ -58,20 +58,6 @@ def main() -> Dict:
     # Get validators
     validators = get_validators()
 
-    # NOTE: we want this format output
-    #[
-    #    {
-    #        <IP Address> : {
-    #            "is_validator": <bool> #Differentiate between RPC nodes and validator nodes.
-    #            "stake": <int> #Stake of the validator or null if RPC node.
-    #            "address": <string> #On-chain address of the validator.
-    #            "extra_info": {
-    #                <Any other info you want to add that may be useful in processing (validator name, skip rate, etc)>
-    #            }
-    #        }
-    #    }
-    #]
-
     # drop validators where ip = 'unkown'
     validators = validators[validators['ip'] != 'unknown']
     validators_dict = validators.set_index('ip').T.to_dict()
@@ -83,6 +69,40 @@ if __name__ == "__main__":
 
     # save to json
     today = datetime.today().strftime("%Y-%m-%d")
-    with open(f'output/avalanche-validators-{today}.json', 'w') as f:
-        json.dump(validators_dict, f)
-    print(validators_dict)
+
+    with open("config/SettingsConfig.json", "r") as f:
+        buff = json.load(f)
+        OUTPUT_FOLDER = buff["output_folder"]
+        f.close()
+
+    # NOTE: we want this format output
+    # {
+    # "timestamp": <str> # When was the analysis last ran
+    # "collection_method": <str>, <"crawl" for nodes manually crawled, or "api" for IPs found via the chain RPC API>
+    # "chain_data": {Any other information to add about the chain},
+    # "nodes": {
+    #     <IP Address> : {
+    #         "is_validator": <bool>, #Differentiate between RPC nodes and validator nodes.
+    #         "stake": <int>, #Stake of the validator or null if RPC node.
+    #         "address": <string>, #On-chain address of the validator.
+    #         "extra_info": {
+    #             <Any other info you want to add that may be useful in processing (validator name, skip rate, etc)>
+    #         }
+    #     },
+    #     <IP Address 2> : {},
+    #     <IP Address 3> : {},
+    #     .
+    #     .
+    # }}
+
+    result = {
+        "timestamp": today,
+        "collection_method": "api",
+        "chain_data": {},
+        "nodes": validators_dict
+    }
+
+
+    with open(f'{OUTPUT_FOLDER}/avalanche.json', 'w') as f:
+        json.dump(result, f, indent=4)
+    print(f"Done. Check {OUTPUT_FOLDER}")
