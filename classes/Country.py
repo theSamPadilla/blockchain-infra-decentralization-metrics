@@ -24,7 +24,10 @@ class Country:
 
         #Historic Data
         self.objectCreationDate = date.today().strftime("%m-%d-%Y")
-        
+    
+    def UpdateAnalysisDate(self, analysisDate: str):
+        self.analysisDate = analysisDate
+
     def SaveCountryNode(self, ip: str, node_info: dict):   
         #Save only new ndoes
         if ip not in self.nodeDict:

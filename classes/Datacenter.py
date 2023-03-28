@@ -7,8 +7,8 @@ class Datacenter:
         self.country_code = country_code
         self.city = city
         self.region = region
-        self.latitude = latitude
-        self.longitude = longitude
+        self.latitude = float(latitude)
+        self.longitude = float(longitude)
         self.provider = provider
         
         #Counts
