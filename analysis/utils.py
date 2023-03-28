@@ -1,5 +1,6 @@
 from ipwhois.net import Net
 from ipwhois.asn import IPASN
+import ipinfo #type: ignore
 
 import config.globals
 from classes.Blockchain import Blockchain
@@ -24,17 +25,19 @@ def IpAsnLookup(ip: str, target_ips: dict, blockchain_obj: Blockchain) -> tuple:
 
     return asn, provider_name
 
-def IpGeoLookup(ip: str, target_ips: dict, blockchain_obj: Blockchain) -> list:
+def IpGeoLookup(ip: str, target_ips: dict, blockchain_obj: Blockchain, ip_handler: ipinfo.Handler) -> list:
     #Nest the IP geo lookup under a try/catch
     try:
-        r = config.globals.GEO_DB.get_all(ip)
-        country = config.globals.COUNTRY_NAME_LOOKUP[r.country_short]
-        result = [country, r.country_short, r.city, r.region, r.latitude, r.longitude]
-        print("\t[INFO] Succesful IP geo lookup.")
+        #Set Ipinfo handler
+        ip_handler = ipinfo.getHandler(config.globals.IPINFO_TOKEN)
+        r = ip_handler.getDetails(ip).all
+        country = config.globals.COUNTRY_NAME_LOOKUP[r["country"]]
+        result = [country, r["country"], r["city"], r["region"], r["latitude"], r["longitude"], r["continent"]["name"]]
+        print("\t[INFO] Succesful geolookup")
     except Exception as e:
         blockchain_obj.unidentifiedLocations[ip] = target_ips[ip]
         print("\t[WARN] - Error performing IP geo lookup: %s for %s" % (e, ip), flush=True)
-        result = ["Unidentified", "Unidentified", "Unidentified", "Unidentified", 0, 0]
+        result = ["Unidentified", "Unidentified", "Unidentified", "Unidentified", 0, 0, "Unidentified"]
 
     return result
 
@@ -73,15 +76,31 @@ def ProviderAnalysis(providers_to_track: dict, asn:str, ip:str, node_info:dict, 
     #Returns overwritten result if found
     return provider_name
 
-def CountryAnalysis(countries_to_track: dict, country: str, country_code:str, city:str, ip:str, node_info:dict, countries_short_to_object_map:dict, blockchain_obj: Blockchain):
-    #Create entry for country if it hasn't yet been seen
-    if country not in blockchain_obj.countriesData:
-        blockchain_obj.countriesData[country] = {
-                "Total Non-Validator Nodes": 0,
-                "Total Validators": 0,
-                "Total Nodes": 0,
-                "Total Stake": 0
+def CountryAnalysis(countries_to_track: dict, continent: str, country: str, country_code:str, city:str, ip:str, node_info:dict, countries_short_to_object_map:dict, blockchain_obj: Blockchain):
+    #Create entry for country inside of the appropriave continent if it hasn't yet been seen
+    if continent not in blockchain_obj.continentData:
+        blockchain_obj.continentData[continent] = {
+            "Total Non-Validator Nodes": 0,
+            "Total Validators": 0,
+            "Total Nodes": 0,
+            "Total Stake": 0,
+            "Countries": {
+                country: {
+                    "Total Non-Validator Nodes": 0,
+                    "Total Validators": 0,
+                    "Total Nodes": 0,
+                    "Total Stake": 0
+                }
+            }
         }
+    #Create entry for country inside continent if not yet seen
+    elif country not in blockchain_obj.continentData[continent]["Countries"]:
+            blockchain_obj.continentData[continent]["Countries"][country] = {
+                    "Total Non-Validator Nodes": 0,
+                    "Total Validators": 0,
+                    "Total Nodes": 0,
+                    "Total Stake": 0
+            }
 
     #Catch the countries_to_track nodes, add city, and save them to country object
     if country_code in countries_to_track:

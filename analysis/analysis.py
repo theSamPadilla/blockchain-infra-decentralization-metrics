@@ -1,4 +1,5 @@
 import json
+import ipinfo #type: ignore
 from ipwhois.net import Net
 from ipwhois.asn import IPASN
 
@@ -110,37 +111,45 @@ def GetFlowNetworkProviderDistribution(providers_to_track: dict, countries_to_tr
     return blockchain_obj
 
 def GetGeneralNetworkProviderDistribution(providers_to_track: dict, countries_to_track: dict, providers_short_to_object_map: dict, countries_short_to_object_map: dict, target_ips: dict, blockchain_obj: Blockchain):
+    #Set Ipinfo handler
+    ip_handler = ipinfo.getHandler(config.globals.IPINFO_TOKEN)
+    
     #Iterate over all IP addresses
     for ip, node_info in target_ips.items():
         #IP ASN Lookup
         asn, provider_name = IpAsnLookup(ip, target_ips, blockchain_obj)
         #IP Geolookup
-        country, country_code, city, region, latitude, longitude = [i for i in IpGeoLookup(ip, target_ips, blockchain_obj)]
+        country, country_code, city, region, latitude, longitude, continent = [i for i in IpGeoLookup(ip, target_ips, blockchain_obj, ip_handler)]
 
         #Perform Analysis
         provider_name = ProviderAnalysis(providers_to_track, asn, ip, node_info, providers_short_to_object_map, country, country_code, city, region, latitude, longitude, provider_name, blockchain_obj)
-        CountryAnalysis(countries_to_track, country, country_code, city, ip, node_info, countries_short_to_object_map, blockchain_obj)
+        CountryAnalysis(countries_to_track, continent, country, country_code, city, ip, node_info, countries_short_to_object_map, blockchain_obj)
 
         #If it is validator (even if unidentified), sum validator and stake to provider dict and blockchain object.
         if node_info["is_validator"]:
             stake = 0 if not node_info["stake"] else int(node_info["stake"])
             blockchain_obj.providersData[provider_name]['Total Validators'] += 1
             blockchain_obj.providersData[provider_name]['Total Stake'] += stake
-            blockchain_obj.countriesData[country]['Total Validators'] += 1
-            blockchain_obj.countriesData[country]['Total Stake'] += stake
+            blockchain_obj.continentData[continent]['Total Validators'] += 1
+            blockchain_obj.continentData[continent]['Total Stake'] += stake
+            blockchain_obj.continentData[continent]["Countries"][country]['Total Validators'] += 1
+            blockchain_obj.continentData[continent]["Countries"][country]['Total Stake'] += stake
+
             blockchain_obj.totalStake += stake
             blockchain_obj.totalValidators += 1
         
         #Else just sum RPC to provider dict and blockchain object
         else:
             blockchain_obj.providersData[provider_name]['Total Non-Validator Nodes'] += 1
-            blockchain_obj.countriesData[country]['Total Non-Validator Nodes'] += 1
+            blockchain_obj.continentData[country]['Total Non-Validator Nodes'] += 1
+            blockchain_obj.continentData[continent]["Countries"][country]['Total Non-Validator Nodes'] += 1
             blockchain_obj.totalNonValidatorNodes += 1
 
         #Add another node to the network and to the provider
         blockchain_obj.totalNodes += 1
         blockchain_obj.providersData[provider_name]['Total Nodes'] += 1
-        blockchain_obj.countriesData[country]['Total Nodes'] += 1
+        blockchain_obj.continentData[continent]['Total Nodes'] += 1
+        blockchain_obj.continentData[continent]["Countries"][country]['Total Nodes'] += 1
 
     #Calculate the percentages after a full analysis
-    blockchain_obj.CalculatePercentages(target_ips)
+    blockchain_obj.CalculatePercentages()

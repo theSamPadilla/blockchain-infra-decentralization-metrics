@@ -3,6 +3,7 @@ import pickle
 from datetime import date, datetime
 
 import config.globals
+from classes.dict_initial_values import providers_init, location_init
 
 class Blockchain:
     def __init__(self, target):
@@ -15,9 +16,9 @@ class Blockchain:
         self.unidentifiedASNs = {}
         self.unidentifiedLocations = {}
 
-        #Main Data Strucutres
-        self.providersData = {"Other": {"Total Non-Validator Nodes": 0, "Total Validators": 0, "Total Nodes": 0, "Total Stake": 0}, "Unidentified": {"Total Non-Validator Nodes": 0, "Total Validators": 0, "Total Nodes": 0, "Total Stake": 0}} #*Data on rpc, validators, and stake per main provider.
-        self.countriesData = {"Unidentified": {"Total Non-Validator Nodes": 0, "Total Validators": 0, "Total Nodes": 0, "Total Stake": 0}} #Note: There is no other, tracking all countries
+        #Main Data Strucutre initializers
+        self.providersData = providers_init
+        self.continentData = location_init
 
         #Set object creation date and analysis date
         self.objectCreationDate = date.today().strftime("%m-%d-%Y")
@@ -32,9 +33,9 @@ class Blockchain:
             f.close()
         print("\tDone.", flush=True)
 
-    def CalculatePercentages(self, target_ips):
-        print("\n\tCalculating Provider and Country Percentages.", flush=True)
-        for dic in [self.providersData, self.countriesData]:
+    def CalculatePercentages(self):
+        print("\n\tCalculating Provider, Continent, and Country Percentages.", flush=True)
+        for dic in [self.providersData, self.continentData]:
             for i in dic:
                 stake = dic[i]["Total Stake"]
                 rpc = dic[i]["Total Non-Validator Nodes"]
@@ -45,6 +46,20 @@ class Blockchain:
                 if self.totalNonValidatorNodes: dic[i]["Percentage of Non-Validator Nodes"] = rpc * 100 / self.totalNonValidatorNodes
                 dic[i]["Percentage of Validators"] = validators * 100 / self.totalValidators
                 dic[i]["Percentage of Total Nodes"] = total * 100 / self.totalNodes
+            
+                #Get Country percentages
+                if "Countries" in i:
+                    for c in dic[i]["Countries"][c]:
+                        stake = dic[i]["Countries"][c]["Total Stake"]
+                        rpc = dic[i]["Countries"][c]["Total Non-Validator Nodes"]
+                        validators = dic[i]["Countries"][c]["Total Validators"]
+                        total = dic[i]["Countries"][c]["Total Nodes"]
+
+                        dic[i]["Countries"][c]["Percentage of Total Stake"] = stake * 100 / self.totalStake
+                        if self.totalNonValidatorNodes: dic[i]["Countries"][c]["Percentage of Non-Validator Nodes"] = rpc * 100 / self.totalNonValidatorNodes
+                        dic[i]["Countries"][c]["Percentage of Validators"] = validators * 100 / self.totalValidators
+                        dic[i]["Countries"][c]["Percentage of Total Nodes"] = total * 100 / self.totalNodes
+        
         print("\tDone.", flush=True)
 
     def SaveProviderDistribution(self):
@@ -56,7 +71,7 @@ class Blockchain:
             'Total Validator Nodes': self.totalValidators,
             'Total stake': self.totalStake,
             'Provider Distribution': self.providersData,
-            'Countries Distribution': self.countriesData
+            'Geographic Distribution': self.continentData
         }
 
         os.makedirs(os.path.dirname(path), exist_ok=True)
@@ -124,7 +139,6 @@ class Flow(Blockchain):
             self.providersData[provider]["Percentage of Total Stake"] = stake * 100 / self.totalStake["active"]
             self.providersData[provider]["Percentage of Active Nodes"] = active * 100 / (self.totalNodes - self.totalInactiveNodes)
             self.providersData[provider]["Percentage of Total Nodes"] = total * 100 / self.totalNodes
-
 
         print("\tDone.", flush=True)
 

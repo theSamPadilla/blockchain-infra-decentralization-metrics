@@ -37,3 +37,6 @@ results/
 json/
 cardano/output/
 avalanche/output/
+
+# Config
+config/keys.json
