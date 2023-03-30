@@ -24,9 +24,6 @@ class Provider:
         #Historic Data
         self.objectCreationDate = date.today().strftime("%m-%d-%Y")
     
-    def UpdateAnalysisDate(self, analysisDate: str):
-        self.analysisDate = analysisDate
-
     def UpdateTotals(self, ip: str, node_info: dict):   
         #Save only new ndoes
         if ip not in self.seenIPs:
@@ -63,7 +60,7 @@ class Provider:
         #Catch for flow
         stake = blockchain_obj.totalStake if blockchain_obj.target != "flow" else blockchain_obj.totalStake["total"]
         to_write = {
-            'Analysis Date': self.analysisDate,
+            'Analysis Date': blockchain_obj.analysisDate,
             'Total Nodes': self.GetTotalNodes(),
             'Validator Nodes': self.validatorCount,
             'Non-Validator Nodes': self.nonValidatorNodeCount,
@@ -72,7 +69,7 @@ class Provider:
             'Cumulative stake': self.cumulativeStake,
             'Percentage of total stake': (self.cumulativeStake * 100) / stake, 
             'Number of datacenters': len(self.datacenters),
-            'Datacenters': self.GetDataCenterNodes((self.cumulativeStake * 100) / stake)
+            'Datacenters': self.GetDataCenterNodes(self.cumulativeStake)
         }
 
         os.makedirs(os.path.dirname(path), exist_ok=True)

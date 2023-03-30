@@ -21,7 +21,6 @@ def LoadFromConfig():
 
 # Sets global variables used by all other files
 BASE_DIR = os.path.dirname(os.path.realpath(__main__.__file__))
-GEO_DB = IP2Location.IP2Location(os.path.join(f"{BASE_DIR}/lib/IP2Location-Python-master/data", "IP-COUNTRY-REGION-CITY-LATITUDE-LONGITUDE-ZIPCODE-TIMEZONE-ISP-DOMAIN-NETSPEED-AREACODE-WEATHER-MOBILE-ELEVATION-USAGETYPE-ADDRESSTYPE-CATEGORY-SAMPLE.BIN"))
 CONFIG_PATH = BASE_DIR + "/config/"
 OUTPUT_FOLDER = "results/"
 PROVIDER_ASN_LOOKUP, COUNTRY_NAME_LOOKUP, IPINFO_TOKEN = LoadFromConfig()

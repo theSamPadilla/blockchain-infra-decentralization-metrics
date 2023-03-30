@@ -3,7 +3,7 @@ import pickle
 from datetime import date, datetime
 
 import config.globals
-from classes.dict_initial_values import providers_init, location_init
+from classes.dict_initial_values import providers_init, location_init, providers_init_flow, location_init_flow
 
 class Blockchain:
     def __init__(self, target):
@@ -48,17 +48,17 @@ class Blockchain:
                 dic[i]["Percentage of Total Nodes"] = total * 100 / self.totalNodes
             
                 #Get Country percentages
-                if "Countries" in i:
-                    for c in dic[i]["Countries"][c]:
-                        stake = dic[i]["Countries"][c]["Total Stake"]
-                        rpc = dic[i]["Countries"][c]["Total Non-Validator Nodes"]
-                        validators = dic[i]["Countries"][c]["Total Validators"]
-                        total = dic[i]["Countries"][c]["Total Nodes"]
+                if "Countries" in dic[i]:
+                    for c in dic[i]["Countries"]:
+                        c_stake = dic[i]["Countries"][c]["Total Stake"]
+                        c_rpc = dic[i]["Countries"][c]["Total Non-Validator Nodes"]
+                        c_validators = dic[i]["Countries"][c]["Total Validators"]
+                        c_total = dic[i]["Countries"][c]["Total Nodes"]
 
-                        dic[i]["Countries"][c]["Percentage of Total Stake"] = stake * 100 / self.totalStake
-                        if self.totalNonValidatorNodes: dic[i]["Countries"][c]["Percentage of Non-Validator Nodes"] = rpc * 100 / self.totalNonValidatorNodes
-                        dic[i]["Countries"][c]["Percentage of Validators"] = validators * 100 / self.totalValidators
-                        dic[i]["Countries"][c]["Percentage of Total Nodes"] = total * 100 / self.totalNodes
+                        dic[i]["Countries"][c]["Percentage of Total Stake"] = c_stake * 100 / self.totalStake
+                        if self.totalNonValidatorNodes: dic[i]["Countries"][c]["Percentage of Non-Validator Nodes"] = c_rpc * 100 / self.totalNonValidatorNodes
+                        dic[i]["Countries"][c]["Percentage of Validators"] = c_validators * 100 / self.totalValidators
+                        dic[i]["Countries"][c]["Percentage of Total Nodes"] = c_total * 100 / self.totalNodes
         
         print("\tDone.", flush=True)
 
@@ -93,11 +93,9 @@ class Flow(Blockchain):
         self.accessNodes = {"active": 0, "total": 0}
         self.totalInactiveNodes = 0
     
-        #Main Data Strucutre
-        self.providersData = {
-            "Other": {"Execution Nodes": {"active": 0, "total": 0}, "Consensus Nodes": {"active": 0, "total": 0}, "Collection Nodes": {"active": 0, "total": 0}, "Verification Nodes": {"active": 0, "total": 0}, "Access Nodes": {"active": 0, "total": 0}, "Total Stake": {"active": 0, "total": 0}, "Total Nodes": 0, "Total Inactive Nodes": 0},
-            "Unidentified": {"Execution Nodes": {"active": 0, "total": 0}, "Consensus Nodes": {"active": 0, "total": 0}, "Collection Nodes": {"active": 0, "total": 0}, "Verification Nodes": {"active": 0, "total": 0}, "Access Nodes": {"active": 0, "total": 0}, "Total Stake": {"active": 0, "total": 0}, "Total Nodes": 0, "Total Inactive Nodes": 0}
-        }
+        #Main Data Strucutres
+        self.providersData = providers_init_flow
+        self.continentData = location_init_flow
 
     def ReturnNodeTypeQuantities(self, role):
         buff = {"execution": self.executionNodes,
@@ -108,8 +106,13 @@ class Flow(Blockchain):
         return buff[role]
 
 
-    #Overwrite percentages
-    def CalculatePercentages(self, target_ips):
+    #Overwrite percentages function
+    def CalculatePercentages(self):
+        self.CalculateProviderPercentages()
+        self.CalculateLocationPercentages()
+        print("\tDone.", flush=True)
+
+    def CalculateProviderPercentages(self):
         print("\tCalculating Provider Percentages.", flush=True)
         for provider in self.providersData:
             stake = self.providersData[provider]["Total Stake"]["total"]
@@ -140,7 +143,69 @@ class Flow(Blockchain):
             self.providersData[provider]["Percentage of Active Nodes"] = active * 100 / (self.totalNodes - self.totalInactiveNodes)
             self.providersData[provider]["Percentage of Total Nodes"] = total * 100 / self.totalNodes
 
-        print("\tDone.", flush=True)
+    def CalculateLocationPercentages(self):
+        print("\tCalculating Country Percentages.", flush=True)
+        for continent in self.continentData:
+            stake_contintnet = self.continentData[continent]["Total Stake"]["total"]
+            execution_contintnet = self.continentData[continent]["Execution Nodes"]
+            collection_contintnet = self.continentData[continent]["Collection Nodes"]
+            consensus_contintnet = self.continentData[continent]["Consensus Nodes"]
+            verification_contintnet = self.continentData[continent]["Verification Nodes"]
+            access_contintnet = self.continentData[continent]["Access Nodes"]
+            total_contintnet = self.continentData[continent]["Total Nodes"]
+            active_contintnet = total_contintnet - self.continentData[continent]["Total Inactive Nodes"]
+
+            #Active
+            self.continentData[continent]["Percentage of Active Execution Nodes"] = execution_contintnet["active"] * 100 / self.executionNodes["active"]
+            self.continentData[continent]["Percentage of Active Collection Nodes"] = collection_contintnet["active"] * 100 / self.collectionNodes["active"]
+            self.continentData[continent]["Percentage of Active Consensus Nodes"] = consensus_contintnet["active"] * 100 / self.consensusNodes["active"]
+            self.continentData[continent]["Percentage of Active Verification Nodes"] = verification_contintnet["active"] * 100 / self.verificationNodes["active"]
+            self.continentData[continent]["Percentage of Active Access Nodes"] = access_contintnet["active"] * 100 / self.accessNodes["active"]
+            
+            #Total
+            self.continentData[continent]["Percentage of Total Execution Nodes"] = execution_contintnet["total"] * 100 / self.executionNodes["total"]
+            self.continentData[continent]["Percentage of Total Collection Nodes"] = collection_contintnet["total"] * 100 / self.collectionNodes["total"]
+            self.continentData[continent]["Percentage of Total Consensus Nodes"] = consensus_contintnet["total"] * 100 / self.consensusNodes["total"]
+            self.continentData[continent]["Percentage of Total Verification Nodes"] = verification_contintnet["total"] * 100 / self.verificationNodes["total"]
+            self.continentData[continent]["Percentage of Total Access Nodes"] = access_contintnet["total"] * 100 / self.accessNodes["total"]
+
+            #General
+            self.continentData[continent]["Percentage of Total Stake"] = stake_contintnet * 100 / self.totalStake["active"]
+            self.continentData[continent]["Percentage of Active Nodes"] = active_contintnet * 100 / (self.totalNodes - self.totalInactiveNodes)
+            self.continentData[continent]["Percentage of Total Nodes"] = total_contintnet * 100 / self.totalNodes
+
+            #Countries
+            for country in self.continentData[continent]["Countries"]:
+                self.CalculateCountryPercentages(country, continent)
+
+    def CalculateCountryPercentages(self, country, continent):
+        stake_country = self.continentData[continent]["Countries"][country]["Total Stake"]["total"]
+        execution_country = self.continentData[continent]["Countries"][country]["Execution Nodes"]
+        collection_country = self.continentData[continent]["Countries"][country]["Collection Nodes"]
+        consensus_country = self.continentData[continent]["Countries"][country]["Consensus Nodes"]
+        verification_country = self.continentData[continent]["Countries"][country]["Verification Nodes"]
+        access_country = self.continentData[continent]["Countries"][country]["Access Nodes"]
+        total_country = self.continentData[continent]["Countries"][country]["Total Nodes"]
+        active_country = total_country - self.continentData[continent]["Countries"][country]["Total Inactive Nodes"]
+
+        #Active
+        self.continentData[continent]["Countries"][country]["Percentage of Active Execution Nodes"] = execution_country["active"] * 100 / self.executionNodes["active"]
+        self.continentData[continent]["Countries"][country]["Percentage of Active Collection Nodes"] = collection_country["active"] * 100 / self.collectionNodes["active"]
+        self.continentData[continent]["Countries"][country]["Percentage of Active Consensus Nodes"] = consensus_country["active"] * 100 / self.consensusNodes["active"]
+        self.continentData[continent]["Countries"][country]["Percentage of Active Verification Nodes"] = verification_country["active"] * 100 / self.verificationNodes["active"]
+        self.continentData[continent]["Countries"][country]["Percentage of Active Access Nodes"] = access_country["active"] * 100 / self.accessNodes["active"]
+        
+        #Total
+        self.continentData[continent]["Countries"][country]["Percentage of Total Execution Nodes"] = execution_country["total"] * 100 / self.executionNodes["total"]
+        self.continentData[continent]["Countries"][country]["Percentage of Total Collection Nodes"] = collection_country["total"] * 100 / self.collectionNodes["total"]
+        self.continentData[continent]["Countries"][country]["Percentage of Total Consensus Nodes"] = consensus_country["total"] * 100 / self.consensusNodes["total"]
+        self.continentData[continent]["Countries"][country]["Percentage of Total Verification Nodes"] = verification_country["total"] * 100 / self.verificationNodes["total"]
+        self.continentData[continent]["Countries"][country]["Percentage of Total Access Nodes"] = access_country["total"] * 100 / self.accessNodes["total"]
+
+        #General
+        self.continentData[continent]["Countries"][country]["Percentage of Total Stake"] = stake_country * 100 / self.totalStake["active"]
+        self.continentData[continent]["Countries"][country]["Percentage of Active Nodes"] = active_country * 100 / (self.totalNodes - self.totalInactiveNodes)
+        self.continentData[continent]["Countries"][country]["Percentage of Total Nodes"] = total_country * 100 / self.totalNodes
 
     def SaveProviderDistribution(self):
         path = "{base}/{output}/{target}/network/ProviderDistribution_{time}.json".format(base=config.globals.BASE_DIR, output=config.globals.OUTPUT_FOLDER, target=self.target, time=str(datetime.today().strftime("%m-%d-%Y")))

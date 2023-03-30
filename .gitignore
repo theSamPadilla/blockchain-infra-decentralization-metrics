@@ -30,6 +30,7 @@ cosmos/analysis/info/
 cosmos/db/tmcrawl.db/
 solana/config/SettingsConfig.json
 cardano/config/SettingsConfig.json
+avalanche/config/SettingsConfig.json
 flow/config/SettingsConfig.json
 
 # Output directories

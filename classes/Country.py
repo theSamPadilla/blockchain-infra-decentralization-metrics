@@ -24,9 +24,6 @@ class Country:
 
         #Historic Data
         self.objectCreationDate = date.today().strftime("%m-%d-%Y")
-    
-    def UpdateAnalysisDate(self, analysisDate: str):
-        self.analysisDate = analysisDate
 
     def SaveCountryNode(self, ip: str, node_info: dict):   
         #Save only new ndoes
@@ -70,7 +67,7 @@ class Country:
         #Catch for flow
         stake = blockchain_obj.totalStake if blockchain_obj.target != "flow" else blockchain_obj.totalStake["total"]
         to_write = {
-            'Analysis Date': self.analysisDate,
+            'Analysis Date': blockchain_obj.analysisDate,
             'Total Nodes': len(self.nodeDict),
             'Validator Nodes': self.validatorCount,
             'Non-Validator Nodes': self.nonValidatorNodeCount,

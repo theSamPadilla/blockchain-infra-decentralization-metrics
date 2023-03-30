@@ -53,7 +53,8 @@ class Datacenter:
                 "Validator Info": node_info["extra_info"]
             }
 
-    def GetDatacenterData(self, parent_total_stake):
+    def GetDatacenterData(self, provider_total_stake):
+        stake_percentage = 0 if provider_total_stake == 0 else (self.cumulativeStake * 100) / provider_total_stake
         return {
             "Country": self.country_name,
             "City": self.city,
@@ -63,6 +64,6 @@ class Datacenter:
             'Validator Nodes': self.validatorCount,
             'Non-Validator Nodes': self.nonValidatorNodeCount,
             'Cumulative stake': self.cumulativeStake,
-            'Percentage provider total stake': (self.cumulativeStake * 100) / parent_total_stake,
+            'Percentage of provider stake': stake_percentage,
             "Nodes": self.nodeDict
         }
