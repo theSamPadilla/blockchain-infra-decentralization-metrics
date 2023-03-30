@@ -60,7 +60,8 @@ The tool takes 1 mandatory parameter and 2 optional parameters in the following 
 ## Things to note
 1. Criteria for `active` in flow is defined by those nodes whose stake is lower than the minimum specified requirement for that node role - as per [Flow's documentation](https://developers.flow.com/nodes/node-operation/node-roles).
 2. RPC node data is not available for all chains, and some stake data may be incomplete for some chains. See each chain's documentation for more information.
-3. For chains in which the IPs were acquired via crawling, there is no way to guarantee that the crawler has found an extensive list of all the nodes in the network.
+3. For chains in which the IPs were acquired via crawling, there is no way to guarantee that the crawler has found an exhaustive list of all the nodes in the network.
+4. No IP data is found in this repo, just tools.
 
 ---
 # Disclaimer & License
