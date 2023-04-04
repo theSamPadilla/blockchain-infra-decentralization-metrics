@@ -56,7 +56,7 @@ def ProviderAnalysis(providers_to_track: dict, asn:str, ip:str, node_info:dict, 
                 "Total Stake": 0
             }
 
-        #Catch the providers_to_track nodes, update analysis, and save them to the object
+        #Catch the providers_to_track nodes and save them to the object
         if provider_name in providers_to_track.values():
             short = list(providers_to_track.keys())[list(providers_to_track.values()).index(provider_name)]
             provider_obj = providers_short_to_object_map[short]

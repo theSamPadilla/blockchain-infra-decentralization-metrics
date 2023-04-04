@@ -24,15 +24,6 @@ class Blockchain:
         self.objectCreationDate = date.today().strftime("%m-%d-%Y")
         self.analysisDate = date.today().strftime("%m-%d-%Y") # will get overwritten by the timestamp in the JSON
 
-    def Save(self):
-        #Write object binary to the file
-        print("\tSaving %s object." % self.target, flush=True)
-        os.makedirs(os.path.dirname(self.objectPath), exist_ok=True)
-        with open(self.objectPath, "wb") as f:
-            pickle.dump(self, f)
-            f.close()
-        print("\tDone.", flush=True)
-
     def CalculatePercentages(self):
         print("\n\tCalculating Provider, Continent, and Country Percentages.", flush=True)
         for dic in [self.providersData, self.continentData]:
@@ -69,7 +60,7 @@ class Blockchain:
             'Total Nodes': self.totalNodes,
             'Total Non-Validator Nodes': self.totalNonValidatorNodes,
             'Total Validator Nodes': self.totalValidators,
-            'Total stake': self.totalStake,
+            'Total Stake': self.totalStake,
             'Provider Distribution': self.providersData,
             'Geographic Distribution': self.continentData
         }

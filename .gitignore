@@ -13,6 +13,7 @@ misc/
 memory/
 ethereum/
 lib/
+prev_results/
 
 # Specific Directories or files
 .vscode/

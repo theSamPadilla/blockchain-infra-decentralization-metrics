@@ -35,15 +35,6 @@ def main(target_blockchain, providers_to_track, countries_to_track, output):
     #Analyze all nodes for provided blockchain (overwrites if flow)
     blockchain_obj = GetNetworkProviderDistribution(providers_to_track, countries_to_track, providers_short_to_object_map, countries_short_to_object_map, blockchain_obj)
 
-    #Save objects
-    print("\n\nSaving Objects...", flush=True)
-    blockchain_obj.Save()
-    for obj in providers_short_to_object_map.values():
-        obj.SaveObject(blockchain_obj)
-    for obj in countries_short_to_object_map.values():
-        obj.SaveObject(blockchain_obj)
-    print("Done.", flush=True)
-
     #Output JSON for trackable providers and countries
     print("\n\nOutputting information to JSON files...")
     for obj in providers_short_to_object_map.values():

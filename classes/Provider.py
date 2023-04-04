@@ -44,17 +44,6 @@ class Provider:
             #Save ip to set
             self.seenIPs.add(ip)
 
-    def SaveObject(self, blockchain_obj):
-        # Update analysis date before saving the object
-        self.analysisDate = blockchain_obj.analysisDate
-        
-        print("\tSaving %s object" % self.provider, flush=True)      
-        os.makedirs(os.path.dirname(self.objectPath), exist_ok=True)
-        with open(self.objectPath, "wb") as f:
-            pickle.dump(self, f)
-            f.close()
-        print("\tDone.", flush=True)
-
     def OutputJSONInfo(self, blockchain_obj):
         path = "{base}/{output}/{target}/providers/{provider}_Nodes_{time}.json".format(base=config.globals.BASE_DIR, output=config.globals.OUTPUT_FOLDER, target=self.target_chain.target, provider=self.provider, time=str(datetime.today().strftime("%m-%d-%Y")))
         #Catch for flow
