@@ -1,10 +1,9 @@
 import json
 import ipinfo #type: ignore
-from ipwhois.net import Net
-from ipwhois.asn import IPASN
+
 
 import config.globals
-from analysis.utils import IpAsnLookup, IpGeoLookup, ProviderAnalysis, CountryAnalysis, FlowProviderAnalysis, FlowCountryAnalysis
+from analysis.utils import IpAsnLookup, IpGeoLookup, ProviderAnalysis, CountryAnalysis, FlowProviderAnalysis, FlowCountryAnalysis, IsValidIp
 from classes.Blockchain import Blockchain, Flow
 
 
@@ -16,10 +15,14 @@ def GetNetworkProviderDistribution(providers_to_track: dict, countries_to_track:
         json_analysis = json.load(f)
         f.close()
 
-    # Update blockchain object analysisDate
+    # Update blockchain object analysisDate and info
     analysisDate = json_analysis["timestamp"] #This is purely for human-readability, no need to be date type.
     blockchain_obj.analysisDate = analysisDate
     target_ips = json_analysis["nodes"]
+    blockchain_obj.info = {
+        "Collection Method": json_analysis["collection_method"],
+        "Context": json_analysis["chain_data"]
+    }
 
     print("\n\nAnalyzing %d Nodes. This may take a few minutes..." % len(target_ips), flush=True)
 
@@ -39,6 +42,10 @@ def GetFlowNetworkProviderDistribution(providers_to_track: dict, countries_to_tr
     
     #Iterate over all IP addresses
     for ip, node_info in target_ips.items():
+        #Pass if IP is private, loopback, or invalid
+        if not IsValidIp(ip):
+            pass
+        
         #IP ASN Lookup
         asn, provider_name = IpAsnLookup(ip, target_ips, blockchain_obj)
         #IP Geolookup
@@ -109,6 +116,10 @@ def GetGeneralNetworkProviderDistribution(providers_to_track: dict, countries_to
     
     #Iterate over all IP addresses
     for ip, node_info in target_ips.items():
+        #Pass if IP is private, loopback, or invalid
+        if not IsValidIp(ip):
+            pass
+
         #IP ASN Lookup
         asn, provider_name = IpAsnLookup(ip, target_ips, blockchain_obj)
         #IP Geolookup

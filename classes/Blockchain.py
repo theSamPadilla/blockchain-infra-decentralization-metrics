@@ -15,6 +15,7 @@ class Blockchain:
         self.totalValidators = 0
         self.unidentifiedASNs = {}
         self.unidentifiedLocations = {}
+        self.info = {}
 
         #Main Data Strucutre initializers
         self.providersData = providers_init
@@ -57,6 +58,7 @@ class Blockchain:
         path = "{base}/{output}/{target}/network/NetworkDistribution_{time}.json".format(base=config.globals.BASE_DIR, output=config.globals.OUTPUT_FOLDER, target=self.target, time=str(datetime.today().strftime("%m-%d-%Y")))
         to_write = {
             'Analysis Date': self.analysisDate,
+            'Info': self.info,
             'Total Nodes': self.totalNodes,
             'Total Non-Validator Nodes': self.totalNonValidatorNodes,
             'Total Validator Nodes': self.totalValidators,
