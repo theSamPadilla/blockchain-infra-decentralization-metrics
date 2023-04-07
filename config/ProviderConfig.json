@@ -94,5 +94,347 @@
         "asn_description": "HETZNER-AS, DE",
         "website": "https://www.hetzner.com/cloud",
         "short": "HTZ"
+    },
+    "213230":{
+        "provider": "Hetzner",
+        "asn_description": "HETZNER-CLOUD2-AS, DE",
+        "website": "https://www.hetzner.com/cloud",
+        "short": "HTZ"
+    },
+    "395201":{
+        "provider": "Allnodes",
+        "asn_description": "ALLNODES, US",
+        "website": "https://www.allnodes.com/",
+        "short": "ALL"
+    },
+    "8075": {
+        "provider": "Azure",
+        "asn_description": "MICROSOFT-CORP-MSN-AS-BLOCK, US",
+        "website": "https://azure.microsoft.com/en-us",
+        "short": "AZU"
+    },
+    "14061":{
+        "provider": "Digital Ocean",
+        "asn_description": "DIGITALOCEAN-ASN, US",
+        "website": "https://www.digitalocean.com/",
+        "short": "DOC"
+    },
+    "45102":{
+        "provider": "Alibaba Cloud",
+        "asn_description": "ALIBABA-CN-NET Alibaba US Technology Co., Ltd., CN",
+        "website": "https://us.alibabacloud.com/",
+        "short": "ABB"
+    },
+    "51167":{
+        "provider": "Contabo",
+        "asn_description": "CONTABO, DE",
+        "website": "https://contabo.com/en",
+        "short": "CTB"
+    },
+    "40021":{
+        "provider": "Contabo",
+        "asn_description": "CONTABO, US",
+        "website": "https://contabo.com/en",
+        "short": "CTB"
+    },
+    "141995":{
+        "provider": "",
+        "asn_description": "CAPL-AS-AP Contabo Asia Private Limited, SG",
+        "website": "https://contabo.com/en",
+        "short": "CTB"
+    },
+    "197540":{
+        "provider": "Netcup",
+        "asn_description": "NETCUP-AS netcup GmbH, DE",
+        "website": "https://www.netcup.eu/",
+        "short": "NTC"
+    },
+    "63949":{
+        "provider": "Akamai",
+        "asn_description": "AKAMAI-AP Akamai Technologies, Inc., SG",
+        "website": "https://www.akamai.com/",
+        "short": "AKM"
+    },
+    "8560":{
+        "provider": "Ionos",
+        "asn_description": "IONOS-AS This is the joint network for IONOS, Fasthosts, Arsys, 1&1 Mail and Media and 1&1 Telecom. Formerly known as 1&1 Internet SE., DE",
+        "website": "https://www.ionos.com/",
+        "short": "ION"
+    },
+    "31898":{
+        "provider": "Oracle Cloud",
+        "asn_description": "ORACLE-BMC-31898, US",
+        "website": "https://www.oracle.com/cloud/",
+        "short": "ORC"
+    },
+    "6724":{
+        "provider": "Strato",
+        "asn_description": "STRATO STRATO AG, DE",
+        "website": "https://stratoautomation.com/en/solutions/strato-cloud-services",
+        "short": "STR"
+    },
+    "12876":{
+        "provider": "Online SAS",
+        "asn_description": "Online SAS, FR",
+        "website": "https://www.sas.com/en_us/solutions/cloud/sas-cloud.html",
+        "short": "OSA"
+    },
+    "7684":{
+        "provider": "Sakura Internet",
+        "asn_description": "SAKURA-A SAKURA Internet Inc., JP",
+        "website": "https://www.sakura.ad.jp/en/corporate/",
+        "short": "SAK"
+    },
+    "7922":{
+        "provider": "Residential",
+        "asn_description": "COMCAST-7922, US",
+        "website": "https://www.xfinity.com/",
+        "short": "RES"
+    },
+    "7018":{
+        "provider": "Residential",
+        "asn_description": "ATT-INTERNET4, US",
+        "website": "https://www.att.com/",
+        "short": "RES"
+    },
+    "701":{
+        "provider": "Residential",
+        "asn_description": "UUNET, US",
+        "website": "https://www.verizon.com/business/",
+        "short": "RES"
+    },
+    "6830":{
+        "provider": "Residential",
+        "asn_description": "LIBERTYGLOBAL Liberty Global formerly UPC Broadband Holding, aka AORTA, NL",
+        "website": "",
+        "short": "RES"
+    },
+    "3209":{
+        "provider": "Residential",
+        "asn_description": "VODANET International IP-Backbone of Vodafone, DE",
+        "website": "",
+        "short": "RES"
+    },
+    "852":{
+        "provider": "Residential",
+        "asn_description": "TELUS Communications, CA",
+        "website": "",
+        "short": "RES"
+    },
+    "45629 45758":{
+        "provider": "Residential",
+        "asn_description": "Jastel",
+        "website": "",
+        "short": "RES"
+    },
+    "20001":{
+        "provider": "Residential",
+        "asn_description": "TWC-20001-PACWEST, US",
+        "website": "",
+        "short": "RES"
+    },
+    "33915":{
+        "provider": "Residential",
+        "asn_description": "TNF-AS, NL",
+        "website": "",
+        "short": "RES"
+    },
+    "4764":{
+        "provider": "Residential",
+        "asn_description": "WIDEBAND-AS-AP Aussie Broadband, AU",
+        "website": "",
+        "short": "RES"
+    },
+    "12874":{
+        "provider": "Residential",
+        "asn_description": "FASTWEB, IT",
+        "website": "",
+        "short": "RES"
+    },
+    "3320":{
+        "provider": "Residential",
+        "asn_description": "DTAG Internet service provider operations, DE",
+        "website": "",
+        "short": "RES"
+    },
+    "6327":{
+        "provider": "Residential",
+        "asn_description": "SHAW, CA",
+        "website": "",
+        "short": "RES"
+    },
+    "4766":{
+        "provider": "Residential",
+        "asn_description": "KIXS-AS-KR Korea Telecom, KR",
+        "website": "",
+        "short": "RES"
+    },
+    "5650":{
+        "provider": "Residential",
+        "asn_description": "FRONTIER-FRTR, US",
+        "website": "",
+        "short": "RES"
+    },
+    "22773":{
+        "provider": "Residential",
+        "asn_description": "ASN-CXA-ALL-CCI-22773-RDC, US",
+        "website": "",
+        "short": "RES"
+    },
+    "5089":{
+        "provider": "Residential",
+        "asn_description": "NTL, GB",
+        "website": "",
+        "short": "RES"
+    },
+    "35598":{
+        "provider": "Residential",
+        "asn_description": "INETCOM, RU",
+        "website": "",
+        "short": "RES"
+    },
+    "577":{
+        "provider": "Residential",
+        "asn_description": "BACOM, CA",
+        "website": "",
+        "short": "RES"
+    },
+    "1136":{
+        "provider": "Residential",
+        "asn_description": "KPN KPN National, NL",
+        "website": "",
+        "short": "RES"
+    },
+    "7545":{
+        "provider": "Residential",
+        "asn_description": "TPG-INTERNET-AP TPG Telecom Limited, AU",
+        "website": "",
+        "short": "RES"
+    },
+    "2856":{
+        "provider": "Residential",
+        "asn_description": "BT-UK-AS BTnet UK Regional network, GB",
+        "website": "",
+        "short": "RES"
+    },
+    "20115":{
+        "provider": "Residential",
+        "asn_description": "CHARTER-20115, US",
+        "website": "",
+        "short": "RES"
+    },
+    "3215":{
+        "provider": "Residential",
+        "asn_description": "France Telecom - Orange, FR",
+        "website": "",
+        "short": "RES"
+    },
+    "":{
+        "provider": "Residential",
+        "asn_description": "",
+        "website": "",
+        "short": "RES"
+    },
+    "3352":{
+        "provider": "Residential",
+        "asn_description": "TELEFONICA_DE_ESPANA, ES",
+        "website": "",
+        "short": "RES"
+    },
+    "6848":{
+        "provider": "Residential",
+        "asn_description": "TELENET-AS, BE",
+        "website": "",
+        "short": "RES"
+    },
+    "8881":{
+        "provider": "Residential",
+        "asn_description": "VERSATEL, DE",
+        "website": "",
+        "short": "RES"
+    },
+    "12322":{
+        "provider": "Residential",
+        "asn_description": "PROXAD, FR",
+        "website": "",
+        "short": "RES"
+    },
+    "16591":{
+        "provider": "Residential",
+        "asn_description": "GOOGLE-FIBER, US",
+        "website": "",
+        "short": "RES"
+    },
+    "9318":{
+        "provider": "Residential",
+        "asn_description": "SKB-AS SK Broadband Co Ltd, KR",
+        "website": "",
+        "short": "RES"
+    },
+    "13030":{
+        "provider": "Residential",
+        "asn_description": "INIT7, CH",
+        "website": "",
+        "short": "RES"
+    },
+    "812":{
+        "provider": "Residential",
+        "asn_description": "ROGERS-COMMUNICATIONS, CA",
+        "website": "",
+        "short": "RES"
+    },
+    "1221":{
+        "provider": "Residential",
+        "asn_description": "ASN-TELSTRA Telstra Corporation Ltd, AU",
+        "website": "",
+        "short": "RES"
+    },
+    "4760":{
+        "provider": "Residential",
+        "asn_description": "HKTIMS-AP HKT Limited, HK",
+        "website": "",
+        "short": "RES"
+    },
+    "29695":{
+        "provider": "Residential",
+        "asn_description": "ALTIBOX_AS Norway, NO",
+        "website": "",
+        "short": "RES"
+    },
+    "6810":{
+        "provider": "Residential",
+        "asn_description": "BEZEK, IL",
+        "website": "",
+        "short": "RES"
+    },
+    "3462":{
+        "provider": "Residential",
+        "asn_description": "HINET Data Communication Business Group, TW",
+        "website": "",
+        "short": "RES"
+    },
+    "20055":{
+        "provider": "Residential",
+        "asn_description": "AS-WHOLESAIL, US",
+        "website": "",
+        "short": "RES"
+    },
+    "6079":{
+        "provider": "Residential",
+        "asn_description": "RCN-AS, US",
+        "website": "",
+        "short": "RES"
+    },
+    "9506":{
+        "provider": "Residential",
+        "asn_description": "SINGTEL-FIBRE Singtel Fibre Broadband, SG",
+        "website": "",
+        "short": "RES"
+    },
+    "10796":{
+        "provider": "Residential",
+        "asn_description": "TWC-10796-MIDWEST, US",
+        "website": "",
+        "short": "RES"
     }
 }
