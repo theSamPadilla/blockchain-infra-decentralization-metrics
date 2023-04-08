@@ -44,7 +44,7 @@ def GetFlowNetworkProviderDistribution(providers_to_track: dict, countries_to_tr
     for ip, node_info in target_ips.items():
         #Pass if IP is private, loopback, or invalid
         if not IsValidIp(ip):
-            pass
+            continue
         
         #IP ASN Lookup
         asn, provider_name = IpAsnLookup(ip, target_ips, blockchain_obj)
@@ -118,8 +118,8 @@ def GetGeneralNetworkProviderDistribution(providers_to_track: dict, countries_to
     for ip, node_info in target_ips.items():
         #Pass if IP is private, loopback, or invalid
         if not IsValidIp(ip):
-            pass
-
+            continue
+        
         #IP ASN Lookup
         asn, provider_name = IpAsnLookup(ip, target_ips, blockchain_obj)
         #IP Geolookup

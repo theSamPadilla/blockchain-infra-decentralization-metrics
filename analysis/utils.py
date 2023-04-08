@@ -194,6 +194,6 @@ def FlowCountryAnalysis(countries_to_track: dict, continent: str, country: str, 
 
 def IsValidIp(ip) -> bool:
     list_172 = ["172.16.", "172.17.", "172.18.", "172.19.", "172.20.", "172.21.", "172.22.", "172.23.", "172.24.", "172.25.", "172.26.", "172.27.", "172.28.", "172.29.", "172.30.", "172.31."]
-    if (ip == "") or (ip[:3] == "10.") or (ip[:8] == "192.168.") or (ip[:7] in list_172) or ("." not in ip and ":" not in ip) or (ip[:4] == "127."):
+    if (ip == "") or (ip == "0.0.0.0") or (ip == "1.1.1.1") or (ip[:3] == "10.") or (ip[:8] == "192.168.") or (ip[:7] in list_172) or ("." not in ip and ":" not in ip) or (ip[:4] == "127."):
         return False
     return True
