@@ -138,7 +138,7 @@
         "short": "CTB"
     },
     "141995":{
-        "provider": "",
+        "provider": "Contabo",
         "asn_description": "CAPL-AS-AP Contabo Asia Private Limited, SG",
         "website": "https://contabo.com/en",
         "short": "CTB"
@@ -185,256 +185,4246 @@
         "website": "https://www.sakura.ad.jp/en/corporate/",
         "short": "SAK"
     },
-    "7922":{
+    "9370": {
+        "provider": "Sakura Internet",
+        "asn_description": "SAKURA-B SAKURA Internet Inc., JP",
+        "website": "https://www.sakura.ad.jp/en/corporate/",
+        "short": "SAK"
+    },
+    "9371": {
+        "provider": "Sakura Internet",
+        "asn_description": "SAKURA-C SAKURA Internet Inc., JP",
+        "website": "https://www.sakura.ad.jp/en/corporate/",
+        "short": "SAK"
+    },
+    "37963": {
+        "provider": "Alibaba Cloud",
+        "asn_description": "ALIBABA-CN-NET Hangzhou Alibaba Advertising Co.,Ltd., CN",
+        "website": "https://us.alibabacloud.com/",
+        "short": "ABB"
+    },
+    "9009": {
+        "provider": "M247",
+        "asn_description": "M247, RO",
+        "website": "https://m247.com",
+        "short": "M24"
+    },
+    "29802": {
+        "provider": "Hivelocity",
+        "asn_description": "HVC-AS, US",
+        "website": "https://www.hivelocity.net/",
+        "short": "HIV"
+    },
+    "21409": {
+        "provider": "Ikoula",
+        "asn_description": "IKOULA, FR",
+        "website": "https://www.ikoula.com/",
+        "short": "IKO"
+    },
+    "200000": {
+        "provider": "Hosting Ukraine",
+        "asn_description": "UKRAINE-AS, UA",
+        "website": "https://www.ukraine.com.ua/uk/",
+        "short": "HOS"
+    },
+    "3170": {
+        "provider": "Veloxserv",
+        "asn_description": "VELOXSERV, GB",
+        "website": "https://www.veloxserv.co.uk/",
+        "short": "VEL"
+    },
+    "135377": {
+        "provider": "UCloud",
+        "asn_description": "UCLOUD-HK-AS-AP UCLOUD INFORMATION TECHNOLOGY HK LIMITED, HK",
+        "website": "https://www.ucloud.cn/",
+        "short": "UCL"
+    },
+    "205544": {
+        "provider": "LeaseWeb",
+        "asn_description": "LEASEWEB-UK-LON-11, GB",
+        "website": "https://www.leaseweb.com/",
+        "short": "LEA"
+    },
+    "60781": {
+        "provider": "LeaseWeb",
+        "asn_description": "LEASEWEB-NL-AMS-01 Netherlands, NL",
+        "website": "https://leaseweb.com",
+        "short": "LEA"
+    },
+    "3223": {
+        "provider": "Voxility",
+        "asn_description": "VOXILITY, GB",
+        "website": "https://www.voxility.com/",
+        "short": "VOX"
+    },
+    "45974": {
+        "provider": "NHN",
+        "asn_description": "NHN-AS-KR NHN, KR",
+        "website": "https://www.nhn.com/",
+        "short": "NHN"
+    },
+    "136907": {
+        "provider": "Huawei Cloud",
+        "asn_description": "HWCLOUDS-AS-AP HUAWEI CLOUDS, HK",
+        "website": "https://www.huaweicloud.com/",
+        "short": "HUA"
+    },
+    "60558": {
+        "provider": "Secured Servers",
+        "asn_description": "SECUREDSERVERS-EU, US",
+        "website": "https://www.securedservers.com/",
+        "short": "SEC"
+    },
+    "23352": {
+        "provider": "ServerCentral",
+        "asn_description": "SERVERCENTRAL, US",
+        "website": "https://www.servercentral.com/",
+        "short": "SER"
+    },
+    "4837": {
+        "provider": "China Unicom",
+        "asn_description": "CHINA169-BACKBONE CHINA UNICOM China169 Backbone, CN",
+        "website": "http://www.chinaunicom.com/",
+        "short": "CHI"
+    },
+    "23749": {
+        "provider": "HKCOLO",
+        "asn_description": "GLOBAL-TRANSIT-AS-HKCOLO-AP HKCOLO ltd. Internet Service Provider, HK",
+        "website": "https://www.hkcolo.com/hkc_website/site_flash/index.html",
+        "short": "HKC"
+    },
+    "16125": {
+        "provider": "Cherry Servers",
+        "asn_description": "CHERRYSERVERS1-AS, LT",
+        "website": "https://cherryservers.com",
+        "short": "CHE"
+    },
+    "32097": {
+        "provider": "WII, US",
+        "asn_description": "WII, US",
+        "website": "http://www.wii.net/",
+        "short": "WII"
+    },
+    "49981": {
+        "provider": "Worldstream",
+        "asn_description": "WORLDSTREAM, NL",
+        "website": "https://worldstream.nl",
+        "short": "WOR"
+    },
+    "44133": {
+        "provider": "IPAX",
+        "asn_description": "IPAX-AS, AT",
+        "website": "https://www.ipax.at/",
+        "short": "IPA"
+    },
+    "42675": {
+        "provider": "Obehosting AB",
+        "asn_description": "OBEHOSTING Obehosting AB, SE",
+        "website": "https://www.obehosting.com/",
+        "short": "OBE"
+    },
+    "24961": {
+        "provider": "MyLoc managed IT AG",
+        "asn_description": "MYLOC-AS IP Backbone of myLoc managed IT AG, DE",
+        "website": "https://myloc.de",
+        "short": "MYL"
+    },
+    "42831": {
+        "provider": "UK Dedicated Servers",
+        "asn_description": "UKSERVERS-AS UK Dedicated Servers, Hosting and Co-Location, GB",
+        "website": "https://www.ukservers.com",
+        "short": "UKD"
+    },
+    "397554": {
+        "provider": "Happy Cycling",
+        "asn_description": "HAPPYCYCLING, US",
+        "website": "https://happycycling.com/",
+        "short": "HAP"
+    },
+    "397031": {
+        "provider": "GalaxyGate International",
+        "asn_description": "GALAXYGATE, US",
+        "website": "https://www.galaxygate.net/",
+        "short": "GAL"
+    },
+    "53755": {
+        "provider": "IOFlood",
+        "asn_description": "IOFLOOD, US",
+        "website": "https://www.ioflood.com/",
+        "short": "IOF"
+    },
+    "17948": {
+        "provider": "EditNet",
+        "asn_description": "EDITNET EditNet, Incorporated, JP",
+        "website": "http://www.edit-net.co.jp/",
+        "short": "EDI"
+    },
+    "9312": {
+        "provider": "xTom",
+        "asn_description": "XTOM xTom, HK",
+        "website": "https://xtom.com.hk/",
+        "short": "XTO"
+    },
+    "132203": {
+        "provider": "Tencent",
+        "asn_description": "TENCENT-NET-AP-CN Tencent Building, Kejizhongyi Avenue, CN",
+        "website": "https://www.tencent.com/",
+        "short": "TEN"
+    },
+    "212531": {
+        "provider": "Interneto Vizija",
+        "asn_description": "INTERNETO-VIZIJA, LT",
+        "website": "https://www.iv.lt/",
+        "short": "INT"
+    },
+    "13335": {
+        "provider": "Cloudfare",
+        "asn_description": "CLOUDFLARENET, US",
+        "website": "https://www.cloudflare.com/",
+        "short": "CLO"
+    },
+    "133159": {
+        "provider": "Mammoth Cloud",
+        "asn_description": "MAMMOTHMEDIA-AS-AP Mammoth Media Pty Ltd, AU",
+        "website": "https://www.mammoth.net.au/",
+        "short": "MAM"
+    },
+    "202448": {
+        "provider": "MVPS",
+        "asn_description": "MVPS www.mvps.net, CY",
+        "website": "https://www.mvps.net",
+        "short": "MVP"
+    },
+    "7506": {
+        "provider": "GMO Internet Group",
+        "asn_description": "INTERQ GMO Internet,Inc, JP",
+        "website": "https://www.gmo.jp",
+        "short": "GMO"
+    },
+    "202053": {
+        "provider": "UpCloud",
+        "asn_description": "UPCLOUD, FI",
+        "website": "https://upcloud.com",
+        "short": "UPC"
+    },
+    "30083": {
+        "provider": "GoDaddy",
+        "asn_description": "AS-30083-GO-DADDY-COM-LLC, US",
+        "website": "https://www.godaddy.com",
+        "short": "GOD"
+    },
+    "197988": {
+        "provider": "Solar Communications ",
+        "asn_description": "SOLARCOM, CH",
+        "website": "https://www.solarcom.ch",
+        "short": "SOL"
+    },
+    "20860": {
+        "provider": "iomart Group",
+        "asn_description": "IOMART-AS, GB",
+        "website": "https://www.iomart.com",
+        "short": "IOM"
+    },
+    "207143": {
+        "provider": "Hosttech",
+        "asn_description": "HOSTTECH-AS, CH",
+        "website": "https://www.hosttech.ch",
+        "short": "HTE"
+    },
+    "25697": {
+        "provider": "UpCloud",
+        "asn_description": "UPCLOUDUSA, US",
+        "website": "https://www.upcloud.com",
+        "short": "UPC"
+    },
+    "8100": {
+        "provider": "QuadraNet",
+        "asn_description": "ASN-QUADRANET-GLOBAL, US",
+        "website": "https://www.quadranet.com",
+        "short": "QUA"
+    },
+    "3301": {
+        "provider": "Telia",
+        "asn_description": "TELIANET-SWEDEN Telia, SE",
+        "website": "https://teliacompany.com",
+        "short": "TEL"
+    },
+    "207452": {
+        "provider": "BESK, UAB",
+        "asn_description": "BESK-AS, LT",
+        "website": "https://www.besk.lt",
+        "short": "BES"
+    },
+    "54290": {
+        "provider": "Hostwinds",
+        "asn_description": "HOSTWINDS, US",
+        "website": "https://www.hostwinds.com",
+        "short": "HTD"
+    },
+    "18779": {
+        "provider": "EGIHosting",
+        "asn_description": "EGIHOSTING, US",
+        "website": "https://www.egihosting.com",
+        "short": "EGI"
+    },
+    "201814": {
+        "provider": "Mevspace",
+        "asn_description": "PL-SKYTECH-AS, PL",
+        "website": "https://mevspace.com/",
+        "short": "MEV"
+    },
+    "20857": {
+        "provider": "TransIP BV",
+        "asn_description": "TRANSIP-AS Amsterdam, the Netherlands, NL",
+        "website": "https://www.transip.nl",
+        "short": "TRA"
+    },
+    "205275": {
+        "provider": "Romarg",
+        "asn_description": "ROMARG HOSTING, RO",
+        "website": "https://www.romarg.ro",
+        "short": "ROM"
+    },
+    "60068": {
+        "provider": "CDN77",
+        "asn_description": "CDN77 ^_^, GB",
+        "website": "https://www.cdn77.com/",
+        "short": "CDN"
+    },
+    "209150": {
+        "provider": "Pointer",
+        "asn_description": "POINTER, GR",
+        "website": "https://www.pointer.gr/",
+        "short": "POI"
+    },
+    "208258": {
+        "provider": "Access2IT",
+        "asn_description": "ACCESS2IT Access2.IT Network, NL",
+        "website": "https://access2.it/",
+        "short": "ACC"
+    },
+    "56655": {
+        "provider": "TerraHost",
+        "asn_description": "TERRAHOST, NO",
+        "website": "https://www.terrahost.no/",
+        "short": "TER"
+    },
+    "36351": {
+        "provider": "IBM Cloud",
+        "asn_description": "SOFTLAYER, US",
+        "website": "https://www.ibm.com/cloud/softlayer",
+        "short": "IBM"
+    },
+    "12337": {
+        "provider": "Noris Network",
+        "asn_description": "NORIS-NETWORK IT Service Provider located in Nuernberg, Germany, DE",
+        "website": "https://www.noris.net/",
+        "short": "NOR"
+    },
+    "2519": {
+        "provider": "Arteria",
+        "asn_description": "VECTANT ARTERIA Networks Corporation, JP",
+        "website": "https://www.arteria-net.com/en/",
+        "short": "ART"
+    },
+    "12212": {
+        "provider": "Ravand",
+        "asn_description": "RAVAND, CA",
+        "website": "https://ravand.com/",
+        "short": "RAV"
+    },
+    "50584": {
+        "provider": "Domenca",
+        "asn_description": "DOMINET, PL",
+        "website": "https://dominet.pl/",
+        "short": "DOM"
+    },
+    "54113": {
+        "provider": "Fastly",
+        "asn_description": "FASTLY, US",
+        "website": "https://www.fastly.com/",
+        "short": "FAS"
+    },
+    "33390": {
+        "provider": "ReadyTech",
+        "asn_description": "READYTECH, US",
+        "website": "http://www.readytech.com/",
+        "short": "REA"
+    },
+    "137272": {
+        "provider": "Psideo",
+        "asn_description": "PSIDEO-SINGAPORE-AS-AP PSiDEO Singapore Pte Ltd, SG",
+        "website": "https://www.psideo.com/",
+        "short": "PSI"
+    },
+    "31863": {
+        "provider": "Dacentec",
+        "asn_description": "DACEN-2, US",
+        "website": "https://www.dacentec.com/",
+        "short": "DAC"
+    },
+    "327813": {
+        "provider": "Web4Africa",
+        "asn_description": "Web4Africa, ZA",
+        "website": "https://www.web4africa.com/",
+        "short": "WEB"
+    },
+    "39912": {
+        "provider": "i3b",
+        "asn_description": "I3B-AS, AT",
+        "website": "https://www.i3b.net/",
+        "short": "I3B"
+    },
+    "19844": {
+        "provider": "SBA Edge Data Center",
+        "asn_description": "SBA-EDGE-JAX, US",
+        "website": "https://www.sba.gov/offices/district/fl/jacksonville",
+        "short": "SBA"
+    },
+    "137951": {
+        "provider": "Clayer",
+        "asn_description": "CLAYERLIMITED-AS-AP Clayer Limited, HK",
+        "website": "https://www.clayer.com/",
+        "short": "CLA"
+    },
+    "396362": {
+        "provider": "LeaseWeb",
+        "asn_description": "LEASEWEB-USA-NYC, US",
+        "website": "https://www.leaseweb.com/",
+        "short": "LEA"
+    },
+    "204436": {
+        "provider": "Kualo",
+        "asn_description": "KUALO-AS, GB",
+        "website": "https://www.kualo.com/",
+        "short": "KUA"
+    },
+    "41436": {
+        "provider": "CloudWebManage",
+        "asn_description": "CLOUDWEBMANAGE-EU, US",
+        "website": "https://www.cloudwebmanage.com/",
+        "short": "CUM"
+    },
+    "30176": {
+        "provider": "Priority Colo",
+        "asn_description": "AS-PRIORITYCOLO, CA",
+        "website": "http://www.prioritycolo.com/",
+        "short": "PRI"
+    },
+    "40805": {
+        "provider": "JMF Networks",
+        "asn_description": "JMF-NETWORKS, US",
+        "website": "https://jmfnetworks.com/",
+        "short": "JMF"
+    },
+    "39351": {
+        "provider": "31173 Services",
+        "asn_description": "ESAB-AS, SE",
+        "website": "https://www.31173.se/",
+        "short": "311"
+    },
+    "63023": {
+        "provider": "GlobalTeleHost",
+        "asn_description": "AS-GLOBALTELEHOST, US",
+        "website": "http://www.globaltelehost.com/",
+        "short": "GLO"
+    },
+    "6649": {
+        "provider": "Hyak",
+        "asn_description": "HYAK, US",
+        "website": "https://www.hyak.net/",
+        "short": "HYA"
+    },
+    "21501": {
+        "provider": "GoDaddy",
+        "asn_description": "GODADDY-AMS, DE",
+        "website": "https://www.godaddy.com/",
+        "short": "GOD"
+    },
+    "211252": {
+        "provider": "Delis",
+        "asn_description": "AS_DELIS, US",
+        "website": "http://www.delis.one/",
+        "short": "DEL"
+    },
+    "3842": {
+        "provider": "RamNode",
+        "asn_description": "RAMNODE, US",
+        "website": "https://www.ramnode.com/",
+        "short": "RAM"
+    },
+    "213250": {
+        "provider": "ITP Solutions",
+        "asn_description": "ITP-SOLUTIONS, DE",
+        "website": "https://www.itp-solutions.de/",
+        "short": "ITP"
+    },
+    "47777": {
+        "provider": "Wunet",
+        "asn_description": "WUNET, DE",
+        "website": "https://www.wunet.de/",
+        "short": "WUN"
+    },
+    "30691": {
+        "provider": "Lifeline Data Centers",
+        "asn_description": "LLDC, US",
+        "website": "http://www.lindsey.edu/",
+        "short": "LIF"
+    },
+    "398101": {
+        "provider": "GoDaddy",
+        "asn_description": "GO-DADDY-COM-LLC, US",
+        "website": "https://www.godaddy.com/",
+        "short": "GOD"
+    },
+    "15987": {
+        "provider": "Portunity",
+        "asn_description": "PORTUNITY-AS, DE",
+        "website": "https://portunix.de/",
+        "short": "POR"
+    },
+    "197944": {
+        "provider": "Virtua",
+        "asn_description": "SI-VIRTUA, SI",
+        "website": "https://www.virtua.si/",
+        "short": "VIR"
+    },
+    "200924": {
+        "provider": "SIS2",
+        "asn_description": "SIS2, DE",
+        "website": "https://www.sis2.de/",
+        "short": "SIS"
+    },
+    "199669": {
+        "provider": "Atlex",
+        "asn_description": "ATLEX-AS, RU",
+        "website": "https://www.atlex.ru/",
+        "short": "ATL"
+    },
+    "142394": {
+        "provider": "Cahaya Solusindo Internusa",
+        "asn_description": "CSNET-AS-ID PT Cahaya Solusindo Internusa, ID",
+        "website": "https://www.csnet.co.id/",
+        "short": "CAH"
+    },
+    "62904": {
+        "provider": "Eonix",
+        "asn_description": "AS62904, US",
+        "website": "https://serverhub.com",
+        "short": "EON"
+    },
+    "29182": {
+        "provider": "JSC IOT",
+        "asn_description": "RU-JSCIOT, RU",
+        "website": "https://aoiot.ru/",
+        "short": "JSC"
+    },
+    "3356": {
+        "provider": "Lumen",
+        "asn_description": "LEVEL3, US",
+        "website": "https://www.lumen.com/en-us/home.html",
+        "short": "LMN"
+    },
+    "43927": {
+        "provider": "Hosterion",
+        "asn_description": "HOSTERION, RO",
+        "website": "https://hosterion.com/",
+        "short": "HTI"
+    },
+    "35592": {
+        "provider": "Coolhousing",
+        "asn_description": "COOLHOUSING-AS Vinohradska 190, CZ",
+        "website": "https://www.coolhousing.net/",
+        "short": "COO"
+    },
+    "4134": {
+        "provider": "ChinaNet",
+        "asn_description": "CHINANET-BACKBONE No.31,Jin-rong Street, CN",
+        "website": "https://www.chinanet.com/",
+        "short": "CIA"
+    },
+    "197071": {
+        "provider": "Active-Servers",
+        "asn_description": "ACTIVE-SERVERS active-servers.com, DE",
+        "website": "https://active-servers.com/",
+        "short": "ACT"
+    },
+    "201514": {
+        "provider": "Kaspol",
+        "asn_description": "KASPOL-AS, PL",
+        "website": "https://www.kaspol.com.pl/",
+        "short": "KAS"
+    },
+    "396948": {
+        "provider": "CloudWebManage",
+        "asn_description": "CLOUDWEBMANAGE-SC, US",
+        "website": "https://www.cloudwebmanage.com/",
+        "short": "CWN"
+    },
+    "33070": {
+        "provider": "RMH14",
+        "asn_description": "RMH-14, US",
+        "website": "https://rmh14.com/",
+        "short": "RMH"
+    },
+    "3249": {
+        "provider": "Estpak",
+        "asn_description": "ESTPAK, EE",
+        "website": "https://www.estpak.ee/",
+        "short": "EST"
+    },
+    "397373": {
+        "provider": "H4Y Technologies",
+        "asn_description": "H4Y-TECHNOLOGIES, US",
+        "website": "https://www.h4y.us/",
+        "short": "H4Y"
+    },
+    "204548": {
+        "provider": "CloudWebManage",
+        "asn_description": "CLOUDWEBMANAGE-IL-FR, US",
+        "website": "https://www.cloudwebmanage.com/",
+        "short": "COA"
+    },
+    "204544": {
+        "provider": "MobinHost",
+        "asn_description": "MOBINHOST, IR",
+        "website": "https://mobinhost.com/",
+        "short": "MOB"
+    },
+    "8468": {
+        "provider": "Entanet",
+        "asn_description": "ENTANET ENTANET International Limited, GB",
+        "website": "https://www.entanet.co.uk/",
+        "short": "ENT"
+    },
+    "212552": {
+        "provider": "Bitcommand",
+        "asn_description": "BITCOMMAND, AM",
+        "website": "https://bitcommand.com/",
+        "short": "BIT"
+    },
+    "41427": {
+        "provider": "MARC-Net",
+        "asn_description": "MARC-NET_AS, SI",
+        "website": "http://www.marc-net.si/",
+        "short": "MAR"
+    },
+    "36352": {
+        "provider": "ColoCrossing",
+        "asn_description": "AS-COLOCROSSING, US",
+        "website": "https://www.colocrossing.com/",
+        "short": "COL"
+    },
+    "49453": {
+        "provider": "Global Layer",
+        "asn_description": "GLOBALLAYER, NL",
+        "website": "https://www.globallayer.com/",
+        "short": "GBY"
+    },
+    "206216": {
+        "provider": "Advin",
+        "asn_description": "ADVIN-AS, US",
+        "website": "https://www.advin.net/",
+        "short": "ADV"
+    },
+    "31034": {
+        "provider": "Aruba",
+        "asn_description": "ARUBA-ASN, IT",
+        "website": "https://www.aruba.it/",
+        "short": "ARU"
+    },
+    "138062": {
+        "provider": "Paas.id",
+        "asn_description": "IDNIC-PAAS-AS-ID PT. Awan Kilat Semesta, ID",
+        "website": "https://paas.id/",
+        "short": "PAA"
+    },
+    "11572": {
+        "provider": "phoenixNAP",
+        "asn_description": "SS-ATL, US",
+        "website": "https://phoenixnap.com/",
+        "short": "PHO"
+    },
+    "36454": {
+        "provider": "Conseev Host",
+        "asn_description": "CL-794, US",
+        "website": "https://conseevhost.com/",
+        "short": "CON"
+    },
+    "27323": {
+        "provider": "ServerStadium",
+        "asn_description": "SERVERSTADIUM, US",
+        "website": "https://serverstadium.com/",
+        "short": "SEU"
+    },
+    "18918": {
+        "provider": "Uno Communications",
+        "asn_description": "UNOCOMM, US",
+        "website": "https://www.unocomm.com/",
+        "short": "UNO"
+    },
+    "207604": {
+        "provider": "United Internet ",
+        "asn_description": "UNITED, RS",
+        "website": "https://united.rs/",
+        "short": "UNI"
+    },
+    "32489": {
+        "provider": "Amanahosting",
+        "asn_description": "AMANAHA-NEW, CA",
+        "website": "https://www.amanahosting.com/",
+        "short": "AMA"
+    },
+    "42730": {
+        "provider": "Evanzo",
+        "asn_description": "EVANZOAS, DE",
+        "website": "https://www.evanzo.com/",
+        "short": "EVA"
+    },
+    "139580": {
+        "provider": "RimuHosting",
+        "asn_description": "RIMUHOSTING-AS-AP RIMU HOSTING LIMITED, NZ",
+        "website": "https://rimuhosting.com/ http://www.master.cz/",
+        "short": "RIM"
+    },
+    "24971": {
+        "provider": "Master Internet",
+        "asn_description": "MASTER-AS Czech Republic www.master.cz, CZ",
+        "website": "http://www.master.cz/",
+        "short": "MAS"
+    },
+    "17511": {
+        "provider": "Optage",
+        "asn_description": "OPTAGE OPTAGE Inc., JP",
+        "website": "https://optage.co.jp/en/",
+        "short": "OPT"
+    },
+    "8972": {
+        "provider": "Host Europe",
+        "asn_description": "GD-EMEA-DC-SXB1, DE",
+        "website": "https://hosteurope.de",
+        "short": "HTP"
+    },
+    "46785": {
+        "provider": "Quasar Data Center",
+        "asn_description": "QUASAR-DATA-CENTER, US",
+        "website": "https://www.quasar.us/",
+        "short": "QAT"
+    },
+    "210083": {
+        "provider": "Privex",
+        "asn_description": "PRIVEX, BZ",
+        "website": "https://privex.io/",
+        "short": "PVV"
+    },
+    "52355": {
+        "provider": "Jalasoft",
+        "asn_description": "Jalasoft Corp., BO",
+        "website": "https://www.jalasoft.com/",
+        "short": "JAL"
+    },
+    "50347": {
+        "provider": "Zontera",
+        "asn_description": "ZONTERRA-AS, RO",
+        "website": "https://zontera.com",
+        "short": "ZON"
+    },
+    "197019": {
+        "provider": "WEDOS",
+        "asn_description": "WEDOS, CZ",
+        "website": "https://hosting.wedos.com/",
+        "short": "WED"
+    },
+    "12574": {
+        "provider": "hosting.de",
+        "asn_description": "ROUTING Franzstr. 51, 52064 Aachen, DE",
+        "website": "https://www.hosting.de/",
+        "short": "HSD"
+    },
+    "7819": {
+        "provider": "Global IP Networks",
+        "asn_description": "GLOBAL-IP-NETWORKS, US",
+        "website": "https://www.globalipnetworks.com/",
+        "short": "GLI"
+    },
+    "33059": {
+        "provider": "Momentum",
+        "asn_description": "MOMENTUM33059, US",
+        "website": "https://gomomentum.com/",
+        "short": "MOM"
+    },
+    "207709": {
+        "provider": "HizHosting",
+        "asn_description": "HIZHOSTING, TR",
+        "website": "https://www.hizhosting.com/",
+        "short": "HIZ"
+    },
+    "60798": {
+        "provider": "AS Servereasy",
+        "asn_description": "ASSERVEREASY, IT",
+        "website": "https://www.asservereasy.com/",
+        "short": "ASS"
+    },
+    "61098": {
+        "provider": "Exoscale",
+        "asn_description": "EXOSCALE, CH",
+        "website": "https://www.exoscale.com/",
+        "short": "EXO"
+    },
+    "51159": {
+        "provider": "Cloud Space",
+        "asn_description": "THINKSYSTEMSUK-ASN, GB",
+        "website": "https://www.cloudspaceuk.co.uk/",
+        "short": "CLS"
+    },
+    "59253": {
+        "provider": "Leaseweb",
+        "asn_description": "LEASEWEB-APAC-SIN-11 Leaseweb Asia Pacific pte. ltd., SG",
+        "website": "https://www.leaseweb.com/",
+        "short": "LSB"
+    },
+    "29550": {
+        "provider": "Simply Transit",
+        "asn_description": "SIMPLYTRANSIT, GB",
+        "website": "https://www.simplytransit.net/",
+        "short": "SIM"
+    },
+    "42652": {
+        "provider": "Delunet",
+        "asn_description": "DELUNET, DE",
+        "website": "https://www.delunet.com/",
+        "short": "DLT"
+    },
+    "30475": {
+        "provider": "We Host Websites",
+        "asn_description": "WEHOSTWEBSITES-COM, US",
+        "website": "https://www.wehostwebsites.com/",
+        "short": "WEH"
+    },
+    "64236": {
+        "provider": "Unreal Hosting Solutions",
+        "asn_description": "UNREAL-SERVERS, US",
+        "website": "https://www.unreal-hosting.com/",
+        "short": "UNR"
+    },
+    "63473": {
+        "provider": "HostHatch",
+        "asn_description": "HOSTHATCH, US",
+        "website": "https://hosthatch.com/",
+        "short": "HTC"
+    },
+    "29468": {
+        "provider": "Infracom",
+        "asn_description": "INFRACOM, SE",
+        "website": "http://www.infracom.se/",
+        "short": "INF"
+    },
+    "20738": {
+        "provider": "Host Europe",
+        "asn_description": "GD-EMEA-DC-LD5, DE",
+        "website": "https://www.hosteurope.de/en/",
+        "short": "HTR"
+    },
+    "40476": {
+        "provider": "ScalaHosting",
+        "asn_description": "SCALAHOSTING, US",
+        "website": "https://www.scalahosting.com/",
+        "short": "SCA"
+    },
+    "45177": {
+        "provider": "Devoli",
+        "asn_description": "DEVOLI-AS-AP Devoli, NZ",
+        "website": "https://www.devoli.co.nz/",
+        "short": "DEV"
+    },
+    "44477": {
+        "provider": "Stark Industries",
+        "asn_description": "STARK-INDUSTRIES, GB",
+        "website": "https://stark-industries.solutions/",
+        "short": "STA"
+    },
+    "32625": {
+        "provider": "OffsiteNOC",
+        "asn_description": "OFFSITE-1, US",
+        "website": "https://offsitenoc.com/",
+        "short": "OFF"
+    },
+    "21013": {
+        "provider": "IT&Tel",
+        "asn_description": "ITANDTEL-AS Wels, AT",
+        "website": "https://www.itandtel.at/",
+        "short": "IT&"
+    },
+    "53667": {
+        "provider": "BUYVM",
+        "asn_description": "PONYNET, US",
+        "website": "https://buyvm.net/",
+        "short": "BUY"
+    },
+    "206170": {
+        "provider": "Inleed",
+        "asn_description": "INLEED, SE",
+        "website": "https://inleed.se/",
+        "short": "INL"
+    },
+    "60016": {
+        "provider": "ASFS",
+        "asn_description": "ASFS3, CH",
+        "website": "https://asfs.ch/",
+        "short": "ASF"
+    },
+    "60924": {
+        "provider": "Orixcom",
+        "asn_description": "ORIXCOM, IE",
+        "website": "https://www.orixcom.com/",
+        "short": "ORI"
+    },
+    "25509": {
+        "provider": "Vortex",
+        "asn_description": "VORTEX-AS Skulagotu 19, IS",
+        "website": "https://vortex.is/",
+        "short": "VOR"
+    },
+    "396949": {
+        "provider": "CloudWebManage",
+        "asn_description": "CLOUDWEBMANAGE-TX, US",
+        "website": "https://www.cloudwebmanage.com/",
+        "short": "CBN"
+    },
+    "52512": {
+        "provider": "OpenCloud",
+        "asn_description": "OPENCLOUD SpA, CL",
+        "website": "https://www.opencloud.cl/",
+        "short": "OPE"
+    },
+    "45090": {
+        "provider": "Tencent",
+        "asn_description": "TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN",
+        "website": "https://www.tencent.com/",
+        "short": "TEN"
+    },
+    "50178": {
+        "provider": "Limits",
+        "asn_description": "LIMITIS-AS, IT",
+        "website": "https://www.limitis.it/",
+        "short": "LIM"
+    },
+    "58328": {
+        "provider": "Imafex",
+        "asn_description": "IMAFEX-AS, SK",
+        "website": "https://imafex.sk/",
+        "short": "IMA"
+    },
+    "131921": {
+        "provider": "GlobalSign",
+        "asn_description": "GMOCL GMO GlobalSign Holdings K.K., JP",
+        "website": "https://www.globalsign.com/",
+        "short": "GLG"
+    },
+    "48661": {
+        "provider": "AirwayNet",
+        "asn_description": "AIRWAYNET, CZ",
+        "website": "https://www.airwaynet.cz/",
+        "short": "AIR"
+    },
+    "39923": {
+        "provider": "Unix-Solutions",
+        "asn_description": "AS-UNIXSOLUTIONS Unix-Solutions Network, BE",
+        "website": "https://www.unix-solutions.be/",
+        "short": "UNS"
+    },
+    "47692": {
+        "provider": "Nessus",
+        "asn_description": "NESSUS, AT",
+        "website": "https://www.nessus.at/",
+        "short": "NES"
+    },
+    "55293": {
+        "provider": "A2 Hosting",
+        "asn_description": "A2HOSTING, US",
+        "website": "https://www.a2hosting.com/",
+        "short": "A2H"
+    },
+    "31549": {
+        "provider": "Rasana Network Solutions",
+        "asn_description": "RASANA, IR",
+        "website": "http://www.rasana.net/",
+        "short": "RAS"
+    },
+    "15456": {
+        "provider": "InterNetX",
+        "asn_description": "INTERNETX-AS, DE",
+        "website": "https://www.internetx.com/",
+        "short": "IRR"
+    },
+    "61317": {
+        "provider": "Heficed",
+        "asn_description": "ASDETUK www.heficed.com, GB",
+        "website": "https://www.heficed.com/",
+        "short": "HEF"
+    },
+    "212238": {
+        "provider": "DataCamp",
+        "asn_description": "CDNEXT, GB",
+        "website": "https://www.datacamp.co.uk/",
+        "short": "DAT"
+    },
+    "60729": {
+        "provider": "zwiebelfreunde",
+        "asn_description": "ZWIEBELFREUN, DE",
+        "website": "https://zwiebelfreunde.de",
+        "short": "ZWI"
+    },
+    "208323": {
+        "provider": "Applied Privacy",
+        "asn_description": "APPLIEDPRIVACY-AS, AT",
+        "website": "https://www.applied-privacy.net/",
+        "short": "APP"
+    },
+    "11878": {
+        "provider": "Tzulo",
+        "asn_description": "TZULO, US",
+        "website": "https://www.tzulo.com/",
+        "short": "TZU"
+    },
+    "43350": {
+        "provider": "NForce",
+        "asn_description": "NFORCE, NL",
+        "website": "https://www.nforce.com/",
+        "short": "NFO"
+    },
+    "49544": {
+        "provider": "i3D.net",
+        "asn_description": "I3DNET, NL",
+        "website": "https://www.i3d.net/",
+        "short": "I3D"
+    },
+    "136557": {
+        "provider": "Host Universal",
+        "asn_description": "HOST-AS-AP Host Universal Pty Ltd, AU",
+        "website": "https://www.hostuniversal.com.au/",
+        "short": "HUL"
+    },
+    "200295": {
+        "provider": "Skoed",
+        "asn_description": "MT-SKOED, MT",
+        "website": "https://www.skoed.com/",
+        "short": "SKO"
+    },
+    "8376": {
+        "provider": "Jordan Data Communications Company",
+        "asn_description": "Jordan Data Communications, JO",
+        "website": "https://jordandata.jo/",
+        "short": "JOR"
+    },
+    "20029": {
+        "provider": "H5 Data Centers",
+        "asn_description": "H5-DATA-CENTERS-GLOBAL, US",
+        "website": "https://www.h5datacenters.com/",
+        "short": "H5D"
+    },
+    "203020": {
+        "provider": "Hostroyale Technologies",
+        "asn_description": "HOSTROYALE, IN",
+        "website": "https://www.hostroyale.com/",
+        "short": "HLE"
+    },
+    "40994": {
+        "provider": "Alwyzon",
+        "asn_description": "ALWYZON Alwyzon, a trading name of Hohl IT e.U., AT",
+        "website": "https://www.alwyzon.com/",
+        "short": "ALW"
+    },
+    "25668": {
+        "provider": "Cipherkey Exchange Corp",
+        "asn_description": "CIPHERKEY, CA",
+        "website": "https://cipherkey.com/",
+        "short": "CIP"
+    },
+    "28753": {
+        "provider": "Leaseweb",
+        "asn_description": "LEASEWEB-DE-FRA-10, DE",
+        "website": "https://www.leaseweb.com/",
+        "short": "LAB"
+    },
+    "200651": {
+        "provider": "Flokinet Ltd.",
+        "asn_description": "FLOKINET, SC",
+        "website": "https://flokinet.is/",
+        "short": "FLO"
+    },
+    "22612": {
+        "provider": "Namecheap",
+        "asn_description": "NAMECHEAP-NET, US",
+        "website": "https://www.namecheap.com/",
+        "short": "NAM"
+    },
+    "395748": {
+        "provider": "NeuStar",
+        "asn_description": "NS, US",
+        "website": "https://www.home.neustar/",
+        "short": "NEU"
+    },
+    "60905": {
+        "provider": "European Datacenter Cloud",
+        "asn_description": "EUDC-CLOUD-AS, RO",
+        "website": "https://eudc.net/",
+        "short": "EUR"
+    },
+    "135060": {
+        "provider": "Telair",
+        "asn_description": "TELAIRPTYLTD-AS-AP Telair Pty Ltd, AU",
+        "website": "https://www.telair.com.au/",
+        "short": "TAI"
+    },
+    "48926": {
+        "provider": "PE3NY.net s.r.o.",
+        "asn_description": "PE3NY-AS, CZ",
+        "website": "https://www.pe3ny.net/",
+        "short": "PE3"
+    },
+    "34977": {
+        "provider": "Procono, S.A.",
+        "asn_description": "PROCONO-AS, ES",
+        "website": "https://www.procono.com/",
+        "short": "PRO"
+    },
+    "51430": {
+        "provider": "AltusHost B.V.",
+        "asn_description": "ALTUS, NL",
+        "website": "https://www.altushost.com/",
+        "short": "ALT"
+    },
+    "45903": {
+        "provider": "CMC Telecom Infrastructure Company",
+        "asn_description": "CMCTELECOM-AS-VN CMC Telecom Infrastructure Company, VN",
+        "website": "https://www.cmcti.vn/",
+        "short": "CMC"
+    },
+    "41536": {
+        "provider": "SXS.ro",
+        "asn_description": "SXS-AS, RO",
+        "website": "http://www.sxs.ro/",
+        "short": "SXS"
+    },
+    "35913": {
+        "provider": "DediPath",
+        "asn_description": "DEDIPATH-LLC, US",
+        "website": "https://www.dedipath.com/",
+        "short": "DED"
+    },
+    "47869": {
+        "provider": "Netrouting",
+        "asn_description": "NETROUTING-AS, NL",
+        "website": "https://www.netrouting.com/",
+        "short": "NET"
+    },
+    "59642": {
+        "provider": "Cherry Servers",
+        "asn_description": "CHERRYSERVERS2-AS, LT",
+        "website": "https://www.cherryservers.com/",
+        "short": "CHE"
+    },
+    "40784": {
+        "provider": "HiQ Data Corporation",
+        "asn_description": "HIQDATA, US",
+        "website": "https://www.hiqdata.com/",
+        "short": "HIQ"
+    },
+    "19693": {
+        "provider": "Centrilogic",
+        "asn_description": "CENTRILOGIC-ASN, US",
+        "website": "https://www.centrilogic.com/",
+        "short": "CEN"
+    },
+    "63018": {
+        "provider": "Dedicated",
+        "asn_description": "DEDICATED, US",
+        "website": "https://dedicated.com/",
+        "short": "DIE"
+    },
+    "208046": {
+        "provider": "ColocationIX",
+        "asn_description": "COLOCATIONX-DATACENTER Dedicated Server Provider, GB",
+        "website": "https://www.colocationix.com/",
+        "short": "CAO"
+    },
+    "41281": {
+        "provider": "Keff",
+        "asn_description": "KEFF Interplanetary Communications Network, GB",
+        "website": "https://keff.org/",
+        "short": "KEF"
+    },
+    "2027": {
+        "provider": "MilkyWan",
+        "asn_description": "MILKYWAN MilkyWan, FR",
+        "website": "https://www.milkywan.com/",
+        "short": "MIL"
+    },
+    "199968": {
+        "provider": "Integrated Web Services FZ",
+        "asn_description": "IWSNET, AE",
+        "website": "https://www.iwsfz.com/",
+        "short": "IWS"
+    },
+    "56322": {
+        "provider": "ServerAstra Kft",
+        "asn_description": "SERVERASTRA-AS, HU",
+        "website": "https://www.serverastra.com/",
+        "short": "SEF"
+    },
+    "60404": {
+        "provider": "LiteServer Holding B.V.",
+        "asn_description": "LITESERVER, NL",
+        "website": "https://www.liteserver.nl/",
+        "short": "LIT"
+    },
+    "206804": {
+        "provider": "EstNOC O\u00dc",
+        "asn_description": "ESTNOC-GLOBAL, EE",
+        "website": "https://www.estnoc.ee/",
+        "short": "ENC"
+    },
+    "40138": {
+        "provider": "MD.net, Wholesale Services Provider, AU",
+        "asn_description": "MDNET, US",
+        "website": "https://www.md.net.au/",
+        "short": "MDN"
+    },
+    "47447": {
+        "provider": "TTM",
+        "asn_description": "TTM, DE",
+        "website": "https://www.ttm.de/",
+        "short": "TTM"
+    },
+    "45671": {
+        "provider": "Servers Australia",
+        "asn_description": "AS45671-NET-AU Wholesale Services Provider, AU",
+        "website": "https://www.serversaustralia.com.au/",
+        "short": "SES"
+    },
+    "212806": {
+        "provider": "Stratagem Intelligent Technology Solutions",
+        "asn_description": "STRATAGEM, GB",
+        "website": "https://www.stratagemits.com/",
+        "short": "SIT"
+    },
+    "57112": {
+        "provider": "F2X ICT Solutions B.V.",
+        "asn_description": "ASN-F2X, NL",
+        "website": "https://www.f2xict.com/",
+        "short": "F2X"
+    },
+    "46562": {
+        "provider": "Performive",
+        "asn_description": "PERFORMIVE, US",
+        "website": "https://performive.com/",
+        "short": "PER"
+    },
+    "58627": {
+        "provider": "OneAsia Network Limited",
+        "asn_description": "ONEASIA-NET-AS OneAsia Network Limited, HK",
+        "website": "https://www.oneas1a.com/",
+        "short": "ONE"
+    },
+    "8220": {
+        "provider": "Colt Technology Services Group Limited",
+        "asn_description": "COLT COLT Technology Services Group Limited, GB",
+        "website": "https://www.colt.net/",
+        "short": "CNM"
+    },
+    "1741": {
+        "provider": "CSC",
+        "asn_description": "FUNETAS, FI",
+        "website": "https://www.csc.fi/asiakkaat",
+        "short": "CSC"
+    },
+    "9930": {
+        "provider": "Time",
+        "asn_description": "TTNET-MY TIME dotCom Berhad No. 14, Jalan Majistret U126 Hicom Glenmarie Industrial Park 40150 Shah Alam Selangor, Malaysia, MY",
+        "website": "https://www.mytime.com.my/",
+        "short": "TIM"
+    },
+    "60414": {
+        "provider": "Netinch Oy",
+        "asn_description": "NETINCH, FI",
+        "website": "https://www.netinch.fi/",
+        "short": "NCC"
+    },
+    "4713": {
+        "provider": "NTT Communications Corporation",
+        "asn_description": "OCN NTT Communications Corporation, JP",
+        "website": "https://www.ntt.com/",
+        "short": "NTT"
+    },
+    "47720": {
+        "provider": "Cork Internet eXchange",
+        "asn_description": "CIX-AS, IE",
+        "website": "https://www.inex.ie/",
+        "short": "COR"
+    },
+    "51765": {
+        "provider": "Creanova Hosting Solutions",
+        "asn_description": "CREANOVA-AS Oy Creanova Hosting Solutions Ltd., FI",
+        "website": "https://www.creanova.org/",
+        "short": "CRE"
+    },
+    "6939": {
+        "provider": "Hurricane Electric",
+        "asn_description": "HURRICANE, US",
+        "website": "https://www.hurricaneelectric.com/",
+        "short": "HUR"
+    },
+    "12668": {
+        "provider": "Miralogic LLC",
+        "asn_description": "MIRALOGIC-AS, RU",
+        "website": "https://www.miralogic.com/",
+        "short": "MIR"
+    },
+    "62642": {
+        "provider": "Bigleaf Networks",
+        "asn_description": "BIGLEAF, US",
+        "website": "https://www.bigleaf.net/",
+        "short": "BIG"
+    },
+    "25985": {
+        "provider": "Symbio Networks",
+        "asn_description": "SYMBIOSYSTEMS, US",
+        "website": "https://symbionetworks.com/",
+        "short": "SYM"
+    },
+    "49505": {
+        "provider": "Selectel",
+        "asn_description": "SELECTEL, RU",
+        "website": "https://selectel.ru/",
+        "short": "SEL"
+    },
+    "46672": {
+        "provider": "Cologix",
+        "asn_description": "COLOGIX-JAX, US",
+        "website": "https://www.cologix.com/",
+        "short": "CLX"
+    },
+    "32613": {
+        "provider": "iWeb Technologies",
+        "asn_description": "IWEB-AS, CA",
+        "website": "https://iweb.com/",
+        "short": "IWE"
+    },
+    "44679": {
+        "provider": "Binbox Global Services",
+        "asn_description": "BINBOX-GLOBAL-SERVICES, RO",
+        "website": "https://www.binbox.com/",
+        "short": "BIN"
+    },
+    "14576": {
+        "provider": "Hosting Solutions",
+        "asn_description": "HOSTING-SOLUTIONS, US",
+        "website": "https://hostingsolutions.com",
+        "short": "HSN"
+    },
+    "46475": {
+        "provider": "Limestone Networks",
+        "asn_description": "LIMESTONENETWORKS, US",
+        "website": "https://limestonenetworks.com",
+        "short": "LSR"
+    },
+    "22439": {
+        "provider": "Perfect International",
+        "asn_description": "PERFECT-INTERNATIONAL, US",
+        "website": "https://www.perfectip.net/",
+        "short": "PTT"
+    },
+    "206264": {
+        "provider": "Koddos",
+        "asn_description": "AMARUTU-TECHNOLOGY, SC",
+        "website": "https://koddos.net/",
+        "short": "KOD"
+    },
+    "7979": {
+        "provider": "Servers.com",
+        "asn_description": "SERVERS-COM, US",
+        "website": "https://www.servers.com/",
+        "short": "SRC"
+    },
+    "397423": {
+        "provider": "Tier.Net",
+        "asn_description": "TIER-NET, US",
+        "website": "https://www.tier.net/",
+        "short": "TIE"
+    },
+    "262287": {
+        "provider": "Latitude",
+        "asn_description": "Latitude.sh LTDA, BR",
+        "website": "https://www.latitude.sh/",
+        "short": "LAT"
+    },
+    "204770": {
+        "provider": "Cherry Servers",
+        "asn_description": "CHERRYSERVERS3-AS, LT",
+        "website": "https://www.cherryservers.com/",
+        "short": "CHE"
+    },
+    "53850": {
+        "provider": "GorillaServers",
+        "asn_description": "GORILLASERVERS, US",
+        "website": "https://gorillaservers.com/",
+        "short": "GOR"
+    },
+    "34867": {
+        "provider": "Cosmonova LLC",
+        "asn_description": "COSMONOVA-AS Cosmonova LLC, UA",
+        "website": "https://www.cosmonova.net/",
+        "short": "COS"
+    },
+    "13830": {
+        "provider": "Nexril",
+        "asn_description": "NEXRIL, US",
+        "website": "https://www.nexril.net/",
+        "short": "NEX"
+    },
+    "397086": {
+        "provider": "LayerHost",
+        "asn_description": "LAYER-HOST-HOUSTON, US",
+        "website": "https://www.layerhost.com/",
+        "short": "LAY"
+    },
+    "44066": {
+        "provider": "First Colo",
+        "asn_description": "DE-FIRSTCOLO www.first-colo.net, DE",
+        "website": "https://www.first-colo.net/",
+        "short": "FIR"
+    },
+    "3255": {
+        "provider": "UARNet-StelNet",
+        "asn_description": "UARNET-AS UARNet-StelNet, UA",
+        "website": "https://www.uar.net/",
+        "short": "UAR"
+    },
+    "33438": {
+        "provider": "StackPath",
+        "asn_description": "STACKPATH, US",
+        "website": "https://www.stackpath.com/",
+        "short": "SCT"
+    },
+    "199610": {
+        "provider": "Marbis",
+        "asn_description": "MARBIS, DE",
+        "website": "https://marbis.net/",
+        "short": "MBB"
+    },
+    "27630": {
+        "provider": "Xfernet",
+        "asn_description": "AS-XFERNET, US",
+        "website": "https://www.xfernet.net/",
+        "short": "XFE"
+    },
+    "55286": {
+        "provider": "ServerMania",
+        "asn_description": "SERVER-MANIA, CA",
+        "website": "https://www.servermania.com/",
+        "short": "SRI"
+    },
+    "56504": {
+        "provider": "HostCircle",
+        "asn_description": "HOSTCIRCLE-L-, NL",
+        "website": "https://www.hostcircle.com/",
+        "short": "HCR"
+    },
+    "32475": {
+        "provider": "SingleHop LLC",
+        "asn_description": "SINGLEHOP-LLC, US",
+        "website": "https://www.singlehop.com/",
+        "short": "SIN"
+    },
+    "35320": {
+        "provider": "ETT UA",
+        "asn_description": "ETT-AS, UA",
+        "website": "https://ett.ua/",
+        "short": "ETT"
+    },
+    "399114": {
+        "provider": "Zesty",
+        "asn_description": "ZESTY-CABLE, US",
+        "website": "https://zestystore.com/",
+        "short": "ZES"
+    },
+    "398427": {
+        "provider": "Markley Group",
+        "asn_description": "MARKLEY-NETWORK-SERVICES, US",
+        "website": "https://www.markleygroup.com/network-services",
+        "short": "MRY"
+    },
+    "197235": {
+        "provider": "Avantel",
+        "asn_description": "AVANTEL-SAMARA, RU",
+        "website": "https://www.avantel.ru/",
+        "short": "AVA"
+    },
+    "33549": {
+        "provider": "Whipcord",
+        "asn_description": "WHIPCORD, CA",
+        "website": "https://www.whipcord.com/",
+        "short": "WHI"
+    },
+    "58061": {
+        "provider": "Scalaxy",
+        "asn_description": "SCALAXY-AS, NL",
+        "website": "https://scalaxy.nl/",
+        "short": "SLL"
+    },
+    "57043": {
+        "provider": "Hostkey",
+        "asn_description": "HOSTKEY-AS, NL",
+        "website": "https://www.hostkey.com/",
+        "short": "HTK"
+    },
+    "44486": {
+        "provider": "Synlinq",
+        "asn_description": "SYNLINQ synlinq.de, DE",
+        "website": "https://www.synlinq.de/",
+        "short": "SYN"
+    },
+    "50304": {
+        "provider": "Blix Solutions",
+        "asn_description": "BLIX, NO",
+        "website": "https://blix.com",
+        "short": "BLI"
+    },
+    "34123": {
+        "provider": "Netorn",
+        "asn_description": "NETORN-AS, RU",
+        "website": "https://netorn.ru/",
+        "short": "NTR"
+    },
+    "50867": {
+        "provider": "Hostkey RU",
+        "asn_description": "HOSTKEY-RU-AS, NL",
+        "website": "https://www.hostkey.ru/",
+        "short": "HSE"
+    },
+    "211091": {
+        "provider": "IP House",
+        "asn_description": "IPHOUSE, GB",
+        "website": "https://www.iphouse.co.uk/",
+        "short": "IPH"
+    },
+    "51945": {
+        "provider": "Connetu",
+        "asn_description": "CONNETU, GB",
+        "website": "https://www.connetu.com/",
+        "short": "CNT"
+    },
+    "1828": {
+        "provider": "Unitas Global",
+        "asn_description": "UNITAS, US",
+        "website": "https://www.unitasglobal.com/",
+        "short": "UIL"
+    },
+    "53292": {
+        "provider": "Mway",
+        "asn_description": "MWAY, US",
+        "website": "https://mway.com/",
+        "short": "MWA"
+    },
+    "22147": {
+        "provider": "Packet Surge",
+        "asn_description": "PACKETSURGE, US",
+        "website": "https://www.packetsurge.net/",
+        "short": "PAC"
+    },
+    "3257": {
+        "provider": "GTT",
+        "asn_description": "GTT-BACKBONE GTT, US",
+        "website": "https://www.gtt.net/",
+        "short": "GTT"
+    },
+    "25248": {
+        "provider": "Bluetone",
+        "asn_description": "BLUETONE-AS The Czech Republic, CZ",
+        "website": "http://www.bluetone.cz/",
+        "short": "BLU"
+    },
+    "212728": {
+        "provider": "Psittacus Systems",
+        "asn_description": "PSITTACUSSYSTEMS-AS, GB",
+        "website": "https://www.psittacus.systems/",
+        "short": "PAS"
+    },
+    "42989": {
+        "provider": "Cidensolutions",
+        "asn_description": "AS-CIDEN, DE",
+        "website": "https://www.cidensolutions.com/",
+        "short": "CID"
+    },
+    "15598": {
+        "provider": "IP-Exchange.de",
+        "asn_description": "IPX-AS15598, DE",
+        "website": "https://www.ip-exchange.de/",
+        "short": "IPE"
+    },
+    "43773": {
+        "provider": "Hvosting",
+        "asn_description": "HVOSTING-AS, UA",
+        "website": "https://hvosting.ua/",
+        "short": "HVO"
+    },
+    "13237": {
+        "provider": "Lambdanet",
+        "asn_description": "LAMBDANET-AS European Backbone of AS13237, DE",
+        "website": "http://www.lambdanet.net/",
+        "short": "LAM"
+    },
+    "13768": {
+        "provider": "Cogeco Peer 1",
+        "asn_description": "COGECO-PEER1, CA",
+        "website": "https://www.cogecopeer1.com/",
+        "short": "COG"
+    },
+    "35810": {
+        "provider": "2COM Co",
+        "asn_description": "BIGTELECOM-AS, RU",
+        "website": "https://2com.ru/",
+        "short": "2CO"
+    },
+    "8334": {
+        "provider": "2COM Co",
+        "asn_description": "CO-2COM-AS Moscow, RU",
+        "website": "https://2com.ru/",
+        "short": "2CO"
+    },
+    "31229": {
+        "provider": "PL-Beyond Sp. z o.o.",
+        "asn_description": "PL-BEYOND-AS, PL",
+        "website": "https://pl-beyond.pl/",
+        "short": "PLB"
+    },
+    "49581": {
+        "provider": "Ferdinand Zink KG",
+        "asn_description": "FERDINANDZINK, DE",
+        "website": "https://www.ferdinand-zink.de/",
+        "short": "FER"
+    },
+    "60251": {
+        "provider": "Calypso IT",
+        "asn_description": "CALYPSO-IT, CH",
+        "website": "https://www.calypso-it.ch/",
+        "short": "CAL"
+    },
+    "5518": {
+        "provider": "Telia",
+        "asn_description": "TELIALATVIJA, LV",
+        "website": "https://www.telia.lv/",
+        "short": "TEL"
+    },
+    "20454": {
+        "provider": "Secured Servers",
+        "asn_description": "SSASN2, US",
+        "website": "https://securedservers.com",
+        "short": "SEC"
+    },
+    "45753": {
+        "provider": "Netsec Limited",
+        "asn_description": "NETSEC-HK Netsec Limited, HK",
+        "website": "https://www.netsec.hk/",
+        "short": "NCM"
+    },
+    "12695": {
+        "provider": "Digital Network JSC",
+        "asn_description": "DINET-AS, RU",
+        "website": "https://dnet.ru/",
+        "short": "DIG"
+    },
+    "29208": {
+        "provider": "Quantcom",
+        "asn_description": "QUANTCOM-AS Quantcom a.s., CZ",
+        "website": "https://www.quantcom.cz/",
+        "short": "QAC"
+    },
+    "396477": {
+        "provider": "DNS Networks",
+        "asn_description": "DNSNETWORKS, CA",
+        "website": "https://www.dnsnetworks.ca/",
+        "short": "DNS"
+    },
+    "58010": {
+        "provider": "UVENsys",
+        "asn_description": "UVENSYS, DE",
+        "website": "https://www.uvensys.com/",
+        "short": "UVE"
+    },
+    "3900": {
+        "provider": "Texas.net",
+        "asn_description": "TEXASNET-ASN, US",
+        "website": "https://texas.net/",
+        "short": "TEX"
+    },
+    "62240": {
+        "provider": "Clouvider",
+        "asn_description": "CLOUVIDER Clouvider - Global ASN, GB",
+        "website": "https://www.clouvider.co.uk/",
+        "short": "CUV"
+    },
+    "20278": {
+        "provider": "Nexeon",
+        "asn_description": "NEXEON, US",
+        "website": "https://www.nexeon.com/",
+        "short": "NEE"
+    },
+    "213220": {
+        "provider": "Data Cheap Ltd.",
+        "asn_description": "DATA-CHEAP-AS, RU",
+        "website": "https://datacheap.net/",
+        "short": "DHA"
+    },
+    "13737": {
+        "provider": "Incapsula",
+        "asn_description": "AS-INCX, US",
+        "website": "https://www.incapsula.com/",
+        "short": "INC"
+    },
+    "48357": {
+        "provider": "K4X OU",
+        "asn_description": "K4X, EE",
+        "website": "https://k4x.ee/",
+        "short": "K4X"
+    },
+    "133296": {
+        "provider": "Web Werks India Pvt. Ltd.",
+        "asn_description": "WEBWERKS-AS-IN Web Werks India Pvt. Ltd., IN",
+        "website": "https://www.webwerks.in/",
+        "short": "WIW"
+    },
+    "47440": {
+        "provider": "BST",
+        "asn_description": "BST-AS, RU",
+        "website": "https://www.bst.ru/",
+        "short": "BST"
+    },
+    "42775": {
+        "provider": "DSRT",
+        "asn_description": "DSRT-NET, GB",
+        "website": "https://www.dsrt.uk/",
+        "short": "DSR"
+    },
+    "28725": {
+        "provider": "CETIN",
+        "asn_description": "CETIN-AS, CZ",
+        "website": "https://www.cetin.cz/",
+        "short": "CET"
+    },
+    "201133": {
+        "provider": "Verdina",
+        "asn_description": "VERDINA, BZ",
+        "website": "https://verdina.net/",
+        "short": "VER"
+    },
+    "34989": {
+        "provider": "ServeTheWorld",
+        "asn_description": "SERVETHEWORLD-AS, NO",
+        "website": "https://www.servetheworld.net/",
+        "short": "SVE"
+    },
+    "212027": {
+        "provider": "PebbleHost",
+        "asn_description": "PEBBLEHOST, GB",
+        "website": "https://pebblehost.com/",
+        "short": "PEB"
+    },
+    "35133": {
+        "provider": "Hybula Network",
+        "asn_description": "HYBULA HYBULA-NETWORK, NL",
+        "website": "https://hybula.com/",
+        "short": "HYB"
+    },
+    "55081": {
+        "provider": "24Shells",
+        "asn_description": "24SHELLS, US",
+        "website": "https://24shells.net/",
+        "short": "24S"
+    },
+    "19437": {
+        "provider": "Residential",
+        "asn_description": "SS-ASH, US",
+        "website": "https://www.silverstar.com/",
+        "short": "RES"
+    },
+    "27017": {
+        "provider": "Residential",
+        "asn_description": "ZIPLY-FIBER-LEGACY-ASN, US",
+        "website": "https://ziplyfiber.com/",
+        "short": "RES"
+    },
+    "7922": {
         "provider": "Residential",
         "asn_description": "COMCAST-7922, US",
-        "website": "https://www.xfinity.com/",
+        "website": "https://corporate.comcast.com/",
         "short": "RES"
     },
-    "7018":{
-        "provider": "Residential",
-        "asn_description": "ATT-INTERNET4, US",
-        "website": "https://www.att.com/",
-        "short": "RES"
-    },
-    "701":{
+    "701": {
         "provider": "Residential",
         "asn_description": "UUNET, US",
         "website": "https://www.verizon.com/business/",
         "short": "RES"
     },
-    "6830":{
-        "provider": "Residential",
-        "asn_description": "LIBERTYGLOBAL Liberty Global formerly UPC Broadband Holding, aka AORTA, NL",
-        "website": "",
-        "short": "RES"
-    },
-    "3209":{
-        "provider": "Residential",
-        "asn_description": "VODANET International IP-Backbone of Vodafone, DE",
-        "website": "",
-        "short": "RES"
-    },
-    "852":{
-        "provider": "Residential",
-        "asn_description": "TELUS Communications, CA",
-        "website": "",
-        "short": "RES"
-    },
-    "45629 45758":{
-        "provider": "Residential",
-        "asn_description": "Jastel",
-        "website": "",
-        "short": "RES"
-    },
-    "20001":{
-        "provider": "Residential",
-        "asn_description": "TWC-20001-PACWEST, US",
-        "website": "",
-        "short": "RES"
-    },
-    "33915":{
+    "33915": {
         "provider": "Residential",
         "asn_description": "TNF-AS, NL",
-        "website": "",
+        "website": "https://www.vodafone.com/",
         "short": "RES"
     },
-    "4764":{
-        "provider": "Residential",
-        "asn_description": "WIDEBAND-AS-AP Aussie Broadband, AU",
-        "website": "",
-        "short": "RES"
-    },
-    "12874":{
-        "provider": "Residential",
-        "asn_description": "FASTWEB, IT",
-        "website": "",
-        "short": "RES"
-    },
-    "3320":{
-        "provider": "Residential",
-        "asn_description": "DTAG Internet service provider operations, DE",
-        "website": "",
-        "short": "RES"
-    },
-    "6327":{
-        "provider": "Residential",
-        "asn_description": "SHAW, CA",
-        "website": "",
-        "short": "RES"
-    },
-    "4766":{
-        "provider": "Residential",
-        "asn_description": "KIXS-AS-KR Korea Telecom, KR",
-        "website": "",
-        "short": "RES"
-    },
-    "5650":{
-        "provider": "Residential",
-        "asn_description": "FRONTIER-FRTR, US",
-        "website": "",
-        "short": "RES"
-    },
-    "22773":{
-        "provider": "Residential",
-        "asn_description": "ASN-CXA-ALL-CCI-22773-RDC, US",
-        "website": "",
-        "short": "RES"
-    },
-    "5089":{
-        "provider": "Residential",
-        "asn_description": "NTL, GB",
-        "website": "",
-        "short": "RES"
-    },
-    "35598":{
-        "provider": "Residential",
-        "asn_description": "INETCOM, RU",
-        "website": "",
-        "short": "RES"
-    },
-    "577":{
-        "provider": "Residential",
-        "asn_description": "BACOM, CA",
-        "website": "",
-        "short": "RES"
-    },
-    "1136":{
-        "provider": "Residential",
-        "asn_description": "KPN KPN National, NL",
-        "website": "",
-        "short": "RES"
-    },
-    "7545":{
-        "provider": "Residential",
-        "asn_description": "TPG-INTERNET-AP TPG Telecom Limited, AU",
-        "website": "",
-        "short": "RES"
-    },
-    "2856":{
-        "provider": "Residential",
-        "asn_description": "BT-UK-AS BTnet UK Regional network, GB",
-        "website": "",
-        "short": "RES"
-    },
-    "20115":{
-        "provider": "Residential",
-        "asn_description": "CHARTER-20115, US",
-        "website": "",
-        "short": "RES"
-    },
-    "3215":{
-        "provider": "Residential",
-        "asn_description": "France Telecom - Orange, FR",
-        "website": "",
-        "short": "RES"
-    },
-    "":{
-        "provider": "Residential",
-        "asn_description": "",
-        "website": "",
-        "short": "RES"
-    },
-    "3352":{
-        "provider": "Residential",
-        "asn_description": "TELEFONICA_DE_ESPANA, ES",
-        "website": "",
-        "short": "RES"
-    },
-    "6848":{
-        "provider": "Residential",
-        "asn_description": "TELENET-AS, BE",
-        "website": "",
-        "short": "RES"
-    },
-    "8881":{
-        "provider": "Residential",
-        "asn_description": "VERSATEL, DE",
-        "website": "",
-        "short": "RES"
-    },
-    "12322":{
-        "provider": "Residential",
-        "asn_description": "PROXAD, FR",
-        "website": "",
-        "short": "RES"
-    },
-    "16591":{
-        "provider": "Residential",
-        "asn_description": "GOOGLE-FIBER, US",
-        "website": "",
-        "short": "RES"
-    },
-    "9318":{
-        "provider": "Residential",
-        "asn_description": "SKB-AS SK Broadband Co Ltd, KR",
-        "website": "",
-        "short": "RES"
-    },
-    "13030":{
+    "13030": {
         "provider": "Residential",
         "asn_description": "INIT7, CH",
-        "website": "",
+        "website": "https://init7.net",
         "short": "RES"
     },
-    "812":{
+    "7018": {
         "provider": "Residential",
-        "asn_description": "ROGERS-COMMUNICATIONS, CA",
-        "website": "",
+        "asn_description": "ATT-INTERNET4, US",
+        "website": "https://www.att.com/",
         "short": "RES"
     },
-    "1221":{
+    "9121": {
         "provider": "Residential",
-        "asn_description": "ASN-TELSTRA Telstra Corporation Ltd, AU",
-        "website": "",
+        "asn_description": "TTNET, TR",
+        "website": "https://www.ttnet.com.tr/",
         "short": "RES"
     },
-    "4760":{
+    "5378": {
         "provider": "Residential",
-        "asn_description": "HKTIMS-AP HKT Limited, HK",
-        "website": "",
+        "asn_description": "Vodafone, GB",
+        "website": "https://www.vodafone.co.uk/",
         "short": "RES"
     },
-    "29695":{
-        "provider": "Residential",
-        "asn_description": "ALTIBOX_AS Norway, NO",
-        "website": "",
-        "short": "RES"
-    },
-    "6810":{
-        "provider": "Residential",
-        "asn_description": "BEZEK, IL",
-        "website": "",
-        "short": "RES"
-    },
-    "3462":{
-        "provider": "Residential",
-        "asn_description": "HINET Data Communication Business Group, TW",
-        "website": "",
-        "short": "RES"
-    },
-    "20055":{
-        "provider": "Residential",
-        "asn_description": "AS-WHOLESAIL, US",
-        "website": "",
-        "short": "RES"
-    },
-    "6079":{
-        "provider": "Residential",
-        "asn_description": "RCN-AS, US",
-        "website": "",
-        "short": "RES"
-    },
-    "9506":{
+    "9506": {
         "provider": "Residential",
         "asn_description": "SINGTEL-FIBRE Singtel Fibre Broadband, SG",
-        "website": "",
+        "website": "https://singtel.com",
         "short": "RES"
     },
-    "10796":{
+    "5089": {
+        "provider": "Residential",
+        "asn_description": "NTL, GB",
+        "website": "https://www.virginmedia.com/",
+        "short": "RES"
+    },
+    "11351": {
+        "provider": "Residential",
+        "asn_description": "TWC-11351-NORTHEAST, US",
+        "website": "https://charter.com",
+        "short": "RES"
+    },
+    "7545": {
+        "provider": "Residential",
+        "asn_description": "TPG-INTERNET-AP TPG Telecom Limited, AU",
+        "website": "https://tpg.com.au",
+        "short": "RES"
+    },
+    "20001": {
+        "provider": "Residential",
+        "asn_description": "TWC-20001-PACWEST, US",
+        "website": "https://charter.com",
+        "short": "RES"
+    },
+    "3209": {
+        "provider": "Residential",
+        "asn_description": "VODANET International IP-Backbone of Vodafone, DE",
+        "website": "https://www.vodafone.com/",
+        "short": "RES"
+    },
+    "3303": {
+        "provider": "Residential",
+        "asn_description": "SWISSCOM Swisscom Switzerland Ltd, CH",
+        "website": "https://www.swisscom.ch",
+        "short": "RES"
+    },
+    "6871": {
+        "provider": "Residential",
+        "asn_description": "PLUSNET UK Internet Service Provider, GB",
+        "website": "https://www.plus.net",
+        "short": "RES"
+    },
+    "3215": {
+        "provider": "Residential",
+        "asn_description": "France Telecom - Orange, FR",
+        "website": "https://orange.com",
+        "short": "RES"
+    },
+    "7992": {
+        "provider": "Residential",
+        "asn_description": "COGECOWAVE, CA",
+        "website": "https://www.cogeco.ca",
+        "short": "RES"
+    },
+    "3352": {
+        "provider": "Residential",
+        "asn_description": "TELEFONICA_DE_ESPANA, ES",
+        "website": "https://telefonica.com",
+        "short": "RES"
+    },
+    "2516": {
+        "provider": "Residential",
+        "asn_description": "KDDI KDDI CORPORATION, JP",
+        "website": "https://www.kddi.com",
+        "short": "RES"
+    },
+    "12727": {
+        "provider": "Residential",
+        "asn_description": "VIALIS Colmar, France, FR",
+        "website": "http://www.vialis.tm.fr/",
+        "short": "RES"
+    },
+    "8151": {
+        "provider": "Residential",
+        "asn_description": "Uninet S.A. de C.V., MX",
+        "website": "https://telmex.com/web/acerca-de-telmex/home",
+        "short": "RES"
+    },
+    "4685": {
+        "provider": "Residential",
+        "asn_description": "ASAHI-NET Asahi Net, JP",
+        "website": "https://www.asahi-net.or.jp",
+        "short": "RES"
+    },
+    "6079": {
+        "provider": "Residential",
+        "asn_description": "RCN-AS, US",
+        "website": "https://rcn.com",
+        "short": "RES"
+    },
+    "16591": {
+        "provider": "Residential",
+        "asn_description": "GOOGLE-FIBER, US",
+        "website": "https://fiber.google.com",
+        "short": "RES"
+    },
+    "8473": {
+        "provider": "Residential",
+        "asn_description": "BAHNHOF, SE",
+        "website": "https://www.bahnhof.net/",
+        "short": "RES"
+    },
+    "56478": {
+        "provider": "Residential",
+        "asn_description": "BCUBE-AS, GB",
+        "website": "https://www.hyperoptic.com/",
+        "short": "RES"
+    },
+    "6128": {
+        "provider": "Residential",
+        "asn_description": "CABLE-NET-1, US",
+        "website": "https://www.cableone.net",
+        "short": "RES"
+    },
+    "15600": {
+        "provider": "Residential",
+        "asn_description": "QUICKLINE Quickline AG, CH",
+        "website": "https://www.quickline.ch/",
+        "short": "RES"
+    },
+    "3320": {
+        "provider": "Residential",
+        "asn_description": "DTAG Internet service provider operations, DE",
+        "website": "https://nic.telekom.de",
+        "short": "RES"
+    },
+    "8758": {
+        "provider": "Residential",
+        "asn_description": "IWAY, CH",
+        "website": "https://www.iway.ch/",
+        "short": "RES"
+    },
+    "56300": {
+        "provider": "Residential",
+        "asn_description": "MYREPUBLIC-SG MyRepublic Ltd., SG",
+        "website": "https://myrepublic.net/sg/",
+        "short": "RES"
+    },
+    "5391": {
+        "provider": "Residential",
+        "asn_description": "T-HT Croatian Telecom Inc., HR",
+        "website": "https://www.t.ht.hr/",
+        "short": "RES"
+    },
+    "3462": {
+        "provider": "Residential",
+        "asn_description": "HINET Data Communication Business Group, TW",
+        "website": "https://hinet.net",
+        "short": "RES"
+    },
+    "133481": {
+        "provider": "Residential",
+        "asn_description": "AIS-FIBRE-AS-AP AIS Fibre, TH",
+        "website": "https://www.ais.co.th/fibre/en/home",
+        "short": "RES"
+    },
+    "15557": {
+        "provider": "Residential",
+        "asn_description": "LDCOMNET, FR",
+        "website": "http://nic.sfr/",
+        "short": "RES"
+    },
+    "8866": {
+        "provider": "Residential",
+        "asn_description": "BTC-AS BULGARIA, BG",
+        "website": "https://vivacom.bg",
+        "short": "RES"
+    },
+    "15547": {
+        "provider": "Residential",
+        "asn_description": "NETPLUS, CH",
+        "website": "https://www.netplus.ch",
+        "short": "RES"
+    },
+    "29695": {
+        "provider": "Residential",
+        "asn_description": "ALTIBOX_AS Norway, NO",
+        "website": "https://altibox.no",
+        "short": "RES"
+    },
+    "34984": {
+        "provider": "Residential",
+        "asn_description": "TELLCOM-AS, TR",
+        "website": "https://www.superonline.net/",
+        "short": "RES"
+    },
+    "12322": {
+        "provider": "Residential",
+        "asn_description": "PROXAD, FR",
+        "website": "https://free.fr",
+        "short": "RES"
+    },
+    "131918": {
+        "provider": "Residential",
+        "asn_description": "SCN-NET SHONAN CABLE NETWORK, JP",
+        "website": "https://www.scn-net.ne.jp/",
+        "short": "RES"
+    },
+    "57370": {
+        "provider": "Residential",
+        "asn_description": "WINGO, CH",
+        "website": "https://www.wingo.ch/",
+        "short": "RES"
+    },
+    "209": {
+        "provider": "Residential",
+        "asn_description": "CENTURYLINK-US-LEGACY-QWEST, US",
+        "website": "https://centurylink.com",
+        "short": "RES"
+    },
+    "13037": {
+        "provider": "Residential",
+        "asn_description": "ZEN-AS Zen Internet - UK, GB",
+        "website": "https://www.zen.co.uk",
+        "short": "RES"
+    },
+    "45899": {
+        "provider": "Residential",
+        "asn_description": "VNPT-AS-VN VNPT Corp, VN",
+        "website": "https://www.vnpt.vn",
+        "short": "RES"
+    },
+    "5650": {
+        "provider": "Residential",
+        "asn_description": "FRONTIER-FRTR, US",
+        "website": "https://www.frontier.com/",
+        "short": "RES"
+    },
+    "57269": {
+        "provider": "Residential",
+        "asn_description": "DIGISPAINTELECOM, ES",
+        "website": "https://www.digis.es/",
+        "short": "RES"
+    },
+    "11426": {
+        "provider": "Residential",
+        "asn_description": "TWC-11426-CAROLINAS, US",
+        "website": "https://charter.com",
+        "short": "RES"
+    },
+    "6830": {
+        "provider": "Residential",
+        "asn_description": "LIBERTYGLOBAL Liberty Global formerly UPC Broadband Holding, aka AORTA, NL",
+        "website": "https://www.libertyglobal.com/",
+        "short": "RES"
+    },
+    "852": {
+        "provider": "Residential",
+        "asn_description": "TELUS Communications, CA",
+        "website": "https://www.telus.com/",
+        "short": "RES"
+    },
+    "4764": {
+        "provider": "Residential",
+        "asn_description": "WIDEBAND-AS-AP Aussie Broadband, AU",
+        "website": "https://www.aussiebroadband.com.au/",
+        "short": "RES"
+    },
+    "4766": {
+        "provider": "Residential",
+        "asn_description": "KIXS-AS-KR Korea Telecom, KR",
+        "website": "https://corp.kt.com/eng/",
+        "short": "RES"
+    },
+    "12874": {
+        "provider": "Residential",
+        "asn_description": "FASTWEB, IT",
+        "website": "https://www.fastweb.it/",
+        "short": "RES"
+    },
+    "6327": {
+        "provider": "Residential",
+        "asn_description": "SHAW, CA",
+        "website": "https://www.shaw.ca/",
+        "short": "RES"
+    },
+    "22773": {
+        "provider": "Residential",
+        "asn_description": "ASN-CXA-ALL-CCI-22773-RDC, US",
+        "website": "https://www.cox.com/",
+        "short": "RES"
+    },
+    "33363": {
+        "provider": "Residential",
+        "asn_description": "BHN-33363, US",
+        "website": "https://spectrum.com",
+        "short": "RES"
+    },
+    "1136": {
+        "provider": "Residential",
+        "asn_description": "KPN KPN National, NL",
+        "website": "https://kpn.com",
+        "short": "RES"
+    },
+    "6848": {
+        "provider": "Residential",
+        "asn_description": "TELENET-AS, BE",
+        "website": "https://telenet.be",
+        "short": "RES"
+    },
+    "1221": {
+        "provider": "Residential",
+        "asn_description": "ASN-TELSTRA Telstra Corporation Ltd, AU",
+        "website": "https://telstra.com.au",
+        "short": "RES"
+    },
+    "5607": {
+        "provider": "Residential",
+        "asn_description": "BSKYB-BROADBAND-AS, GB",
+        "website": "https://www.sky.com",
+        "short": "RES"
+    },
+    "6730": {
+        "provider": "Residential",
+        "asn_description": "SUNRISE, CH",
+        "website": "https://www.sunrise.ch",
+        "short": "RES"
+    },
+    "812": {
+        "provider": "Residential",
+        "asn_description": "ROGERS-COMMUNICATIONS, CA",
+        "website": "https://rogers.com",
+        "short": "RES"
+    },
+    "2514": {
+        "provider": "Residential",
+        "asn_description": "INFOSPHERE NTT PC Communications, Inc., JP",
+        "website": "https://www.ntt.com",
+        "short": "RES"
+    },
+    "50266": {
+        "provider": "Residential",
+        "asn_description": "TMOBILE-THUIS, NL",
+        "website": "https://www.t-mobile.nl/thuis",
+        "short": "RES"
+    },
+    "10796": {
         "provider": "Residential",
         "asn_description": "TWC-10796-MIDWEST, US",
-        "website": "",
+        "website": "https://charter.com",
+        "short": "RES"
+    },
+    "1257": {
+        "provider": "Residential",
+        "asn_description": "TELE2, EU",
+        "website": "https://www.tele2.com",
+        "short": "RES"
+    },
+    "16019": {
+        "provider": "Residential",
+        "asn_description": "VODAFONE-CZ-AS, CZ",
+        "website": "https://www.vodafone.cz",
+        "short": "RES"
+    },
+    "8708": {
+        "provider": "Residential",
+        "asn_description": "RCS-RDS 73-75 Dr. Staicovici, RO",
+        "website": "https://www.rcs-rds.ro",
+        "short": "RES"
+    },
+    "20115": {
+        "provider": "Residential",
+        "asn_description": "CHARTER-20115, US",
+        "website": "https://spectrum.com",
+        "short": "RES"
+    },
+    "54614": {
+        "provider": "Residential",
+        "asn_description": "CIKTELECOM-CABLE, CA",
+        "website": "https://www.ciktel.com",
+        "short": "RES"
+    },
+    "28573": {
+        "provider": "Residential",
+        "asn_description": "Claro NXT Telecomunicacoes Ltda, BR",
+        "website": "https://www.claro.com.br",
+        "short": "RES"
+    },
+    "30722": {
+        "provider": "Residential",
+        "asn_description": "VODAFONE-IT-ASN, IT",
+        "website": "https://www.vodafone.it",
+        "short": "RES"
+    },
+    "38195": {
+        "provider": "Residential",
+        "asn_description": "SUPERLOOP-AS-AP Superloop, AU",
+        "website": "https://www.superloop.com",
+        "short": "RES"
+    },
+    "25596": {
+        "provider": "Residential",
+        "asn_description": "CAMBRIUM-AS, NL",
+        "website": "https://www.cambrium.nl",
+        "short": "RES"
+    },
+    "135961": {
+        "provider": "Residential",
+        "asn_description": "VDO-AS-VN Viet Nam Data Online Joint Stock Company, VN",
+        "website": "https://www.vdocom.com.vn",
+        "short": "RES"
+    },
+    "55430": {
+        "provider": "Residential",
+        "asn_description": "STARHUB-NGNBN Starhub Ltd, SG",
+        "website": "https://www.starhub.com",
+        "short": "RES"
+    },
+    "29580": {
+        "provider": "Residential",
+        "asn_description": "A1BG A1 EAD, BG",
+        "website": "https://www.a1.bg",
+        "short": "RES"
+    },
+    "11492": {
+        "provider": "Residential",
+        "asn_description": "CABLEONE, US",
+        "website": "https://www.cableone.net",
+        "short": "RES"
+    },
+    "5617": {
+        "provider": "Residential",
+        "asn_description": "TPNET, PL",
+        "website": "https://www.tpnet.pl",
+        "short": "RES"
+    },
+    "13127": {
+        "provider": "Residential",
+        "asn_description": "T-MOBILE AS for the Trans-European T-Mobile IP Transport backbone, NL",
+        "website": "https://www.t-mobile.nl",
+        "short": "RES"
+    },
+    "4771": {
+        "provider": "Residential",
+        "asn_description": "SPARKNZ Spark New Zealand Trading Ltd., NZ",
+        "website": "https://www.spark.co.nz",
+        "short": "RES"
+    },
+    "4739": {
+        "provider": "Residential",
+        "asn_description": "INTERNODE-AS Internode Pty Ltd, AU",
+        "website": "https://www.internode.on.net/",
+        "short": "RES"
+    },
+    "17222": {
+        "provider": "Residential",
+        "asn_description": "MUNDIVOX DO BRASIL LTDA, BR",
+        "website": "https://www.mundivox.com/homepage",
+        "short": "RES"
+    },
+    "719": {
+        "provider": "Residential",
+        "asn_description": "ELISA-AS Helsinki, Finland, FI",
+        "website": "https://www.elisa.fi/",
+        "short": "RES"
+    },
+    "5769": {
+        "provider": "Residential",
+        "asn_description": "VIDEOTRON, CA",
+        "website": "https://videotron.com/",
+        "short": "RES"
+    },
+    "6167": {
+        "provider": "Residential",
+        "asn_description": "CELLCO-PART, US",
+        "website": "https://www.verizon.com/",
+        "short": "RES"
+    },
+    "40788": {
+        "provider": "Residential",
+        "asn_description": "START-, CA",
+        "website": "https://www.start.ca/",
+        "short": "RES"
+    },
+    "15704": {
+        "provider": "Residential",
+        "asn_description": "XTRA Telecom, ES",
+        "website": "https://www.xtratelecom.es/",
+        "short": "RES"
+    },
+    "18403": {
+        "provider": "Residential",
+        "asn_description": "FPT-AS-AP FPT Telecom Company, VN",
+        "website": "https://www.fpt.vn/",
+        "short": "RES"
+    },
+    "4760": {
+        "provider": "Residential",
+        "asn_description": "HKTIMS-AP HKT Limited, HK",
+        "website": "https://pccw.com",
+        "short": "RES"
+    },
+    "393552": {
+        "provider": "Residential",
+        "asn_description": "COL-LPC, US",
+        "website": "https://www.longmontcolorado.gov/departments/departments-e-m/longmont-power-communications",
+        "short": "RES"
+    },
+    "8447": {
+        "provider": "Residential",
+        "asn_description": "A1TELEKOM-AT A1 Telekom Austria AG, AT",
+        "website": "https://www.a1.net/",
+        "short": "RES"
+    },
+    "16814": {
+        "provider": "Residential",
+        "asn_description": "NSS S.A., AR",
+        "website": "http://www.nss.com.ar/",
+        "short": "RES"
+    },
+    "9318": {
+        "provider": "Residential",
+        "asn_description": "SKB-AS SK Broadband Co Ltd, KR",
+        "website": "https://skbroadband.com",
+        "short": "RES"
+    },
+    "24309": {
+        "provider": "Residential",
+        "asn_description": "CABLELITE-AS-AP Atria Convergence Technologies Pvt. Ltd. Broadband Internet Service Provider INDIA, IN",
+        "website": "https://www.actcorp.in/",
+        "short": "RES"
+    },
+    "2116": {
+        "provider": "Residential",
+        "asn_description": "GLOBALCONNECT-, NO",
+        "website": "https://globalconnect.net/",
+        "short": "RES"
+    },
+    "5384": {
+        "provider": "Residential",
+        "asn_description": "EMIRATES-INTERNET Emirates Internet, AE",
+        "website": "https://www.eim.ae/",
+        "short": "RES"
+    },
+    "4804": {
+        "provider": "Residential",
+        "asn_description": "MPX-AS Microplex PTY LTD, AU",
+        "website": "https://www.mpx.com.au/",
+        "short": "RES"
+    },
+    "48314": {
+        "provider": "Residential",
+        "asn_description": "IP-PROJECTS, DE",
+        "website": "https://www.ip-projects.de/",
+        "short": "RES"
+    },
+    "11664": {
+        "provider": "Residential",
+        "asn_description": "Techtel LMDS Comunicaciones Interactivas S.A., AR",
+        "website": "http://www.techtel.com.ar/",
+        "short": "RES"
+    },
+    "27651": {
+        "provider": "Residential",
+        "asn_description": "ENTEL CHILE S.A., CL",
+        "website": "https://www.entel.cl/",
+        "short": "RES"
+    },
+    "397142": {
+        "provider": "Residential",
+        "asn_description": "FORT-COLLINS-CONNEXION, US",
+        "website": "https://www.fcgov.com/cityutilities/broadband",
+        "short": "RES"
+    },
+    "21565": {
+        "provider": "Residential",
+        "asn_description": "AS21565, US",
+        "website": "https://www.htcinc.net/",
+        "short": "RES"
+    },
+    "174": {
+        "provider": "Residential",
+        "asn_description": "COGENT-174, US",
+        "website": "https://www.cogentco.com/",
+        "short": "RES"
+    },
+    "12400": {
+        "provider": "Residential",
+        "asn_description": "PARTNER-AS, IL",
+        "website": "https://www.partner.co.il/",
+        "short": "RES"
+    },
+    "58678": {
+        "provider": "Residential",
+        "asn_description": "INTECHONLINE-IN Intech Online Private Limited, IN",
+        "website": "https://intechonline.in/",
+        "short": "RES"
+    },
+    "60656": {
+        "provider": "Residential",
+        "asn_description": "BOLBGIZTOK, BG",
+        "website": "https://www.bol.bg/",
+        "short": "RES"
+    },
+    "36223": {
+        "provider": "Residential",
+        "asn_description": "SPANISHFORK-COMMUNITY-NETWORK, US",
+        "website": "http://www.spanishfork.org/departments/public_works/sfcn.php",
+        "short": "RES"
+    },
+    "56186": {
+        "provider": "Residential",
+        "asn_description": "DIGINET-NZ Digital Island Ltd, NZ",
+        "website": "https://diginet.co.nz/",
+        "short": "RES"
+    },
+    "206920": {
+        "provider": "Residential",
+        "asn_description": "DK-GLENTEVEJSANTENNELAUG, DK",
+        "website": "https://www.glentevej.dk/",
+        "short": "RES"
+    },
+    "269109": {
+        "provider": "Residential",
+        "asn_description": "MARKTEC TELECOM, BR",
+        "website": "https://www.marketec.com.br/",
+        "short": "RES"
+    },
+    "44546": {
+        "provider": "Residential",
+        "asn_description": "ALFATELECOM, CZ",
+        "website": "http://alfatelecom.cz/",
+        "short": "RES"
+    },
+    "14103": {
+        "provider": "Residential",
+        "asn_description": "ACDNET-ASN1, US",
+        "website": "http://www.acd.net/",
+        "short": "RES"
+    },
+    "20634": {
+        "provider": "Residential",
+        "asn_description": "TELECOM-LI Schaanerstrasse 1, LI",
+        "website": "https://www.telecom.li/",
+        "short": "RES"
+    },
+    "25769": {
+        "provider": "Residential",
+        "asn_description": "GVTEL, US",
+        "website": "https://www.gvtel.com/",
+        "short": "RES"
+    },
+    "13036": {
+        "provider": "Residential",
+        "asn_description": "TMOBILE-, CZ",
+        "website": "https://www.t-mobile.cz/",
+        "short": "RES"
+    },
+    "39704": {
+        "provider": "Residential",
+        "asn_description": "CJ2-AS, NL",
+        "website": "http://www.cj2.nl/",
+        "short": "RES"
+    },
+    "24560": {
+        "provider": "Residential",
+        "asn_description": "AIRTELBROADBAND-AS-AP Bharti Airtel Ltd., Telemedia Services, IN",
+        "website": "https://www.airtel.in/broadband/",
+        "short": "RES"
+    },
+    "5645": {
+        "provider": "Residential",
+        "asn_description": "TEKSAVVY, CA",
+        "website": "https://teksavvy.com/",
+        "short": "RES"
+    },
+    "25255": {
+        "provider": "Residential",
+        "asn_description": "H3G-AUSTRIA-AS TELE2 AUSTRIA , AT",
+        "website": "https://www.drei.at/",
+        "short": "RES"
+    },
+    "9304": {
+        "provider": "Residential",
+        "asn_description": "HUTCHISON-AS-AP HGC Global Communications Limited, HK",
+        "website": "https://www.hgc.com.hk/",
+        "short": "RES"
+    },
+    "803": {
+        "provider": "Residential",
+        "asn_description": "SASKTEL, CA",
+        "website": "https://www.sasktel.com/",
+        "short": "RES"
+    },
+    "395367": {
+        "provider": "Residential",
+        "asn_description": "LWBB-333, US",
+        "website": "https://www.lightwavebroadband.net/",
+        "short": "RES"
+    },
+    "202719": {
+        "provider": "Residential",
+        "asn_description": "PRANET, CZ",
+        "website": "https://www.pranet.cz/",
+        "short": "RES"
+    },
+    "136972": {
+        "provider": "Residential",
+        "asn_description": "MYPORT1-AS-AP Gigafy, AU",
+        "website": "https://www.gigafy.com.au/",
+        "short": "RES"
+    },
+    "29438": {
+        "provider": "Residential",
+        "asn_description": "MOMAX-AS, IT",
+        "website": "http://www.momax.it/",
+        "short": "RES"
+    },
+    "8374": {
+        "provider": "Residential",
+        "asn_description": "PLUSNET Plus network operator in Poland, PL",
+        "website": "https://www.plus.pl/",
+        "short": "RES"
+    },
+    "2119": {
+        "provider": "Residential",
+        "asn_description": "TELENOR-NEXTEL Telenor Norge AS, NO",
+        "website": "https://www.telenor.no/",
+        "short": "RES"
+    },
+    "17858": {
+        "provider": "Residential",
+        "asn_description": "POWERVIS-AS-KR LG POWERCOMM, KR",
+        "website": "http://www.powervis.co.kr/",
+        "short": "RES"
+    },
+    "25513": {
+        "provider": "Residential",
+        "asn_description": "ASN-MGTS-USPD, RU",
+        "website": "http://mgts.ru/",
+        "short": "RES"
+    },
+    "20676": {
+        "provider": "Residential",
+        "asn_description": "PLUSNET *****************, DE",
+        "website": "https://www.plus.net/",
+        "short": "RES"
+    },
+    "398778": {
+        "provider": "Residential",
+        "asn_description": "APTITUDE-INTERNET, US",
+        "website": "https://aptitudeinternet.com/",
+        "short": "RES"
+    },
+    "45345": {
+        "provider": "Residential",
+        "asn_description": "NAUTILE-NC-AS-AP Nautile, NC",
+        "website": "https://www.nautile.nc/",
+        "short": "RES"
+    },
+    "2856": {
+        "provider": "Residential",
+        "asn_description": "BT-UK-AS BTnet UK Regional network, GB",
+        "website": "https://bt.com",
+        "short": "RES"
+    },
+    "14140": {
+        "provider": "Residential",
+        "asn_description": "AUBURN-ESSENTIAL-SERVICES, US",
+        "website": "https://www.auburn.ca.gov/1113/Internet-Services",
+        "short": "RES"
+    },
+    "8764": {
+        "provider": "Residential",
+        "asn_description": "TELIA-LIETUVA, LT",
+        "website": "https://www.telia.lt/",
+        "short": "RES"
+    },
+    "14051": {
+        "provider": "Residential",
+        "asn_description": "SUREWEST, US",
+        "website": "https://www.surewest.net/",
+        "short": "RES"
+    },
+    "8681": {
+        "provider": "Residential",
+        "asn_description": "JT, JE",
+        "website": "https://www.jtglobal.com/",
+        "short": "RES"
+    },
+    "9824": {
+        "provider": "Residential",
+        "asn_description": "JTCL-JP-AS JCOM Co., Ltd., JP",
+        "website": "https://www.jcom.co.jp/",
+        "short": "RES"
+    },
+    "1759": {
+        "provider": "Residential",
+        "asn_description": "TSF-IP-CORE Telia Finland Oyj, FI",
+        "website": "https://www.telia.fi/",
+        "short": "RES"
+    },
+    "8717": {
+        "provider": "Residential",
+        "asn_description": "A1, BG",
+        "website": "https://www.a1.bg/",
+        "short": "RES"
+    },
+    "398721": {
+        "provider": "Residential",
+        "asn_description": "OXIO-ASN-01, CA",
+        "website": "https://www.oxio.com/",
+        "short": "RES"
+    },
+    "61272": {
+        "provider": "Residential",
+        "asn_description": "IST-AS, LT",
+        "website": "https://www.ist.lt/",
+        "short": "RES"
+    },
+    "29518": {
+        "provider": "Residential",
+        "asn_description": "BREDBAND2, SE",
+        "website": "https://www.bredband2.se/",
+        "short": "RES"
+    },
+    "5603": {
+        "provider": "Residential",
+        "asn_description": "SIOL-NET Telekom Slovenije d.d., SI",
+        "website": "https://www.telekom.si/en/about/newsroom/news-archive/2018/03/14/telekom-slovenije-is-the-operator-with-the-fastest-internet",
+        "short": "RES"
+    },
+    "205714": {
+        "provider": "Residential",
+        "asn_description": "TELE2HR Telemach Hrvatska d.o.o, HR",
+        "website": "https://www.telemach.hr/",
+        "short": "RES"
+    },
+    "63270": {
+        "provider": "Residential",
+        "asn_description": "AERUX-BROADBAND, US",
+        "website": "https://aerux.com/",
+        "short": "RES"
+    },
+    "20539": {
+        "provider": "Residential",
+        "asn_description": "TCRS-AS Sumy, Ukraine, UA",
+        "website": "http://rs.net.ua/en/",
+        "short": "RES"
+    },
+    "42739": {
+        "provider": "Residential",
+        "asn_description": "FONE-ASN, PL",
+        "website": "https://fone.pl/",
+        "short": "RES"
+    },
+    "39375": {
+        "provider": "Residential",
+        "asn_description": "TPODLASIE, PL",
+        "website": "http://tpodlasie.pl/",
+        "short": "RES"
+    },
+    "51504": {
+        "provider": "Residential",
+        "asn_description": "TELSET, EE",
+        "website": "https://telset.ee/en/",
+        "short": "RES"
+    },
+    "203953": {
+        "provider": "Residential",
+        "asn_description": "HIPER, DK",
+        "website": "https://hiper.dk/",
+        "short": "RES"
+    },
+    "8612": {
+        "provider": "Residential",
+        "asn_description": "TISCALI-, IT",
+        "website": "https://www.tiscali.it/",
+        "short": "RES"
+    },
+    "15659": {
+        "provider": "Residential",
+        "asn_description": "NEXTGENTEL NEXTGENTEL Autonomous System, NO",
+        "website": "https://www.nextgentel.no/",
+        "short": "RES"
+    },
+    "204887": {
+        "provider": "Residential",
+        "asn_description": "TCTTELECOM, FR",
+        "website": "https://www.tct.fr/",
+        "short": "RES"
+    },
+    "13868": {
+        "provider": "Residential",
+        "asn_description": "PEAK, US",
+        "website": "https://www.peakinternet.com/",
+        "short": "RES"
+    },
+    "52373": {
+        "provider": "Residential",
+        "asn_description": "ECOM CHACO S.A., AR",
+        "website": "https://www.ecomchaco.com.ar/",
+        "short": "RES"
+    },
+    "20845": {
+        "provider": "Residential",
+        "asn_description": "DIGICABLE, HU",
+        "website": "http://www.digikabel.hu/",
+        "short": "RES"
+    },
+    "11232": {
+        "provider": "Residential",
+        "asn_description": "MIDCO-NET, US",
+        "website": "https://www.midco.com/",
+        "short": "RES"
+    },
+    "25472": {
+        "provider": "Residential",
+        "asn_description": "WIND-AS, GR",
+        "website": "https://www.wind.gr/",
+        "short": "RES"
+    },
+    "5483": {
+        "provider": "Residential",
+        "asn_description": "MAGYAR-TELEKOM-MAIN-AS Magyar Telekom Nyrt., HU",
+        "website": "https://www.telekom.hu/",
+        "short": "RES"
+    },
+    "30764": {
+        "provider": "Residential",
+        "asn_description": "PODA-AS, CZ",
+        "website": "https://poda.cz/",
+        "short": "RES"
+    },
+    "4788": {
+        "provider": "Residential",
+        "asn_description": "TMNET-AS-AP TM Net, Internet Service Provider, MY",
+        "website": "https://www.tm.com.my/",
+        "short": "RES"
+    },
+    "212221": {
+        "provider": "Residential",
+        "asn_description": "RO-EFX-AS, RO",
+        "website": "http://internet-broker.ro/",
+        "short": "RES"
+    },
+    "6561": {
+        "provider": "Residential",
+        "asn_description": "JUCE, CA",
+        "website": "https://juce.ca/",
+        "short": "RES"
+    },
+    "36556": {
+        "provider": "Residential",
+        "asn_description": "WAVE-RURAL-CONNECT-LLC, US",
+        "website": "https://www.waveruralconnect.com/",
+        "short": "RES"
+    },
+    "23089": {
+        "provider": "Residential",
+        "asn_description": "HOTWIRE-COMMUNICATIONS, US",
+        "website": "https://www.hotwirecommunications.com/",
+        "short": "RES"
+    },
+    "5432": {
+        "provider": "Residential",
+        "asn_description": "PROXIMUS-ISP-AS, BE",
+        "website": "https://www.proximus.be/",
+        "short": "RES"
+    },
+    "34779": {
+        "provider": "Residential",
+        "asn_description": "T-2-AS AS set propagated by T-2 d.o.o., SI",
+        "website": "https://www.t-2.net/",
+        "short": "RES"
+    },
+    "61174": {
+        "provider": "Residential",
+        "asn_description": "GLATTWERK Usterstrasse 111, CH",
+        "website": "https://www.glattwerk.ch/",
+        "short": "RES"
+    },
+    "20910": {
+        "provider": "Residential",
+        "asn_description": "BALTKOM-AS, LV",
+        "website": "https://www.baltkom.lv/",
+        "short": "RES"
+    },
+    "38515": {
+        "provider": "Residential",
+        "asn_description": "GRAHAMEDIA-NET-AS-ID GRAHAMEDIA INFORMASI, PT., ID",
+        "website": "https://www.grahamedia.net.id/",
+        "short": "RES"
+    },
+    "33588": {
+        "provider": "Residential",
+        "asn_description": "BRESNAN-33588, US",
+        "website": "https://charter.com",
+        "short": "RES"
+    },
+    "32133": {
+        "provider": "Residential",
+        "asn_description": "AS-TING-BACKBONE, US",
+        "website": "https://ting.com/internet",
+        "short": "RES"
+    },
+    "7418": {
+        "provider": "Residential",
+        "asn_description": "TELEFONICA CHILE S.A., CL",
+        "website": "https://www.telefonica.cl/",
+        "short": "RES"
+    },
+    "18988": {
+        "provider": "Residential",
+        "asn_description": "CITYWEST-CORP, CA",
+        "website": "https://www.citywest.ca/",
+        "short": "RES"
+    },
+    "44489": {
+        "provider": "Residential",
+        "asn_description": "STARNET, CZ",
+        "website": "https://www.starnet.cz/",
+        "short": "RES"
+    },
+    "9534": {
+        "provider": "Residential",
+        "asn_description": "MAXIS-AS1-AP Binariang Berhad, MY",
+        "website": "https://www.maxis.com.my/",
+        "short": "RES"
+    },
+    "55900": {
+        "provider": "Residential",
+        "asn_description": "GLBB-JP GLBB Japan KK, JP",
+        "website": "http://glbb.ne.jp/",
+        "short": "RES"
+    },
+    "60624": {
+        "provider": "Residential",
+        "asn_description": "MYNETPL-AS, PL",
+        "website": "https://mynet.pl/",
+        "short": "RES"
+    },
+    "11260": {
+        "provider": "Residential",
+        "asn_description": "EASTLINK-HSI, CA",
+        "website": "https://www.eastlink.ca/",
+        "short": "RES"
+    },
+    "27665": {
+        "provider": "Residential",
+        "asn_description": "Columbus Communications Trinidad Limited., TT",
+        "website": "https://www.flowtrinidad.com/",
+        "short": "RES"
+    },
+    "132559": {
+        "provider": "Residential",
+        "asn_description": "GATIK-AS-IN Gatik Business Solutions, IN",
+        "website": "http://ginternet.in/",
+        "short": "RES"
+    },
+    "31775": {
+        "provider": "Residential",
+        "asn_description": "GREENLIGHT-NETWORKS, US",
+        "website": "https://www.greenlightnetworks.com/",
+        "short": "RES"
+    },
+    "48943": {
+        "provider": "Residential",
+        "asn_description": "KAPPERNET, AT",
+        "website": "https://kappernet.at/",
+        "short": "RES"
+    },
+    "394752": {
+        "provider": "Residential",
+        "asn_description": "AVATIVE-FIBER, US",
+        "website": "https://www.avativefiber.com/",
+        "short": "RES"
+    },
+    "41079": {
+        "provider": "Residential",
+        "asn_description": "CF-GDA, PL",
+        "website": "https://www.cf.pl/",
+        "short": "RES"
+    },
+    "12479": {
+        "provider": "Residential",
+        "asn_description": "UNI2-AS, ES",
+        "website": "https://www.telefonica.es/",
+        "short": "RES"
+    },
+    "3269": {
+        "provider": "Residential",
+        "asn_description": "ASN-IBSNAZ, IT",
+        "website": "https://www.tim.it/",
+        "short": "RES"
+    },
+    "35432": {
+        "provider": "Residential",
+        "asn_description": "CABLENET-AS, CY",
+        "website": "https://cablenet.com.cy/",
+        "short": "RES"
+    },
+    "36149": {
+        "provider": "Residential",
+        "asn_description": "HAWAIIAN-TELCOM, US",
+        "website": "https://www.hawaiiantel.com/",
+        "short": "RES"
+    },
+    "132199": {
+        "provider": "Residential",
+        "asn_description": "GLOBE-MOBILE-5TH-GEN-AS Globe Telecom Inc., PH",
+        "website": "https://www.globe.com.ph/",
+        "short": "RES"
+    },
+    "8881": {
+        "provider": "Residential",
+        "asn_description": "VERSATEL, DE",
+        "website": "https://versatel.de",
+        "short": "RES"
+    },
+    "3301": {
+        "provider": "Residential",
+        "asn_description": "TELIANET-SWEDEN Telia Company, SE",
+        "website": "https://www.telia.se/",
+        "short": "RES"
+    },
+    "6810": {
+        "provider": "Residential",
+        "asn_description": "BEZEK, IL",
+        "website": "https://bezeq.com",
+        "short": "RES"
+    },
+    "20055": {
+        "provider": "Residential",
+        "asn_description": "AS-WHOLESAIL, US",
+        "website": "https://wholesailnetworks.com",
+        "short": "RES"
+    },
+    "3243": {
+        "provider": "Residential",
+        "asn_description": "MEO-RESIDENCIAL, PT",
+        "website": "https://www.meo.pt/",
+        "short": "RES"
+    },
+    "6181": {
+        "provider": "Residential",
+        "asn_description": "FUSE-NET, US",
+        "website": "https://www.fuse.net/",
+        "short": "RES"
+    },
+    "25369": {
+        "provider": "Residential",
+        "asn_description": "BANDWIDTH-AS, GB",
+        "website": "https://www.bandwidth.com/",
+        "short": "RES"
+    },
+    "3292": {
+        "provider": "Residential",
+        "asn_description": "TDC TDC AS, DK",
+        "website": "https://tdcgroup.com/",
+        "short": "RES"
+    },
+    "8412": {
+        "provider": "Residential",
+        "asn_description": "TMA Magenta Telekom, AT",
+        "website": "https://www.magenta.at/",
+        "short": "RES"
+    },
+    "6805": {
+        "provider": "Residential",
+        "asn_description": "TDDE-ASN1, DE",
+        "website": "https://www.telefonica.de/home-corporate-en.html",
+        "short": "RES"
+    },
+    "21928": {
+        "provider": "Residential",
+        "asn_description": "T-MOBILE-AS21928, US",
+        "website": "https://www.t-mobile.com/",
+        "short": "RES"
+    },
+    "12430": {
+        "provider": "Residential",
+        "asn_description": "VODAFONE_ES, ES",
+        "website": "https://www.vodafone.es/",
+        "short": "RES"
+    },
+    "4773": {
+        "provider": "Residential",
+        "asn_description": "MOBILEONELTD-AS-AP MobileOne Ltd. MobileInternet Service Provider Singapore, SG",
+        "website": "https://www.m1.com.sg/",
+        "short": "RES"
+    },
+    "7303": {
+        "provider": "Residential",
+        "asn_description": "Telecom Argentina S.A., AR",
+        "website": "https://www.telecom.com.ar/",
+        "short": "RES"
+    },
+    "8400": {
+        "provider": "Residential",
+        "asn_description": "TELEKOM-AS, RS",
+        "website": "https://www.telekom.rs/",
+        "short": "RES"
+    },
+    "11427": {
+        "provider": "Residential",
+        "asn_description": "TWC-11427-TEXAS, US",
+        "website": "https://charter.com",
+        "short": "RES"
+    },
+    "10143": {
+        "provider": "Residential",
+        "asn_description": "EXETEL-AS-AP Exetel Pty Ltd, AU",
+        "website": "https://www.exetel.com.au/",
+        "short": "RES"
+    },
+    "12392": {
+        "provider": "Residential",
+        "asn_description": "ASBRUTELE VOO, BE",
+        "website": "https://www.voo.be/",
+        "short": "RES"
+    },
+    "12271": {
+        "provider": "Residential",
+        "asn_description": "TWC-12271-NYC, US",
+        "website": "https://charter.com",
+        "short": "RES"
+    },
+    "14593": {
+        "provider": "Residential",
+        "asn_description": "SPACEX-STARLINK, US",
+        "website": "https://www.starlink.com/",
+        "short": "RES"
+    },
+    "17552": {
+        "provider": "Residential",
+        "asn_description": "TRUEONLINE-AS-AP True Online, TH",
+        "website": "https://truecorp.co.th/",
+        "short": "RES"
+    },
+    "15802": {
+        "provider": "Residential",
+        "asn_description": "DU-AS1, AE",
+        "website": "https://www.du.ae/",
+        "short": "RES"
+    },
+    "6799": {
+        "provider": "Residential",
+        "asn_description": "OTENET-GR Athens - Greece, GR",
+        "website": "https://www.otenet.gr/",
+        "short": "RES"
+    },
+    "15796": {
+        "provider": "Residential",
+        "asn_description": "SALT-, CH",
+        "website": "https://www.salt.ch/",
+        "short": "RES"
+    },
+    "1267": {
+        "provider": "Residential",
+        "asn_description": "ASN-WINDTRE IUNET, IT",
+        "website": "https://www.windtre.it/",
+        "short": "RES"
+    },
+    "9145": {
+        "provider": "Residential",
+        "asn_description": "EWETEL Cloppenburger Strasse 310, DE",
+        "website": "https://www.ewetel.de/",
+        "short": "RES"
+    },
+    "21949": {
+        "provider": "Residential",
+        "asn_description": "BEANFIELD, CA",
+        "website": "https://www.beanfield.com/",
+        "short": "RES"
+    },
+    "30036": {
+        "provider": "Residential",
+        "asn_description": "MEDIACOM-ENTERPRISE-BUSINESS, US",
+        "website": "https://www.mediacomcc.com/",
+        "short": "RES"
+    },
+    "12578": {
+        "provider": "Residential",
+        "asn_description": "APOLLO-AS Latvia, LV",
+        "website": "https://www.tet.lv/",
+        "short": "RES"
+    },
+    "10242": {
+        "provider": "Residential",
+        "asn_description": "USINTERNET, US",
+        "website": "https://www.usinternet.com/",
+        "short": "RES"
+    },
+    "9031": {
+        "provider": "Residential",
+        "asn_description": "EDPNET, BE",
+        "website": "https://www.edpnet.be/",
+        "short": "RES"
+    },
+    "15895": {
+        "provider": "Residential",
+        "asn_description": "KSNET-AS, UA",
+        "website": "https://kyivstar.ua/",
+        "short": "RES"
+    },
+    "205100": {
+        "provider": "Residential",
+        "asn_description": "F3NETZE, DE",
+        "website": "https://www.f3netze.de/",
+        "short": "RES"
+    },
+    "17676": {
+        "provider": "Residential",
+        "asn_description": "GIGAINFRA Softbank BB Corp., JP",
+        "website": "https://www.softbank.jp/en/",
+        "short": "RES"
+    },
+    "8767": {
+        "provider": "Residential",
+        "asn_description": "MNET-AS Germany, DE",
+        "website": "https://www.m-net.de/",
+        "short": "RES"
+    },
+    "18106": {
+        "provider": "Residential",
+        "asn_description": "VIEWQWEST-SG-AP Viewqwest Pte Ltd, SG",
+        "website": "https://www.viewqwest.com/",
+        "short": "RES"
+    },
+    "12353": {
+        "provider": "Residential",
+        "asn_description": "VODAFONE-PT Vodafone Portugal, PT",
+        "website": "https://www.vodafone.pt/",
+        "short": "RES"
+    },
+    "15502": {
+        "provider": "Residential",
+        "asn_description": "VODAFONE-IRELAND-ASN, IE",
+        "website": "https://n.vodafone.ie/en.html",
+        "short": "RES"
+    },
+    "45758": {
+        "provider": "Residential",
+        "asn_description": "TTBP-AS-AP Triple T Broadband Public Company Limited, TH",
+        "website": "https://fiber.3bb.co.th/",
+        "short": "RES"
+    },
+    "7552": {
+        "provider": "Residential",
+        "asn_description": "VIETEL-AS-AP Viettel Group, VN",
+        "website": "https://www.vietteltelecom.vn/",
+        "short": "RES"
+    },
+    "2728": {
+        "provider": "Residential",
+        "asn_description": "GIGSOUTH, US",
+        "website": "https://www.gigsouth.com/",
+        "short": "RES"
+    },
+    "12083": {
+        "provider": "Residential",
+        "asn_description": "WOW-INTERNET, US",
+        "website": "https://www.wowway.com/",
+        "short": "RES"
+    },
+    "12709": {
+        "provider": "Residential",
+        "asn_description": "MELITACABLE, MT",
+        "website": "https://www.melitacable.com/",
+        "short": "RES"
+    },
+    "4181": {
+        "provider": "Residential",
+        "asn_description": "TDS-AS, US",
+        "website": "https://tdstelecom.com/",
+        "short": "RES"
+    },
+    "213155": {
+        "provider": "Residential",
+        "asn_description": "YETTEL-HU Yettel Hungary Ltd., HU",
+        "website": "https://yettel.hu/",
+        "short": "RES"
+    },
+    "5390": {
+        "provider": "Residential",
+        "asn_description": "EURONET, NL",
+        "website": "https://www.linkedin.com/company/euronet-commiunications-bv/about/",
+        "short": "RES"
+    },
+    "42366": {
+        "provider": "Residential",
+        "asn_description": "TERRATRANSIT-AS, DE",
+        "website": "https://www.terratransit.de/",
+        "short": "RES"
+    },
+    "206238": {
+        "provider": "Residential",
+        "asn_description": "FREEDOMINTERNET, NL",
+        "website": "https://www.freedominternet.org/",
+        "short": "RES"
+    },
+    "22927": {
+        "provider": "Residential",
+        "asn_description": "Telefonica de Argentina, AR",
+        "website": "https://www.movistar.com.ar/",
+        "short": "RES"
+    },
+    "5410": {
+        "provider": "Residential",
+        "asn_description": "BOUYGTEL-ISP, FR",
+        "website": "https://www.bouyguestelecom.fr/",
+        "short": "RES"
+    },
+    "29909": {
+        "provider": "Residential",
+        "asn_description": "LESSE, CA",
+        "website": "https://www.les.net/",
+        "short": "RES"
+    },
+    "3329": {
+        "provider": "Residential",
+        "asn_description": "HOL-GR Athens, Greece, GR",
+        "website": "https://www.vodafone.gr/",
+        "short": "RES"
+    },
+    "57353": {
+        "provider": "Residential",
+        "asn_description": "VITROCONNECT-AS, DE",
+        "website": "https://www.vitroconnect.de/",
+        "short": "RES"
+    },
+    "7122": {
+        "provider": "Residential",
+        "asn_description": "MTS-ASN, CA",
+        "website": "https://www.bellmts.ca/",
+        "short": "RES"
+    },
+    "133612": {
+        "provider": "Residential",
+        "asn_description": "VODAFONE-AS-AP Vodafone Australia Pty Ltd, AU",
+        "website": "https://www.vodafone.com.au/",
+        "short": "RES"
+    },
+    "17072": {
+        "provider": "Residential",
+        "asn_description": "TOTAL PLAY TELECOMUNICACIONES SA DE CV, MX",
+        "website": "https://totalplay.com.mx/",
+        "short": "RES"
+    },
+    "53913": {
+        "provider": "Residential",
+        "asn_description": "CITY-WIDE-COMMUNICATIONS, CA",
+        "website": "https://www.citywidecommunications.com/",
+        "short": "RES"
+    },
+    "2860": {
+        "provider": "Residential",
+        "asn_description": "NOS_COMUNICACOES, PT",
+        "website": "https://www.nos.pt/",
+        "short": "RES"
+    },
+    "9790": {
+        "provider": "Residential",
+        "asn_description": "VOCUSGROUPNZ VocusGroup, NZ",
+        "website": "https://www.vocusgroup.co.nz/",
+        "short": "RES"
+    },
+    "40749": {
+        "provider": "Residential",
+        "asn_description": "CDELIGHTBAND, US",
+        "website": "https://www.cdelightband.com/",
+        "short": "RES"
+    },
+    "1901": {
+        "provider": "Residential",
+        "asn_description": "EUNETAT-AS A1 Telekom Austria AG, AT",
+        "website": "https://www.a1.net/",
+        "short": "RES"
+    },
+    "1403": {
+        "provider": "Residential",
+        "asn_description": "EBOX, CA",
+        "website": "https://www.ebox.ca/",
+        "short": "RES"
+    },
+    "12716": {
+        "provider": "Residential",
+        "asn_description": "A1_BG_AS12716, BG",
+        "website": "https://www.a1.bg/",
+        "short": "RES"
+    },
+    "41164": {
+        "provider": "Residential",
+        "asn_description": "GET-NO GET Norway, NO",
+        "website": "https://www.telia.no/",
+        "short": "RES"
+    },
+    "62336": {
+        "provider": "Residential",
+        "asn_description": "PURTEL-AS # Upstream, DE",
+        "website": "https://www.purtel.com/",
+        "short": "RES"
+    },
+    "17638": {
+        "provider": "Residential",
+        "asn_description": "CHINATELECOM-TJ-AS-AP ASN for TIANJIN Provincial Net of CT, CN",
+        "website": "http://www.chinatelecom.com.cn/",
+        "short": "RES"
+    },
+    "15958": {
+        "provider": "Residential",
+        "asn_description": "CETIN_DOO_AS CETINdoo-NET, RS",
+        "website": "https://www.cetin.rs/",
+        "short": "RES"
+    },
+    "6697": {
+        "provider": "Residential",
+        "asn_description": "BELPAK-AS BELPAK, BY",
+        "website": "https://www.beltelecom.by/en/",
+        "short": "RES"
+    },
+    "6855": {
+        "provider": "Residential",
+        "asn_description": "SK-TELEKOM Slovak Telekom T-Mobile CZ, SK",
+        "website": "https://www.telekom.sk/",
+        "short": "RES"
+    },
+    "201838": {
+        "provider": "Residential",
+        "asn_description": "ASN-COMMUNITYFIBRE, GB",
+        "website": "https://communityfibre.co.uk/",
+        "short": "RES"
+    },
+    "22646": {
+        "provider": "Residential",
+        "asn_description": "HARCOM1, US",
+        "website": "https://www.harborcom.com/",
+        "short": "RES"
+    },
+    "23655": {
+        "provider": "Residential",
+        "asn_description": "TWODEGREES-NZ-AS 2degrees Networks Limited, NZ",
+        "website": "https://www.2degreesmobile.co.nz/",
+        "short": "RES"
+    },
+    "7459": {
+        "provider": "Residential",
+        "asn_description": "GRANDECOM-AS1, US",
+        "website": "https://mygrande.com/",
+        "short": "RES"
+    },
+    "62744": {
+        "provider": "Residential",
+        "asn_description": "QUINTEX, US",
+        "website": "https://www.quintexalliance.com/",
+        "short": "RES"
+    },
+    "21232": {
+        "provider": "Residential",
+        "asn_description": "GGAMAUR, CH",
+        "website": "https://www.ggamaur.ch/",
+        "short": "RES"
+    },
+    "15435": {
+        "provider": "Residential",
+        "asn_description": "KABELFOON DELTA Fiber Nederland, NL",
+        "website": "https://www.deltafiber.nl/",
+        "short": "RES"
+    },
+    "20712": {
+        "provider": "Residential",
+        "asn_description": "AS20712 Andrews & Arnold Ltd, GB",
+        "website": "https://aa.net.uk/",
+        "short": "RES"
+    },
+    "206067": {
+        "provider": "Residential",
+        "asn_description": "H3GUK, GB",
+        "website": "https://www.three.co.uk/",
+        "short": "RES"
+    },
+    "13977": {
+        "provider": "Residential",
+        "asn_description": "CTELCO, US",
+        "website": "https://connectelinc.com/",
+        "short": "RES"
+    },
+    "26827": {
+        "provider": "Residential",
+        "asn_description": "EPBTELECOM, US",
+        "website": "https://epb.com/",
+        "short": "RES"
+    },
+    "11776": {
+        "provider": "Residential",
+        "asn_description": "ATLANTICBB-JOHNSTOWN, US",
+        "website": "https://atlanticbb.com/",
+        "short": "RES"
+    },
+    "21283": {
+        "provider": "Residential",
+        "asn_description": "A1SI-AS A1 Slovenija, SI",
+        "website": "https://www.a1.si/",
+        "short": "RES"
+    },
+    "23243": {
+        "provider": "Residential",
+        "asn_description": "COMCEL GUATEMALA S.A., GT",
+        "website": "https://www.tigo.com.gt/",
+        "short": "RES"
+    },
+    "133579": {
+        "provider": "Residential",
+        "asn_description": "MYREPNZ-AS-AP MYREPUBLIC LIMITED, NZ",
+        "website": "https://myrepublic.net/nz/",
+        "short": "RES"
+    },
+    "7795": {
+        "provider": "Residential",
+        "asn_description": "LUMOS, US",
+        "website": "https://www.lumosnetworks.com/",
+        "short": "RES"
+    },
+    "27884": {
+        "provider": "Residential",
+        "asn_description": "CABLECOLOR S.A., HN",
+        "website": "https://www.cablecolor.hn/",
+        "short": "RES"
+    },
+    "31127": {
+        "provider": "Residential",
+        "asn_description": "SATRO, SK",
+        "website": "https://www.satro.cz/",
+        "short": "RES"
+    },
+    "56048": {
+        "provider": "Residential",
+        "asn_description": "CMNET-BEIJING-AP China Mobile Communicaitons Corporation, CN",
+        "website": "https://www.chinamobileltd.com/",
+        "short": "RES"
+    },
+    "397976": {
+        "provider": "Residential",
+        "asn_description": "CA-1546-ASN-1, US",
+        "website": "https://caecaccess.com/",
+        "short": "RES"
+    },
+    "137549": {
+        "provider": "Residential",
+        "asn_description": "NODE1-AS-AP NODE1 Pty Ltd, AU",
+        "website": "https://www.node1.com.au/",
+        "short": "RES"
+    },
+    "19165": {
+        "provider": "Residential",
+        "asn_description": "WEBPASS, US",
+        "website": "https://webpass.net/",
+        "short": "RES"
+    },
+    "10214": {
+        "provider": "Residential",
+        "asn_description": "PENTANET-AS-AP Pentanet Limited, AU",
+        "website": "https://pentanet.com.au/",
+        "short": "RES"
+    },
+    "8047": {
+        "provider": "Residential",
+        "asn_description": "GCI, US",
+        "website": "https://www.gci.com/",
+        "short": "RES"
+    },
+    "18881": {
+        "provider": "Residential",
+        "asn_description": "TELEFONICA BRASIL S.A, BR",
+        "website": "https://www.telefonica.com.br/",
+        "short": "RES"
+    },
+    "24086": {
+        "provider": "Residential",
+        "asn_description": "VIETTEL-AS-VN Viettel Corporation, VN",
+        "website": "https://www.viettel.com.vn/",
+        "short": "RES"
+    },
+    "42892": {
+        "provider": "Residential",
+        "asn_description": "LOFIS-AS, RU",
+        "website": "https://www.lofis.net/",
+        "short": "RES"
+    },
+    "17547": {
+        "provider": "Residential",
+        "asn_description": "M1NET-SG-AP M1 NET LTD, SG",
+        "website": "https://m1.net/",
+        "short": "RES"
+    },
+    "54339": {
+        "provider": "Residential",
+        "asn_description": "NB-NETWORKS, US",
+        "website": "https://www.nbnetworks.group/",
+        "short": "RES"
+    },
+    "207242": {
+        "provider": "Residential",
+        "asn_description": "NOEL, CZ",
+        "website": "https://www.noel.cz/",
+        "short": "RES"
+    },
+    "133206": {
+        "provider": "Residential",
+        "asn_description": "DPL-AS-AP DGTEK PTY LTD, AU",
+        "website": "https://www.dgtek.net/",
+        "short": "RES"
+    },
+    "6400": {
+        "provider": "Residential",
+        "asn_description": "Compania Dominicana de Telefonos S. A., DO",
+        "website": "https://www.claro.com.do/",
+        "short": "RES"
+    },
+    "206432": {
+        "provider": "Residential",
+        "asn_description": "TRESTON, PL",
+        "website": "http://firma.treston.net/",
+        "short": "RES"
+    },
+    "25310": {
+        "provider": "Residential",
+        "asn_description": "ASN-CWACCESS, GB",
+        "website": "https://www.cwc.com/",
+        "short": "RES"
+    },
+    "32453": {
+        "provider": "Residential",
+        "asn_description": "ICANETWORK, CA",
+        "website": "https://www.icanetwork.co.uk/",
+        "short": "RES"
+    },
+    "15582": {
+        "provider": "Residential",
+        "asn_description": "AKADO-B2C-AS, RU",
+        "website": "https://www.domru.ru/",
+        "short": "RES"
+    },
+    "202664": {
+        "provider": "Residential",
+        "asn_description": "JUMPER AS Jumper GmbH, AT",
+        "website": "https://www.jumper.at/",
+        "short": "RES"
+    },
+    "9050": {
+        "provider": "Residential",
+        "asn_description": "RTD Bucharest, Romania, RO",
+        "website": "https://www.orange.ro/",
+        "short": "RES"
+    },
+    "202425": {
+        "provider": "Residential",
+        "asn_description": "INT-NETWORK, SC",
+        "website": "https://www.ipvolume.net/",
+        "short": "RES"
+    },
+    "6407": {
+        "provider": "Residential",
+        "asn_description": "PRIMUS-AS6407, CA",
+        "website": "https://www.primus.ca/",
+        "short": "RES"
+    },
+    "197155": {
+        "provider": "Residential",
+        "asn_description": "ARTNET, PL",
+        "website": "https://www.artnet.pl/",
+        "short": "RES"
+    },
+    "23969": {
+        "provider": "Residential",
+        "asn_description": "TOT-NET TOT Public Company Limited, TH",
+        "website": "https://www.tot.co.th/",
+        "short": "RES"
+    },
+    "41275": {
+        "provider": "Residential",
+        "asn_description": "LEALTA-AS Moscow, Russia, RU",
+        "website": "https://vk.com/lovit",
+        "short": "RES"
+    },
+    "4657": {
+        "provider": "Residential",
+        "asn_description": "STARHUB-INTERNET StarHub Ltd, SG",
+        "website": "https://www.starhub.com/",
+        "short": "RES"
+    },
+    "17962": {
+        "provider": "Residential",
+        "asn_description": "TOPWAY-NET ShenZhen Topway Video Communication Co. Ltd, CN",
+        "website": "http://www.topway.com.cn/",
+        "short": "RES"
+    },
+    "12350": {
+        "provider": "Residential",
+        "asn_description": "VTX-NETWORK, CH",
+        "website": "https://www.vtx.ch/",
+        "short": "RES"
+    },
+    "397754": {
+        "provider": "Residential",
+        "asn_description": "TELLERWIFI, US",
+        "website": "https://www.teller.co.nz/",
+        "short": "RES"
+    },
+    "43766": {
+        "provider": "Residential",
+        "asn_description": "MTC-KSA-AS, SA",
+        "website": "https://www.mtcksa.com/",
+        "short": "RES"
+    },
+    "12611": {
+        "provider": "Residential",
+        "asn_description": "RKOM R-KOM Regensburger Telekommunikations GmbH & Co. KG, DE",
+        "website": "https://www.r-kom.de/",
+        "short": "RES"
+    },
+    "41872": {
+        "provider": "Residential",
+        "asn_description": "FLASHCABLE Flashcable Network, CH",
+        "website": "http://www.flashcable.cl/",
+        "short": "RES"
+    },
+    "16713": {
+        "provider": "Residential",
+        "asn_description": "NOANET-WA, US",
+        "website": "https://www.noanw.org/",
+        "short": "RES"
+    },
+    "51590": {
+        "provider": "Residential",
+        "asn_description": "ARONET-AS, PL",
+        "website": "https://www.admanet.pl/",
+        "short": "RES"
+    },
+    "57608": {
+        "provider": "Residential",
+        "asn_description": "DGNET, PL",
+        "website": "https://www.dg-net.pl/",
+        "short": "RES"
+    },
+    "4812": {
+        "provider": "Residential",
+        "asn_description": "CHINANET-SH-AP China Telecom Group, CN",
+        "website": "https://www.chinatelecomglobal.com/",
+        "short": "RES"
+    },
+    "28885": {
+        "provider": "Residential",
+        "asn_description": "OMANTEL-NAP-AS OmanTel NAP, OM",
+        "website": "https://www.omantel.om/",
+        "short": "RES"
+    },
+    "47656": {
+        "provider": "Residential",
+        "asn_description": "AST-SYSTEMS-AS, RU",
+        "website": "https://www.astsystems.com/",
+        "short": "RES"
+    },
+    "62658": {
+        "provider": "Residential",
+        "asn_description": "WYAN-AS, US",
+        "website": "https://www.wyandotte.net/",
+        "short": "RES"
+    },
+    "47377": {
+        "provider": "Residential",
+        "asn_description": "ORANGE_BELGIUM_SA New company name is Orange Belgium SA, BE",
+        "website": "https://www.orange.com/",
+        "short": "RES"
+    },
+    "56665": {
+        "provider": "Residential",
+        "asn_description": "TANGO-TELINDUS, LU",
+        "website": "https://www.tango.lu/",
+        "short": "RES"
+    },
+    "40029": {
+        "provider": "Residential",
+        "asn_description": "NOVUS-3, CA",
+        "website": "https://www.novusnow.ca/",
+        "short": "RES"
+    },
+    "12175": {
+        "provider": "Residential",
+        "asn_description": "YELMNET, US",
+        "website": "https://www.yelmtel.com/",
+        "short": "RES"
+    },
+    "24852": {
+        "provider": "Residential",
+        "asn_description": "VINITA, LT",
+        "website": "https://www.vinita.com/",
+        "short": "RES"
+    },
+    "18390": {
+        "provider": "Residential",
+        "asn_description": "SPINTEL-AS-AP Spintel Pty Ltd, AU",
+        "website": "https://spintel.net.au/",
+        "short": "RES"
+    },
+    "12849": {
+        "provider": "Residential",
+        "asn_description": "HOTNET-IL AMS-IX Admin LAN, IL",
+        "website": "https://www.hot-net.net/",
+        "short": "RES"
+    },
+    "202596": {
+        "provider": "Residential",
+        "asn_description": "GNETWORK, GB",
+        "website": "https://www.g.network/",
+        "short": "RES"
+    },
+    "8821": {
+        "provider": "Residential",
+        "asn_description": "TELEZUG WWZ Telekom AG TELEZUG, CH",
+        "website": "https://www.wwz.ch/",
+        "short": "RES"
+    },
+    "11290": {
+        "provider": "Residential",
+        "asn_description": "CC-3272, CA",
+        "website": "https://www.clearcable.ca/",
+        "short": "RES"
+    },
+    "204274": {
+        "provider": "Residential",
+        "asn_description": "AURA-A-S, DK",
+        "website": "https://www.aurafiber.dk/",
+        "short": "RES"
+    },
+    "9946": {
+        "provider": "Residential",
+        "asn_description": "CABLENET-AS-KR KCTV JEJU BROADCASTING, KR",
+        "website": "http://www.jejubc.co.kr/",
+        "short": "RES"
+    },
+    "12897": {
+        "provider": "Residential",
+        "asn_description": "ENTEGAMEDIANET ENTEGA Medianet GmbH, DE",
+        "website": "https://www.entega-medianet.de/",
+        "short": "RES"
+    },
+    "54198": {
+        "provider": "Residential",
+        "asn_description": "VIANET, CA",
+        "website": "https://www.vianet.ca/",
+        "short": "RES"
+    },
+    "9500": {
+        "provider": "Residential",
+        "asn_description": "VODAFONE-TRANSIT-AS Vodafone NZ Ltd., NZ",
+        "website": "https://www.vodafone.co.nz/",
+        "short": "RES"
+    },
+    "14638": {
+        "provider": "Residential",
+        "asn_description": "LCPRL, US",
+        "website": "https://www.longmontcolorado.gov/",
+        "short": "RES"
+    },
+    "27747": {
+        "provider": "Residential",
+        "asn_description": "Telecentro S.A., AR",
+        "website": "https://www.telecentro.com.ar/",
+        "short": "RES"
+    },
+    "135887": {
+        "provider": "Residential",
+        "asn_description": "TELSTRA-BELONG-AP Belong Telstra Corporation, AU",
+        "website": "https://www.belong.com.au/",
+        "short": "RES"
+    },
+    "31246": {
+        "provider": "Residential",
+        "asn_description": "NETBOX-AS NETBOX Autonomous system, CZ",
+        "website": "https://www.netbox.cz/",
+        "short": "RES"
+    },
+    "12389": {
+        "provider": "Residential",
+        "asn_description": "ROSTELECOM-AS, RU",
+        "website": "https://www.rostelecom.ru/",
+        "short": "RES"
+    },
+    "6752": {
+        "provider": "Residential",
+        "asn_description": "ANDORRA Andorra Telecom, AD",
+        "website": "http://www.andorratelecom.ad/",
+        "short": "RES"
+    },
+    "41046": {
+        "provider": "Residential",
+        "asn_description": "NEJTV-AS, CZ",
+        "website": "https://www.nejtv.cz/",
+        "short": "RES"
+    },
+    "25515": {
+        "provider": "Residential",
+        "asn_description": "CTCNET-AS 292 Narodnogo Opolcheniya str., RU",
+        "website": "https://www.ctelecoms.ru/",
+        "short": "RES"
+    },
+    "35699": {
+        "provider": "Residential",
+        "asn_description": "ADAMOEU-AS Adamo Telecom Iberia S.A., ES",
+        "website": "https://www.adamo.es/",
+        "short": "RES"
+    },
+    "19108": {
+        "provider": "Residential",
+        "asn_description": "SUDDENLINK-COMMUNICATIONS, US",
+        "website": "https://www.suddenlink.com/",
+        "short": "RES"
+    },
+    "4922": {
+        "provider": "Residential",
+        "asn_description": "SHENTEL, US",
+        "website": "https://shentel.com/",
+        "short": "RES"
+    },
+    "21571": {
+        "provider": "Residential",
+        "asn_description": "MLS Wireless SA, BR",
+        "website": "http://www.mls.sk/",
+        "short": "RES"
+    },
+    "42541": {
+        "provider": "Residential",
+        "asn_description": "FIBERBY, DK",
+        "website": "https://fiberby.dk/",
+        "short": "RES"
+    },
+    "327901": {
+        "provider": "Residential",
+        "asn_description": "Level7-AS, ZA",
+        "website": "https://www.level-7.co.za/",
+        "short": "RES"
+    },
+    "135468": {
+        "provider": "Residential",
+        "asn_description": "BNET-AS-ID BNET, ID",
+        "website": "https://www.bnet.hr/",
+        "short": "RES"
+    },
+    "8359": {
+        "provider": "Residential",
+        "asn_description": "MTS, RU",
+        "website": "https://www.mts.ru/",
+        "short": "RES"
+    },
+    "205400": {
+        "provider": "Residential",
+        "asn_description": "VIVOCONNECTION, CZ",
+        "website": "https://vivo.com.br/",
+        "short": "RES"
+    },
+    "53274": {
+        "provider": "Residential",
+        "asn_description": "SKYRUNNER-INC, US",
+        "website": "https://skyrunner.net/",
+        "short": "RES"
+    },
+    "29974": {
+        "provider": "Residential",
+        "asn_description": "WIGHT-AS, CA",
+        "website": "https://www.wightman.ca/",
+        "short": "RES"
+    },
+    "398844": {
+        "provider": "Residential",
+        "asn_description": "COMELEC-DUB-01, US",
+        "website": "https://www.comelecinternet.com/",
+        "short": "RES"
+    },
+    "44134": {
+        "provider": "Residential",
+        "asn_description": "BOLIGNET-AS - - - Transit - - -, DK",
+        "website": "https://www.bolignet.dk/",
+        "short": "RES"
+    },
+    "60294": {
+        "provider": "Residential",
+        "asn_description": "DE-DGW Deutsche Glasfaser Wholesale Internet, DE",
+        "website": "https://www.deutsche-glasfaser-wholesale.de/",
+        "short": "RES"
+    },
+    "6147": {
+        "provider": "Residential",
+        "asn_description": "Telefonica del Peru S.A.A., PE",
+        "website": "https://telefonica.com.pe/",
+        "short": "RES"
+    },
+    "8422": {
+        "provider": "Residential",
+        "asn_description": "NETCOLOGNE, DE",
+        "website": "https://netcologne.de/",
+        "short": "RES"
+    },
+    "33130": {
+        "provider": "Residential",
+        "asn_description": "IASL, CA",
+        "website": "https://www.ias.net.au/",
+        "short": "RES"
+    },
+    "137872": {
+        "provider": "Residential",
+        "asn_description": "PEOPLESPHONE-HK China Mobile Hong Kong Company Limited, HK",
+        "website": "https://www.hk.chinamobile.com/",
+        "short": "RES"
+    },
+    "49242": {
+        "provider": "Residential",
+        "asn_description": "INTERNETUNION1, PL",
+        "website": "https://www.internetunion.pl/",
+        "short": "RES"
+    },
+    "9105": {
+        "provider": "Residential",
+        "asn_description": "TISCALI-UK TalkTalk Communications Limited, GB",
+        "website": "https://www.talktalkgroup.com/",
+        "short": "RES"
+    },
+    "8339": {
+        "provider": "Residential",
+        "asn_description": "KABSI-AS, AT",
+        "website": "https://www.kabelsignal.ch/",
+        "short": "RES"
+    },
+    "8445": {
+        "provider": "Residential",
+        "asn_description": "SALZBURG-AG-AS, AT",
+        "website": "https://www.salzburg-ag.at/",
+        "short": "RES"
+    },
+    "55850": {
+        "provider": "Residential",
+        "asn_description": "MERCURYNZ-AS-AP Mercury NZ Limited, NZ",
+        "website": "https://www.mercury.co.nz/",
+        "short": "RES"
+    },
+    "46690": {
+        "provider": "Residential",
+        "asn_description": "SNET-FCC, US",
+        "website": "https://www.fibercast.com/",
+        "short": "RES"
+    },
+    "47119": {
+        "provider": "Residential",
+        "asn_description": "VLTELECOM , RU",
+        "website": "https://vltelecom.com/",
+        "short": "RES"
+    },
+    "8680": {
+        "provider": "Residential",
+        "asn_description": "SURE-INTERNATIONAL-LIMITED, GB",
+        "website": "https://www.sure.com/",
+        "short": "RES"
+    },
+    "201746": {
+        "provider": "Residential",
+        "asn_description": "OLIVENET-AS, ES",
+        "website": "https://www.olivenet.net/",
+        "short": "RES"
+    },
+    "265303": {
+        "provider": "Residential",
+        "asn_description": "TV Alphaville Sistema de TV por Assinatura LTDA, BR",
+        "website": "https://www.alphavillesat.com.br/",
+        "short": "RES"
+    },
+    "56329": {
+        "provider": "Residential",
+        "asn_description": "GIGACLEAR, GB",
+        "website": "https://www.gigaclear.com/",
+        "short": "RES"
+    },
+    "134697": {
+        "provider": "Residential",
+        "asn_description": "LAUNTEL-AS-AP Launtel, AU",
+        "website": "https://launtel.net.au/",
+        "short": "RES"
+    },
+    "33885": {
+        "provider": "Residential",
+        "asn_description": "OWNIT Katarinavagen 15, SE",
+        "website": "https://www.ownit.se/",
+        "short": "RES"
+    },
+    "12714": {
+        "provider": "Residential",
+        "asn_description": "MEGAFON-AS Moscow, Russia, RU",
+        "website": "https://megafon.ru/",
+        "short": "RES"
+    },
+    "51819": {
+        "provider": "Residential",
+        "asn_description": "YAR-AS, RU",
+        "website": "https://www.yarnet.ru/",
+        "short": "RES"
+    },
+    "397412": {
+        "provider": "Residential",
+        "asn_description": "TACH, US",
+        "website": "https://tachus.com/",
+        "short": "RES"
+    },
+    "395354": {
+        "provider": "Residential",
+        "asn_description": "ASN-STARRY, US",
+        "website": "https://starry.com/",
+        "short": "RES"
+    },
+    "22047": {
+        "provider": "Residential",
+        "asn_description": "VTR BANDA ANCHA S.A., CL",
+        "website": "https://www.vtr.com/",
+        "short": "RES"
+    },
+    "6739": {
+        "provider": "Residential",
+        "asn_description": "ONO-AS Cableuropa - ONO, ES",
+        "website": "https://www.ono.es/",
+        "short": "RES"
+    },
+    "396097": {
+        "provider": "Residential",
+        "asn_description": "SAIL-INET, US",
+        "website": "https://www.sailinternet.com/",
+        "short": "RES"
+    },
+    "19429": {
+        "provider": "Residential",
+        "asn_description": "ETB - Colombia, CO",
+        "website": "https://www.etb.com/",
+        "short": "RES"
+    },
+    "53449": {
+        "provider": "Residential",
+        "asn_description": "OEC-FIBER, US",
+        "website": "https://www.orangeec.coop/",
+        "short": "RES"
+    },
+    "59521": {
+        "provider": "Residential",
+        "asn_description": "SKP, NL",
+        "website": "https://www.skpfiber.fi/",
+        "short": "RES"
+    },
+    "12302": {
+        "provider": "Residential",
+        "asn_description": "VODAFONE_RO Charles de Gaulle nr.15, RO",
+        "website": "https://www.vodafone.ro/",
+        "short": "RES"
+    },
+    "204542": {
+        "provider": "Residential",
+        "asn_description": "NUBIP-TALK, ES",
+        "website": "https://www.nubip.ru/",
+        "short": "RES"
+    },
+    "2586": {
+        "provider": "Residential",
+        "asn_description": "UNINET-AS Sopruse pst 145, EE",
+        "website": "https://www.telia.ee/",
+        "short": "RES"
+    },
+    "14291": {
+        "provider": "Residential",
+        "asn_description": "ANTIETAM, US",
+        "website": "https://myactv.net/",
+        "short": "RES"
+    },
+    "29497": {
+        "provider": "Residential",
+        "asn_description": "KUBANGSM, RU",
+        "website": "https://www.kuban-gsm.ru/",
+        "short": "RES"
+    },
+    "16904": {
+        "provider": "Residential",
+        "asn_description": "ARVIG, US",
+        "website": "https://www.arvigbusiness.com/",
+        "short": "RES"
+    },
+    "135600": {
+        "provider": "Residential",
+        "asn_description": "WHIZCOMMS-AS-AP Whiz Communications Pte Ltd, SG",
+        "website": "https://www.whizcomms.com.sg/",
+        "short": "RES"
+    },
+    "9070": {
+        "provider": "Residential",
+        "asn_description": "COOOLBOX, BG",
+        "website": "https://www.cooolbox.cz/",
+        "short": "RES"
+    },
+    "21412": {
+        "provider": "Residential",
+        "asn_description": "CGATES-AS, LT",
+        "website": "https://citygatesnetworks.com/",
+        "short": "RES"
+    },
+    "399525": {
+        "provider": "Residential",
+        "asn_description": "RIMROCK-WIRELESS, US",
+        "website": "https://rimrockmedia.com/",
+        "short": "RES"
+    },
+    "16527": {
+        "provider": "Residential",
+        "asn_description": "GVTCINTERNET, US",
+        "website": "https://www.gvtc.com/",
+        "short": "RES"
+    },
+    "12912": {
+        "provider": "Residential",
+        "asn_description": "TM, PL",
+        "website": "http://www.t-mobile.pl",
+        "short": "RES"
+    },
+    "39699": {
+        "provider": "Residential",
+        "asn_description": "SSPOY-AS, FI",
+        "website": "https://www.sspsv.fi/",
+        "short": "RES"
+    },
+    "3786": {
+        "provider": "Residential",
+        "asn_description": "LGDACOM LG DACOM Corporation, KR",
+        "website": "https://www.uplus.co.kr/",
+        "short": "RES"
+    },
+    "9924": {
+        "provider": "Residential",
+        "asn_description": "TFN-TW Taiwan Fixed Network, Telco and Network Service Provider., TW",
+        "website": "https://english.taiwanmobile.com/",
+        "short": "RES"
+    },
+    "6878": {
+        "provider": "Residential",
+        "asn_description": "AS6878, DE",
+        "website": "https://www.t-mobile.de/",
+        "short": "RES"
+    },
+    "10103": {
+        "provider": "Residential",
+        "asn_description": "HKBN-AS-AP HK Broadband Network Ltd., HK",
+        "website": "https://www.hkbn.net/personal/home/en/landing",
+        "short": "RES"
+    },
+    "35598": {
+        "provider": "Residential",
+        "asn_description": "INETCOM, RU",
+        "website": "https://inetcom.ru",
+        "short": "RES"
+    },
+    "212695": {
+        "provider": "Residential",
+        "asn_description": "LTS-AS, UA",
+        "website": "http://lts.org.ua/",
+        "short": "RES"
+    },
+    "41668": {
+        "provider": "Residential",
+        "asn_description": "ERTH-KAZAN-AS, RU",
+        "website": "https://ertelecom.ru/en/index",
+        "short": "RES"
+    },
+    "59713": {
+        "provider": "Residential",
+        "asn_description": "ERTH-KURSK-AS, RU",
+        "website": "https://ertelecom.ru/en/index",
+        "short": "RES"
+    },
+    "57128": {
+        "provider": "Residential",
+        "asn_description": "KGS-NET, RU",
+        "website": "https://www.ufanet.ru/",
+        "short": "RES"
+    },
+    "59577": {
+        "provider": "Residential",
+        "asn_description": "LINKCOM-LVIV-AS LinkCom, UA",
+        "website": "https://linkcom.lviv.ua/",
+        "short": "RES"
+    },
+    "41661": {
+        "provider": "Residential",
+        "asn_description": "ERTH-CHEL-AS, RU",
+        "website": "https://ertelecom.ru/en/index",
+        "short": "RES"
+    },
+    "35540": {
+        "provider": "Residential",
+        "asn_description": "OVH-TELECOM, FR",
+        "website": "https://www.ovh.com/",
+        "short": "RES"
+    },
+    "35807": {
+        "provider": "Residential",
+        "asn_description": "SKYNET-SPB-AS, RU",
+        "website": "https://sky-net.spb.ru/",
+        "short": "RES"
+    },
+    "57378": {
+        "provider": "Residential",
+        "asn_description": "ROSTOV-AS, RU",
+        "website": "https://www.rostelecom.ru/",
+        "short": "RES"
+    },
+    "56981": {
+        "provider": "Residential",
+        "asn_description": "TOMSK-AS, RU",
+        "website": "https://ertelecom.ru/",
+        "short": "RES"
+    },
+    "29076": {
+        "provider": "Residential",
+        "asn_description": "CITYTELECOM-AS Filanco LTD, RU",
+        "website": "http://www.citytelecom.ru/",
+        "short": "RES"
+    },
+    "12969": {
+        "provider": "Residential",
+        "asn_description": "VODAFONE_ICELAND, IS",
+        "website": "https://www.vodafone.is/",
         "short": "RES"
     }
 }
