@@ -443,12 +443,6 @@
         "website": "https://www.quadranet.com",
         "short": "QUA"
     },
-    "3301": {
-        "provider": "Telia",
-        "asn_description": "TELIANET-SWEDEN Telia, SE",
-        "website": "https://teliacompany.com",
-        "short": "TEL"
-    },
     "207452": {
         "provider": "BESK, UAB",
         "asn_description": "BESK-AS, LT",
