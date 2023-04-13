@@ -190,9 +190,11 @@ def MakeSolanaObject():
 def GetIPs():
     print(f"\n\nAnalyzing {len(SOL_OBJ.gossipLookup)} Nodes. This may take a few minutes...", flush=True)
     nodes = {}
+    i = 0
 
     #Iterate over all gossipNodes
     for ip, node in SOL_OBJ.gossipLookup.items():
+        print(f"\tAnalyzing {ip} \t\t ({i}/{len(SOL_OBJ.gossipLookup)})", flush=True)
         #Set node information
         pubkey = node['pubkey']
         isValidator = pubkey in SOL_OBJ.validatorsLookup #if not validator, then RPC.
@@ -209,6 +211,7 @@ def GetIPs():
             "address": pubkey,
             "extra_info": extra_info
         }
+        i += 1
 
     print("Done.", flush=True)
     return nodes
