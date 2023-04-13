@@ -92,6 +92,11 @@ def get_pool_relays(pool_id: str) -> pd.DataFrame:
     url = f"{BASE_URL}/pools/{pool_id}/relays"
     response = requests.get(url, headers=HEADERS).json()
     df = pd.DataFrame(response)
+    
+    # rebuild empty dataframes to placeholder -> this allows to account for all stake
+    if df.empty:
+        df = pd.DataFrame(columns=["ipv4", "ipv6", "dns", "dns_srv", "port"])
+        df.loc[0] = [None, None, "Unidentified", None, pd.NA]
 
     df["pool_id"] = pool_id
     return df
@@ -120,7 +125,7 @@ def main() -> Dict:
     # Get pools & ids
     pools = get_stake_pools()
     pool_ids = pools["pool_id"].unique().tolist()
-    
+
     # NOTE: trim list to speed up testing
     #pool_ids = pool_ids[:30]
 
@@ -137,18 +142,8 @@ def main() -> Dict:
     pools_relays.loc[pools_relays["ip"].isnull(), "ip"] = pools_relays["ipv4"]
     # If ipv4 is null, use ipv6
     pools_relays.loc[pools_relays["ip"].isnull(), "ip"] = pools_relays["ipv6"]
-
-    # Filter out pools with no ip
-    pools_relays = pools_relays[~pools_relays["ip"].isnull()]
-    # For each pool_id, select the first row
-    pools_relays = pools_relays.groupby("pool_id").first().reset_index()
-
-    # rename so we have a good column name for the ip
-    rename = {
-        "pool_id": "address",
-        "active_stake": "stake",
-    }
-    pools_relays = pools_relays.rename(columns=rename)
+    # If ipv6 is null, use dns
+    pools_relays.loc[pools_relays["ip"].isnull(), "ip"] = pools_relays["dns"]
 
     # NOTE: we want this format output
     # {
@@ -170,18 +165,93 @@ def main() -> Dict:
     #     .
     # }}
 
-    # select ip, stake, address
-    pools_relays = pools_relays[["ip", "stake", "address"]]
-    pools_relays["is_validator"] = True
-    # Add extra_info column
-    pool_relays['extra_info'] = {}
 
-    # convert to dict
+    # adjust the dataframe to the dictionary format and sum stakes
+    ip_dict = {}
+    ip_to_unique_pools = {}
+    seen_pool_ids = set()
+
+    # get all the pools for a given ip
+    for i, row in pools_relays.iterrows():
+        pool_id, active_stake, live_stake, ip, domain = row["pool_id"], row["active_stake"], row["live_stake"], row["ip"], row["dns"]
+
+        # catch none IPs
+        if pd.isna(ip):
+            ip = "Undefined"
+
+        # add to the dict if new
+        if ip not in ip_to_unique_pools:
+            ip_to_unique_pools[ip] = {
+                pool_id: {
+                    "active_stake": active_stake,
+                    "live_stake": live_stake,
+                    "domain": domain,
+                }
+            }
+        # add to the proper ip if not new
+        else:
+            ip_to_unique_pools[ip][pool_id] = {
+                "active_stake": active_stake,
+                "live_stake": live_stake,
+                "domain": domain,
+            }
+
+    # get all proper sums and info
+    for ip in ip_to_unique_pools:
+        # set stake to -1 to mark as nil but still account for Ips with 0 stake
+        active_stake = -1
+        live_stake = -1
+        addresses = []
+
+        # sum stake of all matching pools if the ip maps to multiple pools and the pool hasn't been seen yet
+        if len(ip_to_unique_pools[ip]) > 1:
+            for pool_id in ip_to_unique_pools[ip]:
+                if pool_id not in seen_pool_ids:
+                    # mark as non-nil
+                    if active_stake == -1:
+                        active_stake = 0
+                        live_stake = 0
+                    
+                    active_stake += int(ip_to_unique_pools[ip][pool_id]["active_stake"]) // 1000000
+                    live_stake += int(ip_to_unique_pools[ip][pool_id]["live_stake"]) // 1000000
+                    domain = ip_to_unique_pools[ip][pool_id]["domain"]
+                    addresses.append(pool_id)
+
+                # mark the pool as seen
+                seen_pool_ids.add(pool_id)
+        
+        # set pool id for ips with just one pool
+        else:
+            pool_id = list(ip_to_unique_pools[ip].keys())[0]
+
+            #set values if the pool hasn't been seen yet
+            if pool_id not in seen_pool_ids:
+                active_stake, live_stake, domain = int(ip_to_unique_pools[ip][pool_id]["active_stake"]), int(ip_to_unique_pools[ip][pool_id]["live_stake"]), ip_to_unique_pools[ip][pool_id]["domain"]
+                active_stake = active_stake // 1000000
+                live_stake = live_stake // 1000000
+
+                addresses.append(pool_id)
+                seen_pool_ids.add(pool_id)
+
+        # only add an entry if stake is not nil (-1)
+        if active_stake != -1:
+            ip_dict[ip] = {
+                "is_validator": True,
+                "stake": int(active_stake),
+                "address": pool_id,
+                "extra_info": {
+                    "domain": domain,
+                    "live stake": live_stake,
+                    "other_addresses": addresses
+                }
+            }
+    
+    # final dict
     validators_dict = {
         "timestamp": str(datetime.now().strftime("%m-%d-%Y_%H:%M")),
         "collection_method": "api",
         "chain_data": "",
-        "nodes": pools_relays.set_index("ip").T.to_dict() 
+        "nodes": ip_dict
         }
 
     return validators_dict
