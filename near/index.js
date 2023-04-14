@@ -168,11 +168,15 @@ async function runProcess() {
         jsonOutput.collection_method = "api_and_crawl";
         jsonOutput.chain_data = "NEAR staking validators";
         jsonOutput.nodes = [];
-        for (const validator of validatorsArr) {
 
-            //console.log(validator);
-            var validatorStakeObj = validatorsStakeArr[validator];
+        console.log("\n\Number of validators: " + Object.keys(validatorsStakeArr).length);
+        var validatorsStakeArrKeys = Object.keys(validatorsStakeArr);
+        for (const validatorAccountId of validatorsStakeArrKeys) {
+
+            //console.log(validatorAccountId);
+            var validatorStakeObj = validatorsStakeArr[validatorAccountId];
             //console.log(validatorStakeObj);
+            var validator = validatorStakeObj.account_id;
             var validatorStake = null;
             if(validatorStakeObj !== undefined) {
                 validatorStake = validatorStakeObj.stake;
@@ -191,34 +195,17 @@ async function runProcess() {
             // formatted json object
             var jsonObj = {};
             jsonObj.is_validator = true;
-            jsonObj.stake = parseFloat(validatorStake);
+            //jsonObj.stake = parseFloat(validatorStake);
+            jsonObj.stake = validatorStake;
             jsonObj.address = validatorPeerId;
             //jsonObj.extra_info = {};
             var ipObj = {};
             ipObj[validatorIP] = jsonObj;
             jsonOutput.nodes.push(ipObj);
-        } 
-
-        fs.writeFileSync('./near-ip.json', JSON.stringify(jsonOutput));
-
-        /*
-        var validatorsKeysArr = Object.keys(validatorsStakeArr);
-        var i=1;
-        for (const validatorKey of validatorsKeysArr) {
-
-            var validator = validatorsStakeArr[validatorKey];
-            var validatorIP;
-            if(validator !== undefined) {
-                validatorIP = nodeListAddrArr[validator.public_key];
-                if(validatorIP !== undefined) {
-                    validatorIP = validatorIP.substring(0, validatorIP.indexOf(":"));
-                }                
-            }
-            console.log(i + "," + validator.account_id + "," + validator.public_key + "," + validatorIP);
-            i++;
         }
-        */
 
+        // Save result to the file
+        fs.writeFileSync('./near-ip.json', JSON.stringify(jsonOutput));
 
       }).catch(error => {
         console.log(error);  // rejectReason of any first rejected promise
