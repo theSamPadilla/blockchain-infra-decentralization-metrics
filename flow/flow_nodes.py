@@ -83,7 +83,7 @@ def get_node_info(node: dict):
 
 def get_ip_address(address: str):
     """Returns the ip address of a node"""
-    ping = subprocess.getoutput(f"ping -t 1 {address} ")
+    ping = subprocess.getoutput(f"ping -c 1 {address} ")
     id_pattern = r"\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}"
     address = m.group() if (m := re.search(id_pattern, ping)) is not None else "Unknown"
     return address
@@ -121,6 +121,7 @@ def main():
 
     nodes = []
 
+    print(f"Analyzing {len(id_node_list)} nodes...")
     for _ in id_node_list:
         nodes_fields = get_node_info(_)["value"]["fields"]
 
@@ -143,25 +144,52 @@ def main():
 
         nodes.append(nodes_data)
 
-    roles = {
-        "3": "execution",
-        "2": "consensus",
-        "1": "collection",
-        "4": "verification",
-        "5": "access",
-    }
+    print("\tDone.")
+
+    #Get role settings (key and minimums) from config file
+    with open("config/FlowConfig.json", "r") as f:
+        roles_settings = json.load(f)
+        f.close()
 
     nodes_df = pd.DataFrame(nodes)
-    nodes_df["role"] = nodes_df["role"].apply(lambda x: roles[x])
+
+    print("\nTransforming dataframe result. This may take several minutes...")
+    nodes_df["role"] = nodes_df["role"].apply(lambda x: roles_settings["role_map"][x])
     nodes_df["ip_address"] = nodes_df["networkingAddress"].apply(
         lambda x: get_ip_address(x.split(":")[0])
     )
+
+    print("\tDone.")
     result = nodes_df.groupby("ip_address").apply(group_to_dict).tolist()
-
+    
+    #Prepare final dict
     today = datetime.today().strftime("%Y-%m-%d")
+    dict_result = {
+        "timestamp": today,
+        "collection_method": "api",
+        "chain_data": {"role_requirements": roles_settings["minimum_requirements"]},
+        "nodes": {list(node)[0]: node[list(node)[0]] for node in result}
+    }
 
-    with open(f"flow_output_{today}.json", "w") as f:
-        json.dump(result, f, ensure_ascii=False)
+    #Add activity metric and final edits to each node.
+    for ip, node in dict_result["nodes"].items():
+        role = node["extra_info"]["role"]
+        stake = int(float(node["stake"]))
+        node["extra_info"]["is_active"] = False
+        if stake >= roles_settings["minimum_requirements"][role]:
+            node["extra_info"]["is_active"] = True
+
+        #Update address and domain
+        node["extra_info"]["domain"] = node["address"]
+        node["address"] = node["extra_info"]["id"]
+
+    with open("config/SettingsConfig.json", "r") as f:
+        output_folder = json.load(f)["output_folder"]
+        f.close()
+        
+    with open(f"{output_folder}flow.json", "w") as f:
+        json.dump(dict_result, f, indent=4, ensure_ascii=False)
+        f.close()
 
 
 if __name__ == "__main__":

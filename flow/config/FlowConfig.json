@@ -1,0 +1,18 @@
+{
+    "role_map": {
+        "3": "execution",
+        "2": "consensus",
+        "1": "collection",
+        "4": "verification",
+        "5": "access"
+    },
+    "minimum_requirements": {
+        "consensus": 500000,
+        "execution": 1250000,
+        "verification": 135000,
+        "access": 100,
+        "collection": 250000,
+        "observer": 0,
+        "archive": 0
+    }
+}
