@@ -116,14 +116,15 @@ def GetGeneralNetworkProviderDistribution(providers_to_track: dict, countries_to
     
     #Iterate over all IP addresses
     for ip, node_info in target_ips.items():
-        #Pass if IP is private, loopback, or invalid
+        #Set invalid if IP is private, loopback, or invalid
         if not IsValidIp(ip):
-            continue
-        
-        #IP ASN Lookup
-        asn, provider_name = IpAsnLookup(ip, target_ips, blockchain_obj)
-        #IP Geolookup
-        country, country_code, city, region, latitude, longitude, continent = [i for i in IpGeoLookup(ip, target_ips, blockchain_obj, ip_handler)]
+            asn, provider_name = None, "Invalid"
+            country, country_code, city, region, latitude, longitude, continent = ["Invalid", "Invalid", "Invalid", "Invalid", 0, 0, "Invalid"]
+        else:
+            #IP ASN Lookup
+            asn, provider_name = IpAsnLookup(ip, target_ips, blockchain_obj)
+            #IP Geolookup
+            country, country_code, city, region, latitude, longitude, continent = [i for i in IpGeoLookup(ip, target_ips, blockchain_obj, ip_handler)]
 
         #Perform Analysis
         provider_name = ProviderAnalysis(providers_to_track, asn, ip, node_info, providers_short_to_object_map, country, country_code, city, region, latitude, longitude, provider_name, analysisDate, blockchain_obj)
