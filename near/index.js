@@ -171,6 +171,7 @@ async function runProcess() {
 
         console.log("\n\Number of validators: " + Object.keys(validatorsStakeArr).length);
         var validatorsStakeArrKeys = Object.keys(validatorsStakeArr);
+        var totalStaked = 0;
         for (const validatorAccountId of validatorsStakeArrKeys) {
 
             //console.log(validatorAccountId);
@@ -179,7 +180,7 @@ async function runProcess() {
             var validator = validatorStakeObj.account_id;
             var validatorStake = null;
             if(validatorStakeObj !== undefined) {
-                validatorStake = validatorStakeObj.stake;
+                validatorStake = Number(validatorStakeObj.stake);
             }
             var validatorPeerId = knownProducersAccountsArr[validator];
             var validatorIP = null;
@@ -189,6 +190,7 @@ async function runProcess() {
                     validatorIP = validatorIP.substring(0, validatorIP.indexOf(":"));
                 }
             }
+            totalStaked += validatorStake;
             console.log(i + "," + validator + "," + validatorPeerId + "," + validatorIP + "," + validatorStake);
             i++;
 
@@ -203,6 +205,7 @@ async function runProcess() {
             ipObj[validatorIP] = jsonObj;
             jsonOutput.nodes.push(ipObj);
         }
+        console.log("Total staked: " + totalStaked);
 
         // Save result to the file
         fs.writeFileSync('./near-ip.json', JSON.stringify(jsonOutput));
