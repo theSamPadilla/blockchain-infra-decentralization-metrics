@@ -43,10 +43,11 @@ def get_validators() -> pd.DataFrame:
 
         df = pd.concat([df, tmp_df], axis=0)
 
+
     # unpack everything
-    df["address"] = df["beneficiaries"].apply(lambda x: x[0] if len(x) > 0 else x)
+    df["address"] = df["nodeId"]
     df["ip"] = df["node"].apply(lambda x: x.get("ip","unknown"))
-    df["stake"] = df["stake"].apply(lambda x: x["total"]) # NOTE: need to scale
+    df["stake"] = df["stake"].apply(lambda x: int(x["total"]) // 1000000000)
     df["is_validator"] = True
     df["extra_info"] = df.apply(lambda x: {"name": x["name"], "manager": x["manager"]}, axis=1)
 
@@ -58,8 +59,17 @@ def main() -> Dict:
     # Get validators
     validators = get_validators()
 
-    # drop validators where ip = 'unkown'
-    validators = validators[validators['ip'] != 'unknown']
+    # copy the addresses to other_addresses to group all later
+    validators["other_addresses"] = validators["address"]
+
+    # group by IPs, sum the stake of all the IPs (even if they map to the same pool), aggregate the addresses where they appear
+    validators = validators.groupby('ip').agg({'stake': 'sum', 'extra_info': 'first', 'is_validator': 'first', 'other_addresses': lambda x: list(x), 'address': 'first'}).reset_index()
+
+    # update extra info
+    validators["extra_info"] = validators.apply(lambda x: {"name": x["extra_info"]["name"] if not pd.isna(x["extra_info"]["name"]) else "", "manager": x["extra_info"]["manager"] if not pd.isna(x["extra_info"]["manager"]) else "", "other_addresses": x["other_addresses"] if len(set(x["other_addresses"])) > 1 else ""}, axis=1)
+    
+    # drop extra column and return address
+    validators.drop(columns=["other_addresses"], inplace=True)
     validators_dict = validators.set_index('ip').T.to_dict()
     return validators_dict
 

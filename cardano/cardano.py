@@ -165,14 +165,12 @@ def main() -> Dict:
     #     .
     # }}
 
-
-    # adjust the dataframe to the dictionary format and sum stakes
     ip_dict = {}
     ip_to_unique_pools = {}
     seen_pool_ids = set()
 
     # get all the pools for a given ip
-    for i, row in pools_relays.iterrows():
+    for _, row in pools_relays.iterrows():
         pool_id, active_stake, live_stake, ip, domain = row["pool_id"], row["active_stake"], row["live_stake"], row["ip"], row["dns"]
 
         # catch none IPs
