@@ -201,11 +201,11 @@ def main() -> Dict:
         live_stake = -1
         addresses = []
 
-        # sum stake of all matching pools if the ip maps to multiple pools and the pool hasn't been seen yet
+        # sum stake of all matching pools if the ip maps to multiple unique pools and the pool hasn't been seen yet
         if len(ip_to_unique_pools[ip]) > 1:
             for pool_id in ip_to_unique_pools[ip]:
                 if pool_id not in seen_pool_ids:
-                    # mark as non-nil
+                    # mark as non-nil if still nil
                     if active_stake == -1:
                         active_stake = 0
                         live_stake = 0
