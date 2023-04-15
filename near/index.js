@@ -146,28 +146,29 @@ async function runProcess() {
 
     const allPromise = Promise.all(promisesArr);
     allPromise.then(values => {
-        console.log(values); // [valueOfPromise1, valueOfPromise2, ...]
+        // console.log(values); // [valueOfPromise1, valueOfPromise2, ...]
 
-        console.log("\n\n********\n\n");
-        console.log("\n\nnodeListAddrArr: " + Object.keys(nodeListAddrArr).length);
-        console.log(nodeListAddrArr);
-        console.log("\n\nknownProducersAccountsArr: " + Object.keys(knownProducersAccountsArr).length);
-        console.log(knownProducersAccountsArr);
-        console.log("\n\nvalidatorsArr: " + validatorsArr.length);
-        console.log(validatorsArr);
-        console.log("\n\nvalidatorsStakeArr: " + Object.keys(validatorsStakeArr).length);
-        console.log(validatorsStakeArr);
+        // console.log("\n\n********\n\n");
+        // console.log("\n\nnodeListAddrArr: " + Object.keys(nodeListAddrArr).length);
+        // console.log(nodeListAddrArr);
+        // console.log("\n\nknownProducersAccountsArr: " + Object.keys(knownProducersAccountsArr).length);
+        // console.log(knownProducersAccountsArr);
+        // console.log("\n\nvalidatorsArr: " + validatorsArr.length);
+        // console.log(validatorsArr);
+        // console.log("\n\nvalidatorsStakeArr: " + Object.keys(validatorsStakeArr).length);
+        // console.log(validatorsStakeArr);
         
 
         console.log("\n\n********\n\n");
 
         
         var i=1;
+        const yocto = 1000000000000000000000000
         var jsonOutput = {};
         jsonOutput.timestamp = new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '');
         jsonOutput.collection_method = "api_and_crawl";
         jsonOutput.chain_data = "NEAR staking validators";
-        jsonOutput.nodes = [];
+        jsonOutput.nodes = {};
 
         console.log("\n\Number of validators: " + Object.keys(validatorsStakeArr).length);
         var validatorsStakeArrKeys = Object.keys(validatorsStakeArr);
@@ -180,7 +181,7 @@ async function runProcess() {
             var validator = validatorStakeObj.account_id;
             var validatorStake = null;
             if(validatorStakeObj !== undefined) {
-                validatorStake = Number(validatorStakeObj.stake);
+                validatorStake = Number(validatorStakeObj.stake) / yocto; //yocto division 10^24
             }
             var validatorPeerId = knownProducersAccountsArr[validator];
             var validatorIP = null;
@@ -197,18 +198,30 @@ async function runProcess() {
             // formatted json object
             var jsonObj = {};
             jsonObj.is_validator = true;
-            //jsonObj.stake = parseFloat(validatorStake);
             jsonObj.stake = validatorStake;
             jsonObj.address = validatorPeerId;
-            //jsonObj.extra_info = {};
-            var ipObj = {};
-            ipObj[validatorIP] = jsonObj;
-            jsonOutput.nodes.push(ipObj);
+            jsonObj.extra_info = {};
+
+            // add stake to prveious IP if already seen
+            if (jsonOutput.nodes.hasOwnProperty(validatorIP)) {
+                jsonOutput.nodes[validatorIP].stake += validatorStake;
+                if (Object.keys(jsonOutput.nodes[validatorIP].extra_info).length === 0) {
+                    jsonOutput.nodes[validatorIP].extra_info["other_addresses"] = [];
+                }
+                jsonOutput.nodes[validatorIP].extra_info["other_addresses"].push(validatorPeerId);
+            } else { // else add object for the first time
+                jsonOutput.nodes[validatorIP] = jsonObj;
+            }
         }
         console.log("Total staked: " + totalStaked);
 
-        // Save result to the file
-        fs.writeFileSync('./near-ip.json', JSON.stringify(jsonOutput));
+        // Get ouput path and save result to the file
+        fs.readFile('./config/SettingsConfig.json', (err, data) => {
+            if (err) throw err;
+          
+            const config = JSON.parse(data);
+            fs.writeFileSync(`${config.output_folder}/near.json`, JSON.stringify(jsonOutput, null, 4));
+          });
 
       }).catch(error => {
         console.log(error);  // rejectReason of any first rejected promise
@@ -217,5 +230,4 @@ async function runProcess() {
 }
 
 runProcess();
-
  
