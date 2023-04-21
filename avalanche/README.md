@@ -1,4 +1,4 @@
-# Cardano
+# Avalanche 
 
 ## Overview
 This script was built to analyze the infrastructure providers of all the validators running on the Avalanche network.
