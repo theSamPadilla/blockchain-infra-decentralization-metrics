@@ -3,7 +3,7 @@ import pickle
 from datetime import date, datetime
 
 import config.globals
-from classes.dict_initial_values import providers_init, location_init, providers_init_flow, location_init_flow
+from classes.dict_initial_values import providers_init, location_init, providers_init_flow, location_init_flow, flow_total_stake
 
 class Blockchain:
     def __init__(self, target):
@@ -78,7 +78,7 @@ class Flow(Blockchain):
         self.analysisDate = analysis_date
 
         #Flow specific variables
-        self.totalStake = {"active": 0, "total": 0}
+        self.totalStake = flow_total_stake
         self.executionNodes = {"active": 0, "total": 0}
         self.consensusNodes = {"active": 0, "total": 0}
         self.collectionNodes = {"active": 0, "total": 0}
@@ -98,7 +98,6 @@ class Flow(Blockchain):
         "access": self.accessNodes}
         return buff[role]
 
-
     #Overwrite percentages function
     def CalculatePercentages(self):
         self.CalculateProviderPercentages()
@@ -108,7 +107,14 @@ class Flow(Blockchain):
     def CalculateProviderPercentages(self):
         print("\tCalculating Provider Percentages.", flush=True)
         for provider in self.providersData:
-            stake = self.providersData[provider]["Total Stake"]["total"]
+            #Stake
+            execution_stake = self.providersData[provider]["Total Stake"]["execution"]["total"]
+            consensus_stake = self.providersData[provider]["Total Stake"]["consensus"]["total"]
+            collection_stake = self.providersData[provider]["Total Stake"]["collection"]["total"]
+            verification_stake = self.providersData[provider]["Total Stake"]["verification"]["total"]
+            access_stake = self.providersData[provider]["Total Stake"]["access"]["total"]
+
+            #Counts
             execution = self.providersData[provider]["Execution Nodes"]
             collection = self.providersData[provider]["Collection Nodes"]
             consensus = self.providersData[provider]["Consensus Nodes"]
@@ -131,15 +137,28 @@ class Flow(Blockchain):
             self.providersData[provider]["Percentage of Total Verification Nodes"] = verification["total"] * 100 / self.verificationNodes["total"]
             self.providersData[provider]["Percentage of Total Access Nodes"] = access["total"] * 100 / self.accessNodes["total"]
 
-            #General
-            self.providersData[provider]["Percentage of Total Stake"] = stake * 100 / self.totalStake["active"]
+            #Stake percentages
+            self.providersData[provider]["Percentage of Total Execution Stake"] = execution_stake * 100 / self.totalStake["execution"]["active"]
+            self.providersData[provider]["Percentage of Total Consensus Stake"] = consensus_stake * 100 / self.totalStake["consensus"]["active"]
+            self.providersData[provider]["Percentage of Total Collection Stake"] = collection_stake * 100 / self.totalStake["collection"]["active"]
+            self.providersData[provider]["Percentage of Total Verification Stake"] = verification_stake * 100 / self.totalStake["verification"]["active"]
+            self.providersData[provider]["Percentage of Total Access Stake"] = access_stake * 100 / self.totalStake["access"]["active"]
+
+            #Other percentages
             self.providersData[provider]["Percentage of Active Nodes"] = active * 100 / (self.totalNodes - self.totalInactiveNodes)
             self.providersData[provider]["Percentage of Total Nodes"] = total * 100 / self.totalNodes
 
     def CalculateLocationPercentages(self):
         print("\tCalculating Country Percentages.", flush=True)
         for continent in self.continentData:
-            stake_contintnet = self.continentData[continent]["Total Stake"]["total"]
+            #Stake
+            execution_stake_contintnet = self.continentData[continent]["Total Stake"]["execution"]["total"]
+            consensus_stake_contintnet = self.continentData[continent]["Total Stake"]["consensus"]["total"]
+            collection_stake_contintnet = self.continentData[continent]["Total Stake"]["collection"]["total"]
+            verification_stake_contintnet = self.continentData[continent]["Total Stake"]["verification"]["total"]
+            access_stake_contintnet = self.continentData[continent]["Total Stake"]["access"]["total"]
+            
+            #Counts
             execution_contintnet = self.continentData[continent]["Execution Nodes"]
             collection_contintnet = self.continentData[continent]["Collection Nodes"]
             consensus_contintnet = self.continentData[continent]["Consensus Nodes"]
@@ -162,8 +181,14 @@ class Flow(Blockchain):
             self.continentData[continent]["Percentage of Total Verification Nodes"] = verification_contintnet["total"] * 100 / self.verificationNodes["total"]
             self.continentData[continent]["Percentage of Total Access Nodes"] = access_contintnet["total"] * 100 / self.accessNodes["total"]
 
-            #General
-            self.continentData[continent]["Percentage of Total Stake"] = stake_contintnet * 100 / self.totalStake["active"]
+            #Stake Percentages
+            self.continentData[continent]["Percentage of Total Execution Stake"] = execution_stake_contintnet * 100 / self.totalStake["execution"]["active"]
+            self.continentData[continent]["Percentage of Total Consensus Stake"] = consensus_stake_contintnet * 100 / self.totalStake["consensus"]["active"]
+            self.continentData[continent]["Percentage of Total Collection Stake"] = collection_stake_contintnet * 100 / self.totalStake["collection"]["active"]
+            self.continentData[continent]["Percentage of Total Verification Stake"] = verification_stake_contintnet * 100 / self.totalStake["verification"]["active"]
+            self.continentData[continent]["Percentage of Total Access Stake"] = access_stake_contintnet * 100 / self.totalStake["access"]["active"]
+
+            #Other percentages
             self.continentData[continent]["Percentage of Active Nodes"] = active_contintnet * 100 / (self.totalNodes - self.totalInactiveNodes)
             self.continentData[continent]["Percentage of Total Nodes"] = total_contintnet * 100 / self.totalNodes
 
@@ -172,7 +197,14 @@ class Flow(Blockchain):
                 self.CalculateCountryPercentages(country, continent)
 
     def CalculateCountryPercentages(self, country, continent):
-        stake_country = self.continentData[continent]["Countries"][country]["Total Stake"]["total"]
+        #Stake
+        execution_stake_country = self.continentData[continent]["Countries"][country]["Total Stake"]["execution"]["total"]
+        consensus_stake_country = self.continentData[continent]["Countries"][country]["Total Stake"]["consensus"]["total"]
+        collection_stake_country = self.continentData[continent]["Countries"][country]["Total Stake"]["collection"]["total"]
+        verification_stake_country = self.continentData[continent]["Countries"][country]["Total Stake"]["verification"]["total"]
+        access_stake_country = self.continentData[continent]["Countries"][country]["Total Stake"]["access"]["total"]
+        
+        #Counts
         execution_country = self.continentData[continent]["Countries"][country]["Execution Nodes"]
         collection_country = self.continentData[continent]["Countries"][country]["Collection Nodes"]
         consensus_country = self.continentData[continent]["Countries"][country]["Consensus Nodes"]
@@ -195,8 +227,14 @@ class Flow(Blockchain):
         self.continentData[continent]["Countries"][country]["Percentage of Total Verification Nodes"] = verification_country["total"] * 100 / self.verificationNodes["total"]
         self.continentData[continent]["Countries"][country]["Percentage of Total Access Nodes"] = access_country["total"] * 100 / self.accessNodes["total"]
 
-        #General
-        self.continentData[continent]["Countries"][country]["Percentage of Total Stake"] = stake_country * 100 / self.totalStake["active"]
+        #Stake percentages
+        self.continentData[continent]["Countries"][country]["Percentage of Total Execution Stake"] = execution_stake_country * 100 / self.totalStake["execution"]["active"]
+        self.continentData[continent]["Countries"][country]["Percentage of Total Consensus Stake"] = consensus_stake_country * 100 / self.totalStake["consensus"]["active"]
+        self.continentData[continent]["Countries"][country]["Percentage of Total Collection Stake"] = collection_stake_country * 100 / self.totalStake["collection"]["active"]
+        self.continentData[continent]["Countries"][country]["Percentage of Total Verification Stake"] = verification_stake_country * 100 / self.totalStake["verification"]["active"]
+        self.continentData[continent]["Countries"][country]["Percentage of Total Access Stake"] = access_stake_country * 100 / self.totalStake["access"]["active"]
+        
+        #Other percentages
         self.continentData[continent]["Countries"][country]["Percentage of Active Nodes"] = active_country * 100 / (self.totalNodes - self.totalInactiveNodes)
         self.continentData[continent]["Countries"][country]["Percentage of Total Nodes"] = total_country * 100 / self.totalNodes
 
@@ -207,9 +245,9 @@ class Flow(Blockchain):
             'Total Nodes': self.totalNodes,
             'Inactive Nodes': self.totalInactiveNodes,
             'Total Active Nodes': (self.totalNodes - self.totalInactiveNodes),
-            'Total Stake': self.totalStake["total"],
-            'Inactive Stake': self.totalStake["total"] - self.totalStake["total"],
-            'Provider Distribution': self.providersData
+            'Total Stake': self.totalStake,
+            'Provider Distribution': self.providersData,
+            'Geographic Distribution': self.continentData
         }
 
         os.makedirs(os.path.dirname(path), exist_ok=True)

@@ -57,7 +57,15 @@ location_init = {
         }
     }
 
-#Initialization dictionaries
+#Flow-Specific Initialization dictionaries
+flow_total_stake = {
+    "execution": {"active": 0, "total": 0},
+    "consensus": {"active": 0, "total": 0},
+    "collection": {"active": 0, "total": 0}, 
+    "verification": {"active": 0, "total": 0}, 
+    "access": {"active": 0, "total": 0}
+}
+
 providers_init_flow = {
     "Other": {
         "Execution Nodes": {"active": 0, "total": 0},
@@ -65,7 +73,7 @@ providers_init_flow = {
         "Collection Nodes": {"active": 0, "total": 0},
         "Verification Nodes": {"active": 0, "total": 0},
         "Access Nodes": {"active": 0, "total": 0},
-        "Total Stake": {"active": 0, "total": 0},
+        "Total Stake": flow_total_stake,
         "Total Nodes": 0,
         "Total Inactive Nodes": 0
         },
@@ -75,7 +83,7 @@ providers_init_flow = {
         "Collection Nodes": {"active": 0, "total": 0},
         "Verification Nodes": {"active": 0, "total": 0},
         "Access Nodes": {"active": 0, "total": 0},
-        "Total Stake": {"active": 0, "total": 0},
+        "Total Stake": flow_total_stake,
         "Total Nodes": 0,
         "Total Inactive Nodes": 0
     },
@@ -85,7 +93,7 @@ providers_init_flow = {
         "Collection Nodes": {"active": 0, "total": 0},
         "Verification Nodes": {"active": 0, "total": 0},
         "Access Nodes": {"active": 0, "total": 0},
-        "Total Stake": {"active": 0, "total": 0},
+        "Total Stake": flow_total_stake,
         "Total Nodes": 0,
         "Total Inactive Nodes": 0
     }
@@ -99,7 +107,7 @@ location_init_flow = {
         "Collection Nodes": {"active": 0, "total": 0},
         "Verification Nodes": {"active": 0, "total": 0},
         "Access Nodes": {"active": 0, "total": 0},
-        "Total Stake": {"active": 0, "total": 0},
+        "Total Stake": flow_total_stake,
         "Total Nodes": 0,
         "Total Inactive Nodes": 0,
         "Countries": {
@@ -109,7 +117,7 @@ location_init_flow = {
                 "Collection Nodes": {"active": 0, "total": 0},
                 "Verification Nodes": {"active": 0, "total": 0},
                 "Access Nodes": {"active": 0, "total": 0},
-                "Total Stake": {"active": 0, "total": 0},
+                "Total Stake": flow_total_stake,
                 "Total Nodes": 0,
                 "Total Inactive Nodes": 0
                 }
@@ -121,7 +129,7 @@ location_init_flow = {
         "Collection Nodes": {"active": 0, "total": 0},
         "Verification Nodes": {"active": 0, "total": 0},
         "Access Nodes": {"active": 0, "total": 0},
-        "Total Stake": {"active": 0, "total": 0},
+        "Total Stake": flow_total_stake,
         "Total Nodes": 0,
         "Total Inactive Nodes": 0,
         "Countries": {
@@ -131,7 +139,7 @@ location_init_flow = {
                 "Collection Nodes": {"active": 0, "total": 0},
                 "Verification Nodes": {"active": 0, "total": 0},
                 "Access Nodes": {"active": 0, "total": 0},
-                "Total Stake": {"active": 0, "total": 0},
+                "Total Stake": flow_total_stake,
                 "Total Nodes": 0,
                 "Total Inactive Nodes": 0
                 }

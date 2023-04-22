@@ -1,4 +1,5 @@
 from classes.Provider import Provider
+from classes.dict_initial_values import flow_total_stake
 
 class Datacenter:
     def __init__(self, country_name:str, country_code:str, city:str, region:str, latitude:float, longitude:float, provider:Provider):
@@ -14,7 +15,7 @@ class Datacenter:
         #Counts
         self.validatorCount = 0
         self.nonValidatorNodeCount = 0
-        self.cumulativeStake = 0
+        self.cumulativeStake = flow_total_stake if provider.target_chain.target == "flow" else 0
         self.nodeDict = {} #*{IP:{key, extra data}}
         
     def __eq__(self, other):
@@ -27,7 +28,7 @@ class Datacenter:
                 return True
             return False
     
-    def SaveDatacenterNode(self, ip: str, node_info: dict):   
+    def SaveDatacenterNode(self, ip: str, node_info: dict, role=None):   
         #Save only new ndoes
         if ip not in self.nodeDict:
 
@@ -38,7 +39,15 @@ class Datacenter:
                     stake = 0
                 else:
                     stake = int(float(node_info['stake']))              
-                self.cumulativeStake += stake
+                
+                #Catch Flow stake
+                if not role:       
+                    self.cumulativeStake += stake
+                else:
+                    if node_info["extra_info"]["is_active"]:
+                        self.cumulativeStake[role]["active"] += stake
+                    else:
+                        self.cumulativeStake[role]["total"] += stake
             
             #Non validator node
             else:
@@ -65,5 +74,33 @@ class Datacenter:
             'Non-Validator Nodes': self.nonValidatorNodeCount,
             'Cumulative stake': self.cumulativeStake,
             'Percentage of provider stake': stake_percentage,
+            "Nodes": self.nodeDict
+        }
+
+    def GetFlowDatacenterData(self, provider_total_stake_dict:dict):
+        execution = 0 if provider_total_stake_dict["execution"]["total"] == 0 else (self.cumulativeStake["execution"]["total"] * 100) / provider_total_stake_dict["execution"]["total"]
+        consensus = 0 if provider_total_stake_dict["consensus"]["total"] == 0 else (self.cumulativeStake["consensus"]["total"] * 100) / provider_total_stake_dict["consensus"]["total"]
+        collection = 0 if provider_total_stake_dict["collection"]["total"] == 0 else (self.cumulativeStake["collection"]["total"] * 100) / provider_total_stake_dict["collection"]["total"]
+        verification = 0 if provider_total_stake_dict["verification"]["total"] == 0 else (self.cumulativeStake["verification"]["total"] * 100) / provider_total_stake_dict["verification"]["total"]
+        access = 0 if provider_total_stake_dict["access"]["total"] == 0 else (self.cumulativeStake["access"]["total"] * 100) / provider_total_stake_dict["access"]["total"]
+
+        stake_percentages = {
+            "execution": execution,
+            "consensus": consensus,
+            "collection": collection, 
+            "verification": verification,
+            "access": access
+            }
+        
+        return {
+            "Country": self.country_name,
+            "City": self.city,
+            "Region": self.region,
+            "Coordinates": f"{self.latitude}, {self.longitude}",
+            'Total Nodes': len(self.nodeDict),
+            'Validator Nodes': self.validatorCount,
+            'Non-Validator Nodes': self.nonValidatorNodeCount,
+            'Cumulative stake': self.cumulativeStake,
+            'Percentage of provider Total stake': stake_percentages,
             "Nodes": self.nodeDict
         }

@@ -3,6 +3,7 @@ import pickle
 from datetime import date, datetime
 
 from classes.Blockchain import Blockchain
+from classes.dict_initial_values import flow_total_stake
 
 import config.globals
 
@@ -19,13 +20,13 @@ class Country:
         #Counts
         self.validatorCount = 0
         self.nonValidatorNodeCount = 0
-        self.cumulativeStake = 0
+        self.cumulativeStake = flow_total_stake if self.target_chain.target == "flow" else 0
         self.nodeDict = {} #*{IP:{key, extra data}}
 
         #Historic Data
         self.objectCreationDate = date.today().strftime("%m-%d-%Y")
 
-    def SaveCountryNode(self, ip: str, node_info: dict):   
+    def SaveCountryNode(self, ip: str, node_info: dict, role=None):   
         #Save only new ndoes
         if ip not in self.nodeDict:
 
@@ -36,7 +37,15 @@ class Country:
                     stake = 0
                 else:
                     stake = int(float(node_info['stake']))              
-                self.cumulativeStake += stake
+                
+                #Catch Flow stake
+                if not role:       
+                    self.cumulativeStake += stake
+                else:
+                    if node_info["extra_info"]["is_active"]:
+                        self.cumulativeStake[role]["active"] += stake
+                    else:
+                        self.cumulativeStake[role]["total"] += stake
             
             #Non validator node
             else:
@@ -54,7 +63,25 @@ class Country:
     def OutputJSONInfo(self, blockchain_obj):
         path = "{base}/{output}/{target}/countries/{country}_Nodes_{time}.json".format(base=config.globals.BASE_DIR, output=config.globals.OUTPUT_FOLDER, target=self.target_chain.target, country=self.country, time=str(datetime.today().strftime("%m-%d-%Y")))
         #Catch for flow
-        stake = blockchain_obj.totalStake if blockchain_obj.target != "flow" else blockchain_obj.totalStake["total"]
+        if blockchain_obj.target == "flow":
+            execution = 0 if blockchain_obj.totalStake["execution"]["total"] == 0 else (self.cumulativeStake["execution"]["total"] * 100) / blockchain_obj.totalStake["execution"]["total"]
+            consensus = 0 if blockchain_obj.totalStake["consensus"]["total"] == 0 else (self.cumulativeStake["consensus"]["total"] * 100) / blockchain_obj.totalStake["consensus"]["total"]
+            collection = 0 if blockchain_obj.totalStake["collection"]["total"] == 0 else (self.cumulativeStake["collection"]["total"] * 100) / blockchain_obj.totalStake["collection"]["total"]
+            verification = 0 if blockchain_obj.totalStake["verification"]["total"] == 0 else (self.cumulativeStake["verification"]["total"] * 100) / blockchain_obj.totalStake["verification"]["total"]
+            access = 0 if blockchain_obj.totalStake["access"]["total"] == 0 else (self.cumulativeStake["access"]["total"] * 100) / blockchain_obj.totalStake["access"]["total"]
+
+            stake_percentage = {
+                "execution": execution,
+                "consensus": consensus,
+                "collection": collection, 
+                "verification": verification,
+                "access": access
+                }
+         
+        else:
+            stake_percentage = 0 if blockchain_obj.totalStake == 0 else (self.cumulativeStake * 100) / blockchain_obj.totalStake
+    
+        
         to_write = {
             'Analysis Date': blockchain_obj.analysisDate,
             'Total Nodes': len(self.nodeDict),
@@ -63,7 +90,7 @@ class Country:
             'Monitoring since date': self.objectCreationDate,
             'Analysis Date': date.today().strftime("%m-%d-%Y"),
             'Cumulative stake': self.cumulativeStake,
-            'Percentage of total stake': (self.cumulativeStake * 100) / stake, 
+            'Percentage of total stake': stake_percentage, 
             'Nodes': self.nodeDict
         }
 

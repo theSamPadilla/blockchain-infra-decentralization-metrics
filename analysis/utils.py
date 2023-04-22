@@ -5,6 +5,7 @@ import ipinfo #type: ignore
 import config.globals
 from classes.Blockchain import Blockchain, Flow
 from classes.Datacenter import Datacenter
+from classes.dict_initial_values import flow_total_stake
 
 ## Helper Functions ##
 def IpAsnLookup(ip: str, target_ips: dict, blockchain_obj: Blockchain) -> tuple:
@@ -109,7 +110,7 @@ def CountryAnalysis(countries_to_track: dict, continent: str, country: str, coun
         country_obj.cities.add(city)
         country_obj.SaveCountryNode(ip, node_info)
 
-def FlowProviderAnalysis(providers_to_track: dict, asn:str, ip:str, node_info:dict, providers_short_to_object_map:dict, country:str, country_code:str, city:str, region:str, latitude:float, longitude:float, provider_name:str, analysisDate: str, blockchain_obj: Flow) -> str:
+def FlowProviderAnalysis(providers_to_track: dict, asn:str, ip:str, node_info:dict, providers_short_to_object_map:dict, country:str, country_code:str, city:str, region:str, latitude:float, longitude:float, provider_name:str, analysisDate: str, blockchain_obj: Flow, role: str) -> str:
     #If the ASN is in the ASN lookup, overwrite 'Other' provider
     if asn in config.globals.PROVIDER_ASN_LOOKUP:
         provider_name = config.globals.PROVIDER_ASN_LOOKUP[asn]['provider']
@@ -122,7 +123,7 @@ def FlowProviderAnalysis(providers_to_track: dict, asn:str, ip:str, node_info:di
                 "Collection Nodes": {"active": 0, "total": 0},
                 "Verification Nodes": {"active": 0, "total": 0},
                 "Access Nodes": {"active": 0, "total": 0},
-                "Total Stake": {"active": 0, "total": 0},
+                "Total Stake": flow_total_stake,
                 "Total Nodes": 0,
                 "Total Inactive Nodes": 0
             }
@@ -142,13 +143,13 @@ def FlowProviderAnalysis(providers_to_track: dict, asn:str, ip:str, node_info:di
                 provider_obj.datacenters.append(datacenter_obj)
 
             #Save node to datacenter and update totals
-            datacenter_obj.SaveDatacenterNode(ip, node_info)
-            provider_obj.UpdateTotals(ip, node_info)
+            datacenter_obj.SaveDatacenterNode(ip, node_info, role)
+            provider_obj.UpdateTotals(ip, node_info, role)
 
     #Returns overwritten result if found
     return provider_name
 
-def FlowCountryAnalysis(countries_to_track: dict, continent: str, country: str, country_code:str, city:str, ip:str, node_info:dict, countries_short_to_object_map:dict, analysisDate: str, blockchain_obj: Flow):
+def FlowCountryAnalysis(countries_to_track: dict, continent: str, country: str, country_code:str, city:str, ip:str, node_info:dict, countries_short_to_object_map:dict, analysisDate: str, blockchain_obj: Flow, role: str):
     #Create entry for country inside of the appropriave continent if it hasn't yet been seen
     if continent not in blockchain_obj.continentData:
         blockchain_obj.continentData[continent] = {
@@ -157,7 +158,7 @@ def FlowCountryAnalysis(countries_to_track: dict, continent: str, country: str, 
             "Collection Nodes": {"active": 0, "total": 0},
             "Verification Nodes": {"active": 0, "total": 0},
             "Access Nodes": {"active": 0, "total": 0},
-            "Total Stake": {"active": 0, "total": 0},
+            "Total Stake": flow_total_stake,
             "Total Nodes": 0,
             "Total Inactive Nodes": 0,
             "Countries": {
@@ -167,7 +168,7 @@ def FlowCountryAnalysis(countries_to_track: dict, continent: str, country: str, 
                     "Collection Nodes": {"active": 0, "total": 0},
                     "Verification Nodes": {"active": 0, "total": 0},
                     "Access Nodes": {"active": 0, "total": 0},
-                    "Total Stake": {"active": 0, "total": 0},
+                    "Total Stake": flow_total_stake,
                     "Total Nodes": 0,
                     "Total Inactive Nodes": 0
                 }
@@ -181,7 +182,7 @@ def FlowCountryAnalysis(countries_to_track: dict, continent: str, country: str, 
                 "Collection Nodes": {"active": 0, "total": 0},
                 "Verification Nodes": {"active": 0, "total": 0},
                 "Access Nodes": {"active": 0, "total": 0},
-                "Total Stake": {"active": 0, "total": 0},
+                "Total Stake": flow_total_stake,
                 "Total Nodes": 0,
                 "Total Inactive Nodes": 0
             }
@@ -190,7 +191,7 @@ def FlowCountryAnalysis(countries_to_track: dict, continent: str, country: str, 
     if country_code in countries_to_track:
         country_obj = countries_short_to_object_map[country_code]
         country_obj.cities.add(city)
-        country_obj.SaveCountryNode(ip, node_info)
+        country_obj.SaveCountryNode(ip, node_info, role)
 
 def IsValidIp(ip) -> bool:
     list_172 = ["172.16.", "172.17.", "172.18.", "172.19.", "172.20.", "172.21.", "172.22.", "172.23.", "172.24.", "172.25.", "172.26.", "172.27.", "172.28.", "172.29.", "172.30.", "172.31."]
