@@ -1,5 +1,4 @@
 import json, os
-import pickle
 from datetime import date, datetime
 
 import config.globals
