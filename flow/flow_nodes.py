@@ -187,7 +187,7 @@ def main():
         output_folder = json.load(f)["output_folder"]
         f.close()
         
-    with open(f"{output_folder}flow.json", "w") as f:
+    with open(f"{output_folder}/flow.json", "w") as f:
         json.dump(dict_result, f, indent=4, ensure_ascii=False)
         f.close()
 
