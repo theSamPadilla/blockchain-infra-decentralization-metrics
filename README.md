@@ -8,7 +8,7 @@ This project measures:
 - RPC nodes distribution across geographies
 
 ## How it Works
-The individual scripts inside each chain directory get/crawls the IP addresses of the validators and finds their respective stake and other relevant information. Each script outputs the data for their chain to a JSON file inside the `json` folder in the root directory. That JSON file **must** follow the specification below. Some of the scripts or programs inside each directory may need some work, so contributions are welcomed.
+The individual scripts inside each chain directory get/crawl the IP addresses of the validators and nodes, and finds their respective stake and other relevant information. Each script outputs the data for their chain to a JSON file inside the `json` folder in the root directory. That JSON file **must** follow the specification below. Some of the scripts or programs inside each directory may need some work, so contributions are welcomed.
 
 The `main.py` script uses the JSON files for a given chain to find the infrastructure provider and the geographic location where each node is running.
 
