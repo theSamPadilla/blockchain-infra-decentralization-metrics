@@ -2,6 +2,8 @@ import json, os
 from datetime import date, datetime
 
 import config.globals
+from copy import deepcopy
+
 from classes.dict_initial_values import providers_init, location_init, providers_init_flow, location_init_flow, flow_total_stake
 
 class Blockchain:
@@ -77,7 +79,7 @@ class Flow(Blockchain):
         self.analysisDate = analysis_date
 
         #Flow specific variables
-        self.totalStake = flow_total_stake
+        self.totalStake = deepcopy(flow_total_stake)
         self.executionNodes = {"active": 0, "total": 0}
         self.consensusNodes = {"active": 0, "total": 0}
         self.collectionNodes = {"active": 0, "total": 0}

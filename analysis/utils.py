@@ -5,7 +5,11 @@ import ipinfo #type: ignore
 import config.globals
 from classes.Blockchain import Blockchain, Flow
 from classes.Datacenter import Datacenter
+
+#NOTE: This is a compound object. Simple assignment will pass a reference to the object defined in dict_initial_values.py
+#NOTE: To pass a net deepcopy use the .deepcopy() method.
 from classes.dict_initial_values import flow_total_stake
+from copy import deepcopy
 
 ## Helper Functions ##
 def IpAsnLookup(ip: str, target_ips: dict, blockchain_obj: Blockchain) -> tuple:
@@ -123,7 +127,7 @@ def FlowProviderAnalysis(providers_to_track: dict, asn:str, ip:str, node_info:di
                 "Collection Nodes": {"active": 0, "total": 0},
                 "Verification Nodes": {"active": 0, "total": 0},
                 "Access Nodes": {"active": 0, "total": 0},
-                "Total Stake": flow_total_stake,
+                "Total Stake": deepcopy(flow_total_stake),
                 "Total Nodes": 0,
                 "Total Inactive Nodes": 0
             }
@@ -158,7 +162,7 @@ def FlowCountryAnalysis(countries_to_track: dict, continent: str, country: str, 
             "Collection Nodes": {"active": 0, "total": 0},
             "Verification Nodes": {"active": 0, "total": 0},
             "Access Nodes": {"active": 0, "total": 0},
-            "Total Stake": flow_total_stake,
+            "Total Stake": deepcopy(flow_total_stake),
             "Total Nodes": 0,
             "Total Inactive Nodes": 0,
             "Countries": {
@@ -168,7 +172,7 @@ def FlowCountryAnalysis(countries_to_track: dict, continent: str, country: str, 
                     "Collection Nodes": {"active": 0, "total": 0},
                     "Verification Nodes": {"active": 0, "total": 0},
                     "Access Nodes": {"active": 0, "total": 0},
-                    "Total Stake": flow_total_stake,
+                    "Total Stake": deepcopy(flow_total_stake),
                     "Total Nodes": 0,
                     "Total Inactive Nodes": 0
                 }
@@ -182,7 +186,7 @@ def FlowCountryAnalysis(countries_to_track: dict, continent: str, country: str, 
                 "Collection Nodes": {"active": 0, "total": 0},
                 "Verification Nodes": {"active": 0, "total": 0},
                 "Access Nodes": {"active": 0, "total": 0},
-                "Total Stake": flow_total_stake,
+                "Total Stake": deepcopy(flow_total_stake),
                 "Total Nodes": 0,
                 "Total Inactive Nodes": 0
             }
