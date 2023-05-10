@@ -1,3 +1,5 @@
+from copy import deepcopy
+
 #Initialization dictionaries
 providers_init = {
     #Other providers
@@ -58,6 +60,8 @@ location_init = {
     }
 
 #Flow-Specific Initialization dictionaries
+#NOTE: Wherever this is called from this needs to be called as a deepcopy().
+#NOTE: Failing to do so will pass this around as a reference to this object, messing up the counts.
 flow_total_stake = {
     "execution": {"active": 0, "total": 0},
     "consensus": {"active": 0, "total": 0},
@@ -73,7 +77,7 @@ providers_init_flow = {
         "Collection Nodes": {"active": 0, "total": 0},
         "Verification Nodes": {"active": 0, "total": 0},
         "Access Nodes": {"active": 0, "total": 0},
-        "Total Stake": flow_total_stake,
+        "Total Stake": deepcopy(flow_total_stake),
         "Total Nodes": 0,
         "Total Inactive Nodes": 0
         },
@@ -83,7 +87,7 @@ providers_init_flow = {
         "Collection Nodes": {"active": 0, "total": 0},
         "Verification Nodes": {"active": 0, "total": 0},
         "Access Nodes": {"active": 0, "total": 0},
-        "Total Stake": flow_total_stake,
+        "Total Stake": deepcopy(flow_total_stake),
         "Total Nodes": 0,
         "Total Inactive Nodes": 0
     },
@@ -93,7 +97,7 @@ providers_init_flow = {
         "Collection Nodes": {"active": 0, "total": 0},
         "Verification Nodes": {"active": 0, "total": 0},
         "Access Nodes": {"active": 0, "total": 0},
-        "Total Stake": flow_total_stake,
+        "Total Stake": deepcopy(flow_total_stake),
         "Total Nodes": 0,
         "Total Inactive Nodes": 0
     }
@@ -107,7 +111,7 @@ location_init_flow = {
         "Collection Nodes": {"active": 0, "total": 0},
         "Verification Nodes": {"active": 0, "total": 0},
         "Access Nodes": {"active": 0, "total": 0},
-        "Total Stake": flow_total_stake,
+        "Total Stake": deepcopy(flow_total_stake),
         "Total Nodes": 0,
         "Total Inactive Nodes": 0,
         "Countries": {
@@ -117,7 +121,7 @@ location_init_flow = {
                 "Collection Nodes": {"active": 0, "total": 0},
                 "Verification Nodes": {"active": 0, "total": 0},
                 "Access Nodes": {"active": 0, "total": 0},
-                "Total Stake": flow_total_stake,
+                "Total Stake": deepcopy(flow_total_stake),
                 "Total Nodes": 0,
                 "Total Inactive Nodes": 0
                 }
@@ -129,7 +133,7 @@ location_init_flow = {
         "Collection Nodes": {"active": 0, "total": 0},
         "Verification Nodes": {"active": 0, "total": 0},
         "Access Nodes": {"active": 0, "total": 0},
-        "Total Stake": flow_total_stake,
+        "Total Stake": deepcopy(flow_total_stake),
         "Total Nodes": 0,
         "Total Inactive Nodes": 0,
         "Countries": {
@@ -139,7 +143,7 @@ location_init_flow = {
                 "Collection Nodes": {"active": 0, "total": 0},
                 "Verification Nodes": {"active": 0, "total": 0},
                 "Access Nodes": {"active": 0, "total": 0},
-                "Total Stake": flow_total_stake,
+                "Total Stake": deepcopy(flow_total_stake),
                 "Total Nodes": 0,
                 "Total Inactive Nodes": 0
                 }
