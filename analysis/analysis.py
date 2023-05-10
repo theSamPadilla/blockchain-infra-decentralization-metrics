@@ -52,58 +52,58 @@ def GetFlowNetworkProviderDistribution(providers_to_track: dict, countries_to_tr
             #IP Geolookup
             country, country_code, city, region, latitude, longitude, continent = [i for i in IpGeoLookup(ip, target_ips, blockchain_obj, ip_handler)]
 
-            #Identify role parameter, stake, and key name
-            role = node_info["extra_info"]["role"]
-            role_param = blockchain_obj.ReturnNodeTypeQuantities(role)
-            stake = 0 if not node_info["stake"] else int(float(node_info["stake"]))
-            key_name = f"{role.capitalize()} Nodes"
+        #Identify role parameter, stake, and key name
+        role = node_info["extra_info"]["role"]
+        role_param = blockchain_obj.ReturnNodeTypeQuantities(role)
+        stake = 0 if not node_info["stake"] else int(float(node_info["stake"]))
+        key_name = f"{role.capitalize()} Nodes"
 
-            #Perform Analysis
-            provider_name = FlowProviderAnalysis(providers_to_track, asn, ip, node_info, providers_short_to_object_map, country, country_code, city, region, latitude, longitude, provider_name, analysisDate, blockchain_obj, role)
-            FlowCountryAnalysis(countries_to_track, continent, country, country_code, city, ip, node_info, countries_short_to_object_map, analysisDate, blockchain_obj, role)
+        #Perform Analysis
+        provider_name = FlowProviderAnalysis(providers_to_track, asn, ip, node_info, providers_short_to_object_map, country, country_code, city, region, latitude, longitude, provider_name, analysisDate, blockchain_obj, role)
+        FlowCountryAnalysis(countries_to_track, continent, country, country_code, city, ip, node_info, countries_short_to_object_map, analysisDate, blockchain_obj, role)
 
-            #Check if it meets requirements and add to general and provider stake
-            if node_info["extra_info"]["is_active"]:
-                role_param["active"] += 1
+        #Check if it meets requirements and add to general and provider stake
+        if node_info["extra_info"]["is_active"]:
+            role_param["active"] += 1
 
-                #Total stake
-                blockchain_obj.totalStake[role]["active"] += stake
-                blockchain_obj.providersData[provider_name]["Total Stake"][role]["active"] += stake
-                blockchain_obj.continentData[continent]['Total Stake'][role]["active"] += stake
-                blockchain_obj.continentData[continent]["Countries"][country]['Total Stake'][role]["active"] += stake
+            #Total stake
+            blockchain_obj.totalStake[role]["active"] += stake
+            blockchain_obj.providersData[provider_name]["Total Stake"][role]["active"] += stake
+            blockchain_obj.continentData[continent]['Total Stake'][role]["active"] += stake
+            blockchain_obj.continentData[continent]["Countries"][country]['Total Stake'][role]["active"] += stake
 
-                #Provider and country data
-                blockchain_obj.providersData[provider_name][key_name]["active"] += 1
-                blockchain_obj.continentData[continent][key_name]["active"] += 1
-                blockchain_obj.continentData[continent]["Countries"][country][key_name]["active"] += 1
+            #Provider and country data
+            blockchain_obj.providersData[provider_name][key_name]["active"] += 1
+            blockchain_obj.continentData[continent][key_name]["active"] += 1
+            blockchain_obj.continentData[continent]["Countries"][country][key_name]["active"] += 1
 
 
-            #Else sum inactive nodes to provider dict and blockchain object
-            else:
-                blockchain_obj.providersData[provider_name]['Total Inactive Nodes'] += 1
-                blockchain_obj.continentData[continent]['Total Inactive Nodes'] += 1
-                blockchain_obj.continentData[continent]["Countries"][country]['Total Inactive Nodes'] += 1
-                blockchain_obj.totalInactiveNodes += 1
+        #Else sum inactive nodes to provider dict and blockchain object
+        else:
+            blockchain_obj.providersData[provider_name]['Total Inactive Nodes'] += 1
+            blockchain_obj.continentData[continent]['Total Inactive Nodes'] += 1
+            blockchain_obj.continentData[continent]["Countries"][country]['Total Inactive Nodes'] += 1
+            blockchain_obj.totalInactiveNodes += 1
 
-            #Add to general and provider/country totals
-            role_param["total"] += 1
-            blockchain_obj.totalStake[role]["total"] += stake
-            blockchain_obj.continentData[continent]['Total Nodes'] += 1
-            blockchain_obj.continentData[continent]["Countries"][country]['Total Nodes'] += 1
-            blockchain_obj.totalNodes += 1
+        #Add to general and provider/country totals
+        role_param["total"] += 1
+        blockchain_obj.totalStake[role]["total"] += stake
+        blockchain_obj.continentData[continent]['Total Nodes'] += 1
+        blockchain_obj.continentData[continent]["Countries"][country]['Total Nodes'] += 1
+        blockchain_obj.totalNodes += 1
 
-            #Provider data
-            blockchain_obj.providersData[provider_name][key_name]["total"] += 1
-            blockchain_obj.providersData[provider_name]["Total Stake"][role]["total"] += stake
-            blockchain_obj.providersData[provider_name]["Total Nodes"] += 1
+        #Provider data
+        blockchain_obj.providersData[provider_name][key_name]["total"] += 1
+        blockchain_obj.providersData[provider_name]["Total Stake"][role]["total"] += stake
+        blockchain_obj.providersData[provider_name]["Total Nodes"] += 1
 
-            #Country data
-            blockchain_obj.continentData[continent]['Total Nodes'] += 1
-            blockchain_obj.continentData[continent]["Countries"][country]['Total Nodes'] += 1
-            blockchain_obj.continentData[continent]["Total Stake"][role]["total"] += stake
-            blockchain_obj.continentData[continent]["Countries"][country]["Total Stake"][role]["total"] += stake
-            blockchain_obj.continentData[continent][key_name]["total"] += 1
-            blockchain_obj.continentData[continent]["Countries"][country][key_name]["total"] += 1
+        #Country data
+        blockchain_obj.continentData[continent]['Total Nodes'] += 1
+        blockchain_obj.continentData[continent]["Countries"][country]['Total Nodes'] += 1
+        blockchain_obj.continentData[continent]["Total Stake"][role]["total"] += stake
+        blockchain_obj.continentData[continent]["Countries"][country]["Total Stake"][role]["total"] += stake
+        blockchain_obj.continentData[continent][key_name]["total"] += 1
+        blockchain_obj.continentData[continent]["Countries"][country][key_name]["total"] += 1
 
     #Calculate the percentages after a full analysis
     blockchain_obj.CalculatePercentages()
