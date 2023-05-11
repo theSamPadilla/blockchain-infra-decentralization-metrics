@@ -3,6 +3,7 @@ from datetime import date, datetime
 
 from classes.Blockchain import Blockchain
 from classes.dict_initial_values import flow_total_stake
+from copy import deepcopy
 
 import config.globals
 
@@ -19,7 +20,7 @@ class Country:
         #Counts
         self.validatorCount = 0
         self.nonValidatorNodeCount = 0
-        self.cumulativeStake = flow_total_stake if self.target_chain.target == "flow" else 0
+        self.cumulativeStake = deepcopy(flow_total_stake) if self.target_chain.target == "flow" else 0
         self.nodeDict = {} #*{IP:{key, extra data}}
 
         #Historic Data
