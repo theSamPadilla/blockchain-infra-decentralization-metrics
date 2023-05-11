@@ -4,6 +4,7 @@ from datetime import date, datetime
 import config.globals
 from classes.Blockchain import Blockchain
 from classes.dict_initial_values import flow_total_stake
+from copy import deepcopy
 
 class Provider:
     def __init__(self, short:str, provider:str, target_chain:Blockchain):
@@ -17,7 +18,7 @@ class Provider:
         #Counts
         self.validatorCount = 0
         self.nonValidatorNodeCount = 0
-        self.cumulativeStake = flow_total_stake if self.target_chain.target == "flow" else 0
+        self.cumulativeStake = deepcopy(flow_total_stake) if self.target_chain.target == "flow" else 0
         self.seenIPs = set()
         self.datacenters = []
 
