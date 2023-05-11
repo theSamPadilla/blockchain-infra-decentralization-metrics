@@ -1,5 +1,6 @@
 from classes.Provider import Provider
 from classes.dict_initial_values import flow_total_stake
+from copy import deepcopy
 
 class Datacenter:
     def __init__(self, country_name:str, country_code:str, city:str, region:str, latitude:float, longitude:float, provider:Provider):
@@ -15,7 +16,7 @@ class Datacenter:
         #Counts
         self.validatorCount = 0
         self.nonValidatorNodeCount = 0
-        self.cumulativeStake = flow_total_stake if provider.target_chain.target == "flow" else 0
+        self.cumulativeStake = deepcopy(flow_total_stake) if provider.target_chain.target == "flow" else 0
         self.nodeDict = {} #*{IP:{key, extra data}}
         
     def __eq__(self, other):
