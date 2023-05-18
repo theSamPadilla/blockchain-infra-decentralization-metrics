@@ -22,12 +22,15 @@ cosmos/analysis/*.json
 cosmos/analysis/results/
 cosmos/analysis/info/
 cosmos/db/tmcrawl.db/
+
+# Settings
 solana/config/SettingsConfig.json
 near/config/SettingsConfig.json
 near/node_modules
 cardano/config/SettingsConfig.json
 avalanche/config/SettingsConfig.json
 flow/config/SettingsConfig.json
+aptos/config/SettingsConfig.json
 
 # Output directories
 results/
