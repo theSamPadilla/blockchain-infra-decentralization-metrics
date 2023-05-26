@@ -4,8 +4,8 @@ This repo is a collection of scripts that measure the infrastructure decentraliz
 This project measures:
 - Stake distribution across infrastructure providers.
 - Stake distribution across geographies.
-- RPC nodes distribution across infrastructure providers
-- RPC nodes distribution across geographies
+- Validator distribution across infrastructure providers.
+- Validator distribution across geographies.
 
 ## How it Works
 The individual scripts inside each chain directory get/crawl the IP addresses of the validators and nodes, and finds their respective stake and other relevant information. Each script outputs the data for their chain to a JSON file inside the `json` folder in the root directory. That JSON file **must** follow the specification below. Some of the scripts or programs inside each directory may need some work, so contributions are welcomed.
@@ -69,7 +69,7 @@ This is not an officially supported Google product.
 
 Apache Header:
 ```
-Copyright 2022 Google LLC
+Copyright 2023 Google LLC
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

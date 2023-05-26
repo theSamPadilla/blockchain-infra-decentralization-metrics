@@ -15,7 +15,6 @@
 # limitations under the License.
 ############################################
 import sys, json, subprocess, requests, os
-import pickle
 from datetime import date, datetime
 from ipwhois.net import Net #type: ignore
 from ipwhois.asn import IPASN #type: ignore
@@ -37,9 +36,6 @@ class SolanaCLI:
         self.objectPath = BASE_DIR + "/memory/SOL_object.pickle"
         self.totalStake = 0
 
-        #Main Data Strucutres
-        self.providersData = {"Other": {"Total RPC Nodes": 0, "Total Validators": 0, "Total Stake": 0}} #*Data on rpc, validators, and stake per main provider.
-        
         #Placeholder Data Structures for commands/request outputs
         self.gossipLookup = {} #*Lookup optimized response of Gossip {IP->{info}}
         self.validatorInfoLookup = {} #*Lookup optimized output of Validator Info Get {pubkey->{info}}
@@ -50,10 +46,6 @@ class SolanaCLI:
         self.GetGossip()
         self.RunValidators()
         self.RunValidatorInfo()
-
-        #Set object creation
-        self.objectCreationEpoch = self.epoch
-        self.objectCreationDate = date.today().strftime("%m-%d-%Y")
 
     #API call
     def GetGossip(self):
@@ -165,7 +157,7 @@ class SolanaCLI:
 def main():
     print("\n-----RUNTIME-----")
     
-    #Make SOL Object (global) and provider objects if providers_to_track not empty
+    #Make SOL Object (global)
     MakeSolanaObject()
     nodes = GetIPs()
 
@@ -188,13 +180,14 @@ def MakeSolanaObject():
     return
 
 def GetIPs():
-    print(f"\n\nAnalyzing {len(SOL_OBJ.gossipLookup)} Nodes. This may take a few minutes...", flush=True)
     nodes = {}
     i = 0
+    n = len(SOL_OBJ.gossipLookup)
+    print(f"\n\nAnalyzing {n} Nodes. This may take a few minutes...", flush=True)
 
     #Iterate over all gossipNodes
     for ip, node in SOL_OBJ.gossipLookup.items():
-        print(f"\tAnalyzing {ip} \t\t ({i}/{len(SOL_OBJ.gossipLookup)})", flush=True)
+        print(f"\tAnalyzing {ip} \t\t ({i}/{n})", flush=True)
         #Set node information
         pubkey = node['pubkey']
         isValidator = pubkey in SOL_OBJ.validatorsLookup #if not validator, then RPC.
