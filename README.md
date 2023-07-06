@@ -1,4 +1,11 @@
 # Blockchain Infra Decentralization Metrics
+The Messari report that used this project can be found here:
+> (Evluating Validator Decentralization - Geographic and Infrastructure Distribution in Proof of Stake Networks)(https://messari.io/report/evaluating-validator-decentralization-geographic-and-infrastructure-distribution-in-proof-of-stake-networks)
+
+Contributions to this repo are welcomed and encouraged.
+
+---
+
 This repo is a collection of scripts that measure the infrastructure decentralization of multiple blockchains.
 
 This project measures:
