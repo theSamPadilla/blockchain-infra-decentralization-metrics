@@ -5,6 +5,7 @@ The Messari report that used this project can be found here:
 Contributions to this repo are welcomed and encouraged.
 
 ---
+## Overview
 
 This repo is a collection of scripts that measure the infrastructure decentralization of multiple blockchains.
 
